@@ -1,0 +1,2279 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
+
+</head>
+<body class="">
+		<!-- fabricator icons -->
+		<svg style="display: none;">
+			<symbol id="f-icon-code" viewBox="0 0 512 512">
+				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+			</symbol>
+			<symbol id="f-icon-notes" viewBox="0 0 512 512">
+				<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+			</symbol>
+			<symbol id="f-icon-labels" viewBox="0 0 512 512">
+				<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+			</symbol>
+			<symbol id="f-icon-menu" viewBox="0 0 512 512">
+				<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+			</symbol>
+			<symbol id="f-icon-settings" viewBox="0 0 512 512">
+				<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+			</symbol>
+		</svg>
+		<!-- /fabricator icons -->
+		<!-- fabricator menu -->
+		<div class="f-menu">
+		
+			<div class="f-controls">
+				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+					<svg>
+						<use xlink:href="#f-icon-labels" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+					<svg>
+						<use xlink:href="#f-icon-notes" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</div>
+			</div>
+		
+			<ul>
+		
+				<li>
+					<a href="index.html" class="f-menu__heading">Overview</a>
+				</li>
+		
+				<li>
+					<a href="components.html" class="f-menu__heading">Components</a>
+					<ul>
+						<li>
+							<a href="components.html#blocks">Blocks</a>
+						</li>
+						<li>
+							<a href="components.html#buttons">Buttons</a>
+						</li>
+						<li>
+							<a href="components.html#cards">Cards</a>
+						</li>
+						<li>
+							<a href="components.html#collections">Collections</a>
+						</li>
+						<li>
+							<a href="components.html#image-blocks">Image Blocks</a>
+						</li>
+						<li>
+							<a href="components.html#images">Images</a>
+						</li>
+						<li>
+							<a href="components.html#navigation">Navigation</a>
+						</li>
+						<li>
+							<a href="components.html#profile">Profile</a>
+						</li>
+						<li>
+							<a href="components.html#radio">Radio</a>
+						</li>
+						<li>
+							<a href="components.html#select">Select</a>
+						</li>
+						<li>
+							<a href="components.html#table">Table</a>
+						</li>
+						<li>
+							<a href="components.html#text-input">Text Input</a>
+						</li>
+						<li>
+							<a href="components.html#textarea">Textarea</a>
+						</li>
+						<li>
+							<a href="components.html#typography">Typography</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="structures.html" class="f-menu__heading">Structures</a>
+					<ul>
+						<li>
+							<a href="structures.html#base">Base</a>
+						</li>
+						<li>
+							<a href="structures.html#site-blocks">Site Blocks</a>
+						</li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="pages.html" class="f-menu__heading">Pages</a>
+					<ul>
+						<li>
+							<a href="pages/article-index.html" target="_blank">Article Index</a>
+						</li>
+						<li>
+							<a href="pages/article.html" target="_blank">Article</a>
+						</li>
+						<li>
+							<a href="pages/contact.html" target="_blank">Contact</a>
+						</li>
+						<li>
+							<a href="pages/get-involved.html" target="_blank">Get Involved</a>
+						</li>
+						<li>
+							<a href="pages/home.html" target="_blank">Home</a>
+						</li>
+						<li>
+							<a href="pages/new-to-church.html" target="_blank">New To Church</a>
+						</li>
+						<li>
+							<a href="pages/our-story.html" target="_blank">Our Story</a>
+						</li>
+						<li>
+							<a href="pages/our-vision.html" target="_blank">Our Vision</a>
+						</li>
+						<li>
+							<a href="pages/testimonies.html" target="_blank">Testimonies</a>
+						</li>
+						<li>
+							<a href="pages/what-we-believe.html" target="_blank">What We Believe</a>
+						</li>
+						<li>
+							<a href="pages/who-we-are.html" target="_blank">Who We Are</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="stories.html" class="f-menu__heading">Stories</a>
+					<ul>
+						<li>
+							<a href="stories/nicky.html" target="_blank">Nicky</a>
+						</li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="docs.html" class="f-menu__heading">Docs</a>
+					<ul>
+						<li>
+							<a href="docs.html#article">Article</a>
+						</li>
+						<li>
+							<a href="docs.html#Media">Media</a>
+						</li>
+					</ul>
+				</li>
+		
+			</ul>
+		
+		
+		</div>
+		<!-- /fabricator menu -->
+		<div class="f-container">
+			<div class="f-control-bar">
+				<div class="f-control f-menu-toggle">
+					<svg>
+						<use xlink:href="#f-icon-menu" />
+					</svg>
+				</div>
+			</div>
+
+
+	
+<h1 data-f-toggle="labels">Structures</h1>
+
+
+<div class="f-item-group" id="base">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Base</h2>
+	</div>
+		<div class="f-item-group" id="base.contact">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Contact</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="container">
+	<label for="textInput">Firstname
+<input type="text" id="textInput" placeholder="Enter your first name" /></label><label for="textInput">Surname
+<input type="text" id="textInput" placeholder="Enter your surname" /></label><label for="textInput">Email
+<input type="text" id="textInput" placeholder="Enter your email address" /></label></div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;container&quot;&gt;
+	&lt;label for&#x3D;&quot;textInput&quot;&gt;Firstname
+&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; placeholder&#x3D;&quot;Enter your first name&quot; /&gt;&lt;/label&gt;&lt;label for&#x3D;&quot;textInput&quot;&gt;Surname
+&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; placeholder&#x3D;&quot;Enter your surname&quot; /&gt;&lt;/label&gt;&lt;label for&#x3D;&quot;textInput&quot;&gt;Email
+&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; placeholder&#x3D;&quot;Enter your email address&quot; /&gt;&lt;/label&gt;&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="base.footer">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Footer</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="row">
+	<div class="col-4">
+		<div class="content-block theme-facebook">
+			<a href="https://www.facebook.com/libertychurchfamily" target="_blank"><span class="icon icon-facebook"></span></a>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="content-block theme-twitter">
+			<a href="https://twitter.com/LibertyChurchUK" target="_blank"><span class="icon icon-twitter"></span></a>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="content-block theme-vimeo">
+			<a href="https://vimeo.com/libertychurchuk" target="_blank"><span class="icon icon-vimeo"></span></a>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="content-block theme-instagram">
+			<a href="https://instagram.com/libertychurchuk" target="_blank"><span class="icon icon-instagram"></span></a>
+		</div>
+	</div>
+</div>
+<div class="site-footer">
+	<div class="site-footer__content">
+
+		<div class="scrolltop">
+			<a href="#" id="scrolltop" class="nolink"><span class="icon-arrow-up"></span>Back to Top</a>
+		</div>
+
+		<img alt="Liberty Church" class="site-footer__logo" src="../assets/toolkit/images/liberty-logo-text-white.svg" role="presentation">
+
+		<h3>Contact Liberty Church </h3>
+		<p><strong>Phone</strong> <br><a href="tel:+447943 501007">+44 7943 501007</a></p>
+		<p><strong>Email</strong> <br><a href="mailto:hello@libertychurchuk.com" target="_blank">hello@libertychurchuk.com</a></p>
+
+	</div>
+</div>
+<footer class="footer">
+	Copyright © 2016 Liberty Church. All rights reserved.
+
+</footer>
+<div class="drawer" data-action="nav">
+	<div class="drawer__nav">
+		<div class="drawer__logo">
+			<svg width="100" viewBox="0 0 391 254" xmlns="http://www.w3.org/2000/svg"><title>Liberty Church Logo</title><path d="M236.36 82.43c3.18-1.49 5.61 2.07 6.79 4.54 3.04 5.3.86 11.51.87 17.23 8.82-4.27 19.01-4.17 28.47-2.47 4.27.97 8.75 2.37 11.87 5.62-9.33 1.17-19.2.41-28.01 4.13-6.03 2.9-11.01 7.48-16 11.85-2.11 1.85-4.44 3.69-5.58 6.34-3.35 12.99-7.62 25.74-11.62 38.55-1.82 6.17-4.43 12.39-9.21 16.88-2.2-1.75-3.54-4.37-2.73-7.21 2.92-17.25 7.51-34.16 12.17-51.01.73-1.65-.56-3.01-1.34-4.3 4.51-5.46 6.74-12.33 8.18-19.16.98-4.88 3.09-9.47 3.81-14.42.58-2.22.39-4.98 2.33-6.57zm-82.35-63.42c4 4.24 5.38 10.28 5.24 15.96-.86 7.96-4.73 15.11-7.64 22.45-4.49 12.43-9.03 24.86-13.01 37.47-1.75 5.4-2.43 11.07-3.98 16.52-2.3 6.69-5.28 13.16-7 20.04.55-.08 1.66-.23 2.22-.3 5.8-2.86 11.3-6.31 17.04-9.29 4.84-2.3 10.75-.88 14.52 2.78 3.38 2.6 4.85 6.71 5.94 10.67 4.76-9.3 10.42-18.77 19.5-24.44 6.98-4.43 16.84-5.63 23.72-.34 3.08 2.5 8.07 3.9 8.64 8.42.37 9.28-3.79 18.02-8.44 25.82-6.41 9.24-17.16 13.62-26.93 18.34-4.45 2.41-8.72-1.28-12.57-3.16-.85 4.93-1.1 10.05-.31 15 1.63 5.45 8.56 4.87 13.06 5.11 7.25.3 13.45-3.8 20.3-5.2-1.79 3.42-4.34 6.83-8.2 7.97-5.33 1.61-10.62 3.49-16.13 4.34-4.99-.02-8.68-3.87-12.17-6.94-4.86-4.23-6.79-10.84-6.74-17.1-7.15 8.81-15.44 16.77-25.02 22.9-1.94 1.22-4.16 1.88-6.22 2.84-3.24 1.69-6.05 4.59-9.86 4.89-3.44-.93-5.71-3.99-8.54-5.98-3.53 5.83-6.08 12.33-10.39 17.63-.32-2.5-.29-5.03.29-7.48 3.11-14.74 7.22-29.24 10.55-43.92 9.83-41.7 21.02-83.1 34.17-123.88 1.33-4 .73-8.6 3.11-12.24 1.58-1.34 3.67-.14 4.85 1.12zm36.39 101.46c2.67-4.57 8.29-5.47 12.89-7.06 2.12 2.11 4.1 4.99 3.15 8.14-2.28 7.77-5.67 15.57-11.73 21.16-6.22 6.02-14.06 10.02-22.02 13.22 1.18-8.63 4.5-16.84 8.89-24.32 2.65-3.93 6.17-7.2 8.82-11.14zm-42.45 12.7c2.69-.5 5.2-1.79 7.94-2.06 3.05 1.76 1.96 6.05 1.58 8.91-2.34 8.4-8.26 15.23-14.29 21.29-7.14 6.19-14.32 12.42-22.2 17.67-1.88 1.42-4.19 1.78-6.49 1.58 1.29-9.32 4.33-18.28 6.31-27.46.73-4.8 4.18-8.78 8.19-11.29 5.9-3.67 12.07-7.24 18.96-8.64zm-39.36-99.62c3.24-2.85 8.46.32 8.39 4.33.65 9.59-2.16 19.64-8.7 26.85-2.3-.78-5.47-1.79-5.51-4.76-.67-9.15 2.5-18.05 5.82-26.42zM92.03 99.9c.77-3.69 3.16-7.71 7.06-8.6 3.26-.71 5.61 2.21 7.03 4.71 2.05 2.96.52 6.6.35 9.87-.24 4.46-2.43 8.41-3.86 12.55-3.19 8.91-5.49 18.11-7.33 27.38-2.25 12.01-4.21 24.44-2.21 36.61 3.27-2.39 5.78-5.62 8.84-8.25-.23 5.48-2.22 10.84-5.6 15.16-.95 1.56-2.95 1.19-4.36.62-2.89-.99-5.89-2.56-7.4-5.34-4.49-9.49-5.05-20.35-3.56-30.62 2.55-18.24 6.91-36.16 11.04-54.09zM314.72 2.51c2.01-3.18 7.24-1.84 8.45 1.46 3.57 7.91.88 16.78-1.72 24.57-1.81 5.35-2.65 10.98-4.56 16.3-1.04 2.8-1.06 5.81-1.23 8.76 5.91-.16 11.84.06 17.73-.54 10.83-1.56 21.75.15 32.61-.41 2.26.15 5.76-.68 6.43 2.32.42 3.93-4.37 5.37-7.41 6.09-8.29 1-16.67-1.01-24.98-.05-8.67.51-17.39.51-26.04-.3-2.49 8.71-3.6 17.83-7.12 26.23-1.13 2.47-1.58 5.2-1.27 7.91-1.38 4.92-.66 11-5.22 14.4.4.37 1.21 1.1 1.62 1.46-2.13 4.27-2.11 9.32-4.91 13.29.34 2.63-.43 5.06-2.19 7.03.94 2.96.09 5.8-1.58 8.31-1.88 2.5.12 5.59-.55 8.35-.93 2.2-3.01 3.87-3.42 6.27.36 15.91-6.87 30.56-9.24 46.06.2 1.89-1.94 3.31-3.6 2.42-3.81-1.75-8.09-4.78-8.35-9.37-.55-4.11 2.63-7.37 3.68-11.14 5.13-16.04 8.64-32.54 12.22-48.98 5.83-23.83 12.13-47.55 17.06-71.59-4.02-.24-8.03-.87-12.06-.73-.51-.12-1.54-.35-2.06-.46-2.26.73-4.59.47-6.85-.1-2.7 1.22-5.53 1.07-8.18-.18-10.48 2.77-21.36.48-32.02 1.24-1.8-2.04.16-4.97 1.37-6.86 2.64-3.44 7.12-1.3 10.66-1.08 16.62 1.15 33.3-.16 49.95.32 1.73-10.03 4.55-19.83 7.35-29.61 2.16-7.03 2.74-14.51 5.43-21.39zm-15.68 84.95c1.63-.66 2.12-.13 1.48 1.59-1.64.65-2.13.12-1.48-1.59zm-14.35 58.41c.51-.07 1.53-.19 2.04-.25-.64 1.11-1.32 2.21-1.96 3.33-.04-1.03-.07-2.06-.08-3.08zm1.37-1.58c-1.9-.24-.56-3.85 1.09-2.9.55 1.28.19 2.24-1.09 2.9zm.99-6.14c-.66-3.01-.72-7.66 2.67-8.96-.12 3.16-1.2 6.19-2.67 8.96zm8.9-40.21c.79-1.01 1.6-2 2.42-2.99-.99 4.47-.6 10.55-4.98 13.22.67-3.22 1.22-6.87 4.05-8.98-.37-.31-1.12-.93-1.49-1.25zm-7.36 30.47c1.49-6.33 2.7-12.83 5.02-18.92.41 5.95-1.56 11.59-3.13 17.23l-1.89 1.69zm-.94-72.9c4.23-.16 8.49-.11 12.71.3-3.33 1.27-6.96 1.05-10.45.88-.94 0-1.7-.39-2.26-1.18zm-13.15 1.06c.35-1.63 3.38-1.21 4.54-.52-.78 1.18-3.28 1-4.54.52zm7.32-1.6c1.78.01 3.56.03 5.35.05-.05.49-.14 1.48-.18 1.98h-5.37l.2-2.03zM61.17 19.24c.56-2.51.12-6.97 3.77-6.88 3.36.8 7.18 2.94 8.11 6.53.23 2.82-.87 5.53-1.43 8.25-2.36 8.76-4.09 17.69-7.12 26.26-4.06 10.72-8.51 21.29-13.5 31.61-5.4 18.35-12.18 36.26-18.74 54.21-1.95 5.64-2.8 11.58-4.7 17.24-2.6 7.77-4.84 15.65-6.83 23.6-.94 3.95-2.5 7.79-2.62 11.91 14.91 1.6 29.94 1.56 44.91 2.26 7.52.48 15.37-1.29 22.64 1.27 2.61 1.78 3.21 5.45 2.72 8.39-1.13 2.8-4.49 2.89-7.02 3.22-7.45.63-14.91 1.13-22.38 1.45-16.33.52-33.1-2.88-49.07 1.77-3.56.67-6.4-2.39-8.11-5.13-1.76-2.31-2.26-5.44-1.29-8.18 1.05-2.86 4.07-4.48 4.93-7.42 6.72-22.07 13.19-44.22 19.86-66.3 8.3-23.26 16.69-46.49 25.04-69.73 3.96-11.32 8.32-22.58 10.83-34.33zM38.25 96.19c.16-2.32.24-5.13 2.48-6.49.05 2.44-.5 4.89-2.48 6.49zm-3.79 8.9c.93-2.1 1.25-4.75 3.28-6.12-5.88 19.16-12.41 38.12-18.48 57.22-.9 2.64-1.53 5.41-2.94 7.85-.07-4.67 2.2-8.93 3.38-13.36 5.06-15.15 9.5-30.5 14.76-45.59zm342.48-47.24c2.78-.74 5.96-2.04 8.67-.39 3.38 2.26 4.75 6.63 4.76 10.52.01 4.44-2.53 8.21-4.07 12.21-5.36 16.98-9.4 34.34-13.12 51.75-3.02 10.39-4.48 21.16-7.97 31.41-2.54 11.38-5.12 22.78-8.95 33.81-1.01 3.05-4.35 5.75-2.89 9.18-.83 2.54-1.5 5.12-2.22 7.69-3.04 7.58-7.26 14.82-13.15 20.55-1.24 3.18-3.66 5.69-6.7 7.19-1.06 2.7-3.23 4.55-6.06 5.21-.89 1.47-1.97 2.94-3.72 3.42-3.18 1.02-6.18 2.62-9.47 3.28-6.09-.57-12.68 0-17.8-4.01 5.1-4.22 11.54-6.11 17.29-9.17 7.17-4.38 13.5-10.12 18.46-16.91 10.98-13.56 16.71-30.36 20.66-47.13 4.3-16.99 7.88-34.15 11.52-51.28.41-2.08.57-4.2.78-6.31-4.05 5.88-8.86 11.21-14.04 16.11-2.42 2.23-6.13 1.36-8.65-.22-5.15-3.21-9.87-7.77-11.47-13.8-4.03-12.5-1.21-25.63 1.18-38.14 1.01-3.72-1.65-8.48 1.4-11.49 6.39-3.49 14.76 3.87 13.1 10.66-1.02 8.7-2.68 17.32-4.4 25.92-.88 4.48-1.34 9.13-.43 13.64 4.99-.98 8.35-4.93 10.79-9.1 8.48-12.68 17.33-25.45 22.16-40.06 1.87-4.71 3.28-9.59 4.34-14.54zm-15.33 86.38c-.72-3.06-.44-6.44 2.06-8.62-.06 2.98-.46 6.04-2.06 8.62zm-8.35 32.21c.78-4.37 2.03-8.65 3.42-12.86.63 7.78-2.57 15.07-4.14 22.55-3.37 13.33-6.8 27.3-15.67 38.18 1.57-7.17 5.82-13.26 8.67-19.92 1.67-3.64 1.9-7.71 3.11-11.5 1.93-5.45 2.38-11.47 5.79-16.32l-1.18-.13zm6.65-30.64c.55.96 1.39 1.99.9 3.2-.64 4.07-1.37 8.24-3.34 11.91.45-5.09 1.55-10.09 2.44-15.11zm-245.87 82.21c4.17-5.91 13.58-6.79 18.86-1.91 1.83 1.56 2.54 3.94 3.28 6.14-.72 0-2.15 0-2.87.01-1.3-5.25-7.18-8.25-12.21-6.33-10.27 3.69-9.43 22.52 1.83 24.19 5.56 1.14 10.14-3.77 10.72-8.98h2.83c-.66 3.3-1.72 6.78-4.48 8.94-5.81 4.7-15.62 2.62-18.97-4.09-2.79-5.57-2.61-12.82 1.01-17.97zm57.68-4.41c.96-.01 1.92-.02 2.88-.02.01 6.11-.08 12.23.01 18.35-.05 3.03 1.29 6.52 4.37 7.61 4.2 1.68 10.51.45 11.59-4.6.78-7.1.31-14.29.51-21.43.69.02 2.05.05 2.74.07-.04 6.47.11 12.94-.06 19.41-.08 3.49-2.05 7.01-5.33 8.45-3.65 1.63-8.11 1.58-11.7-.2-3.39-1.7-5.03-5.61-4.99-9.25-.06-6.13.03-12.26-.02-18.39zm63.6.71c6.7-3.63 16.81 0 17.7 8.14-3.54.81-3.6-3.21-5.63-4.89-4.06-3.52-11.02-2.62-14.07 1.81-3.26 4.82-3.3 11.58-.24 16.51 2.86 4.57 9.97 5.89 14.03 2.17 2.07-1.74 2.8-4.41 3.45-6.91.71-.01 2.14-.01 2.85-.02-.68 3.5-1.92 7.19-4.97 9.33-6.07 4.33-15.75 1.91-18.77-5.01-3.29-7.06-1.82-17.35 5.65-21.13zm-93.14-.62l2.98-.12c-.01 4.08-.01 8.16-.02 12.24 5.51 0 11.03 0 16.54.01-.01-4.08-.01-8.15-.02-12.22l2.87-.04c.03 9.42-.05 18.83.04 28.25-.72.07-2.16.23-2.88.3-.03-4.61-.02-9.21-.01-13.82-5.51.01-11.03.01-16.54 0 .01 4.54.01 9.08.01 13.62-.73.01-2.17.02-2.9.02-.03-9.41.1-18.83-.07-28.24zm58.92-.09c5.84.32 11.92-.89 17.58.86 5.81 2.33 5.21 11.67-.54 13.73 5.73 2.29 3.29 9.2 5.09 13.81-.79-.04-2.36-.12-3.15-.17-.94-4 .58-9.81-3.76-12.12-4.13-.57-8.34-.2-12.49-.14.09 4.12.07 8.24.06 12.37-.69-.01-2.07-.02-2.76-.02-.01-9.44.04-18.88-.03-28.32zm2.73 13.18c.08-3.56.05-7.12.09-10.69 4.24.16 8.53-.36 12.73.33 4.66 1.46 4.15 9.25-.62 10.25-4.04.54-8.15.47-12.2.11zm55.34-13.19c.73.01 2.19.02 2.92.02 0 4.06 0 8.13-.01 12.2 5.51 0 11.03-.01 16.55.02 0-4.07 0-8.13-.01-12.2l3.16-.16c-.47 9.43-.19 18.89-.25 28.33l-2.9.36c.06-4.63.03-9.25 0-13.88-5.52.03-11.05.01-16.56.02 0 3.91.11 7.82-.03 11.73-.06.55-.19 1.65-.25 2.21-.62-.09-1.85-.26-2.47-.35l-.07-.83c-.17-9.16.02-18.31-.08-27.47z" fill="#fff" fill-rule="evenodd"/></svg>
+		</div>
+		<div class="drawer__close">
+			<img class="drawer__close-icon js-drawer__close" width="20" height="17" data-action="nav-close" src="../assets/toolkit/images/menu-close.svg" alt="" />
+		</div>
+		<a class="drawer__link" href="home.html">Home</a>
+		<a class="drawer__link" href="new-to-church.html">I'm new</a>
+		<a class="drawer__link" href="who-we-are.html">Who we are</a>
+		<a class="drawer__link" href="get-involved.html">Get involved</a>
+		<a class="drawer__link" href="our-vision.html">Vision</a>
+		<a class="drawer__link" href="what-we-believe.html">What we believe</a>
+		<a class="drawer__link" href="contact.html">Contact</a>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-facebook&quot;&gt;
+			&lt;a href&#x3D;&quot;https://www.facebook.com/libertychurchfamily&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-twitter&quot;&gt;
+			&lt;a href&#x3D;&quot;https://twitter.com/LibertyChurchUK&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-vimeo&quot;&gt;
+			&lt;a href&#x3D;&quot;https://vimeo.com/libertychurchuk&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-vimeo&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-instagram&quot;&gt;
+			&lt;a href&#x3D;&quot;https://instagram.com/libertychurchuk&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-instagram&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;site-footer&quot;&gt;
+	&lt;div class&#x3D;&quot;site-footer__content&quot;&gt;
+
+		&lt;div class&#x3D;&quot;scrolltop&quot;&gt;
+			&lt;a href&#x3D;&quot;#&quot; id&#x3D;&quot;scrolltop&quot; class&#x3D;&quot;nolink&quot;&gt;&lt;span class&#x3D;&quot;icon-arrow-up&quot;&gt;&lt;/span&gt;Back to Top&lt;/a&gt;
+		&lt;/div&gt;
+
+		&lt;img alt&#x3D;&quot;Liberty Church&quot; class&#x3D;&quot;site-footer__logo&quot; src&#x3D;&quot;../assets/toolkit/images/liberty-logo-text-white.svg&quot; role&#x3D;&quot;presentation&quot;&gt;
+
+		&lt;h3&gt;Contact Liberty Church &lt;/h3&gt;
+		&lt;p&gt;&lt;strong&gt;Phone&lt;/strong&gt; &lt;br&gt;&lt;a href&#x3D;&quot;tel:+447943 501007&quot;&gt;+44 7943 501007&lt;/a&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;strong&gt;Email&lt;/strong&gt; &lt;br&gt;&lt;a href&#x3D;&quot;mailto:hello@libertychurchuk.com&quot; target&#x3D;&quot;_blank&quot;&gt;hello@libertychurchuk.com&lt;/a&gt;&lt;/p&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;footer class&#x3D;&quot;footer&quot;&gt;
+	Copyright © 2016 Liberty Church. All rights reserved.
+
+&lt;/footer&gt;
+&lt;div class&#x3D;&quot;drawer&quot; data-action&#x3D;&quot;nav&quot;&gt;
+	&lt;div class&#x3D;&quot;drawer__nav&quot;&gt;
+		&lt;div class&#x3D;&quot;drawer__logo&quot;&gt;
+			&lt;svg width&#x3D;&quot;100&quot; viewBox&#x3D;&quot;0 0 391 254&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;title&gt;Liberty Church Logo&lt;/title&gt;&lt;path d&#x3D;&quot;M236.36 82.43c3.18-1.49 5.61 2.07 6.79 4.54 3.04 5.3.86 11.51.87 17.23 8.82-4.27 19.01-4.17 28.47-2.47 4.27.97 8.75 2.37 11.87 5.62-9.33 1.17-19.2.41-28.01 4.13-6.03 2.9-11.01 7.48-16 11.85-2.11 1.85-4.44 3.69-5.58 6.34-3.35 12.99-7.62 25.74-11.62 38.55-1.82 6.17-4.43 12.39-9.21 16.88-2.2-1.75-3.54-4.37-2.73-7.21 2.92-17.25 7.51-34.16 12.17-51.01.73-1.65-.56-3.01-1.34-4.3 4.51-5.46 6.74-12.33 8.18-19.16.98-4.88 3.09-9.47 3.81-14.42.58-2.22.39-4.98 2.33-6.57zm-82.35-63.42c4 4.24 5.38 10.28 5.24 15.96-.86 7.96-4.73 15.11-7.64 22.45-4.49 12.43-9.03 24.86-13.01 37.47-1.75 5.4-2.43 11.07-3.98 16.52-2.3 6.69-5.28 13.16-7 20.04.55-.08 1.66-.23 2.22-.3 5.8-2.86 11.3-6.31 17.04-9.29 4.84-2.3 10.75-.88 14.52 2.78 3.38 2.6 4.85 6.71 5.94 10.67 4.76-9.3 10.42-18.77 19.5-24.44 6.98-4.43 16.84-5.63 23.72-.34 3.08 2.5 8.07 3.9 8.64 8.42.37 9.28-3.79 18.02-8.44 25.82-6.41 9.24-17.16 13.62-26.93 18.34-4.45 2.41-8.72-1.28-12.57-3.16-.85 4.93-1.1 10.05-.31 15 1.63 5.45 8.56 4.87 13.06 5.11 7.25.3 13.45-3.8 20.3-5.2-1.79 3.42-4.34 6.83-8.2 7.97-5.33 1.61-10.62 3.49-16.13 4.34-4.99-.02-8.68-3.87-12.17-6.94-4.86-4.23-6.79-10.84-6.74-17.1-7.15 8.81-15.44 16.77-25.02 22.9-1.94 1.22-4.16 1.88-6.22 2.84-3.24 1.69-6.05 4.59-9.86 4.89-3.44-.93-5.71-3.99-8.54-5.98-3.53 5.83-6.08 12.33-10.39 17.63-.32-2.5-.29-5.03.29-7.48 3.11-14.74 7.22-29.24 10.55-43.92 9.83-41.7 21.02-83.1 34.17-123.88 1.33-4 .73-8.6 3.11-12.24 1.58-1.34 3.67-.14 4.85 1.12zm36.39 101.46c2.67-4.57 8.29-5.47 12.89-7.06 2.12 2.11 4.1 4.99 3.15 8.14-2.28 7.77-5.67 15.57-11.73 21.16-6.22 6.02-14.06 10.02-22.02 13.22 1.18-8.63 4.5-16.84 8.89-24.32 2.65-3.93 6.17-7.2 8.82-11.14zm-42.45 12.7c2.69-.5 5.2-1.79 7.94-2.06 3.05 1.76 1.96 6.05 1.58 8.91-2.34 8.4-8.26 15.23-14.29 21.29-7.14 6.19-14.32 12.42-22.2 17.67-1.88 1.42-4.19 1.78-6.49 1.58 1.29-9.32 4.33-18.28 6.31-27.46.73-4.8 4.18-8.78 8.19-11.29 5.9-3.67 12.07-7.24 18.96-8.64zm-39.36-99.62c3.24-2.85 8.46.32 8.39 4.33.65 9.59-2.16 19.64-8.7 26.85-2.3-.78-5.47-1.79-5.51-4.76-.67-9.15 2.5-18.05 5.82-26.42zM92.03 99.9c.77-3.69 3.16-7.71 7.06-8.6 3.26-.71 5.61 2.21 7.03 4.71 2.05 2.96.52 6.6.35 9.87-.24 4.46-2.43 8.41-3.86 12.55-3.19 8.91-5.49 18.11-7.33 27.38-2.25 12.01-4.21 24.44-2.21 36.61 3.27-2.39 5.78-5.62 8.84-8.25-.23 5.48-2.22 10.84-5.6 15.16-.95 1.56-2.95 1.19-4.36.62-2.89-.99-5.89-2.56-7.4-5.34-4.49-9.49-5.05-20.35-3.56-30.62 2.55-18.24 6.91-36.16 11.04-54.09zM314.72 2.51c2.01-3.18 7.24-1.84 8.45 1.46 3.57 7.91.88 16.78-1.72 24.57-1.81 5.35-2.65 10.98-4.56 16.3-1.04 2.8-1.06 5.81-1.23 8.76 5.91-.16 11.84.06 17.73-.54 10.83-1.56 21.75.15 32.61-.41 2.26.15 5.76-.68 6.43 2.32.42 3.93-4.37 5.37-7.41 6.09-8.29 1-16.67-1.01-24.98-.05-8.67.51-17.39.51-26.04-.3-2.49 8.71-3.6 17.83-7.12 26.23-1.13 2.47-1.58 5.2-1.27 7.91-1.38 4.92-.66 11-5.22 14.4.4.37 1.21 1.1 1.62 1.46-2.13 4.27-2.11 9.32-4.91 13.29.34 2.63-.43 5.06-2.19 7.03.94 2.96.09 5.8-1.58 8.31-1.88 2.5.12 5.59-.55 8.35-.93 2.2-3.01 3.87-3.42 6.27.36 15.91-6.87 30.56-9.24 46.06.2 1.89-1.94 3.31-3.6 2.42-3.81-1.75-8.09-4.78-8.35-9.37-.55-4.11 2.63-7.37 3.68-11.14 5.13-16.04 8.64-32.54 12.22-48.98 5.83-23.83 12.13-47.55 17.06-71.59-4.02-.24-8.03-.87-12.06-.73-.51-.12-1.54-.35-2.06-.46-2.26.73-4.59.47-6.85-.1-2.7 1.22-5.53 1.07-8.18-.18-10.48 2.77-21.36.48-32.02 1.24-1.8-2.04.16-4.97 1.37-6.86 2.64-3.44 7.12-1.3 10.66-1.08 16.62 1.15 33.3-.16 49.95.32 1.73-10.03 4.55-19.83 7.35-29.61 2.16-7.03 2.74-14.51 5.43-21.39zm-15.68 84.95c1.63-.66 2.12-.13 1.48 1.59-1.64.65-2.13.12-1.48-1.59zm-14.35 58.41c.51-.07 1.53-.19 2.04-.25-.64 1.11-1.32 2.21-1.96 3.33-.04-1.03-.07-2.06-.08-3.08zm1.37-1.58c-1.9-.24-.56-3.85 1.09-2.9.55 1.28.19 2.24-1.09 2.9zm.99-6.14c-.66-3.01-.72-7.66 2.67-8.96-.12 3.16-1.2 6.19-2.67 8.96zm8.9-40.21c.79-1.01 1.6-2 2.42-2.99-.99 4.47-.6 10.55-4.98 13.22.67-3.22 1.22-6.87 4.05-8.98-.37-.31-1.12-.93-1.49-1.25zm-7.36 30.47c1.49-6.33 2.7-12.83 5.02-18.92.41 5.95-1.56 11.59-3.13 17.23l-1.89 1.69zm-.94-72.9c4.23-.16 8.49-.11 12.71.3-3.33 1.27-6.96 1.05-10.45.88-.94 0-1.7-.39-2.26-1.18zm-13.15 1.06c.35-1.63 3.38-1.21 4.54-.52-.78 1.18-3.28 1-4.54.52zm7.32-1.6c1.78.01 3.56.03 5.35.05-.05.49-.14 1.48-.18 1.98h-5.37l.2-2.03zM61.17 19.24c.56-2.51.12-6.97 3.77-6.88 3.36.8 7.18 2.94 8.11 6.53.23 2.82-.87 5.53-1.43 8.25-2.36 8.76-4.09 17.69-7.12 26.26-4.06 10.72-8.51 21.29-13.5 31.61-5.4 18.35-12.18 36.26-18.74 54.21-1.95 5.64-2.8 11.58-4.7 17.24-2.6 7.77-4.84 15.65-6.83 23.6-.94 3.95-2.5 7.79-2.62 11.91 14.91 1.6 29.94 1.56 44.91 2.26 7.52.48 15.37-1.29 22.64 1.27 2.61 1.78 3.21 5.45 2.72 8.39-1.13 2.8-4.49 2.89-7.02 3.22-7.45.63-14.91 1.13-22.38 1.45-16.33.52-33.1-2.88-49.07 1.77-3.56.67-6.4-2.39-8.11-5.13-1.76-2.31-2.26-5.44-1.29-8.18 1.05-2.86 4.07-4.48 4.93-7.42 6.72-22.07 13.19-44.22 19.86-66.3 8.3-23.26 16.69-46.49 25.04-69.73 3.96-11.32 8.32-22.58 10.83-34.33zM38.25 96.19c.16-2.32.24-5.13 2.48-6.49.05 2.44-.5 4.89-2.48 6.49zm-3.79 8.9c.93-2.1 1.25-4.75 3.28-6.12-5.88 19.16-12.41 38.12-18.48 57.22-.9 2.64-1.53 5.41-2.94 7.85-.07-4.67 2.2-8.93 3.38-13.36 5.06-15.15 9.5-30.5 14.76-45.59zm342.48-47.24c2.78-.74 5.96-2.04 8.67-.39 3.38 2.26 4.75 6.63 4.76 10.52.01 4.44-2.53 8.21-4.07 12.21-5.36 16.98-9.4 34.34-13.12 51.75-3.02 10.39-4.48 21.16-7.97 31.41-2.54 11.38-5.12 22.78-8.95 33.81-1.01 3.05-4.35 5.75-2.89 9.18-.83 2.54-1.5 5.12-2.22 7.69-3.04 7.58-7.26 14.82-13.15 20.55-1.24 3.18-3.66 5.69-6.7 7.19-1.06 2.7-3.23 4.55-6.06 5.21-.89 1.47-1.97 2.94-3.72 3.42-3.18 1.02-6.18 2.62-9.47 3.28-6.09-.57-12.68 0-17.8-4.01 5.1-4.22 11.54-6.11 17.29-9.17 7.17-4.38 13.5-10.12 18.46-16.91 10.98-13.56 16.71-30.36 20.66-47.13 4.3-16.99 7.88-34.15 11.52-51.28.41-2.08.57-4.2.78-6.31-4.05 5.88-8.86 11.21-14.04 16.11-2.42 2.23-6.13 1.36-8.65-.22-5.15-3.21-9.87-7.77-11.47-13.8-4.03-12.5-1.21-25.63 1.18-38.14 1.01-3.72-1.65-8.48 1.4-11.49 6.39-3.49 14.76 3.87 13.1 10.66-1.02 8.7-2.68 17.32-4.4 25.92-.88 4.48-1.34 9.13-.43 13.64 4.99-.98 8.35-4.93 10.79-9.1 8.48-12.68 17.33-25.45 22.16-40.06 1.87-4.71 3.28-9.59 4.34-14.54zm-15.33 86.38c-.72-3.06-.44-6.44 2.06-8.62-.06 2.98-.46 6.04-2.06 8.62zm-8.35 32.21c.78-4.37 2.03-8.65 3.42-12.86.63 7.78-2.57 15.07-4.14 22.55-3.37 13.33-6.8 27.3-15.67 38.18 1.57-7.17 5.82-13.26 8.67-19.92 1.67-3.64 1.9-7.71 3.11-11.5 1.93-5.45 2.38-11.47 5.79-16.32l-1.18-.13zm6.65-30.64c.55.96 1.39 1.99.9 3.2-.64 4.07-1.37 8.24-3.34 11.91.45-5.09 1.55-10.09 2.44-15.11zm-245.87 82.21c4.17-5.91 13.58-6.79 18.86-1.91 1.83 1.56 2.54 3.94 3.28 6.14-.72 0-2.15 0-2.87.01-1.3-5.25-7.18-8.25-12.21-6.33-10.27 3.69-9.43 22.52 1.83 24.19 5.56 1.14 10.14-3.77 10.72-8.98h2.83c-.66 3.3-1.72 6.78-4.48 8.94-5.81 4.7-15.62 2.62-18.97-4.09-2.79-5.57-2.61-12.82 1.01-17.97zm57.68-4.41c.96-.01 1.92-.02 2.88-.02.01 6.11-.08 12.23.01 18.35-.05 3.03 1.29 6.52 4.37 7.61 4.2 1.68 10.51.45 11.59-4.6.78-7.1.31-14.29.51-21.43.69.02 2.05.05 2.74.07-.04 6.47.11 12.94-.06 19.41-.08 3.49-2.05 7.01-5.33 8.45-3.65 1.63-8.11 1.58-11.7-.2-3.39-1.7-5.03-5.61-4.99-9.25-.06-6.13.03-12.26-.02-18.39zm63.6.71c6.7-3.63 16.81 0 17.7 8.14-3.54.81-3.6-3.21-5.63-4.89-4.06-3.52-11.02-2.62-14.07 1.81-3.26 4.82-3.3 11.58-.24 16.51 2.86 4.57 9.97 5.89 14.03 2.17 2.07-1.74 2.8-4.41 3.45-6.91.71-.01 2.14-.01 2.85-.02-.68 3.5-1.92 7.19-4.97 9.33-6.07 4.33-15.75 1.91-18.77-5.01-3.29-7.06-1.82-17.35 5.65-21.13zm-93.14-.62l2.98-.12c-.01 4.08-.01 8.16-.02 12.24 5.51 0 11.03 0 16.54.01-.01-4.08-.01-8.15-.02-12.22l2.87-.04c.03 9.42-.05 18.83.04 28.25-.72.07-2.16.23-2.88.3-.03-4.61-.02-9.21-.01-13.82-5.51.01-11.03.01-16.54 0 .01 4.54.01 9.08.01 13.62-.73.01-2.17.02-2.9.02-.03-9.41.1-18.83-.07-28.24zm58.92-.09c5.84.32 11.92-.89 17.58.86 5.81 2.33 5.21 11.67-.54 13.73 5.73 2.29 3.29 9.2 5.09 13.81-.79-.04-2.36-.12-3.15-.17-.94-4 .58-9.81-3.76-12.12-4.13-.57-8.34-.2-12.49-.14.09 4.12.07 8.24.06 12.37-.69-.01-2.07-.02-2.76-.02-.01-9.44.04-18.88-.03-28.32zm2.73 13.18c.08-3.56.05-7.12.09-10.69 4.24.16 8.53-.36 12.73.33 4.66 1.46 4.15 9.25-.62 10.25-4.04.54-8.15.47-12.2.11zm55.34-13.19c.73.01 2.19.02 2.92.02 0 4.06 0 8.13-.01 12.2 5.51 0 11.03-.01 16.55.02 0-4.07 0-8.13-.01-12.2l3.16-.16c-.47 9.43-.19 18.89-.25 28.33l-2.9.36c.06-4.63.03-9.25 0-13.88-5.52.03-11.05.01-16.56.02 0 3.91.11 7.82-.03 11.73-.06.55-.19 1.65-.25 2.21-.62-.09-1.85-.26-2.47-.35l-.07-.83c-.17-9.16.02-18.31-.08-27.47z&quot; fill&#x3D;&quot;#fff&quot; fill-rule&#x3D;&quot;evenodd&quot;/&gt;&lt;/svg&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;drawer__close&quot;&gt;
+			&lt;img class&#x3D;&quot;drawer__close-icon js-drawer__close&quot; width&#x3D;&quot;20&quot; height&#x3D;&quot;17&quot; data-action&#x3D;&quot;nav-close&quot; src&#x3D;&quot;../assets/toolkit/images/menu-close.svg&quot; alt&#x3D;&quot;&quot; /&gt;
+		&lt;/div&gt;
+		&lt;a class&#x3D;&quot;drawer__link&quot; href&#x3D;&quot;home.html&quot;&gt;Home&lt;/a&gt;
+		&lt;a class&#x3D;&quot;drawer__link&quot; href&#x3D;&quot;new-to-church.html&quot;&gt;I&#x27;m new&lt;/a&gt;
+		&lt;a class&#x3D;&quot;drawer__link&quot; href&#x3D;&quot;who-we-are.html&quot;&gt;Who we are&lt;/a&gt;
+		&lt;a class&#x3D;&quot;drawer__link&quot; href&#x3D;&quot;get-involved.html&quot;&gt;Get involved&lt;/a&gt;
+		&lt;a class&#x3D;&quot;drawer__link&quot; href&#x3D;&quot;our-vision.html&quot;&gt;Vision&lt;/a&gt;
+		&lt;a class&#x3D;&quot;drawer__link&quot; href&#x3D;&quot;what-we-believe.html&quot;&gt;What we believe&lt;/a&gt;
+		&lt;a class&#x3D;&quot;drawer__link&quot; href&#x3D;&quot;contact.html&quot;&gt;Contact&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="base.header">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="sticky-header">
+	<header class="top-bar">
+		<a class=top-bar__logo href="home.html">
+			<img alt="Liberty Church" src="../assets/toolkit/images/liberty-logo-text.svg" />
+		</a>
+
+		<nav class="top-bar__nav nav">
+			<div class="nav__links">
+				<a class="nav__link" href="new-to-church.html">I'm new</a>
+				<a class="nav__link" href="who-we-are.html">Who we are</a>
+				<a class="nav__link" href="get-involved.html">Get involved</a>
+				<a class="nav__link" href="contact.html">Contact</a>
+
+			</div>
+		</nav>
+
+		<a class="top-bar__nav-toggle js-nav__toggle"> <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg"><title>Navigation Drawer Open</title><path class="top-bar-nav-open" d="M1 2c-.6 0-1-.5-1-1 0-.6.4-1 1-1h18c.5 0 1 .4 1 1 0 .5-.5 1-1 1H1zM1 9c-.6 0-1-.4-1-1s.4-1 1-1h18c.5 0 1 .4 1 1s-.5 1-1 1H1zM1 16c-.6 0-1-.5-1-1 0-.6.4-1 1-1h18c.5 0 1 .4 1 1 0 .5-.5 1-1 1H1z"/></svg>			Menu
+		</a>
+
+	</header>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;sticky-header&quot;&gt;
+	&lt;header class&#x3D;&quot;top-bar&quot;&gt;
+		&lt;a class&#x3D;top-bar__logo href&#x3D;&quot;home.html&quot;&gt;
+			&lt;img alt&#x3D;&quot;Liberty Church&quot; src&#x3D;&quot;../assets/toolkit/images/liberty-logo-text.svg&quot; /&gt;
+		&lt;/a&gt;
+
+		&lt;nav class&#x3D;&quot;top-bar__nav nav&quot;&gt;
+			&lt;div class&#x3D;&quot;nav__links&quot;&gt;
+				&lt;a class&#x3D;&quot;nav__link&quot; href&#x3D;&quot;new-to-church.html&quot;&gt;I&#x27;m new&lt;/a&gt;
+				&lt;a class&#x3D;&quot;nav__link&quot; href&#x3D;&quot;who-we-are.html&quot;&gt;Who we are&lt;/a&gt;
+				&lt;a class&#x3D;&quot;nav__link&quot; href&#x3D;&quot;get-involved.html&quot;&gt;Get involved&lt;/a&gt;
+				&lt;a class&#x3D;&quot;nav__link&quot; href&#x3D;&quot;contact.html&quot;&gt;Contact&lt;/a&gt;
+
+			&lt;/div&gt;
+		&lt;/nav&gt;
+
+		&lt;a class&#x3D;&quot;top-bar__nav-toggle js-nav__toggle&quot;&gt; &lt;svg width&#x3D;&quot;20&quot; height&#x3D;&quot;16&quot; viewBox&#x3D;&quot;0 0 20 16&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;title&gt;Navigation Drawer Open&lt;/title&gt;&lt;path class&#x3D;&quot;top-bar-nav-open&quot; d&#x3D;&quot;M1 2c-.6 0-1-.5-1-1 0-.6.4-1 1-1h18c.5 0 1 .4 1 1 0 .5-.5 1-1 1H1zM1 9c-.6 0-1-.4-1-1s.4-1 1-1h18c.5 0 1 .4 1 1s-.5 1-1 1H1zM1 16c-.6 0-1-.5-1-1 0-.6.4-1 1-1h18c.5 0 1 .4 1 1 0 .5-.5 1-1 1H1z&quot;/&gt;&lt;/svg&gt;			Menu
+		&lt;/a&gt;
+
+	&lt;/header&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="site-blocks">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Site Blocks</h2>
+	</div>
+		<div class="f-item-group" id="site-blocks.block-beliefs">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Beliefs</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-dark">
+	<div class="content-block-inner">
+		<div class="content-block__content">
+			<ul class="collapsible theme-dark" data-collapsible="expandable">
+				<li>
+					<div class="collapsible-header">We Believe</div>
+					<div class="collapsible-body">
+						<p>We Believe: in God the Father, Jesus Christ, in the Holy Spirit,</p>
+						<p>We Believe that He has given us a new life. </p>
+						<p>We believe in the crucifixion, that Jesus conquered hell, that Jesus rose from the dead,and that Jesus is coming back again.</p>
+						<p>We Believe there is only one salvation, through Jesus Christ</p>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header">The Scriptures</div>
+					<div class="collapsible-body">
+						<p>We believe that the Bible is God&#8217;s Word.</p>
+						<p>It is accurate, authoritative and applicable to our everyday lives.</p>
+
+						<ul>
+							<li>2 Timothy 3:16, 1:13</li>
+							<li>2 Peter 1:20&#8211;21</li>
+							<li>Psalm 119:105, 160, 12:6</li>
+							<li>Proverbs 30:5</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header">The Godhead</div>
+					<div class="collapsible-body">
+						<p>We believe in one eternal God who is the Creator of all things. He exists in three Persons: God the Father, God the Son and God the Holy Spirit. He is totally loving and completely holy.</p>
+
+						<ul>
+							<li>Genesis 1:1,26, 27, 3:22</li>
+							<li>Psalm 90:2</li>
+							<li>Matthew 28:19</li>
+							<li>1 Peter 1:2</li>
+							<li>2 Corinthians 13:14</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header">Jesus and His Work</div>
+					<div class="collapsible-body">
+						<p>We believe that the Lord Jesus Christ as both God and man is the only One who can reconcile us to God. He lived a sinless and exemplary life, died on the cross in our place, and rose again to prove His victory and empower us for life.</p>
+
+						<ul>
+							<li>Matthew 1:22, 23</li>
+							<li>Isaiah 9:6</li>
+							<li>John 1:1&#8211;5, 14:10&#8211;30</li>
+							<li>Hebrews 4:14&#8211;15</li>
+							<li>1 Corinthians 15:3&#8211;4</li>
+							<li>Romans 1:3&#8211;4</li>
+							<li>Acts 1:9&#8211;11</li>
+							<li>1 Timothy 6:14&#8211;15</li>
+							<li>Titus 2:13</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header">The Person and the work of the Holy Spirit</div>
+					<div class="collapsible-body">
+						<p>The Holy Spirit lives in each Christian from salvation. He is present in the world to make men aware of their need for Jesus Christ. He provides Christians with power for living, understanding of spiritual truth, and guidance in doing what is right.
+							</p>
+
+						<p>The Holy Spirit enables us to use spiritual gifts, including speaking in tongues. As Christians we seek to live under His influence daily.</p>
+
+						<ul>
+							<li>Acts 1:8</li>
+							<li>1 Corinthians 3:17</li>
+							<li>John 16:7&#8211;13 14:16&#8211;17</li>
+							<li>Galatians 5:25</li>
+							<li>1 Corinthians 2:12, 3:16</li>
+							<li>Ephesians 1:13 5:18</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header">The Fall and Salvation of Man</div>
+					<div class="collapsible-body">
+						<p>We are made in His Image. People are made in the spiritual image of God, to be like Him in character. Although every person has tremendous potential for good, all of us are marred by an attitude of disobedience toward God called &#8220;sin.&#8221;
+							Sin has separated us from God and His purpose for our lives. </p>
+
+						<p>We believe that Jesus died on the cross and shed His blood the for our sins. </p>
+
+						<p>We believe that all the redeemed, once saved, are kept by God’s power and are thus secure in Christ forever. </p>
+
+						<p>We believe that it is the privilege of believers to rejoice in the assurance of their salvation through the testimony of God’s Word believe that by placing our faith is Jesus we receive this free gift of salvation.</p>
+
+						<ul>
+							<li>Genesis 1:27</li>
+							<li>Psalm 8:3&#8211;6</li>
+							<li>Isaiah 53:6</li>
+							<li>Romans 3:23</li>
+							<li>Isaiah 59:1&#8211;2</li>
+							<li>Romans 6:23</li>
+							<li>Ephesians 2:8&#8211;9</li>
+							<li>John 14:6, 1:2</li>
+							<li>Titus 3:5</li>
+							<li>Galatians 3:26</li>
+							<li>Romans 5:1, 10:9&#8211;10</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header">Eternal Destination</div>
+					<div class="collapsible-body">
+						<p>We believe that our eternal destination of either Heaven or hell is determined by our response to the Lord Jesus Christ. People were created to exist forever. We will either exist eternally separated from God by sin or eternally with God through
+							forgiveness and salvation.</p>
+
+						<ul>
+							<li>John 3:16, 4:17</li>
+							<li>Romans 6:23, 8:17&#8211;18</li>
+							<li>Revelation 20:15</li>
+							<li>1 Corinthians 2:7&#8211;9</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header">The Church and Christian Living</div>
+					<div class="collapsible-body">
+						<p>We believe that the true church comprises all who have been justified by God’s grace through faith alone in Christ alone. They are united by the Holy Spirit in the body of Christ, of which He is the Head.</p>
+
+						<p>The true church is manifest in local churches, whose membership should be composed only of believers. That local church should seek to model, in every way, the pattern of the New Testament example of Christian life, values, structure and power.</p>
+
+						<p>We believe the Lord Jesus mandated two ordinances, baptism and the Lord’s Supper, which visibly and tangibly express the gospel. Though they are not the means of salvation, when celebrated by the church in genuine faith these ordinances confirm
+							and nourish the believer.</p>
+
+						<p>We believe in the power and significance of the Church and the necessity of believers to meet regularly together for fellowship, prayer and communion. We believe that God has individually equipped us so that we can successfully achieve His purpose
+							for our lives which is to worship God, fulfil our role in the Church and serve the community in which we live. </p>
+
+						<p>We believe that God wants to heal and transform us so that we can live healthy and blessed lives in order to help others more effectively.</p>
+
+						<p>We believe that the Lord Jesus Christ is coming back again as He promised.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-dark&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;ul class&#x3D;&quot;collapsible theme-dark&quot; data-collapsible&#x3D;&quot;expandable&quot;&gt;
+				&lt;li&gt;
+					&lt;div class&#x3D;&quot;collapsible-header&quot;&gt;We Believe&lt;/div&gt;
+					&lt;div class&#x3D;&quot;collapsible-body&quot;&gt;
+						&lt;p&gt;We Believe: in God the Father, Jesus Christ, in the Holy Spirit,&lt;/p&gt;
+						&lt;p&gt;We Believe that He has given us a new life. &lt;/p&gt;
+						&lt;p&gt;We believe in the crucifixion, that Jesus conquered hell, that Jesus rose from the dead,and that Jesus is coming back again.&lt;/p&gt;
+						&lt;p&gt;We Believe there is only one salvation, through Jesus Christ&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class&#x3D;&quot;collapsible-header&quot;&gt;The Scriptures&lt;/div&gt;
+					&lt;div class&#x3D;&quot;collapsible-body&quot;&gt;
+						&lt;p&gt;We believe that the Bible is God&amp;#8217;s Word.&lt;/p&gt;
+						&lt;p&gt;It is accurate, authoritative and applicable to our everyday lives.&lt;/p&gt;
+
+						&lt;ul&gt;
+							&lt;li&gt;2 Timothy 3:16, 1:13&lt;/li&gt;
+							&lt;li&gt;2 Peter 1:20&amp;#8211;21&lt;/li&gt;
+							&lt;li&gt;Psalm 119:105, 160, 12:6&lt;/li&gt;
+							&lt;li&gt;Proverbs 30:5&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class&#x3D;&quot;collapsible-header&quot;&gt;The Godhead&lt;/div&gt;
+					&lt;div class&#x3D;&quot;collapsible-body&quot;&gt;
+						&lt;p&gt;We believe in one eternal God who is the Creator of all things. He exists in three Persons: God the Father, God the Son and God the Holy Spirit. He is totally loving and completely holy.&lt;/p&gt;
+
+						&lt;ul&gt;
+							&lt;li&gt;Genesis 1:1,26, 27, 3:22&lt;/li&gt;
+							&lt;li&gt;Psalm 90:2&lt;/li&gt;
+							&lt;li&gt;Matthew 28:19&lt;/li&gt;
+							&lt;li&gt;1 Peter 1:2&lt;/li&gt;
+							&lt;li&gt;2 Corinthians 13:14&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class&#x3D;&quot;collapsible-header&quot;&gt;Jesus and His Work&lt;/div&gt;
+					&lt;div class&#x3D;&quot;collapsible-body&quot;&gt;
+						&lt;p&gt;We believe that the Lord Jesus Christ as both God and man is the only One who can reconcile us to God. He lived a sinless and exemplary life, died on the cross in our place, and rose again to prove His victory and empower us for life.&lt;/p&gt;
+
+						&lt;ul&gt;
+							&lt;li&gt;Matthew 1:22, 23&lt;/li&gt;
+							&lt;li&gt;Isaiah 9:6&lt;/li&gt;
+							&lt;li&gt;John 1:1&amp;#8211;5, 14:10&amp;#8211;30&lt;/li&gt;
+							&lt;li&gt;Hebrews 4:14&amp;#8211;15&lt;/li&gt;
+							&lt;li&gt;1 Corinthians 15:3&amp;#8211;4&lt;/li&gt;
+							&lt;li&gt;Romans 1:3&amp;#8211;4&lt;/li&gt;
+							&lt;li&gt;Acts 1:9&amp;#8211;11&lt;/li&gt;
+							&lt;li&gt;1 Timothy 6:14&amp;#8211;15&lt;/li&gt;
+							&lt;li&gt;Titus 2:13&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class&#x3D;&quot;collapsible-header&quot;&gt;The Person and the work of the Holy Spirit&lt;/div&gt;
+					&lt;div class&#x3D;&quot;collapsible-body&quot;&gt;
+						&lt;p&gt;The Holy Spirit lives in each Christian from salvation. He is present in the world to make men aware of their need for Jesus Christ. He provides Christians with power for living, understanding of spiritual truth, and guidance in doing what is right.
+							&lt;/p&gt;
+
+						&lt;p&gt;The Holy Spirit enables us to use spiritual gifts, including speaking in tongues. As Christians we seek to live under His influence daily.&lt;/p&gt;
+
+						&lt;ul&gt;
+							&lt;li&gt;Acts 1:8&lt;/li&gt;
+							&lt;li&gt;1 Corinthians 3:17&lt;/li&gt;
+							&lt;li&gt;John 16:7&amp;#8211;13 14:16&amp;#8211;17&lt;/li&gt;
+							&lt;li&gt;Galatians 5:25&lt;/li&gt;
+							&lt;li&gt;1 Corinthians 2:12, 3:16&lt;/li&gt;
+							&lt;li&gt;Ephesians 1:13 5:18&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class&#x3D;&quot;collapsible-header&quot;&gt;The Fall and Salvation of Man&lt;/div&gt;
+					&lt;div class&#x3D;&quot;collapsible-body&quot;&gt;
+						&lt;p&gt;We are made in His Image. People are made in the spiritual image of God, to be like Him in character. Although every person has tremendous potential for good, all of us are marred by an attitude of disobedience toward God called &amp;#8220;sin.&amp;#8221;
+							Sin has separated us from God and His purpose for our lives. &lt;/p&gt;
+
+						&lt;p&gt;We believe that Jesus died on the cross and shed His blood the for our sins. &lt;/p&gt;
+
+						&lt;p&gt;We believe that all the redeemed, once saved, are kept by God’s power and are thus secure in Christ forever. &lt;/p&gt;
+
+						&lt;p&gt;We believe that it is the privilege of believers to rejoice in the assurance of their salvation through the testimony of God’s Word believe that by placing our faith is Jesus we receive this free gift of salvation.&lt;/p&gt;
+
+						&lt;ul&gt;
+							&lt;li&gt;Genesis 1:27&lt;/li&gt;
+							&lt;li&gt;Psalm 8:3&amp;#8211;6&lt;/li&gt;
+							&lt;li&gt;Isaiah 53:6&lt;/li&gt;
+							&lt;li&gt;Romans 3:23&lt;/li&gt;
+							&lt;li&gt;Isaiah 59:1&amp;#8211;2&lt;/li&gt;
+							&lt;li&gt;Romans 6:23&lt;/li&gt;
+							&lt;li&gt;Ephesians 2:8&amp;#8211;9&lt;/li&gt;
+							&lt;li&gt;John 14:6, 1:2&lt;/li&gt;
+							&lt;li&gt;Titus 3:5&lt;/li&gt;
+							&lt;li&gt;Galatians 3:26&lt;/li&gt;
+							&lt;li&gt;Romans 5:1, 10:9&amp;#8211;10&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class&#x3D;&quot;collapsible-header&quot;&gt;Eternal Destination&lt;/div&gt;
+					&lt;div class&#x3D;&quot;collapsible-body&quot;&gt;
+						&lt;p&gt;We believe that our eternal destination of either Heaven or hell is determined by our response to the Lord Jesus Christ. People were created to exist forever. We will either exist eternally separated from God by sin or eternally with God through
+							forgiveness and salvation.&lt;/p&gt;
+
+						&lt;ul&gt;
+							&lt;li&gt;John 3:16, 4:17&lt;/li&gt;
+							&lt;li&gt;Romans 6:23, 8:17&amp;#8211;18&lt;/li&gt;
+							&lt;li&gt;Revelation 20:15&lt;/li&gt;
+							&lt;li&gt;1 Corinthians 2:7&amp;#8211;9&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class&#x3D;&quot;collapsible-header&quot;&gt;The Church and Christian Living&lt;/div&gt;
+					&lt;div class&#x3D;&quot;collapsible-body&quot;&gt;
+						&lt;p&gt;We believe that the true church comprises all who have been justified by God’s grace through faith alone in Christ alone. They are united by the Holy Spirit in the body of Christ, of which He is the Head.&lt;/p&gt;
+
+						&lt;p&gt;The true church is manifest in local churches, whose membership should be composed only of believers. That local church should seek to model, in every way, the pattern of the New Testament example of Christian life, values, structure and power.&lt;/p&gt;
+
+						&lt;p&gt;We believe the Lord Jesus mandated two ordinances, baptism and the Lord’s Supper, which visibly and tangibly express the gospel. Though they are not the means of salvation, when celebrated by the church in genuine faith these ordinances confirm
+							and nourish the believer.&lt;/p&gt;
+
+						&lt;p&gt;We believe in the power and significance of the Church and the necessity of believers to meet regularly together for fellowship, prayer and communion. We believe that God has individually equipped us so that we can successfully achieve His purpose
+							for our lives which is to worship God, fulfil our role in the Church and serve the community in which we live. &lt;/p&gt;
+
+						&lt;p&gt;We believe that God wants to heal and transform us so that we can live healthy and blessed lives in order to help others more effectively.&lt;/p&gt;
+
+						&lt;p&gt;We believe that the Lord Jesus Christ is coming back again as He promised.&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-blokes">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Blokes</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block content-block--overlay theme-light content-block--right content-block--image" style="background-image: url('/assets/toolkit/images/blokes.jpg')">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">Blokes</h2>
+		<div class="content-block__content">
+			<p>Our 5 week foundation course offers a great opportunity to understand our culture, explore the essentials of the Christian faith and also see what we believe as a church.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn" href="https://www.facebook.com/blokeswales/" target="_blank">Facebook Page</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block content-block--overlay theme-light content-block--right content-block--image&quot; style&#x3D;&quot;background-image: url(&#x27;/assets/toolkit/images/blokes.jpg&#x27;)&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;Blokes&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Our 5 week foundation course offers a great opportunity to understand our culture, explore the essentials of the Christian faith and also see what we believe as a church.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;https://www.facebook.com/blokeswales/&quot; target&#x3D;&quot;_blank&quot;&gt;Facebook Page&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-extend">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Extend</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-dark">
+	<div class="content-block-inner">
+		<h2 class="content-block__heading">
+    <img src="../assets/toolkit/images/extend.png" width="300" />
+  </h2>
+		<div class="content-block__content">
+			<p>To reach and influence the world by building a large Christ-centered, Bible-based church, changing mindsets and empowering people to lead and impact in every sphere of life.</p>
+		</div>
+		<div class="content-block__footer">
+			<a class="btn" href="http://www.extend-sphere.com/">Extend Network</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-dark&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+    &lt;img src&#x3D;&quot;../assets/toolkit/images/extend.png&quot; width&#x3D;&quot;300&quot; /&gt;
+  &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;To reach and influence the world by building a large Christ-centered, Bible-based church, changing mindsets and empowering people to lead and impact in every sphere of life.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;
+			&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;http://www.extend-sphere.com/&quot;&gt;Extend Network&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-facebook">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Facebook</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-facebook">
+	<a href="https://www.facebook.com/libertychurchfamily" target="_blank"><span class="icon icon-facebook"></span></a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-facebook&quot;&gt;
+	&lt;a href&#x3D;&quot;https://www.facebook.com/libertychurchfamily&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-faithstatement">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Faithstatement</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-dark">
+	<div class="content-block-inner">
+		<h2 class="content-block__heading">What we believe</h2>
+		<a class="btn" href="statement-of-faith.html">Statement of Faith</a>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-dark&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;What we believe&lt;/h2&gt;
+		&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;statement-of-faith.html&quot;&gt;Statement of Faith&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-foundation">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Foundation</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-foundation">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">    <img src="../assets/toolkit/images/foundation.png" width="400" />
+</h2>
+		<h2 class="content-block__subheading">Establishing solid foundations to build on</h2>
+
+		<div class="content-block__content">
+			<p>Our 5 week foundation course offers a great opportunity to understand our culture, explore the essentials of the Christian faith and also see what we believe as a church.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn btn--outline" href="#">Facebook Event</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-foundation&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;    &lt;img src&#x3D;&quot;../assets/toolkit/images/foundation.png&quot; width&#x3D;&quot;400&quot; /&gt;
+&lt;/h2&gt;
+		&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;Establishing solid foundations to build on&lt;/h2&gt;
+
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Our 5 week foundation course offers a great opportunity to understand our culture, explore the essentials of the Christian faith and also see what we believe as a church.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;#&quot;&gt;Facebook Event&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-getinvolved">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Getinvolved</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-light">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">How can I get involved?</h2>
+		<div class="content-block__content">
+			<p>We have a connections table and would love to chat to you there. Also please just grab one of the team or elders at any time, we would love to spend time connecting with you.</p>
+
+			<p>Background to various ministries including and referencing</p>
+			<ul>
+				<li>Liberty Groups</li>
+				<li>Walking Group</li>
+				<li>Musicians</li>
+				<li>Prayer meetings</li>
+			</ul>
+		</div>
+		<div class="content-block__footer"><a class="btn btn--outline" href="http://www.libertychurchuk.com/ministries">Life of the church</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-light&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;How can I get involved?&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;We have a connections table and would love to chat to you there. Also please just grab one of the team or elders at any time, we would love to spend time connecting with you.&lt;/p&gt;
+
+			&lt;p&gt;Background to various ministries including and referencing&lt;/p&gt;
+			&lt;ul&gt;
+				&lt;li&gt;Liberty Groups&lt;/li&gt;
+				&lt;li&gt;Walking Group&lt;/li&gt;
+				&lt;li&gt;Musicians&lt;/li&gt;
+				&lt;li&gt;Prayer meetings&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;http://www.libertychurchuk.com/ministries&quot;&gt;Life of the church&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-home-new">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Home New</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block content-block--overlay-new-to-church theme-dark content-block--image" style="background-image: url('/assets/toolkit/images/gathering.jpg')">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">New to church</h2>
+		<div class="content-block__content">
+			<p>If you’re new to church, interested in the Christian faith or simply want to know what it means to be part of the Liberty family.
+			</p>
+		</div>
+		<div class="content-block__footer"><a class="btn" href="new-to-church.html">Find out more</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block content-block--overlay-new-to-church theme-dark content-block--image&quot; style&#x3D;&quot;background-image: url(&#x27;/assets/toolkit/images/gathering.jpg&#x27;)&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;New to church&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;If you’re new to church, interested in the Christian faith or simply want to know what it means to be part of the Liberty family.
+			&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;new-to-church.html&quot;&gt;Find out more&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-instagram">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Instagram</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-instagram">
+	<a href="https://instagram.com/libertychurchuk" target="_blank"><span class="icon icon-instagram"></span></a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-instagram&quot;&gt;
+	&lt;a href&#x3D;&quot;https://instagram.com/libertychurchuk&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-instagram&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-kids">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Kids</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-kids">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">
+      <img src="../assets/toolkit/images/liberty-kids.png" width="300"/>
+    </h2>
+		<div class="content-block__content">
+			<p>Our children are an essential part of the church, we want them to have God's best. Sunday mornings are action packed, full of fun learning how awesome the Father, Jesus and the Holy Spirit are.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn" href="#">Parents Facebook Group</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-kids&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+      &lt;img src&#x3D;&quot;../assets/toolkit/images/liberty-kids.png&quot; width&#x3D;&quot;300&quot;/&gt;
+    &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Our children are an essential part of the church, we want them to have God&#x27;s best. Sunday mornings are action packed, full of fun learning how awesome the Father, Jesus and the Holy Spirit are.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;#&quot;&gt;Parents Facebook Group&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-lambs">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Lambs</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-lambs">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">
+      <img src="../assets/toolkit/images/liberty-lambs.png" width="450"/>
+    </h2>
+		<div class="content-block__content">
+			<p>Liberty Lambs is a parent toddler group that meets in two different locations, Hatherleigh Community Centre and Duffryn Community Centre. The groups are a great time to have a coffee, cake, meet new friends and for your babies and toddlers to enjoy
+				playing. We ask £1 per family.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn" href="https://www.facebook.com/LibertyLambs" target="_blank">Facebook</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-lambs&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+      &lt;img src&#x3D;&quot;../assets/toolkit/images/liberty-lambs.png&quot; width&#x3D;&quot;450&quot;/&gt;
+    &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Liberty Lambs is a parent toddler group that meets in two different locations, Hatherleigh Community Centre and Duffryn Community Centre. The groups are a great time to have a coffee, cake, meet new friends and for your babies and toddlers to enjoy
+				playing. We ask £1 per family.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;https://www.facebook.com/LibertyLambs&quot; target&#x3D;&quot;_blank&quot;&gt;Facebook&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-lg">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Lg</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-dark content-block--overlay content-block--image" style="background-image: url('/assets/toolkit/images/liberty-groups-bg.jpg')">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">
+    <img src="../assets/toolkit/images/groups.png" width="220"/>
+  </h2>
+		<div class="content-block__content">
+			<p>Liberty groups are at the heart of the church. They are a place to build relationships, enjoy time together, to grow, learn and be discipled. We believe in community, where people are looked after, loved and can flourish.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn" href="#">Find a group</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-dark content-block--overlay content-block--image&quot; style&#x3D;&quot;background-image: url(&#x27;/assets/toolkit/images/liberty-groups-bg.jpg&#x27;)&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+    &lt;img src&#x3D;&quot;../assets/toolkit/images/groups.png&quot; width&#x3D;&quot;220&quot;/&gt;
+  &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Liberty groups are at the heart of the church. They are a place to build relationships, enjoy time together, to grow, learn and be discipled. We believe in community, where people are looked after, loved and can flourish.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;#&quot;&gt;Find a group&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-location">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Location</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block content-block--fullwidthmap">
+	<div id="mapid"></div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block content-block--fullwidthmap&quot;&gt;
+	&lt;div id&#x3D;&quot;mapid&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-marriage">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Marriage</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-marriage">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">
+    <img src="../assets/toolkit/images/simplymarriage_logo.png" width="220"/>
+  </h2>
+		<div class="content-block__content">
+			<p>Simply marriage runs a couple of times a year and is a great evening to invest in your marriage. We discuss some of the realities of marriage, hear and learn from people who have walked this journey for a number of years.</p>
+
+			<p>Thinking of getting married, married, legends of marriage… this is for you.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn btn--outline" href="#">Facebook Page</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-marriage&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+    &lt;img src&#x3D;&quot;../assets/toolkit/images/simplymarriage_logo.png&quot; width&#x3D;&quot;220&quot;/&gt;
+  &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Simply marriage runs a couple of times a year and is a great evening to invest in your marriage. We discuss some of the realities of marriage, hear and learn from people who have walked this journey for a number of years.&lt;/p&gt;
+
+			&lt;p&gt;Thinking of getting married, married, legends of marriage… this is for you.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;#&quot;&gt;Facebook Page&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-messages">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Messages</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block content-block--left content-block--overlay-messages theme-dark content-block--image" style="background-image: url('/assets/toolkit/images/messages.jpg')">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">Messages</h2>
+		<div class="content-block__content">
+			<p>Catch up with the latest messages from our Sunday meetings and mid week sessions.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn" href="http://libertychurchuk.podbean.com/" target="_blank">Catch Up</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block content-block--left content-block--overlay-messages theme-dark content-block--image&quot; style&#x3D;&quot;background-image: url(&#x27;/assets/toolkit/images/messages.jpg&#x27;)&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;Messages&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Catch up with the latest messages from our Sunday meetings and mid week sessions.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;http://libertychurchuk.podbean.com/&quot; target&#x3D;&quot;_blank&quot;&gt;Catch Up&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-new-bepartofus">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block New Bepartofus</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block content-block--overlay-blackrock theme-dark content-block--image" style="background-image: url('/assets/toolkit/images/praise-report.jpg')">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">Don’t remain a guest, become part of the family!</h2>
+		<div class="content-block__content">
+			<p>If you would like to make Liberty Church your home or would like to find out a bit more about us, please let us know at the connections table. We also have vision evenings where you can come and hear what we are about as a church and ask questions.</p>
+
+			<p>Alternatively just grab one of the leadership team and they would love to chat with you if you have any questions. You’ll also enjoy some delicious snacks and some great coffee too.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block content-block--overlay-blackrock theme-dark content-block--image&quot; style&#x3D;&quot;background-image: url(&#x27;/assets/toolkit/images/praise-report.jpg&#x27;)&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;Don’t remain a guest, become part of the family!&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;If you would like to make Liberty Church your home or would like to find out a bit more about us, please let us know at the connections table. We also have vision evenings where you can come and hear what we are about as a church and ask questions.&lt;/p&gt;
+
+			&lt;p&gt;Alternatively just grab one of the leadership team and they would love to chat with you if you have any questions. You’ll also enjoy some delicious snacks and some great coffee too.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-newsletter">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Newsletter</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-dark">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">
+    Signup to Liberty News
+  </h2>
+		<div class="content-block__content">
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+				<form action="//rdsaunders.us4.list-manage.com/subscribe/post?u=49ab5bcd43327ae2215ef8f7a&amp;id=e7bd035f9c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+
+						<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+						<div class="mc-field-group">
+							<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+						</div>
+						<div class="mc-field-group">
+							<label for="mce-FNAME">First Name </label>
+							<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+						</div>
+						<div class="mc-field-group">
+							<label for="mce-LNAME">Last Name </label>
+							<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+						</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_49ab5bcd43327ae2215ef8f7a_e7bd035f9c" tabindex="-1" value=""></div>
+						<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					</div>
+				</form>
+			</div>
+
+			<!--End mc_embed_signup-->
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-dark&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+    Signup to Liberty News
+  &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;!-- Begin MailChimp Signup Form --&gt;
+			&lt;div id&#x3D;&quot;mc_embed_signup&quot;&gt;
+				&lt;form action&#x3D;&quot;//rdsaunders.us4.list-manage.com/subscribe/post?u&#x3D;49ab5bcd43327ae2215ef8f7a&amp;amp;id&#x3D;e7bd035f9c&quot; method&#x3D;&quot;post&quot; id&#x3D;&quot;mc-embedded-subscribe-form&quot; name&#x3D;&quot;mc-embedded-subscribe-form&quot; class&#x3D;&quot;validate&quot; target&#x3D;&quot;_blank&quot; novalidate&gt;
+					&lt;div id&#x3D;&quot;mc_embed_signup_scroll&quot;&gt;
+
+						&lt;div class&#x3D;&quot;indicates-required&quot;&gt;&lt;span class&#x3D;&quot;asterisk&quot;&gt;*&lt;/span&gt; indicates required&lt;/div&gt;
+						&lt;div class&#x3D;&quot;mc-field-group&quot;&gt;
+							&lt;label for&#x3D;&quot;mce-EMAIL&quot;&gt;Email Address  &lt;span class&#x3D;&quot;asterisk&quot;&gt;*&lt;/span&gt;
+&lt;/label&gt;
+							&lt;input type&#x3D;&quot;email&quot; value&#x3D;&quot;&quot; name&#x3D;&quot;EMAIL&quot; class&#x3D;&quot;required email&quot; id&#x3D;&quot;mce-EMAIL&quot;&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;mc-field-group&quot;&gt;
+							&lt;label for&#x3D;&quot;mce-FNAME&quot;&gt;First Name &lt;/label&gt;
+							&lt;input type&#x3D;&quot;text&quot; value&#x3D;&quot;&quot; name&#x3D;&quot;FNAME&quot; class&#x3D;&quot;&quot; id&#x3D;&quot;mce-FNAME&quot;&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;mc-field-group&quot;&gt;
+							&lt;label for&#x3D;&quot;mce-LNAME&quot;&gt;Last Name &lt;/label&gt;
+							&lt;input type&#x3D;&quot;text&quot; value&#x3D;&quot;&quot; name&#x3D;&quot;LNAME&quot; class&#x3D;&quot;&quot; id&#x3D;&quot;mce-LNAME&quot;&gt;
+						&lt;/div&gt;
+						&lt;div id&#x3D;&quot;mce-responses&quot; class&#x3D;&quot;clear&quot;&gt;
+							&lt;div class&#x3D;&quot;response&quot; id&#x3D;&quot;mce-error-response&quot; style&#x3D;&quot;display:none&quot;&gt;&lt;/div&gt;
+							&lt;div class&#x3D;&quot;response&quot; id&#x3D;&quot;mce-success-response&quot; style&#x3D;&quot;display:none&quot;&gt;&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+						&lt;div style&#x3D;&quot;position: absolute; left: -5000px;&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;b_49ab5bcd43327ae2215ef8f7a_e7bd035f9c&quot; tabindex&#x3D;&quot;-1&quot; value&#x3D;&quot;&quot;&gt;&lt;/div&gt;
+						&lt;div class&#x3D;&quot;clear&quot;&gt;&lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;Subscribe&quot; name&#x3D;&quot;subscribe&quot; id&#x3D;&quot;mc-embedded-subscribe&quot; class&#x3D;&quot;button&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/form&gt;
+			&lt;/div&gt;
+
+			&lt;!--End mc_embed_signup--&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-parenting">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Parenting</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-dark">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">
+    Positive Parenting
+  </h2>
+		<div class="content-block__content">
+			<p>We know that being a parent can be both rewarding and challenging. Our courses are here to support you and to help you build a strong and secure relationship with your child, whatever their age.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn" href="#">Facebook Page</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-dark&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+    Positive Parenting
+  &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;We know that being a parent can be both rewarding and challenging. Our courses are here to support you and to help you build a strong and secure relationship with your child, whatever their age.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;#&quot;&gt;Facebook Page&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-service">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Service</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block content-block--overlay-blackrock theme-dark content-block--image" style="background-image: url('/assets/toolkit/images/IMG_1842.jpg')">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">
+    The Service
+  </h2>
+		<div class="content-block__content">
+			The main celebration runs for about an 1hour 20mins and includes a time of singing, prayer and talk from our lead elder and the team.</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block content-block--overlay-blackrock theme-dark content-block--image&quot; style&#x3D;&quot;background-image: url(&#x27;/assets/toolkit/images/IMG_1842.jpg&#x27;)&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+    The Service
+  &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			The main celebration runs for about an 1hour 20mins and includes a time of singing, prayer and talk from our lead elder and the team.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-story-nicky">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Story Nicky</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block content-block--right theme-light content-block--image content-block--image-large" style="background-image: url('/assets/toolkit/images/nicky.png')">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">Nicky</h2>
+		<div class="content-block__content">
+			<p>Powerful testimony by Nicky. See how God has been working in and through her life.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn" href="/stories/nicky.html">Play Video</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block content-block--right theme-light content-block--image content-block--image-large&quot; style&#x3D;&quot;background-image: url(&#x27;/assets/toolkit/images/nicky.png&#x27;)&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;Nicky&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Powerful testimony by Nicky. See how God has been working in and through her life.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;/stories/nicky.html&quot;&gt;Play Video&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-twitter">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Twitter</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-twitter">
+	<a href="https://twitter.com/LibertyChurchUK" target="_blank"><span class="icon icon-twitter"></span></a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-twitter&quot;&gt;
+	&lt;a href&#x3D;&quot;https://twitter.com/LibertyChurchUK&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-vimeo">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Vimeo</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-vimeo">
+	<a href="https://vimeo.com/libertychurchuk" target="_blank"><span class="icon icon-vimeo"></span></a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-vimeo&quot;&gt;
+	&lt;a href&#x3D;&quot;https://vimeo.com/libertychurchuk&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-vimeo&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-vision">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Vision</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">Vision Statement</h2>
+		<a class="btn btn--outline" href="our-vision.html">See our vision</a>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;Vision Statement&lt;/h2&gt;
+		&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;our-vision.html&quot;&gt;See our vision&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-women">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Women</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block content-block--left theme-dark content-block--overlay content-block--image" style="background-image: url('/assets/toolkit/images/courageous-women-bg.jpg')">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">
+    <img src="../assets/toolkit/images/courageous-women.svg" width="220"/>
+  </h2>
+		<div class="content-block__content">
+			<p>Courageous Women is the women ministry of Liberty Church. We believe that women are born with purpose and destiny. We loved to see women being built up and released into all God has for them. We host worship nights, where the gifts of spirit flow,
+				the word is preached and the worship flows.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn" href="#">Facebook Event</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block content-block--left theme-dark content-block--overlay content-block--image&quot; style&#x3D;&quot;background-image: url(&#x27;/assets/toolkit/images/courageous-women-bg.jpg&#x27;)&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+    &lt;img src&#x3D;&quot;../assets/toolkit/images/courageous-women.svg&quot; width&#x3D;&quot;220&quot;/&gt;
+  &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Courageous Women is the women ministry of Liberty Church. We believe that women are born with purpose and destiny. We loved to see women being built up and released into all God has for them. We host worship nights, where the gifts of spirit flow,
+				the word is preached and the worship flows.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;#&quot;&gt;Facebook Event&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-worship">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Worship</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">Liberty Worship</h2>
+		<div class="content-block__content">
+			<p>We love to worship our saviour. We have a gifted church with many talented musicians and songwriters, listen to the latest from Liberty music.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn btn--outline" href="article.html">Worship Blog</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;Liberty Worship&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;We love to worship our saviour. We have a gifted church with many talented musicians and songwriters, listen to the latest from Liberty music.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;article.html&quot;&gt;Worship Blog&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.block-youth">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Block Youth</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block theme-youth">
+	<div class="content-block-inner">
+
+		<h2 class="content-block__heading">
+      <img src="../assets/toolkit/images/liberty-youth.png" width="350"/>
+    </h2>
+		<div class="content-block__content">
+			<p>Our young people are excellent. Friday nights hang outs to Sunday afternoon meals, our young people have a crazy, fun time. They love to spend time together, encouraging one another, going deeper with God and exploring the awesome gifts and talents
+				they have been blessed with.</p>
+		</div>
+		<div class="content-block__footer"><a class="btn btn--outline" href="#">Facebook Group</a></div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block theme-youth&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+      &lt;img src&#x3D;&quot;../assets/toolkit/images/liberty-youth.png&quot; width&#x3D;&quot;350&quot;/&gt;
+    &lt;/h2&gt;
+		&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+			&lt;p&gt;Our young people are excellent. Friday nights hang outs to Sunday afternoon meals, our young people have a crazy, fun time. They love to spend time together, encouraging one another, going deeper with God and exploring the awesome gifts and talents
+				they have been blessed with.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;#&quot;&gt;Facebook Group&lt;/a&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.grid-beliefs">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Grid Beliefs</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="row">
+	<div class="col-2">
+		<div class="content-block">
+			<div class="content-block-inner">
+
+				<h2 class="content-block__heading">Vision Statement</h2>
+				<a class="btn btn--outline" href="our-vision.html">See our vision</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-2">
+		<div class="content-block theme-dark">
+			<div class="content-block-inner">
+				<h2 class="content-block__heading">What we believe</h2>
+				<a class="btn" href="statement-of-faith.html">Statement of Faith</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-2&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block&quot;&gt;
+			&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+				&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;Vision Statement&lt;/h2&gt;
+				&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;our-vision.html&quot;&gt;See our vision&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-2&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-dark&quot;&gt;
+			&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+				&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;What we believe&lt;/h2&gt;
+				&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;statement-of-faith.html&quot;&gt;Statement of Faith&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.grid-children">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Grid Children</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="row">
+
+	<div class="col-2">
+		<div class="content-block theme-kids">
+			<div class="content-block-inner">
+
+				<h2 class="content-block__heading">
+          <img src="../assets/toolkit/images/liberty-kids.png" width="300"/>
+        </h2>
+				<div class="content-block__content">
+					<p>Our children are an essential part of the church, we want them to have God's best. Sunday mornings are action packed, full of fun learning how awesome the Father, Jesus and the Holy Spirit are.</p>
+				</div>
+				<div class="content-block__footer"><a class="btn" href="#">Parents Facebook Group</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-2">
+		<div class="content-block theme-youth">
+			<div class="content-block-inner">
+
+				<h2 class="content-block__heading">
+          <img src="../assets/toolkit/images/liberty-youth.png" width="350"/>
+        </h2>
+				<div class="content-block__content">
+					<p>Our young people are excellent. Friday nights hang outs to Sunday afternoon meals, our young people have a crazy, fun time. They love to spend time together, encouraging one another, going deeper with God and exploring the awesome gifts and talents
+						they have been blessed with.</p>
+				</div>
+				<div class="content-block__footer"><a class="btn btn--outline" href="#">Facebook Group</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+
+	&lt;div class&#x3D;&quot;col-2&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-kids&quot;&gt;
+			&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+				&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+          &lt;img src&#x3D;&quot;../assets/toolkit/images/liberty-kids.png&quot; width&#x3D;&quot;300&quot;/&gt;
+        &lt;/h2&gt;
+				&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+					&lt;p&gt;Our children are an essential part of the church, we want them to have God&#x27;s best. Sunday mornings are action packed, full of fun learning how awesome the Father, Jesus and the Holy Spirit are.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;#&quot;&gt;Parents Facebook Group&lt;/a&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-2&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-youth&quot;&gt;
+			&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+				&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+          &lt;img src&#x3D;&quot;../assets/toolkit/images/liberty-youth.png&quot; width&#x3D;&quot;350&quot;/&gt;
+        &lt;/h2&gt;
+				&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+					&lt;p&gt;Our young people are excellent. Friday nights hang outs to Sunday afternoon meals, our young people have a crazy, fun time. They love to spend time together, encouraging one another, going deeper with God and exploring the awesome gifts and talents
+						they have been blessed with.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;#&quot;&gt;Facebook Group&lt;/a&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.grid-family">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Grid Family</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="row">
+	<div class="col-2">
+		<div class="content-block theme-marriage">
+			<div class="content-block-inner">
+
+				<h2 class="content-block__heading">
+        <img src="../assets/toolkit/images/simplymarriage_logo.png" width="220"/>
+      </h2>
+				<div class="content-block__content">
+					<p>Simply marriage runs a couple of times a year and is a great evening to invest in your marriage. We discuss some of the realities of marriage, hear and learn from people who have walked this journey for a number of years.</p>
+
+					<p>Thinking of getting married, married, legends of marriage… this is for you.</p>
+				</div>
+				<div class="content-block__footer"><a class="btn btn--outline" href="#">Facebook Page</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-2">
+		<div class="content-block theme-foundation">
+			<div class="content-block-inner">
+
+				<h2 class="content-block__heading">    <img src="../assets/toolkit/images/foundation.png" width="400" />
+    </h2>
+				<h2 class="content-block__subheading">Establishing solid foundations to build on</h2>
+
+				<div class="content-block__content">
+					<p>Our 5 week foundation course offers a great opportunity to understand our culture, explore the essentials of the Christian faith and also see what we believe as a church.</p>
+				</div>
+				<div class="content-block__footer"><a class="btn btn--outline" href="#">Facebook Event</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-2&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-marriage&quot;&gt;
+			&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+				&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;
+        &lt;img src&#x3D;&quot;../assets/toolkit/images/simplymarriage_logo.png&quot; width&#x3D;&quot;220&quot;/&gt;
+      &lt;/h2&gt;
+				&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+					&lt;p&gt;Simply marriage runs a couple of times a year and is a great evening to invest in your marriage. We discuss some of the realities of marriage, hear and learn from people who have walked this journey for a number of years.&lt;/p&gt;
+
+					&lt;p&gt;Thinking of getting married, married, legends of marriage… this is for you.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;#&quot;&gt;Facebook Page&lt;/a&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-2&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-foundation&quot;&gt;
+			&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+				&lt;h2 class&#x3D;&quot;content-block__heading&quot;&gt;    &lt;img src&#x3D;&quot;../assets/toolkit/images/foundation.png&quot; width&#x3D;&quot;400&quot; /&gt;
+    &lt;/h2&gt;
+				&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;Establishing solid foundations to build on&lt;/h2&gt;
+
+				&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+					&lt;p&gt;Our 5 week foundation course offers a great opportunity to understand our culture, explore the essentials of the Christian faith and also see what we believe as a church.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;&lt;a class&#x3D;&quot;btn btn--outline&quot; href&#x3D;&quot;#&quot;&gt;Facebook Event&lt;/a&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.grid-social">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Grid Social</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="row">
+	<div class="col-4">
+		<div class="content-block theme-facebook">
+			<a href="https://www.facebook.com/libertychurchfamily" target="_blank"><span class="icon icon-facebook"></span></a>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="content-block theme-twitter">
+			<a href="https://twitter.com/LibertyChurchUK" target="_blank"><span class="icon icon-twitter"></span></a>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="content-block theme-vimeo">
+			<a href="https://vimeo.com/libertychurchuk" target="_blank"><span class="icon icon-vimeo"></span></a>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="content-block theme-instagram">
+			<a href="https://instagram.com/libertychurchuk" target="_blank"><span class="icon icon-instagram"></span></a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-facebook&quot;&gt;
+			&lt;a href&#x3D;&quot;https://www.facebook.com/libertychurchfamily&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-facebook&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-twitter&quot;&gt;
+			&lt;a href&#x3D;&quot;https://twitter.com/LibertyChurchUK&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-twitter&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-vimeo&quot;&gt;
+			&lt;a href&#x3D;&quot;https://vimeo.com/libertychurchuk&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-vimeo&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-4&quot;&gt;
+		&lt;div class&#x3D;&quot;content-block theme-instagram&quot;&gt;
+			&lt;a href&#x3D;&quot;https://instagram.com/libertychurchuk&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;span class&#x3D;&quot;icon icon-instagram&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-beliefs">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block Beliefs</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<header class="content-block content-block--header">
+	<div class="content-block-inner">
+
+		<h1 class="header-block__heading">What we believe</h1>
+		<h2 class="content-block__subheading">Statement of beliefs</h2>
+	</div>
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class&#x3D;&quot;content-block content-block--header&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h1 class&#x3D;&quot;header-block__heading&quot;&gt;What we believe&lt;/h1&gt;
+		&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;Statement of beliefs&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-blog">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block Blog</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<header class="content-block content-block--header">
+	<div class="content-block-inner">
+
+		<h1 class="header-block__heading">blog</h1>
+		<h2 class="content-block__subheading">recent news &amp; stories from our church</h2>
+	</div>
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class&#x3D;&quot;content-block content-block--header&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h1 class&#x3D;&quot;header-block__heading&quot;&gt;blog&lt;/h1&gt;
+		&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;recent news &amp;amp; stories from our church&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-contact">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block Contact</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<header class="content-block content-block--header">
+	<div class="content-block-inner">
+
+		<h1 class="header-block__heading">contact</h1>
+		<h2 class="content-block__subheading">we'd love to speak to you</h2>
+	</div>
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class&#x3D;&quot;content-block content-block--header&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h1 class&#x3D;&quot;header-block__heading&quot;&gt;contact&lt;/h1&gt;
+		&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;we&#x27;d love to speak to you&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-get-involved">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block Get Involved</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<header class="content-block content-block--header">
+	<div class="content-block-inner">
+
+		<h1 class="header-block__heading">get involved</h1>
+		<h2 class="content-block__subheading">be part of the family</h2>
+	</div>
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class&#x3D;&quot;content-block content-block--header&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h1 class&#x3D;&quot;header-block__heading&quot;&gt;get involved&lt;/h1&gt;
+		&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;be part of the family&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-home">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block Home</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="content-block content-block--header theme-home-header content-block--overlay-dark content-block--image content-block--fixed-image" style="background-image: url('../assets/toolkit/images/llanwern-worship.jpg')">
+	<h1 class="content-block__heading">
+    <img class="home__logo" src="/assets/toolkit/images/forsuchatime.svg" width="350"/>
+  </h1>
+	<div class="content-block__content">
+		<h2>Join Us <br />Sunday Mornings</h2>
+		<div class="home__time">10.30 - 13.00</div>
+		<div class="home__location">Llanwern High School, Hartridge Road, Newport</div>
+	</div>
+	<div class="content-block__footer">
+		<a class="btn" href="https://www.google.co.uk/maps/place/Llanwern+High+School/@51.5859565,-2.9371047,17z/data=!3m1!4b1!4m5!3m4!1s0x4871e6419382d1bb:0x9be538fde5e654ec!8m2!3d51.5859532!4d-2.934916">Get Directions</a>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;content-block content-block--header theme-home-header content-block--overlay-dark content-block--image content-block--fixed-image&quot; style&#x3D;&quot;background-image: url(&#x27;../assets/toolkit/images/llanwern-worship.jpg&#x27;)&quot;&gt;
+	&lt;h1 class&#x3D;&quot;content-block__heading&quot;&gt;
+    &lt;img class&#x3D;&quot;home__logo&quot; src&#x3D;&quot;/assets/toolkit/images/forsuchatime.svg&quot; width&#x3D;&quot;350&quot;/&gt;
+  &lt;/h1&gt;
+	&lt;div class&#x3D;&quot;content-block__content&quot;&gt;
+		&lt;h2&gt;Join Us &lt;br /&gt;Sunday Mornings&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;home__time&quot;&gt;10.30 - 13.00&lt;/div&gt;
+		&lt;div class&#x3D;&quot;home__location&quot;&gt;Llanwern High School, Hartridge Road, Newport&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;content-block__footer&quot;&gt;
+		&lt;a class&#x3D;&quot;btn&quot; href&#x3D;&quot;https://www.google.co.uk/maps/place/Llanwern+High+School/@51.5859565,-2.9371047,17z/data&#x3D;!3m1!4b1!4m5!3m4!1s0x4871e6419382d1bb:0x9be538fde5e654ec!8m2!3d51.5859532!4d-2.934916&quot;&gt;Get Directions&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-new">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block New</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<header class="content-block content-block--header">
+	<div class="content-block-inner">
+		<h1 class="header-block__heading">I'm New</h1>
+		<h2 class="content-block__subheading">It's not easy starting out on a new journey, take a look what liberty church is all about.</h2>
+	</div>
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class&#x3D;&quot;content-block content-block--header&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+		&lt;h1 class&#x3D;&quot;header-block__heading&quot;&gt;I&#x27;m New&lt;/h1&gt;
+		&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;It&#x27;s not easy starting out on a new journey, take a look what liberty church is all about.&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-story">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block Story</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<header class="content-block content-block--header">
+	<div class="content-block-inner">
+
+		<h1 class="header-block__heading">our story</h1>
+		<h1 class="header-block__subheading">the history of liberty church</h1>
+	</div>
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class&#x3D;&quot;content-block content-block--header&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h1 class&#x3D;&quot;header-block__heading&quot;&gt;our story&lt;/h1&gt;
+		&lt;h1 class&#x3D;&quot;header-block__subheading&quot;&gt;the history of liberty church&lt;/h1&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-testimony">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block Testimony</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<header class="content-block content-block--header">
+	<div class="content-block-inner">
+
+		<h1 class="header-block__heading">stories</h1>
+		<h2 class="content-block__subheading">their stories with Jesus</h1>
+  </div>
+
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class&#x3D;&quot;content-block content-block--header&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h1 class&#x3D;&quot;header-block__heading&quot;&gt;stories&lt;/h1&gt;
+		&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;their stories with Jesus&lt;/h1&gt;
+  &lt;/div&gt;
+
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-vision">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block Vision</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<header class="content-block content-block--header">
+	<div class="content-block-inner">
+
+		<h1 class="header-block__heading">vision</h1>
+		<h2 class="content-block__subheading">the Church we want to see</h2>
+	</div>
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class&#x3D;&quot;content-block content-block--header&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h1 class&#x3D;&quot;header-block__heading&quot;&gt;vision&lt;/h1&gt;
+		&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;the Church we want to see&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="site-blocks.header-block-who-we-are">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Header Block Who We Are</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<header class="content-block content-block--header">
+	<div class="content-block-inner">
+
+		<h1 class="header-block__heading">Who we are</h1>
+		<h2 class="content-block__subheading">find out more about us</h2>
+	</div>
+</header>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;header class&#x3D;&quot;content-block content-block--header&quot;&gt;
+	&lt;div class&#x3D;&quot;content-block-inner&quot;&gt;
+
+		&lt;h1 class&#x3D;&quot;header-block__heading&quot;&gt;Who we are&lt;/h1&gt;
+		&lt;h2 class&#x3D;&quot;content-block__subheading&quot;&gt;find out more about us&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+
+
+		</div>
+	<script src="/assets/fabricator/scripts/f.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+	<!-- toolkit scripts -->
+	<script src="/assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+</body>
+</html>
