@@ -1,0 +1,54 @@
+.card {
+width: 100%;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+padding-bottom: 1rem;
+}
+
+.card-inner {
+display: block;;
+position: relative;
+overflow: hidden;
+background: $whitesmoke;
+color: $textcolor;
+text-decoration: none;
+
+&:hover {
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+}
+
+.card__image {
+width: 100%;
+display: block;
+}
+
+.card__body {
+padding: 2rem;
+font-size: 0.8125rem;
+}
+
+.card__title {
+font-size: 1.125rem;
+font-weight: bold;
+margin-bottom: 0.25rem;
+}
+
+.card__date {
+font-size: 0.6875rem;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+
+.card__footer {
+padding: 1rem 2rem;
+background: $whitesmoke;
+}
+
+.card__author {
+max-width: 48%;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+font-size: 0.8125rem;
+}

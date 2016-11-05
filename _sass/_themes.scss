@@ -1,0 +1,253 @@
+.theme-dark {
+background-color: $codgrey;
+color: $whitesmoke;
+
+  .btn {
+  background-color: $shiraz;
+  color: $whitesmoke;
+
+    &:hover {background-color: lighten($shiraz, 10%);}
+
+  }
+
+  &.collapsible {
+  border-left-color: lighten($shipcove, 10%);
+  border-right-color: lighten($shipcove, 10%);
+  border-top-color: lighten($shipcove, 10%);
+  }
+
+  .collapsible-header {
+  background-color: $shipcove;
+  border-bottom-color: lighten($shipcove, 10%);
+  }
+
+  .collapsible-body {
+  background-color: $white;
+  color: $textcolor;
+  }
+}
+
+
+.theme-light {
+background-color: #f7f7f7;
+color: $black;
+border-bottom: 1px solid $bordercolor;
+
+  .btn {
+  background-color: $shipcove;
+  color: $whitesmoke;
+
+    &:hover {background-color: darken($shipcove, 10%)}
+
+  }
+
+}
+
+.theme-marriage {
+background-color: lighten($marriagepurple, 20%);
+border-bottom: 1px solid $bordercolor;
+
+  .btn {
+  background-color: $marriagepurple;
+  color: $whitesmoke;
+
+    &:hover {  background-color: darken($marriagepurple, 10%);}
+
+  }
+
+  .btn--outline {
+  background: transparent;
+  border-color: $marriagepurple;
+  color: $marriagepurple;
+
+    &:hover {
+    background: transparent;
+    border-color: darken($marriagepurple, 10%);
+    color: darken($marriagepurple, 10%);
+    }
+
+  }
+
+}
+
+
+.theme-kids {
+background-color: $kidsblue;
+color: $white;
+
+  .btn {
+  background-color: $kidsorange;
+  color: $white;
+
+    &:hover {  background-color: $white; color: $kidsblue;}
+
+  }
+
+  .btn--outline {
+  background: transparent;
+  border-color: $white;
+  color: $white;
+
+    &:hover {
+    background: $kidsorange;
+    border-color: $kidsorange;
+    color: $white;
+    }
+
+  }
+
+}
+
+.theme-youth {
+  background: $black;
+  color: $white;
+
+
+  .btn {
+  background-color: $youthgreen;
+  color: $black;
+
+    &:hover {  background-color: darken($youthgreen, 10);}
+
+  }
+
+  .btn--outline {
+  background: transparent;
+  border-color: $youthgreen;
+  color: $youthgreen;
+
+    &:hover {
+      background: transparent;
+    border-color: darken($youthgreen, 10);
+    color: darken($youthgreen, 10);
+    }
+
+  }
+}
+
+// Foundation Course
+.theme-foundation {
+background-color: $foundationblue;
+color: $white;
+
+  .content-block__heading,
+  .content-block__subheading {
+  color: $foundationgreen;
+  margin-bottom: 0;
+  }
+
+  .content-block__subheading {
+  font-size: 1.5rem;
+  }
+
+  .btn {
+  background-color: $foundationgreen;
+  color: $foundationblue;
+
+    &:hover {  background-color: darken($foundationgreen, 5);}
+
+  }
+
+  .btn--outline {
+  background: transparent;
+  border-color: $foundationgreen;
+  color: $foundationgreen;
+
+    &:hover {
+    background: transparent;
+    border-color: darken($foundationgreen, 5);
+    color: darken($foundationgreen, 5);
+    }
+
+  }
+}
+
+.theme-lambs {
+background-color: $lambs;
+color: $white;
+
+
+    .btn {
+    background-color: $lambsmint;
+    color: $white;
+
+      &:hover {  background-color: darken($lambsmint, 10);}
+
+    }
+
+    .btn--outline {
+    background: transparent;
+    border-color: $lambsmint;
+    color: $lambsmint;
+
+      &:hover {
+      background: transparent;
+      border-color: darken($lambsmint, 5);
+      color: darken($lambsmint, 5);
+      }
+
+    }
+}
+
+
+// Social Themes
+.theme-instagram,
+.theme-twitter,
+.theme-vimeo,
+.theme-facebook {
+padding: 0;
+transition: opacity 0.3s ease;
+
+  &:hover {opacity: 0.8;}
+
+  a {
+  padding: 2rem;
+  }
+
+}
+
+
+
+.theme-instagram {
+background-color: $instagram;
+}
+
+.theme-twitter {
+background-color: $twitter;
+}
+
+.theme-facebook {
+background-color: $facebook;
+}
+
+.theme-vimeo {
+background-color: $vimeo;
+}
+
+
+.theme-home-header {
+background-color: $codgrey;
+color: $whitesmoke;
+
+  .btn {
+  background-color: $shiraz;
+  color: $whitesmoke;
+
+    &:hover {background-color: lighten($shiraz, 10%);}
+
+  }
+
+  .home__logo {
+  position: relative;
+  top: -3rem;
+  left: -0.5rem;
+  }
+
+  .home__time {
+    margin: 0;
+  }
+  .home__location {
+    margin-bottom: 1.5rem;
+  }
+
+}

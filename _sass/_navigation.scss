@@ -1,0 +1,144 @@
+.nav {
+  display: none;
+  margin-right: 30px;
+}
+
+  @include medium {
+    .nav {
+      display: block;
+    }
+  }
+
+
+.nav__link {
+display: inline-block;
+margin-right: 1rem;
+text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:last-child {
+  margin-right: 0;
+  }
+
+  &.is-active {
+  font-weight: bold;
+  }
+
+}
+
+  @include medium {
+
+    .nav__link {
+    margin-right: 20px;
+    }
+
+  }
+
+  @include large {
+
+    .nav__link {
+    margin-right: 30px;
+    }
+
+  }
+
+
+.drawer.is-visible .drawer__nav {
+transform: translateX(0);
+}
+
+
+.drawer__nav {
+@include z-index(drawer);
+background-color: $blackrock;
+border-left: 1px solid lighten($blackrock, 15%);
+color: $whitesmoke;
+bottom: 0;
+right: 0;
+position: fixed;
+left: 0;
+top: 0;
+transition: all ease-in-out 0.25s;
+transform: translateX(100%);
+overflow-y: auto;
+will-change: transform;
+-webkit-overflow-scrolling:touch;
+}
+
+@include medium {
+  .drawer__nav {
+    left: 60%;
+  }
+}
+
+@include large {
+  .drawer__nav {
+    left: 70%;
+  }
+}
+
+@include xlarge {
+  .drawer__nav {
+    left: 70%;
+  }
+}
+
+.drawer__link {
+border-bottom: 1px solid lighten($blackrock, 15%);
+display: block;
+padding: 1.5rem 2rem;
+text-align: right;
+text-transform: uppercase;
+text-decoration: none;
+color: $whitesmoke;
+background-color: $blackrock;
+font-weight: bold;
+
+  &:hover {
+  background-color: lighten($shiraz, 10%);
+  color: $whitesmoke;
+  }
+
+}
+
+.drawer__close {
+border-bottom: 1px solid lighten($blackrock, 15%);
+padding: 2rem;
+text-align: right;
+}
+
+.drawer__logo {
+float: left;
+position: absolute;
+top: 0.6rem;
+left: 1rem;
+
+  @include medium {
+  display: none;
+  }
+
+}
+
+.subnav {}
+.subnav__inner {}
+.subnav__link {
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 6px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $silver;
+    color: $white;
+  }
+
+  &.is-active {
+    background-color: $shipcove;
+    color: $white;
+  }
+}

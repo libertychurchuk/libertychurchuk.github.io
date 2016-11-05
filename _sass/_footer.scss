@@ -1,0 +1,24 @@
+.site-footer {
+text-align: center;
+background: $blackrock;
+color: $whitesmoke;
+padding: 2rem;
+}
+
+.site-footer__content {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.site-footer__logo {
+height: 100px;
+margin: 2em 0;
+}
+
+.footer {
+padding: 2rem;
+background: darken($blackrock, 5%);
+color: darken($whitesmoke, 40%);
+border-top: 1px solid lighten($blackrock, 15%);
+font-size: 0.75rem; //12/16
+}

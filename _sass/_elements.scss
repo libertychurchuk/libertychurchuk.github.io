@@ -1,0 +1,16 @@
+.sticky-header {
+@include z-index(sticky-header);
+position: relative;
+top: 0;
+border-bottom: 1px solid #f2f2f2;
+}
+
+@include medium {
+
+  .sticky-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+
+}

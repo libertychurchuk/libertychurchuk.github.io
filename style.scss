@@ -1,0 +1,39 @@
+---
+---
+@import "config";
+
+@import "fonts";
+@import "normalize";
+@import "breakpoints";
+@import "z-index";
+@import "print";
+
+@import "elements";
+@import "base";
+@import "grid";
+@import "cards";
+@import "profiles";
+@import "blocks";
+@import "buttons";
+@import "collapsible";
+@import "topbar";
+@import "header";
+@import "navigation";
+@import "footer";
+@import "themes";
+@import "article";
+@import "icons";
+
+.container {
+
+margin-left: auto;
+margin-right: auto;
+display: block;
+overflow: visible;
+
+@include medium {
+  max-width: 40em;
+}
+}
+
+#mapid { height: 320px; }

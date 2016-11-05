@@ -1,0 +1,73 @@
+.row {
+margin: 0 auto;
+max-width: $row-width;
+
+  &:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+  @include medium {
+    display: flex;
+  }
+
+}
+
+[class*='col-'] {
+float: left;
+display: flex;
+}
+
+// Create grid widths (1-12)
+@for $i from $col-start through $col-end {
+    .col-#{$i} {
+        width: $col-full / $i;
+    }
+}
+
+
+// Responsiveness
+// -------------------------------------------------------------------
+
+@media (max-width: $small) {
+    @for $i from $col-start through $col-end {
+        .col-#{$i} {
+            width: $col-full;
+        }
+    }
+}
+
+@media (min-width: $small) and (max-width: $medium) {
+    .col-4,
+    .col-6,
+    .col-8,
+    .col-10,
+    .col-12 {
+    width: $col-half;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-5,
+    .col-7,
+    .col-9,
+    .col-11 {
+    width: $col-full;
+    }
+}
+
+@media (min-width: $medium) and (max-width: $large) {
+    .col-2,
+    .col-7 {
+    width: $col-full;
+    }
+
+    .col-4,
+    .col-8,
+    .col-10,
+    .col-12 {
+    width: $col-half;
+    }
+}

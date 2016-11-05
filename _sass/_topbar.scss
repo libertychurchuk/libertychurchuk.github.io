@@ -1,0 +1,43 @@
+.top-bar {
+@include z-index(top-bar);
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+background: $top-bar-bg-color;
+position: relative;
+
+  > a {
+  display: inline-block;
+  }
+
+  .top-bar__logo {
+  padding: 0.5rem 0 0.5rem 1rem;
+  display: flex;
+  flex: 1;
+  order: 1;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+
+    img {height: 60px;}
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+  }
+
+  .top-bar__nav {
+  order: 2;
+  }
+
+  .top-bar__nav-toggle {
+  order: 3;
+  padding: 0.5rem 1rem;
+  border: 1px solid $top-bar-toggle-border-color;
+  margin-right: 1rem;
+  border-radius: 6px;
+  }
+
+}

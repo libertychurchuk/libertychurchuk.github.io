@@ -1,0 +1,16 @@
+$z-index: (
+  drawer             : 3,
+  sticky-header      : 2,
+  content-block      : 1,
+  topbar             : 1,
+  map                : 0,
+  content-overlay    : 0
+);
+
+@function z-index($key) {
+  @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+z-index: z-index($key);
+}
