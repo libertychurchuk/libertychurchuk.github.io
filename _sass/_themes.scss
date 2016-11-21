@@ -99,8 +99,8 @@ color: $white;
 }
 
 .theme-youth {
-  background: $black;
-  color: $white;
+background: $youthbg;
+color: $youthtext;
 
 
   .btn {
@@ -201,12 +201,10 @@ transition: opacity 0.3s ease;
   &:hover {opacity: 0.8;}
 
   a {
-  padding: 2rem;
+  padding: 1.5rem;
   }
 
 }
-
-
 
 .theme-instagram {
 background-color: $instagram;
@@ -246,6 +244,7 @@ color: $whitesmoke;
   .home__time {
     margin: 0;
   }
+
   .home__location {
     margin-bottom: 1.5rem;
   }

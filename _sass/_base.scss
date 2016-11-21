@@ -95,15 +95,7 @@ resize: vertical;
 a {
 color: $linkcolour;
 transition: all 0.3s ease;
-}
 
-a:hover {
-color: lighten($linkcolour, 5%); }
+	&:hover {color: lighten($linkcolour, 5%);}
 
-
-.emphasis {
-	background: #fff;
-	color: #000;
-	padding: 4px 6px;
-	margin: 4px 4px;
 }

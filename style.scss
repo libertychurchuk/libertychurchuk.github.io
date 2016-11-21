@@ -12,7 +12,6 @@
 @import "base";
 @import "grid";
 @import "cards";
-@import "profiles";
 @import "blocks";
 @import "buttons";
 @import "collapsible";
@@ -31,9 +30,8 @@ margin-right: auto;
 display: block;
 overflow: visible;
 
-@include medium {
+  @include medium {
   max-width: 40em;
-}
-}
+  }
 
-#mapid { height: 320px; }
+}

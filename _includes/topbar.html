@@ -1,17 +1,9 @@
 <header class="top-bar">
-  <a class=top-bar__logo href="home.html">
-    <img alt="Liberty Church" src="{{ site.baseurl }}/images/liberty-logo-text.svg" />
+  <a class=top-bar__logo href="index.html">
+    <img alt="Liberty Church" src="{{ site.baseurl }}/images/logos/liberty-logo-text.svg" />
   </a>
 
-  <nav class="top-bar__nav nav">
-    <div class="nav__links">
-      <a class="nav__link" href="new-to-church.html">I'm new</a>
-      <a class="nav__link" href="who-we-are.html">Who we are</a>
-      <a class="nav__link" href="get-involved.html">Get involved</a>
-      <a class="nav__link" href="contact.html">Contact</a>
-
-    </div>
-  </nav>
+  {% include nav-primary.html %}
 
   <a class="top-bar__nav-toggle js-nav__toggle"> <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg"><title>Navigation Drawer Open</title><path class="top-bar-nav-open" d="M1 2c-.6 0-1-.5-1-1 0-.6.4-1 1-1h18c.5 0 1 .4 1 1 0 .5-.5 1-1 1H1zM1 9c-.6 0-1-.4-1-1s.4-1 1-1h18c.5 0 1 .4 1 1s-.5 1-1 1H1zM1 16c-.6 0-1-.5-1-1 0-.6.4-1 1-1h18c.5 0 1 .4 1 1 0 .5-.5 1-1 1H1z"/></svg>
  Menu</a>
