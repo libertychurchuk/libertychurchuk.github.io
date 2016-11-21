@@ -184,13 +184,11 @@ height: 100vh;
 
 
 .content-block--fullwidth {
-  padding: 0;
+padding: 0;
 }
+
 .content-block--fullwidthmap {
 @include z-index(map);
 padding: 0;
 display: block;
 }
-
-.content-block--quote {}
-.content-block--large-quote {}
