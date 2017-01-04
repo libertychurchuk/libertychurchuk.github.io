@@ -5,12 +5,12 @@ text-decoration: none;
 text-transform: uppercase;
 display: inline-block;
 font-weight: bold;
-transition: background-color 0.3s ease;
+transition: background 0.3s ease;
 }
 
 
 .btn--outline {
 border-width: 2px;
 border-style: solid;
-transition: border-color 0.3s ease;
+transition: border-color, background-color 0.3s ease;
 }

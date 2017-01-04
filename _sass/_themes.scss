@@ -10,6 +10,14 @@ color: $whitesmoke;
 
   }
 
+  .btn--outline {
+  background-color: rgba($shiraz, 0%);
+  color: $whitesmoke;
+
+    &:hover {background-color: lighten($shiraz, 10%);}
+
+  }
+
   &.collapsible {
   border-left-color: lighten($shipcove, 10%);
   border-right-color: lighten($shipcove, 10%);
@@ -38,6 +46,18 @@ border-bottom: 1px solid $bordercolor;
   color: $whitesmoke;
 
     &:hover {background-color: darken($shipcove, 10%);}
+
+  }
+
+  .btn--outline {
+  background-color: rgba($shipcove, 0%);
+  border-color: $shipcove;
+  color: $shipcove;
+
+    &:hover {
+    background-color: darken($shipcove, 10%);
+    color: $whitesmoke;
+    }
 
   }
 

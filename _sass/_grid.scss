@@ -2,21 +2,20 @@
 margin: 0 auto;
 max-width: $row-width;
 
+  @include medium {
+  display: flex;
+  }
+
   &:after {
   content: "";
   display: table;
   clear: both;
   }
 
-  @include medium {
-    display: flex;
-  }
-
 }
 
 [class*='col-'] {
 float: left;
-display: flex;
 }
 
 // Create grid widths (1-12)

@@ -3,18 +3,37 @@ text-align: center;
 background: $blackrock;
 color: $whitesmoke;
 padding: 2rem;
+
+  a {
+  color: lighten($linkcolour, 5%);
+
+  	&:hover {color: $linkcolour;}
+
+  }
+
 }
 
 .contentinfo__logo {
-height: 100px;
+height: 80px;
+opacity: 0.85;
 margin: 2em 0;
 }
 
-.contentinfo__copyright {
+.contentinfo__smallprint {
 margin: 0;
 padding: 2rem;
 background: darken($blackrock, 5%);
 color: darken($whitesmoke, 40%);
 border-top: 1px solid lighten($blackrock, 15%);
 font-size: 1rem;
+}
+
+.contentinfo__charitystatus {
+color: rgba($white, 0.7);
+}
+
+.contentinfo__copyright {
+  @include medium {
+  text-align: right;
+  }
 }

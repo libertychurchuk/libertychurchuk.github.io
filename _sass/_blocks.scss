@@ -1,6 +1,7 @@
 .content-block {
 position: relative;
 width: 100%;
+height: 100%;
 font-size: 1.125em; //18px/16px
 display: flex;
 flex-direction: column;
@@ -112,6 +113,7 @@ height: 100vh;
   }
 
 }
+
 .content-block--overlay-messages {
 
   &:before {
@@ -128,8 +130,6 @@ height: 100vh;
 
 }
 
-
-
 .content-block--overlay-shiraz {
 
   &:before {
@@ -137,7 +137,6 @@ height: 100vh;
   }
 
 }
-
 
 .content-block--overlay-blackrock {
 
