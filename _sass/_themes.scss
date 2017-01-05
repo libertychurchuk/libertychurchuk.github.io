@@ -11,7 +11,7 @@ color: $whitesmoke;
   }
 
   .btn--outline {
-  background-color: rgba($shiraz, 0%);
+  background-color: rgba($shiraz, 0);
   color: $whitesmoke;
 
     &:hover {background-color: lighten($shiraz, 10%);}
@@ -50,7 +50,7 @@ border-bottom: 1px solid $bordercolor;
   }
 
   .btn--outline {
-  background-color: rgba($shipcove, 0%);
+  background-color: rgba($shipcove, 0);
   border-color: $shipcove;
   color: $shipcove;
 
