@@ -33,7 +33,8 @@ margin-bottom: 0.5em;
 }
 
 .header-block__heading {
-font-weight: 700;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-weight: normal;
 font-size: 4rem;
 margin: 0;
 line-height: 0.75;
@@ -48,6 +49,11 @@ color: $shipcove;
   @include large {
     font-size: 8rem;
   }
+}
+
+
+.fonts-loaded .header-block__heading {
+  font-family: lovetime_cleanregular, sans-serif;
 }
 
 .header-block__subheading {

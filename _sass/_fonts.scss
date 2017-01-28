@@ -1,17 +1,8 @@
 @font-face {
-  font-family: 'chasing_embers_one';
-  src: url('../fonts/chasing_embers_one-webfont.woff2') format('woff2'),
-       url('../fonts/chasing_embers_one-webfont.woff') format('woff'),
-       url('../fontschasing_embers_one-webfont.ttf') format('truetype');
-       font-weight:normal;
-       font-style: normal;
-}
+    font-family: 'lovetime_cleanregular';
+    src: url('../fonts/lovetime_clean-webfont.woff2') format('woff2'),
+         url('../fonts/lovetime_clean-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-
-body {
-    font-family: sans-serif;
-}
-
-.fonts-loaded body {
-    font-family: chasing_embers_one, sans-serif;
 }
