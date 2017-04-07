@@ -37,7 +37,6 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-weight: normal;
 font-size: 4rem;
 margin: 0;
-line-height: 0.75;
 text-transform: lowercase;
 transition: font-size 0.3s ease;
 color: $shipcove;
@@ -151,6 +150,14 @@ z-index: 0;
 
   &:before {
   background-color: rgba($blackrock, 0.4);
+  }
+
+}
+
+.content-block--after-service {
+
+  &:before {
+  background-color: rgba(196, 162, 37, 0.3);
   }
 
 }
