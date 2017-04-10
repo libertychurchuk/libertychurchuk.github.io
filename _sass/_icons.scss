@@ -3,9 +3,10 @@ display: inline-block;
 vertical-align: middle;
 background-repeat: no-repeat;
 background-size: contain;
-width: 2em;
-height: 2em;
+width: 1em;
+height: 1em;
 }
+
 
 // 24px
 .icon--medium {
@@ -31,6 +32,9 @@ width: 4em;
 height: 4em;
 }
 
+.icon--light {
+  fill: $white;
+}
 // Social Media
 .icon-facebook {background-image: url('../images/icons/vendor/facebook.svg');}
 .icon-twitter {background-image: url('../images/icons/vendor/twitter.svg'); background-position-y: 2px;}

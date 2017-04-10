@@ -8,8 +8,10 @@ background: $blackrock;
 color: $whitesmoke;
 padding: 2rem;
 
+  svg { display: block; margin: 0 auto 1em;}
   a {
   color: lighten($linkcolour, 5%);
+  display: block;
 
   	&:hover {color: $linkcolour;}
 
