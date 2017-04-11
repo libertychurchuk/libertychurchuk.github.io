@@ -10,3 +10,14 @@ author:
   url: https://www.rdsaunders.co.uk
   email: noreply@rdsaunders.co.uk
   photo: https://gravatar.com/avatar/6747ba6c061b6886d3d4b3aafd82ac7d?s=256
+
+# Pagination settings
+paginate: 10
+
+# SCSS Output
+sass:
+  style: :compressed
+
+# Additional Jekyll Support
+gems:
+  - jekyll-sitemap
