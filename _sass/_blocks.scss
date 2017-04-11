@@ -66,6 +66,12 @@ padding-top: 2rem;
 .content-block__subheading {
 z-index: 1;
 font-weight: 100;
+
+ .icon {
+ display: block;
+ margin: 0 auto 0.5em;
+ }
+
 }
 
 .content-block__footer {
@@ -121,7 +127,9 @@ z-index: 0;
 .content-block--overlay-dark,
 .content-block--overlay-blackrock,
 .content-block--overlay-messages,
-.content-block--overlay-new-to-church {
+.content-block--overlay-new-to-church,
+.content-block--overlay-after-service,
+.content-block--overlay-part-of-us {
 @include z-index(content-overlay);
 
   &:before {
@@ -152,10 +160,10 @@ z-index: 0;
 
 }
 
-.content-block--after-service {
+.content-block--overlay-after-service {
 
   &:before {
-  background-color: rgba(196, 162, 37, 0.3);
+  background-color: rgba(132, 149, 125, 0.4);
   }
 
 }
@@ -164,6 +172,14 @@ z-index: 0;
 
   &:before {
   background: rgba(108, 103, 52, 0.65);
+  }
+
+}
+
+.content-block--overlay-part-of-us {
+
+  &:before {
+  background: rgba(97, 109, 125, 0.65);
   }
 
 }
@@ -179,7 +195,7 @@ z-index: 0;
 .content-block--overlay-blackrock {
 
   &:before {
-  background: rgba($blackrock, 0.65);
+  background: rgba($blackrock, 0.6);
   }
 
 }
@@ -197,7 +213,9 @@ z-index: 0;
 }
 
 .content-block--left {
-
+  .content-block__content {
+    width: 60%;
+  }
   .content-block-inner {
     @include medium {
     align-items: flex-start;
@@ -208,6 +226,10 @@ z-index: 0;
 }
 
 .content-block--right {
+
+  .content-block__content {
+    width: 60%;
+  }
 
   .content-block-inner {
     @include medium {
