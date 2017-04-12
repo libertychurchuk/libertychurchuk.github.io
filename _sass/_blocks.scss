@@ -79,9 +79,14 @@ font-weight: 100;
 }
 
 .content-block--image {
-background-position: center;
+background-position: top center;
 background-size: cover;
 min-height: 400px;
+
+  @include large {
+  min-height: 540px;
+  }
+
 }
 
 .content-block--home-image {
