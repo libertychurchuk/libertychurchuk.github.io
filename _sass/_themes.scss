@@ -217,26 +217,35 @@ color: $white;
 .theme-vimeo,
 .theme-facebook {
 padding: 1.5rem;
-transition: opacity 0.3s ease;
-
-  &:hover {opacity: 0.8;}
-
+transition: background-color 0.3s ease;
 }
 
 .theme-instagram {
 background-color: $instagram;
+
+  &:hover {background-color: darken($instagram, 10%)}
+
 }
 
 .theme-twitter {
 background-color: $twitter;
+
+  &:hover {background-color: darken($twitter, 10%)}
+
 }
 
 .theme-facebook {
 background-color: $facebook;
+
+  &:hover {background-color: darken($facebook, 10%)}
+
 }
 
 .theme-vimeo {
 background-color: $vimeo;
+
+  &:hover {background-color: darken($vimeo, 10%)}
+
 }
 
 

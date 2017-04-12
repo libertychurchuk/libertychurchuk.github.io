@@ -43,3 +43,9 @@ color: rgba($white, 0.7);
   text-align: right;
   }
 }
+
+.contentinfo__contact--tel,
+.contentinfo__contact--email {
+  padding: 0.5em;
+ a {color: $whitesmoke;}
+}
