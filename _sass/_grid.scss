@@ -23,12 +23,13 @@
 
 
 .column {
-display: flex;
 flex-basis: 100%;
 
   @include medium {
-    flex: 1;
+  display: flex;
+  flex: 1;
   }
+
 }
 
 .sm-order-1 {order: 1;}

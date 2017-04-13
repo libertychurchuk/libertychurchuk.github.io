@@ -47,5 +47,6 @@ color: rgba($white, 0.7);
 .contentinfo__contact--tel,
 .contentinfo__contact--email {
   padding: 0.5em;
+  flex-direction: column;
  a {color: $whitesmoke;}
 }
