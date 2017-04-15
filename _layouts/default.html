@@ -12,15 +12,8 @@ layout: compress
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/ico"/>
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/icons/apple-touch-icon-192x192.png" type="image/png"/>
     <link rel="mask-icon" href="{{ site.baseurl }}/images/icons/icon.svg" color="{{ site.theme_color }}"/>
-    <link rel="manifest" href="{{ site.baseurl }}/manifest.json"/>
 
-    <meta charset="utf-8"/>
-    <meta name="author" content="{{ site.author.name }}"/>
-    <meta name="referrer" content="origin"/>
-    <meta name="robots" content="index, follow"/>
-    <meta name="theme-color" content="{{ site.theme_color }}"/>
-    <meta name="application-name" content="{{ site.title }}"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    {% include meta.html %}
 
     <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
