@@ -1,3 +1,4 @@
+// Navigation
 $(document).ready(function(){
 
     $('.js-nav__toggle').on('click', function(e) {
@@ -10,6 +11,7 @@ $(document).ready(function(){
 
 });
 
+// collapsible panels
 (function ($) {
   $.fn.collapsible = function(options) {
     var defaults = {
