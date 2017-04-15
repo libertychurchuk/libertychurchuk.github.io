@@ -9,6 +9,7 @@ facebook:
  publisher:
  admins:
 logo: /images/og-default.jpg
+lang: en-GB
 
 # Pagination settings
 paginate: 10
