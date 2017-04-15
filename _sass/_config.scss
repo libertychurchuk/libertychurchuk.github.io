@@ -10,22 +10,6 @@ $xlarge: 1200px;
 $xxlarge: 1440px;
 
 
-// Helpers
-$col-full:              100%;
-$col-half:              100% / 2;
-
-// Grid widths
-// ----------------------------------------------
-// Feel free to change this to how many columns
-// you want this grid system to have.
-$col-start:             1;
-$col-end:               12;
-
-// Frame width (grid wrapper)
-$row-width:       100%;
-
-
-
 $white: #fff;
 $black: rgb(30, 30, 30);
 $montana: #363839;
@@ -64,6 +48,8 @@ $textcolor: #555;
 $linkcolour: $shipcove;
 $bordercolor: #ccc;
 
+$baselineheight: 1.5em;
+$gutterwidth: 20px;
 
 // collapsible / expandable component
 $collapsible-border-color: #ccc;
