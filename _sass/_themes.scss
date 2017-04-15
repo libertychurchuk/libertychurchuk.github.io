@@ -35,6 +35,14 @@ color: $whitesmoke;
   }
 }
 
+.theme-deep {
+  background-color: $blackrock;
+  color: $whitesmoke;
+
+  .header-block__heading {
+    color: $white;
+  }
+}
 
 .theme-light {
 background-color: $whitesmoke;
