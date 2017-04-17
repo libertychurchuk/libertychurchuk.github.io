@@ -42,6 +42,14 @@ color: $whitesmoke;
   .header-block__heading {
     color: $white;
   }
+
+  .btn--outline {
+  background-color: rgba($shiraz, 0);
+  color: $whitesmoke;
+
+    &:hover {background-color: lighten($shiraz, 10%);}
+
+  }
 }
 
 .theme-light {
