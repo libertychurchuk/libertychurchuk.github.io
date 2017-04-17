@@ -7,7 +7,7 @@
 			<use xlink:href="{{ site.baseurl }}/images/icons/svg-icons.svg#logo"></use>
 		</svg>
 
-		<h3>Contact Liberty Church </h3>
+		<h3 class="sr-only">Contact Liberty Church </h3>
 		<div class="container">
 		<div class="row">
 			<div class="column contentinfo__contact--tel">
@@ -23,8 +23,13 @@
  				<a href="mailto:hello@libertychurchuk.com">hello@libertychurchuk.com</a>
 			</div>
 		</div>
+
 	</div>
 
+</div>
+
+<div class="contentinfo__newsletter" id="contact">
+	{% include /mailchimp.html %}
 </div>
 
 {% include /grids/social.html %}
