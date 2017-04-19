@@ -6,7 +6,8 @@ color: $whitesmoke;
   background-color: $shiraz;
   color: $whitesmoke;
 
-    &:hover {background-color: lighten($shiraz, 10%);}
+    &:hover,
+    &:focus {background-color: lighten($shiraz, 10%);}
 
   }
 
@@ -14,7 +15,8 @@ color: $whitesmoke;
   background-color: rgba($shiraz, 0);
   color: $whitesmoke;
 
-    &:hover {background-color: lighten($shiraz, 10%);}
+    &:hover,
+    &:focus {background-color: lighten($shiraz, 10%);}
 
   }
 
@@ -47,7 +49,8 @@ color: $whitesmoke;
   background-color: rgba($shiraz, 0);
   color: $whitesmoke;
 
-    &:hover {background-color: lighten($shiraz, 10%);}
+    &:hover,
+    &:focus {background-color: lighten($shiraz, 10%);}
 
   }
 }
@@ -61,7 +64,8 @@ border-bottom: 1px solid $bordercolor;
   background-color: $shipcove;
   color: $whitesmoke;
 
-    &:hover {background-color: darken($shipcove, 10%);}
+    &:hover,
+    &:focus {background-color: darken($shipcove, 10%);}
 
   }
 
@@ -70,7 +74,8 @@ border-bottom: 1px solid $bordercolor;
   border-color: $shipcove;
   color: $shipcove;
 
-    &:hover {
+    &:hover,
+    &:focus {
     background-color: darken($shipcove, 10%);
     color: $whitesmoke;
     }
@@ -87,7 +92,8 @@ border-bottom: 1px solid $bordercolor;
   background-color: $marriagepurple;
   color: $whitesmoke;
 
-    &:hover {  background-color: darken($marriagepurple, 10%);}
+    &:hover,
+    &:focus {  background-color: darken($marriagepurple, 10%);}
 
   }
 
@@ -96,7 +102,8 @@ border-bottom: 1px solid $bordercolor;
   border-color: $marriagepurple;
   color: $marriagepurple;
 
-    &:hover {
+    &:hover,
+    &:focus {
     background: transparent;
     border-color: darken($marriagepurple, 10%);
     color: darken($marriagepurple, 10%);
@@ -115,7 +122,8 @@ color: $white;
   background-color: $kidsorange;
   color: $white;
 
-    &:hover {  background-color: $white; color: $kidsblue;}
+    &:hover,
+    &:focus {  background-color: $white; color: $kidsblue;}
 
   }
 
@@ -124,7 +132,8 @@ color: $white;
   border-color: $white;
   color: $white;
 
-    &:hover {
+    &:hover,
+    &:focus {
     background: $kidsorange;
     border-color: $kidsorange;
     color: $white;
@@ -143,7 +152,8 @@ color: $youthtext;
   background-color: $youthgreen;
   color: $black;
 
-    &:hover {  background-color: darken($youthgreen, 10);}
+    &:hover,
+    &:focus {  background-color: darken($youthgreen, 10);}
 
   }
 
@@ -152,7 +162,8 @@ color: $youthtext;
   border-color: $youthgreen;
   color: $youthgreen;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: transparent;
     border-color: darken($youthgreen, 10);
     color: darken($youthgreen, 10);
@@ -181,7 +192,8 @@ color: $white;
   background-color: $foundationgreen;
   color: $foundationblue;
 
-    &:hover {  background-color: darken($foundationgreen, 5);}
+    &:hover,
+    &:focus {  background-color: darken($foundationgreen, 5);}
 
   }
 
@@ -190,7 +202,8 @@ color: $white;
   border-color: $foundationgreen;
   color: $foundationgreen;
 
-    &:hover {
+    &:hover,
+    &:focus {
     background: transparent;
     border-color: darken($foundationgreen, 5);
     color: darken($foundationgreen, 5);
@@ -208,7 +221,8 @@ color: $white;
     background-color: $lambsmint;
     color: $white;
 
-      &:hover {  background-color: darken($lambsmint, 10);}
+      &:hover,
+      &:focus {  background-color: darken($lambsmint, 10);}
 
     }
 
@@ -217,7 +231,8 @@ color: $white;
     border-color: $lambsmint;
     color: $lambsmint;
 
-      &:hover {
+      &:hover,
+      &:focus {
       background: transparent;
       border-color: darken($lambsmint, 5);
       color: darken($lambsmint, 5);
@@ -239,28 +254,32 @@ transition: background-color 0.3s ease;
 .theme-instagram {
 background-color: $instagram;
 
-  &:hover {background-color: darken($instagram, 10%)}
+  &:hover,
+  &:focus {background-color: darken($instagram, 10%)}
 
 }
 
 .theme-twitter {
 background-color: $twitter;
 
-  &:hover {background-color: darken($twitter, 10%)}
+  &:hover,
+  &:focus {background-color: darken($twitter, 10%)}
 
 }
 
 .theme-facebook {
 background-color: $facebook;
 
-  &:hover {background-color: darken($facebook, 10%)}
+  &:hover,
+  &:focus {background-color: darken($facebook, 10%)}
 
 }
 
 .theme-vimeo {
 background-color: $vimeo;
 
-  &:hover {background-color: darken($vimeo, 10%)}
+  &:hover,
+  &:focus {background-color: darken($vimeo, 10%)}
 
 }
 
@@ -273,7 +292,8 @@ color: $whitesmoke;
   background-color: $shiraz;
   color: $whitesmoke;
 
-    &:hover {background-color: lighten($shiraz, 10%);}
+    &:hover,
+    &:focus {background-color: lighten($shiraz, 10%);}
 
   }
 

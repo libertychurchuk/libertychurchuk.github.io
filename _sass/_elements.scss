@@ -47,3 +47,38 @@ padding: 0 $gutterwidth;
 .gutter--right {padding-right: $gutterwidth;}
 .gutter--sides {padding: 0 $gutterwidth;}
 .gutter--sides-half {padding: 0 $gutterwidth / 2;}
+
+
+.newsletter {
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+.newsletter__title {
+  margin-bottom: $baselineheight / 2;
+}
+
+.newsletter__email,
+.newsletter__submit {
+  padding: 0.75em $baselineheight;
+  border: 0;
+}
+
+.newsletter__email {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  color: $textcolor;
+}
+.newsletter__submit {
+  background-color: $shiraz;
+  color: $white;
+  text-transform: uppercase;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($shiraz, 10%);
+  }
+}
