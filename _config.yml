@@ -1,6 +1,6 @@
 title: Liberty Church, Newport, South Wales
 description: As a local church we are a community of everyday people in which Jesus is central, in all we do, as we seek to embrace our city and nation we live in.
-url: https://libertychurchuk.github.io
+url: https://www.libertychurchuk.com
 author: Liberty Church
 twitter:
   username: LibertyChurchUK
@@ -11,6 +11,13 @@ facebook:
 logo: /images/logos/liberty-church-logo.png
 lang: en-GB
 
+social:
+  links:
+    - https://twitter.com/LibertyChurchUK
+    - https://www.facebook.com/libertychurchfamily
+    - https://instagram.com/libertychurchuk
+    - https://vimeo.com/libertychurchuk
+    
 # Pagination settings
 paginate: 10
 
