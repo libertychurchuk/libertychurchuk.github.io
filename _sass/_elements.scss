@@ -68,6 +68,7 @@ padding: 0 $gutterwidth;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   color: $textcolor;
+  -webkit-appearance: none;
 }
 .newsletter__submit {
   background-color: $shiraz;
