@@ -2,7 +2,6 @@
 layout: compress
 ---
 <!DOCTYPE html>
-
 <!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
 <html lang="en" class="no-js fonts-loaded">
 <!--#else -->
@@ -19,11 +18,21 @@ layout: compress
 
     {% include meta.html %}
 
-    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+    <style>
+    @font-face {
+        font-family: 'lovetime_cleanregular';
+        src: url('/fonts/lovetime_clean-webfont.woff2') format('woff2'),
+             url('/fonts/lovetime_clean-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
 
+    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
     {% seo %}
+
   </head>
 
   <body id="top">
@@ -31,12 +40,13 @@ layout: compress
     {% include header.html %}
     {% include main.html %}
     {% include footer.html %}
+    {% include nav-off-canvas.html %}
 
     {% include google-analytics.html %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/js/main.js"></script>
     <script src="{{ site.baseurl }}/js/fontfaceobserver.js"></script>
+    <script src="{{ site.baseurl }}/js/main.js"></script>
 
   </body>
 </html>
