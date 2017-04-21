@@ -2,13 +2,13 @@
 $(document).ready(function(){
 
     $('.js-nav__toggle').on('click', function(e) {
-      $('.drawer').toggleClass('is-visible');
-      $('body').toggleClass('no-scroll');
+      $('.off-canvas-wrapper').toggleClass('is-visible');
+      $('body').toggleClass('off-canvas-no-scroll');
     });
 
-    $('.js-drawer__close').on('click', function(e) {
-      $('.drawer').toggleClass('is-visible');
-      $('body').toggleClass('no-scroll');
+    $('.js-off-canvas__close').on('click', function(e) {
+      $('.off-canvas-wrapper').toggleClass('is-visible');
+      $('body').toggleClass('off-canvas-no-scroll');
     });
 
 });
