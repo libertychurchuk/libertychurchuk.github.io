@@ -83,3 +83,7 @@ padding: 0 $gutterwidth;
     background-color: lighten($shiraz, 10%);
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+}
