@@ -17,9 +17,10 @@ social:
     - https://www.facebook.com/libertychurchfamily
     - https://instagram.com/libertychurchuk
     - https://vimeo.com/libertychurchuk
-    
+
 # Pagination settings
-paginate: 10
+paginate: 9
+paginate_path: "/blog/page:num/"
 
 # SCSS Output
 sass:

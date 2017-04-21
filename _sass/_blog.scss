@@ -1,0 +1,8 @@
+.blog {
+  background: $whitesmoke;
+  padding: $baselineheight 0;
+
+  @include large {
+    padding: $baselineheight * 2 0;
+  }
+}

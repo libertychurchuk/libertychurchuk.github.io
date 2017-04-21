@@ -1,0 +1,25 @@
+<article class="card">
+  <a class="card-inner" href="{{ item.url }}">
+    <div class="card__image">
+      {% if item.date %}
+      <img src="{{ item.image }}" alt="" />
+      {% endif %}
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">{{ item.title }}</h3>
+      {% if item.date %}
+      <time class="card__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
+      {% endif %}
+
+      {% if item.summary %}
+        {{ item.summary }}
+      {% endif %}
+    </div>
+    <div class="card__footer">
+      <div class="card__author">
+        <div class="card__author-image"></div>
+        Richard Saunders
+      </div>
+    </div>
+  </a>
+</article>

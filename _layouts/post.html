@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<main role="main">
+  <article class="article">
+    <header class="article__header">
+      <div class="article__titles">
+        <time class="article__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B, %Y" }}</time>
+        <h1 class="article__heading">{{ page.title }}</h1>
+        <div class="article__subheading">{{ page.subtitle }}</div>
+      </div>
+      <hr>
+      <div class="article__meta">
+        <ul>
+          <li>Article by Author: <a href="#">Richard Saunders</a></li>
+          <li>Topic: {{ page.category }}</li>
+        </ul>
+      </div>
+    </header>
+
+    <figure class="article__feature-image">
+      <img alt="" src="{{ page.image }}">
+    </figure>
+
+    <div class="article__body">
+      {{ content }}
+    </div>
+
+    <footer class="article__footer">
+      <div class="author">
+        <figure class="author__image">
+          <img src="#" title="Author Name" />
+        </figure>
+        <div class="author__bio">
+          <p>This is the authors bio.</p>
+        </div>
+      </div>
+    </footer>
+  </article>
+</main>

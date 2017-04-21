@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% include /header-blocks/blog.html %}
+
+<section class="blog">
+  {% for item in paginator.posts %}
+  {% cycle 'add row' : '<div class="row">', nil, nil %}
+    <div class="column">
+      {% include /items/item-article.html %}
+    </div>
+
+  {% cycle 'end row' : nil, nil, '</div>' %}
+  {% endfor %}
+{% cycle 'end row' : nil, '</div>', '</div>' %}
+
+{% include item-pagination.html %}
+
+
+</section>
