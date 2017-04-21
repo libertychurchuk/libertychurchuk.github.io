@@ -1,8 +1,9 @@
 ---
 title: Let’s Teach Our Kids ‘Beautiful’
-author: richard
-categories: preaching
-image: http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg
+author: adam
+category: worship
+image:
+description: This is the description for the post
 ---
 
 On a recent vacation, I sat on the beach enjoying a sliver of one of those exquisitely designed days: clear sunny sky, warm breeze, the Atlantic Ocean that stunning mix of clear and steel blue.

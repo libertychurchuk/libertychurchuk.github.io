@@ -20,6 +20,28 @@ height: 100%;
 
 }
 
+.card__labels {
+position: absolute;
+z-index: 1;
+top: 0;
+left: 0;
+padding: 5%;
+width: 100%;
+}
+
+.card__labels-inner {
+  background: rgba(0,0,0,0.4);
+  float: left;
+  overflow: hidden;
+}
+
+.card__labels-label {
+  color: $whitesmoke;
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
 .card__image {
 width: 100%;
 display: block;
