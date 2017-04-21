@@ -7,10 +7,13 @@
 @import "breakpoints";
 @import "z-index";
 @import "print";
-
 @import "elements";
 @import "base";
 @import "grid";
+@import "icons";
+@import "forms";
+
+// Components
 @import "cards";
 @import "blocks";
 @import "buttons";
@@ -22,8 +25,8 @@
 @import "footer";
 @import "themes";
 @import "article";
-@import "icons";
-@import "forms";
+@import "newsletter";
+
 
 .container {
 margin-left: auto;

@@ -1,3 +1,18 @@
+.sticky-header {
+@include z-index(sticky-header);
+position: relative;
+top: 0;
+border-bottom: 1px solid $whitesmoke;
+will-change: transform;
+
+  @include medium {
+  position: fixed;
+  left: 0;
+  right: 0;
+  }
+
+}
+
 .top-bar {
 @include z-index(top-bar);
 display: flex;
@@ -11,42 +26,42 @@ position: relative;
   display: inline-block;
   }
 
-  .top-bar__logo {
-  padding: 0.5rem 0 0.5rem 1rem;
-  display: flex;
-  flex: 1;
-  order: 1;
-  text-decoration: none;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+}
 
-    &:hover {
-      opacity: 0.6;
-    }
+.top-bar__logo {
+padding: 0.5rem 0 0.5rem 1rem;
+display: flex;
+flex: 1;
+order: 1;
+text-decoration: none;
+opacity: 1;
+transition: opacity 0.3s ease;
 
+  &:hover {
+    opacity: 0.6;
   }
 
-  .top-bar__nav {
-  order: 2;
-  }
+}
 
-  .top-bar__nav-toggle {
-  order: 3;
-  padding: 0.5rem 1rem;
-  border: 1px solid $top-bar-toggle-border-color;
-  margin-right: 1rem;
-  border-radius: 6px;
-  background: transparent;
-  line-height: 1;
-  }
+.top-bar__nav {
+order: 2;
+}
 
+.top-bar__nav-toggle {
+order: 3;
+padding: 0.5rem 1rem;
+border: 1px solid $top-bar-toggle-border-color;
+margin-right: 1rem;
+border-radius: 6px;
+background: transparent;
+line-height: 1;
 }
 
 .logo {
-  width: 100px;
-  height: 64px;
+width: 100px;
+height: 64px;
 }
 
 .logo--light {
-  fill: white;
+fill: white;
 }
