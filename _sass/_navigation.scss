@@ -45,6 +45,10 @@ text-decoration: none;
 
   }
 
+.drawer {
+position: relative;
+overflow: hidden;
+}
 
 .drawer.is-visible .drawer__block {
 transform: translateX(0);
@@ -66,6 +70,7 @@ transform: translateX(100%);
 overflow-y: auto;
 will-change: transform;
 -webkit-overflow-scrolling: touch;
+height: 100%;
 }
 
 @include medium {
