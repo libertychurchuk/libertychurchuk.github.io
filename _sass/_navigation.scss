@@ -1,50 +1,41 @@
 .nav {
 display: none;
+list-style-type: none;
+margin: 0;
+padding: 0;
 margin-right: 30px;
-}
 
   @include medium {
-    .nav {
-    display: block;
-    }
-  }
+  display: block;}
 
+}
 
-.nav__link {
+.nav__item {
 display: inline-block;
 margin-right: 1rem;
-text-decoration: none;
-
-  &:hover {
-  text-decoration: underline;
-  }
 
   &:last-child {
-  margin-right: 0;
-  }
+  margin-right: 0;}
 
-  &.is-active {
-  font-weight: bold;
-  }
+  @include medium {
+  margin-right: 20px;}
+
+  @include large {
+  margin-right: 30px;}
 
 }
 
-  @include medium {
+.nav__link {
+text-decoration: none;
 
-    .nav__link {
-    margin-right: 20px;
-    }
+  &:hover,
+  &:focus {
+  text-decoration: underline;}
 
-  }
+  &.is-active {
+  font-weight: bold;}
 
-  @include large {
-
-    .nav__link {
-    margin-right: 30px;
-    }
-
-  }
-
+}
 
 
 .subnav__link {
