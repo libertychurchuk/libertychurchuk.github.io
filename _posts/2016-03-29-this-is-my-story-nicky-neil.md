@@ -1,9 +1,10 @@
 ---
 title: "This is my story: Nicky Neil"
-image:
+image: /uploads/2016/03/this-is-my-story.png
 category: testimony
 author: richard
 description: This is Nicky Neil's story.
+
 ---
 <iframe src="https://player.vimeo.com/video/160713259?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
