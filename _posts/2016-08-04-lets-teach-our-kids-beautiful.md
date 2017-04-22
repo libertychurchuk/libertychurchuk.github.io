@@ -2,7 +2,7 @@
 title: Let’s Teach Our Kids ‘Beautiful’
 author: adam
 category: worship
-image:
+image: /images/blog.jpg
 description: This is the description for the post
 ---
 
