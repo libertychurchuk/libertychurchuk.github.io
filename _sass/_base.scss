@@ -99,3 +99,10 @@ transition: all 0.3s ease;
 	&:hover {color: lighten($linkcolour, 5%);}
 
 }
+
+
+.dl-simple {
+
+dd {padding: 0; margin: 0;}
+
+}
