@@ -59,6 +59,7 @@ text-decoration: none;
 
 
 .item-pagination {
+@include clearfix;
 text-align: center;
 padding: 1em 0;
 
