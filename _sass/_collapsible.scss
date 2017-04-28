@@ -35,15 +35,28 @@ font-weight: bold;
 }
 
 .collapsible-body {
-display: none;
+//display: none;
 border-bottom: 1px solid $collapsible-border-color;
 box-sizing: border-box;
 padding: 1rem;
 }
 
 
-.collapsible li.active .icon {
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-  transform: rotate(90deg);
+.collapsible__item {
+
+  &.active {
+
+    .icon {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    }
+
+    .collapsible-body {
+    display: block;
+    }
+
+  }
+
+
 }
