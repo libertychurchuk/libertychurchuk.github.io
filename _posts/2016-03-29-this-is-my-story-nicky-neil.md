@@ -1,7 +1,7 @@
 ---
 title: "This is my story: Nicky Neil"
 image: /uploads/2016/03/this-is-my-story.png
-category: testimony
+category: Testimony
 author: richard
 description: This is Nicky Neil's story.
 
