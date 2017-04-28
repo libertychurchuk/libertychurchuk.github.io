@@ -3,7 +3,8 @@ position: relative;
 }
 
 .contentinfo__contact,
-.contentinfo__newsletter {
+.contentinfo__newsletter,
+ {
 text-align: center;
 background: $blackrock;
 color: $whitesmoke;
@@ -54,7 +55,8 @@ color: rgba($white, 0.7);
 }
 
 .contentinfo__contact--tel,
-.contentinfo__contact--email {
+.contentinfo__contact--email,
+.contentinfo__contact--address {
   padding: 0.5em;
   flex-direction: column;
  a {color: $whitesmoke;}
