@@ -4,6 +4,7 @@ author: adam
 category: Worship
 image: /images/blog.jpg
 description: This is the description for the post
+published: false
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EXv7QP4MzN8" frameborder="0" allowfullscreen></iframe>
