@@ -54,8 +54,3 @@ fluidvids.init({
       offCanvasMenu.classList.toggle("is-visible");
       preventScroll.classList.toggle("off-canvas-no-scroll");
   };
-
-
-  // -----------------------------------------------------------------------------
-  // Collapsible
-  // -----------------------------------------------------------------------------

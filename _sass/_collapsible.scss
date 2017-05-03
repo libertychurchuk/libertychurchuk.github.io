@@ -1,62 +1,59 @@
-.collapsible {
-border-top-width: 1px;
-border-top-style: solid;
-border-top-color: $collapsible-border-color;
-border-left-width: 1px;
-border-left-style: solid;
-border-left-color: $collapsible-border-color;
-border-right-width: 1px;
-border-right-style: solid;
-border-right-color: $collapsible-border-color;
-list-style: none;
-margin: 0;
-padding: 0;
+.collapsible-accordion {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: $collapsible-border-color;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: $collapsible-border-color;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: $collapsible-border-color;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.collapsible-accordion__panel[aria-hidden="true"] {
+  display: none;
 }
 
-.collapsible-header {
-display: block;
-cursor: pointer;
-//min-height: $collapsible-height;
-//line-height: $collapsible-height;
-padding: 1rem;
-background-color: $collapsible-header-color;
-border-bottom: 1px solid $collapsible-border-color;
-font-weight: bold;
-
-  i {
-    width: 2rem;
-    font-size: 1.6rem;
-    line-height: $collapsible-height;
-    display: block;
-    float: left;
-    text-align: center;
-    margin-right: 1rem;
-  }
+.collapsible-accordion__panel {
+  border-bottom: 1px solid $collapsible-border-color;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
-.collapsible-body {
-//display: none;
-border-bottom: 1px solid $collapsible-border-color;
-box-sizing: border-box;
-padding: 1rem;
+.collapsible-accordion__header {
+  display: block;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  background-color: $collapsible-header-color;
+  border-bottom: 1px solid $collapsible-border-color;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
 }
 
+// title opened
+.collapsible-accordion__header[aria-expanded="true"]:before {
+  content: "- ";
+}
 
-.collapsible__item {
+// title closed
+.collapsible-accordion__header[aria-expanded="false"]:before {
+  content: "+ ";
+}
 
-  &.active {
+// title selected
+//.collapsible-accordion__header[aria-selected="true"]:after {
+//  content: " (sel)";
+//}
 
-    .icon {
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-    }
+//title non selected
+//.collapsible-accordion__header[aria-selected="false"]:after {
+//  content: " (unselc)";
+//}
 
-    .collapsible-body {
-    display: block;
-    }
-
-  }
-
-
+.collapsible-accordion__title {
+  display: none;
 }
