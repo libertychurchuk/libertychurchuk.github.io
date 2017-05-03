@@ -55,5 +55,5 @@
 //}
 
 .collapsible-accordion__title {
-  display: none;
+  @extend .sr-only;
 }
