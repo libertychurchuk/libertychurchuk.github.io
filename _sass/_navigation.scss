@@ -58,7 +58,7 @@ text-decoration: none;
 }
 
 
-.item-pagination {
+.post-navigation {
 @include clearfix;
 text-align: center;
 padding: 1em 0;
@@ -74,7 +74,7 @@ padding: 1em 0;
   display: inline-block;
   }
 
-  .item-pagination__pager {
+  .post-navigation__pager {
   display: none;
   padding: 0.5em 1em;
 
@@ -85,15 +85,15 @@ padding: 1em 0;
 
   }
 
-  .item-pagination__next,
-  .item-pagination__previous {
+  .post-navigation__next,
+  .post-navigation__previous {
   padding: 0.5em 1em;
   background: none;
   border-radius: 3px;
   border: 1px solid $bordercolor;
   }
 
-  .item-pagination__previous {
+  .post-navigation__previous {
   margin-left: 1em;
   float: left;
 
@@ -103,7 +103,7 @@ padding: 1em 0;
 
   }
 
-  .item-pagination__next {
+  .post-navigation__next {
   margin-right: 1em;
   float: right;
 
@@ -113,7 +113,7 @@ padding: 1em 0;
 
   }
 
-  .item-pagination__disabled {
+  .post-navigation__disabled {
   color: rgba($textcolor, 0.5);
   pointer-events: none;
   }
