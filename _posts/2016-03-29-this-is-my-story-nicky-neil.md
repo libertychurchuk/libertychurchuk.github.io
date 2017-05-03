@@ -1,9 +1,9 @@
 ---
 title: "This is my story: Nicky Neil"
-image: /uploads/2016/03/this-is-my-story.png
+image: /uploads/2016/03/tims-nicky-neil.jpg
 category: Testimony
 author: richard
-description: This is Nicky Neil's story.
+description: Nicky’s story starts in South Africa, where Church had always been part of her life growing up. Life has thrown it’s ups and downs but His hand stayed firmly in her life. He had plan and a purpose even if Nicky didn’t know believe it herself.
 
 ---
 <iframe src="https://player.vimeo.com/video/160713259?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
