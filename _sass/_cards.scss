@@ -5,6 +5,26 @@ padding-right: 0.5rem;
 padding-bottom: 1rem;
 }
 
+  .card--blog {
+
+    @include small {
+    max-width: 100%;
+    }
+
+    @include medium {
+    max-width: 50%;
+    }
+
+    @include large {
+    max-width: 33%;
+    }
+
+    @include xlarge {
+    max-width: 25%;
+    }
+
+  }
+
 .card-inner {
 display: block;;
 position: relative;

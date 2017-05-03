@@ -4,17 +4,10 @@ layout: default
 {% include /header-blocks/blog.html %}
 
 <section class="blog">
-  {% for item in paginator.posts %}
-  {% cycle 'add row' : '<div class="row">', nil, nil %}
-    <div class="column">
+  <div class="row">
+    {% for item in paginator.posts %}
       {% include /items/item-article.html %}
-    </div>
-
-  {% cycle 'end row' : nil, nil, '</div>' %}
-  {% endfor %}
-{% cycle 'end row' : nil, '</div>', '</div>' %}
-
-{% include item-pagination.html %}
-
-
+    {% endfor %}
+  </div>
+  {% include item-pagination.html %}
 </section>
