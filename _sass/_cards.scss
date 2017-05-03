@@ -100,7 +100,6 @@ min-height: 40px;
 }
 
 .card__author {
-max-width: 48%;
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
@@ -108,15 +107,15 @@ font-size: 0.8125rem;
 float: left;
 padding-top: 3px;
 font-size: 0.8125em;
-line-height: 26px;;
+line-height: 26px;
 }
 
 .card__author-image {
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
-  float: left;
-  margin-right: $gutterwidth / 2;
-  margin-top: -3px;
+border-radius: 50%;
+width: 32px;
+height: 32px;
+overflow: hidden;
+float: left;
+margin-right: $gutterwidth / 2;
+margin-top: -3px;
 }
