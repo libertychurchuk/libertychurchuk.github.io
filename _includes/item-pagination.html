@@ -1,7 +1,7 @@
 <nav class="post-navigation">
 
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="item-pagination__previous">Prev</a>
+    <a href="{{ paginator.previous_page_path }}" class="item-pagination__previous" rel="prev">Prev</a>
   {% else %}
     <span class="post-navigation__previous post-navigation__disabled">Previous</span>
   {% endif %}
@@ -9,7 +9,7 @@
   <span class="post-navigation__pager">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="post-navigation__next">Next</a>
+    <a href="{{ paginator.next_page_path }}" class="post-navigation__next" rel="next">Next</a>
   {% else %}
     <span class="post-navigation__next post-navigation__disabled">Next</span>
   {% endif %}
