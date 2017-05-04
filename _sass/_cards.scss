@@ -6,21 +6,26 @@ padding-bottom: 1rem;
 }
 
   .card--blog {
+//flex: 1 0 auto;
 
-    @include small {
-    max-width: 100%;
+   @include small {
+    //max-width: 100%;
+    flex-basis: 100%;
     }
 
     @include medium {
-    max-width: 50%;
+    //max-width: 50%;
+    flex-basis: 50%;
     }
 
     @include large {
-    max-width: 33%;
+    //max-width: 33%;
+    flex-basis: 33%;
     }
 
     @include xlarge {
-    max-width: 25%;
+    //max-width: 25%;
+    flex-basis: 25%;
     }
 
   }
@@ -34,6 +39,10 @@ color: $textcolor;
 text-decoration: none;
 height: 100%;
 padding-bottom: 50px;
+
+  @include medium {
+    height: 450px;
+  }
 
   &:hover {
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
@@ -73,13 +82,13 @@ display: block;
 position: relative;
 top: 0;
 left: 0;
-padding: 2rem;
+padding: 1rem 1.5rem;
 font-size: 0.875rem;
 line-height: 150%;
 }
 
 .card__title {
-font-size: 1.5rem;
+font-size: 1.125rem;
 font-weight: bold;
 margin-bottom: 0.25rem;
 }
@@ -92,7 +101,7 @@ margin-bottom: $baselineheight / 3;
 }
 
 .card__footer {
-padding: 1rem 2rem;
+padding: 1rem 1.5rem;
 position: absolute;
 bottom: 0;
 width: 100%;
