@@ -29,8 +29,8 @@ w.Promise
 // -----------------------------------------------------------------------------
 
 fluidvids.init({
-  selector: ['iframe'],
-  players: ['www.youtube.com', 'player.vimeo.com']
+  selector: ["iframe"],
+  players: ["www.youtube.com", "player.vimeo.com"]
 });
 
 
@@ -40,7 +40,7 @@ fluidvids.init({
 
 var offCanvasMenu = document.querySelector(".off-canvas-wrapper");
 var openMenu = document.querySelector(".js-nav-open");
-var closeMenu = document.querySelectorAll('.js-nav-close');
+var closeMenu = document.querySelectorAll(".js-nav-close");
 var preventScroll = document.querySelector("body");
 
 // Open menu
@@ -52,7 +52,7 @@ openMenu.onclick = function () {
 
 // Close Menu
 for (var i = 0; i < closeMenu.length; i++) {
-  closeMenu[i].addEventListener('click', function(event) {
+  closeMenu[i].addEventListener("click", function(event) {
     "use strict";
     offCanvasMenu.classList.toggle("is-visible");
     preventScroll.classList.toggle("off-canvas-no-scroll");
