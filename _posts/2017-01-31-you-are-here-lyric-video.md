@@ -2,7 +2,7 @@
 title: "Liberty Worship: You Are Here, lyric video"
 author: adam
 category: Worship
-image: /images/blog.jpg
+image: /images/blog/worship.jpg
 description: This is the description for the post
 ---
 

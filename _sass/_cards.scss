@@ -60,7 +60,7 @@ width: 100%;
 }
 
 .card__labels-inner {
-  background: rgba(0,0,0,0.4);
+  background: $shiraz;
   float: left;
   overflow: hidden;
 }
@@ -70,12 +70,16 @@ width: 100%;
   padding: 0.5em;
   text-transform: uppercase;
   font-size: 0.75em;
-  display: none;
 }
 
 .card__image {
 width: 100%;
 display: block;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .card__body {

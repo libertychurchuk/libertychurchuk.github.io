@@ -42,9 +42,12 @@ layout: compress
     {% include nav-off-canvas.html %}
 
     {% include google-analytics.html %}
-
+    {% if page.file %}
+    <script src="https://cdn.jsdelivr.net/mediaelement/3.2.3/mediaelement-and-player.min.js" defer></script>
+    {% endif %}
     <script src="{{ site.baseurl }}/js/modernizr.js" defer></script>
     <script src="{{ site.baseurl }}/main.js" defer></script>
+
 
   </body>
 </html>

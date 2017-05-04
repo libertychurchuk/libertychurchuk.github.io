@@ -1,14 +1,14 @@
 <article class="card card--blog">
   <a class="card-inner" href="{{ item.url }}">
     <div class="card__image">
-      {% if item.category %}
+      {% if item.image %}
       <div class="card__labels">
         <div class="card__labels-inner">
           <div class="card__labels-label">{{ item.category }}</div>
         </div>
       </div>
       {% endif %}
-      {% if item.date %}
+      {% if item.image %}
       <img src="{{ item.image }}" alt="{{ item.title }}" />
       {% endif %}
     </div>

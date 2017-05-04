@@ -6,11 +6,36 @@
     "avatar": "https://pbs.twimg.com/profile_images/478811439218839552/Wms2OIlA_200x200.jpeg"
   },
   "heath": {
-    "name": "Heath van Staden",
-    "twitter": "heathbaxter"
+    "name": "Heath Van Staden",
+    "twitter": "heathbaxter",
+    "avatar": "/images/authors/heath-van-staden.jpg"
   },
   "adam": {
     "name": "Adam Howard",
     "avatar": "/images/authors/adam-howard.jpg"
-    }
+  },
+  "mike": {
+    "name": "Mike Eltringham",
+    "avatar": "/images/authors/mike-eltringham.jpg"
+  },
+  "phil": {
+    "name": "Phil Boalch",
+    "avatar": "/images/authors/phil-boalch.jpg"
+  },
+  "rob": {
+    "name": "Rob Hutton",
+    "avatar": "/images/authors/rob-hutton.jpg"
+  },
+  "graham": {
+    "name": "Graham Sheppard",
+    "avatar": "/images/authors/graham-sheppard.jpg"
+  },
+  "andyhawthorne": {
+    "name": "Andy Hawthorne",
+    "avatar": "/images/authors/andy-hawthorne.jpg"
+  },
+  "cathwoolridge": {
+    "name": "Cath Woolridge",
+    "avatar": "/images/authors/cath-woolridge.jpg"
+  }
 }
