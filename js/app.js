@@ -38,19 +38,23 @@ fluidvids.init({
 // Off Canvas Navigation
 // -----------------------------------------------------------------------------
 
-  var offCanvasMenu = document.querySelector(".off-canvas-wrapper");
-  var openMenu = document.querySelector(".js-nav-open");
-  var closeMenu = document.querySelector(".js-nav-close");
-  var preventScroll = document.querySelector("body");
+var offCanvasMenu = document.querySelector(".off-canvas-wrapper");
+var openMenu = document.querySelector(".js-nav-open");
+var closeMenu = document.querySelectorAll('.js-nav-close');
+var preventScroll = document.querySelector("body");
 
-  openMenu.onclick = function () {
-      "use strict";
-      offCanvasMenu.classList.toggle("is-visible");
-      preventScroll.classList.toggle("off-canvas-no-scroll");
-  };
+// Open menu
+openMenu.onclick = function () {
+  "use strict";
+  offCanvasMenu.classList.toggle("is-visible");
+  preventScroll.classList.toggle("off-canvas-no-scroll");
+};
 
-  closeMenu.onclick = function () {
-      "use strict";
-      offCanvasMenu.classList.toggle("is-visible");
-      preventScroll.classList.toggle("off-canvas-no-scroll");
-  };
+// Close Menu
+for (var i = 0; i < closeMenu.length; i++) {
+  closeMenu[i].addEventListener('click', function(event) {
+    "use strict";
+    offCanvasMenu.classList.toggle("is-visible");
+    preventScroll.classList.toggle("off-canvas-no-scroll");
+  });
+}
