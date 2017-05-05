@@ -28,7 +28,9 @@
       {% if item.date %}
       <time class="card__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
       {% endif %}
-
+      {% if item.scripture %}
+        <div class="card__text"><strong>Scripture:</strong> {{ item.scripture }}</div>
+      {% endif %}
       {% if item.description %}
         <div class="card__text">{{ item.description }}</div>
       {% endif %}

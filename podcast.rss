@@ -34,18 +34,18 @@
 		<itunes:explicit>clean</itunes:explicit>
 		{% for item in site.categories.message %}
 		<item>
-			<title>{{ item.title | xml_escape }}</title>
-			<itunes:author>{{ site.author }}</itunes:author>
-      <itunes:subtitle>{{ site.title }}: {{ item.title }}</itunes:subtitle>
-      <itunes:summary>{{ item.scripture | xml_escape }}</itunes:summary>
-      <itunes:image href="{{ site.url }}/images/itunes.jpg" />
-      <enclosure url="http:{{ item.file }}" length="{{ item.length }}" type="audio/mp3"/>
-      <guid isPermaLink="true">{{ site.url }}{{ item.url }}</guid>
-      <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
-      <itunes:duration>{{ item.duration }}</itunes:duration>
-			<itunes:keywords>{{ item.keywords }}</itunes:keywords>
-      <link>{{ site.url }}{{ item.url }}</link>
-			<description>{{ item.scripture | xml_escape }}</description>
+		<title>{{ item.title | xml_escape }}</title>
+		<itunes:author>{{ site.data.authors[item.author].name }}</itunes:author>
+    <itunes:subtitle>{{ item.subtitle }}</itunes:subtitle>
+    <itunes:summary>{{ item.scripture | xml_escape }}</itunes:summary>
+    <itunes:image href="{{ site.url }}/images/itunes.jpg" />
+    <enclosure url="http:{{ item.file }}" length="{{ item.length }}" type="audio/mp3"/>
+    <guid isPermaLink="true">{{ site.url }}{{ item.url }}</guid>
+    <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+    <itunes:duration>{{ item.duration }}</itunes:duration>
+		<itunes:keywords>{{ item.keywords }}</itunes:keywords>
+    <link>{{ site.url }}{{ item.url }}</link>
+		<description>{{ item.scripture | xml_escape }}</description>
 		</item>
 		{% endfor %}
 	</channel>
