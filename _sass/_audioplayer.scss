@@ -11,7 +11,7 @@
 
 .mejs__container {
     position: relative;
-    background: #000;
+    background: $blackrock;
     font-family: "Helvetica", Arial, serif;
     text-align: left;
     vertical-align: top;
@@ -677,7 +677,7 @@ margin-bottom: 1.5em;
   }
 
   .mejs__controls:not([style*="display: none"]) {
-  background: $black;
+  background: $blackrock;
   }
 
 }

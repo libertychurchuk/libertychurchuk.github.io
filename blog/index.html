@@ -9,9 +9,9 @@ description: The Liberty Church blog. Stories, updates, thoughts and articles ab
   <div class="row block-grid">
     {% for item in paginator.posts %}
       {% if item.category == "message" %}
-        {% include items/item-message.html %}
+        {% include items/message.html %}
       {% else %}
-        {% include items/item-article.html %}
+        {% include items/article.html %}
       {% endif %}
     {% endfor %}
   </div>

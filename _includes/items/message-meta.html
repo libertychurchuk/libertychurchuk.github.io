@@ -1,0 +1,28 @@
+<ul class="article-meta">
+
+  {% if page.scripture %}
+  <li class="item__scripture">
+    <svg class="icon">
+      <use xlink:href="{{ site.baseurl }}/images/icons/svg-icons.svg#bible"></use>
+    </svg> {{ page.scripture }}
+  </li>
+  {% endif %}
+
+  {% if page.duration %}
+  <li class="item__duration">
+    <svg class="icon">
+      <use xlink:href="{{ site.baseurl }}/images/icons/svg-icons.svg#duration"></use>
+    </svg> {{ page.duration }}
+  </li>
+  {% endif %}
+
+  {% if page.file %}
+  <li class="item__download">
+    <svg class="icon">
+      <use xlink:href="{{ site.baseurl }}/images/icons/svg-icons.svg#download"></use>
+    </svg>
+    <a href="{{ page.file }}">Download MP3</a>
+  </li>
+  {% endif %}
+
+</ul>

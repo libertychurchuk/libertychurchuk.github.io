@@ -2,24 +2,24 @@
 layout: default
 ---
   <article class="article">
+
+    {% if page.file %}
+      {% include items/message-player.html %}
+    {% endif %}
+
     <header class="article__header">
+
       <div class="article__titles">
         <time class="article__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B, %Y" }}</time>
         <h1 class="article__heading">{{ page.title }}</h1>
         <div class="article__subheading">{{ page.subtitle }}</div>
       </div>
 
-
-    {% if page.file %}
-      <div class="article__feature">
-
-        <div class="audio-player">
-          <audio src="{{ page.file }}" class="mejs__player" width="100%"></audio>
-        </div>
-
-      </div>
-    {% endif %}
-
+      {% if page.category == "message" %}
+        {% include items/message-meta.html %}
+      {% endif %}
+    </header>
+    
     <div class="article__body">
       {{ content }}
     </div>
