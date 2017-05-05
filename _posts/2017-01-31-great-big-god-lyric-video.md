@@ -2,7 +2,7 @@
 title: "Liberty Kids: Great Big God, lyric video"
 author: adam
 category: Worship
-image: /images/blog.jpg
+image: /uploads/2017/01/great-big-god.jpg
 description: This is the description for the post
 ---
 
