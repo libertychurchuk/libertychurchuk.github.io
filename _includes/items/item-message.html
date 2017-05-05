@@ -1,0 +1,45 @@
+{% if item.image %}
+<article class="card card--message">
+  <a class="card-inner" href="{{ item.url }}">
+    <div class="card__image">
+      <div class="card__labels">
+        <div class="card__labels-inner">
+          <div class="card__labels-label">{{ item.category }}</div>
+        </div>
+      </div>
+      {% else %}
+      <article class="card card--message card--noimage">
+        <a class="card-inner" href="{{ item.url }}">
+          <div class="card__image">
+            <div class="card__labels">
+              <div class="card__labels-inner">
+                <div class="card__labels-label">{{ item.category }}</div>
+              </div>
+            </div>
+      {% endif %}
+
+
+      {% if item.image %}
+      <img src="{{ item.image }}" alt="{{ item.title }}" />
+      {% endif %}
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">{{ item.title }}</h3>
+      {% if item.date %}
+      <time class="card__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
+      {% endif %}
+
+      {% if item.description %}
+        <div class="card__text">{{ item.description }}</div>
+      {% endif %}
+    </div>
+    <div class="card__footer">
+      <div class="card__author">
+        <div class="card__author-image">
+          <img src="{{ site.data.authors[item.author].avatar }}" alt="{{ site.data.authors[item.author].name }}" />
+        </div>
+        {{ site.data.authors[item.author].name }}
+      </div>
+    </div>
+  </a>
+</article>

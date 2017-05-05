@@ -6,9 +6,13 @@ description: The Liberty Church blog. Stories, updates, thoughts and articles ab
 {% include /header-blocks/blog.html %}
 
 <section class="blog">
-  <div class="row">
+  <div class="row block-grid">
     {% for item in paginator.posts %}
-      {% include /items/item-article.html %}
+      {% if item.category == "message" %}
+        {% include items/item-message.html %}
+      {% else %}
+        {% include items/item-article.html %}
+      {% endif %}
     {% endfor %}
   </div>
   {% include item-pagination.html %}

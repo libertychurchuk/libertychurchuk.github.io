@@ -68,3 +68,29 @@ overflow: visible;
   }
 
 }
+
+
+.block-grid .card {
+//flex: 1 0 auto;
+
+ @include small {
+  //max-width: 100%;
+  flex-basis: 100%;
+  }
+
+  @include medium {
+  //max-width: 50%;
+  flex-basis: 50%;
+  }
+
+  @include large {
+  //max-width: 33%;
+  flex-basis: 33%;
+  }
+
+  @include xlarge {
+  //max-width: 25%;
+  flex-basis: 25%;
+  }
+
+}

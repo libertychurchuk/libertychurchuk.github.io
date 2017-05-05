@@ -5,30 +5,12 @@ padding-right: 0.5rem;
 padding-bottom: 1rem;
 }
 
-  .card--blog {
-//flex: 1 0 auto;
-
-   @include small {
-    //max-width: 100%;
-    flex-basis: 100%;
-    }
-
-    @include medium {
-    //max-width: 50%;
-    flex-basis: 50%;
-    }
-
-    @include large {
-    //max-width: 33%;
-    flex-basis: 33%;
-    }
-
-    @include xlarge {
-    //max-width: 25%;
-    flex-basis: 25%;
-    }
-
+.card--noimage {
+  .card__body {
+    padding-top: 5em;
   }
+}
+
 
 .card-inner {
 display: block;;
@@ -55,7 +37,7 @@ position: absolute;
 z-index: 1;
 top: 0;
 left: 0;
-padding: 5%;
+padding: 1.5em;
 width: 100%;
 }
 
