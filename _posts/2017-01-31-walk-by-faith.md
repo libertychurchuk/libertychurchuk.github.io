@@ -3,7 +3,7 @@ title: "Liberty Kids: Walk By Faith, lyric video"
 author: adam
 category: Worship
 image: /images/blog.jpg
-description: This is the description for the post
+description: 
 published: false
 ---
 

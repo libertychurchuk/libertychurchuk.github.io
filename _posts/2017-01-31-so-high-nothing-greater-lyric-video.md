@@ -3,7 +3,7 @@ title: "Liberty Kids: So High (Nothing Greater), lyric video"
 author: adam
 category: Worship
 image: /images/blog.jpg
-description: This is the description for the post
+description: 
 published: false
 ---
 
