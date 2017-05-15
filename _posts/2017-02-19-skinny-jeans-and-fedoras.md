@@ -1,9 +1,12 @@
 ---
-title: "Skinny Jeans and Fedoras"
+title: Skinny Jeans and Fedoras
+date: 2017-02-19 00:00:00 Z
+categories:
+- message
 file: "/2017/19-02-2017.mp3"
-author: "Adam Howard"
-duration: "51:41"
-length: "76929947"
-image: /uploads/2017/02/skinny-jeans-and-fedoras.jpg
-category: message
+author: Adam Howard
+duration: '51:41'
+length: '76929947'
+image: "/uploads/2017/02/skinny-jeans-and-fedoras.jpg"
 ---
+

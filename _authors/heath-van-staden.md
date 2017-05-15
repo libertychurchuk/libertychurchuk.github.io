@@ -1,5 +1,7 @@
 ---
+title: Heath Van Staden
 name: Heath Van Staden
-twitter: "heathbaxter"
+twitter: heathbaxter
 avatar: "/images/authors/heath-van-staden.jpg"
 ---
+

@@ -1,38 +1,38 @@
+---
 title: Liberty Church, Newport, South Wales
-description: As a local church we are a community of everyday people in which Jesus is central, in all we do, as we seek to embrace our city and nation we live in.
+timezone: UTC
+collections:
+  authors:
+    title: Authors
+    output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: As a local church we are a community of everyday people in which Jesus
+  is central, in all we do, as we seek to embrace our city and nation we live in.
 url: https://www.libertychurchuk.com
 author: Liberty Church
 twitter:
   username: LibertyChurchUK
 facebook:
- app_id:
- publisher:
- admins:
-logo: /images/logos/liberty-church-logo.png
+  app_id: 
+  publisher: 
+  admins: 
+logo: "/images/logos/liberty-church-logo.png"
 lang: en-GB
-
 social:
   links:
-    - https://twitter.com/LibertyChurchUK
-    - https://www.facebook.com/libertychurchfamily
-    - https://instagram.com/libertychurchuk
-    - https://vimeo.com/libertychurchuk
-
-# Pagination settings
+  - https://twitter.com/LibertyChurchUK
+  - https://www.facebook.com/libertychurchfamily
+  - https://instagram.com/libertychurchuk
+  - https://vimeo.com/libertychurchuk
 paginate: 12
 paginate_path: "/blog/page:num/"
-
-# Collections
-collections:
-  authors:
-    title: Authors
-    #output: true
-
-# SCSS Output
 sass:
   style: :compressed
-
-# Additional Jekyll Support
 gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-seo-tag

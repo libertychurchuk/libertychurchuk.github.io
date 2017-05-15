@@ -1,11 +1,15 @@
 ---
-title: "This is my story: Nicky Neil"
-image: /uploads/2016/03/tims-nicky-neil.jpg
-category: Testimony
+title: 'This is my story: Nicky Neil'
+date: 2016-03-29 00:00:00 Z
+categories:
+- Testimony
+image: "/uploads/2016/03/tims-nicky-neil.jpg"
 author: Richard Saunders
-description: Nicky’s story starts in South Africa, where Church had always been part of her life growing up. Life has thrown it’s ups and downs but His hand stayed firmly in her life. He had plan and a purpose even if Nicky didn’t know believe it herself.
-
+description: Nicky’s story starts in South Africa, where Church had always been part
+  of her life growing up. Life has thrown it’s ups and downs but His hand stayed firmly
+  in her life. He had plan and a purpose even if Nicky didn’t know believe it herself.
 ---
+
 <iframe src="https://player.vimeo.com/video/160713259?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 My story started in South Africa where I was born and church has been a massive part of my life right from the beginning. We moved to South Wales as a family when I was six, after my father died in a car accident. This is where my walk with God really began, I became baptised in water at the age of nine, and baptised in the spirit at the age of 10 and God was very real and very active in my life. He gave me words of wisdom and showed me new mercies everyday.
