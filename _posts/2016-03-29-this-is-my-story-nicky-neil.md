@@ -2,7 +2,7 @@
 title: "This is my story: Nicky Neil"
 image: /uploads/2016/03/tims-nicky-neil.jpg
 category: Testimony
-author: richard
+author: Richard Saunders
 description: Nicky’s story starts in South Africa, where Church had always been part of her life growing up. Life has thrown it’s ups and downs but His hand stayed firmly in her life. He had plan and a purpose even if Nicky didn’t know believe it herself.
 
 ---

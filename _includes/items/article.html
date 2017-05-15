@@ -23,12 +23,7 @@
       {% endif %}
     </div>
     <div class="card__footer">
-      <div class="card__author">
-        <div class="card__author-image">
-          <img src="{{ site.data.authors[item.author].avatar }}" alt="{{ site.data.authors[item.author].name }}" />
-        </div>
-        {{ site.data.authors[item.author].name }}
-      </div>
+      {% include items/card-author.html %}
     </div>
   </a>
 </article>

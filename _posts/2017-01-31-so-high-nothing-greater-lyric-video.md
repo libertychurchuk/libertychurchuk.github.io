@@ -1,9 +1,9 @@
 ---
 title: "Liberty Kids: So High (Nothing Greater), lyric video"
-author: adam
+author: "Adam Howard"
 category: Worship
 image: /images/blog.jpg
-description: 
+description:
 published: false
 ---
 

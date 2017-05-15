@@ -1,9 +1,8 @@
 ---
 title: "Liberty Kids: Great Big God, lyric video"
-author: adam
+author: "Adam Howard"
 category: Worship
 image: /uploads/2017/01/great-big-god.jpg
-description: 
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pfba0Qqysyw" frameborder="0" allowfullscreen></iframe>

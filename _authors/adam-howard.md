@@ -1,0 +1,4 @@
+---
+name: "Adam Howard"
+avatar: "/images/authors/adam-howard.jpg"
+---

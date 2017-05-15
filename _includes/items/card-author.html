@@ -1,0 +1,9 @@
+{% assign author = site.authors | where: 'name', item.author | first %}
+{% if author %}
+<div class="card__author">
+  <div class="card__author-image">
+    <img src="{{ author.avatar }}" alt="{{ author.name }}" />
+  </div>
+  {{ author.name }}
+</div>
+{% endif %}

@@ -1,7 +1,7 @@
 ---
 title: "Keep your love on part 4 - love or fear"
 file: "/2016/16-10-2016.mp3"
-author: heath
+author: "Heath Van Staden"
 duration: "36:32"
 length: "52621399"
 category: message

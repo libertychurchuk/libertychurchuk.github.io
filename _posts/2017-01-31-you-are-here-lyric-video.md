@@ -1,9 +1,9 @@
 ---
 title: "Liberty Worship: You Are Here, lyric video"
-author: adam
+author: "Adam Howard"
 category: Worship
 image: /images/blog/worship.jpg
-description: 
+description:
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZqYdLkQo3o" frameborder="0" allowfullscreen></iframe>

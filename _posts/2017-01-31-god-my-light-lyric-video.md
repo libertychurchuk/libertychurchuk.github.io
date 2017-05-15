@@ -1,9 +1,8 @@
 ---
 title: "Liberty Worship: God My Light, lyric video"
-author: adam
+author: "Adam Howard"
 category: Worship
 image: /images/blog/worship.jpg
-description: 
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SVKGqlITPBo" frameborder="0" allowfullscreen></iframe>

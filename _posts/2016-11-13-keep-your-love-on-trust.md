@@ -1,7 +1,7 @@
 ---
 title: "Keep your love on part 5 - trust"
 file: "/2016/13-11-2016.mp3"
-author: heath
+author: "Heath Van Staden"
 duration: "35:46"
 length: "51491523"
 category: message

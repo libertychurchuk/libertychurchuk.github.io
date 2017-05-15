@@ -19,22 +19,25 @@ layout: default
         {% include items/message-meta.html %}
       {% endif %}
     </header>
-    
+
     <div class="article__body">
       {{ content }}
     </div>
 
     <footer class="article__footer">
 
+      {% assign author = site.authors | where: 'name', page.author | first %}
+      {% if author %}
       <div class="author">
         <figure class="author__image">
-          <img src="{{ site.data.authors[page.author].avatar }}" title="{{ site.data.authors[page.author].name }}" />
-          <figcaption>{{ site.data.authors[page.author].name }}</figcaption>
+          <img src="{{ author.avatar }}" title="{{ author.name }}" />
+          <figcaption>{{ author.name }}</figcaption>
         </figure>
         <div class="author__bio">
-          <p>{{ site.data.authors[page.author].bio }}</p>
+          <p>{{ author.content }}</p>
         </div>
       </div>
+      {% endif %}
     </footer>
   </article>
 

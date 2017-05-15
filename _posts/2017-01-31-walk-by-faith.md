@@ -1,9 +1,9 @@
 ---
 title: "Liberty Kids: Walk By Faith, lyric video"
-author: adam
+author: "Adam Howard"
 category: Worship
 image: /images/blog.jpg
-description: 
+description:
 published: false
 ---
 
