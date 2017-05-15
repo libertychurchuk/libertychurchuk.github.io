@@ -27,7 +27,7 @@
 			<itunes:name>{{ site.author }}</itunes:name>
 			<itunes:email>{{ site.email }}</itunes:email>
 		</itunes:owner>
-		<itunes:image href="{{ site.url }}/images/itunes.jpg" />
+		<itunes:image href="{{ site.url }}/images/itunes.png" />
     <itunes:category text="Religion &amp; Spirituality">
     	<itunes:category text="Christianity" />
     </itunes:category>
@@ -38,14 +38,23 @@
 		<itunes:author>{{ site.data.authors[item.author].name }}</itunes:author>
     <itunes:subtitle>{{ item.subtitle }}</itunes:subtitle>
     <itunes:summary>{{ item.scripture | xml_escape }}</itunes:summary>
-    <itunes:image href="{{ site.url }}/images/itunes.jpg" />
+    <itunes:image href="{{ site.url }}/images/itunes.png" />
     <enclosure url="http:{{ item.file }}" length="{{ item.length }}" type="audio/mp3"/>
     <guid isPermaLink="true">{{ site.url }}{{ item.url }}</guid>
     <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
     <itunes:duration>{{ item.duration }}</itunes:duration>
 		<itunes:keywords>{{ item.keywords }}</itunes:keywords>
     <link>{{ site.url }}{{ item.url }}</link>
-		<description>{{ item.scripture | xml_escape }}</description>
+		<description>
+
+			{% if item.author %}
+				{{ site.data.authors[item.author].name }}
+			{% endif %}
+
+			{% if item.scripture %}
+				,{{ item.scripture | xml_escape }}
+			{% endif %}
+		</description>
 		</item>
 		{% endfor %}
 	</channel>
