@@ -1,8 +1,7 @@
 ---
 title: 'Liberty Worship: God My Light, lyric video'
 date: 2017-01-31 00:00:00 Z
-categories:
-- Worship
+category: worship
 author: Adam Howard
 image: "/images/blog/worship.jpg"
 ---

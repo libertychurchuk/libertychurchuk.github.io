@@ -1,8 +1,7 @@
 ---
 title: 'This is my story: Nicky Neil'
 date: 2016-03-29 00:00:00 Z
-categories:
-- Testimony
+category: testimony
 image: "/uploads/2016/03/tims-nicky-neil.jpg"
 author: Richard Saunders
 description: Nicky’s story starts in South Africa, where Church had always been part

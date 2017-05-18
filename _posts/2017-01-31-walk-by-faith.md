@@ -2,11 +2,10 @@
 title: 'Liberty Kids: Walk By Faith, lyric video'
 date: 2017-01-31 00:00:00 Z
 published: false
-categories:
-- Worship
+category: worship
 author: Adam Howard
 image: "/images/blog.jpg"
-description: 
+description:
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_8qDBpwvZhY" frameborder="0" allowfullscreen></iframe>

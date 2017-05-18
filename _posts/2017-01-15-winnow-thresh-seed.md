@@ -1,12 +1,10 @@
 ---
 title: Winnow, Thresh, Seed
 date: 2017-01-15 00:00:00 Z
-categories:
-- message
+category: message
 file: "/2017/15-01-2017.mp3"
 author: Graham Sheppard
 duration: '51:35'
 length: '74290945'
 image: "/uploads/2017/01/winnow-thresh-seed.jpg"
 ---
-
