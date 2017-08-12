@@ -7,6 +7,9 @@ author: Richard Saunders
 description: My niece was diagnosed with an aggressive cancer on 17th May. The cancer was in her lymph nodes and so spread incredibly fast. She started chemo on 29th May.
 ---
 
+
+![A photo of John with text of Revelation 12:11 overlaid](/uploads/2017/08/tims-john.jpg)
+
 This is my story…
 
 My niece was diagnosed with an aggressive cancer on 17th May. The cancer was in her lymph nodes and so spread incredibly fast. She started chemo on 29th May.

@@ -7,6 +7,8 @@ author: Richard Saunders
 description: On Friday last week, my friend Abi suffered a stroke down her right side, which resulted in her being rushed into hospital.
 ---
 
+![A photo of Rachel with text of Revelation 12:11 overlaid](/uploads/2017/07/tims-rachel.jpg)
+
 This is my story…
 
 On Friday last week, my friend Abi suffered a stroke down her right side, which resulted in her being rushed into hospital. Abi had suffered a ruptured blood vessel in the back of her neck during the recent birth of her second child only three weeks earlier.
