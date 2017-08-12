@@ -22,10 +22,6 @@ text-decoration: none;
 height: 100%;
 padding-bottom: 50px;
 
-  @include medium {
-    height: 450px;
-  }
-
   &:hover {
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
   }
@@ -101,7 +97,6 @@ white-space: nowrap;
 font-size: 0.8125rem;
 float: left;
 padding-top: 3px;
-font-size: 0.8125em;
 line-height: 26px;
 }
 
