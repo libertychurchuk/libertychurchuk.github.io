@@ -6,6 +6,6 @@ file: "/201723-07-2017.mp3"
 author: Richard Saunders
 duration: '25:05'
 length: '36130544'
-image: ""
+image: 
 description:
 ---
