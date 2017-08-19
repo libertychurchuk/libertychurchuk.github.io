@@ -1,14 +1,14 @@
 ---
 title: 'This is my story: Alice'
-date: 2017-0816 00:00:00 Z
+date: 2017-08-16 00:00:00 Z
 category: testimony
 image: "/uploads/2017/08/tims-alice.jpg"
 author: Richard Saunders
-description: A short while ago I felt God was leading me to take a leap of faith and really trust Him!
+description: "A short while ago I felt God was leading me to take a leap of faith and really trust Him!"
 ---
 
 
-![A photo of John with text of Revelation 12:11 overlaid](/uploads/2017/08/tims-john.jpg)
+![A photo of Alice with text of Revelation 12:11 overlaid](/uploads/2017/08/tims-alice.jpg)
 
 This is my story…
 
