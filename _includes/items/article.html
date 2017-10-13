@@ -4,7 +4,9 @@
       {% if item.image %}
       <div class="card__labels">
         <div class="card__labels-inner">
+          {% if item.category %}  
           <div class="card__labels-label">{{ item.category }}</div>
+          {% endif %}
         </div>
       </div>
       {% endif %}
