@@ -8,7 +8,7 @@ description: "A short while ago I felt God was leading me to take a leap of fait
 ---
 
 
-![A photo of Alice with text of Revelation 12:11 overlaid](/uploads/2017/08/tims-alice.jpg)
+![A photo of Alice with a blurred background](/uploads/2017/08/tims-alice.jpg)
 
 This is my story…
 

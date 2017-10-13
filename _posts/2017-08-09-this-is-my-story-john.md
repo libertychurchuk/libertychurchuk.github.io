@@ -8,7 +8,7 @@ description: My niece was diagnosed with an aggressive cancer on 17th May. The c
 ---
 
 
-![A photo of John with text of Revelation 12:11 overlaid](/uploads/2017/08/tims-john.jpg)
+![A photo of John with a blurred background](/uploads/2017/08/tims-john.jpg)
 
 This is my story…
 
