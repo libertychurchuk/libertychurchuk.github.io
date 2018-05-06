@@ -19,7 +19,7 @@ var fontA = new w.FontFaceObserver( "lovetime_cleanregular", {
 w.Promise
   .all([fontA.check()])
   .then(function(){
-    w.document.documentElement.className += " fonts-loaded";
+    w.document.documentElement.className += "fonts-loaded";
   });
 }( this ));
 

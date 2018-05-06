@@ -48,3 +48,18 @@ iframe,
 .typeform-widget iframe {
 margin-bottom: 0;
 }
+
+.js #cookie-message {
+display: none;
+}
+
+#cookie-message {
+position: relative;
+background: $white;
+padding: 0 $gutterwidth;
+ 
+p {
+  margin: 0;
+}
+}
+
