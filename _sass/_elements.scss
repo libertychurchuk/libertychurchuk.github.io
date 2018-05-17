@@ -55,11 +55,21 @@ display: none;
 
 #cookie-message {
 position: relative;
-background: $white;
 padding: 0 $gutterwidth;
  
 p {
   margin: 0;
 }
+
+}
+
+.cookie-message {
+  background: #8c2a3c;
+  color: #fff;
+  padding: 1em 0;
+
+  a {
+    color: #fff;
+  }
 }
 
