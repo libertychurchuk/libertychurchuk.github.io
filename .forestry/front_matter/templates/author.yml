@@ -7,9 +7,9 @@ fields:
   label: Title
   config:
     required: true
-- type: datetime
-  name: date
-  label: Date
 - type: text
   name: name
   label: Name
+- type: file
+  name: avatar
+  label: Avatar
