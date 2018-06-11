@@ -17,3 +17,9 @@ fields:
   label: Date
   config:
     time_format: h:mm
+- type: tag_list
+  name: categories
+  label: Categories
+- type: text
+  name: file
+  label: File
