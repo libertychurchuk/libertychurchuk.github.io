@@ -10,3 +10,6 @@ fields:
 - type: datetime
   name: date
   label: Date
+- type: text
+  name: name
+  label: Name
