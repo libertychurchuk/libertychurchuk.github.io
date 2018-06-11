@@ -12,3 +12,8 @@ fields:
       type: pages
       section: authors
   label: Author
+- type: datetime
+  name: date
+  label: Date
+  config:
+    time_format: h:mm
