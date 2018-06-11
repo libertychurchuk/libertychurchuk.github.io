@@ -20,14 +20,15 @@ fields:
 - type: textarea
   name: description
   label: Description
+- type: text
+  name: file
+  label: File
 - type: tag_list
   name: categories
   label: Categories
   default:
   - message
-- type: text
-  name: file
-  label: File
+  hidden: true
 - type: text
   name: duration
   label: Duration
