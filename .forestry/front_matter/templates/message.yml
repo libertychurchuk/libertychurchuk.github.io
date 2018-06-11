@@ -23,11 +23,5 @@ fields:
 - type: text
   name: file
   label: File
-- type: number
-  name: size
-  label: Size
-- type: text
-  name: length
-  label: Length
 pages:
 - _posts/2016-08-07-two-directors-two-outcomes.md
