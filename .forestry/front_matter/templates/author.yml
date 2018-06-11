@@ -13,3 +13,5 @@ fields:
 - type: file
   name: avatar
   label: Avatar
+pages:
+- _authors/adam-howard.md
