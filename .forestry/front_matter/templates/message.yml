@@ -27,7 +27,7 @@ fields:
   name: size
   label: Size
 - type: text
-  name: duration
-  label: Duration
+  name: length
+  label: Length
 pages:
 - _posts/2016-08-07-two-directors-two-outcomes.md
