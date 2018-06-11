@@ -17,6 +17,7 @@ fields:
   label: Date
   config:
     time_format: h:mm
+    date_format: MM/DD/YYYY
 - type: textarea
   name: description
   label: Description
