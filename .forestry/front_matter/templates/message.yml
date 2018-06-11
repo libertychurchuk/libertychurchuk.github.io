@@ -1,0 +1,14 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: select
+  name: author
+  config:
+    source:
+      type: pages
+      section: authors
+  label: Author
