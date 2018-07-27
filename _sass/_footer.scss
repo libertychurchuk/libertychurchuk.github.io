@@ -3,8 +3,7 @@ position: relative;
 }
 
 .contentinfo__contact,
-.contentinfo__newsletter,
- {
+.contentinfo__newsletter {
 text-align: center;
 background: $blackrock;
 color: $whitesmoke;
@@ -22,7 +21,8 @@ padding: 2rem;
 }
 
 .contentinfo__newsletter {
-  padding: 0 0 2rem;
+  background-color: darken($blackrock, 5%);
+  padding: 2rem 0;
 }
 
 
