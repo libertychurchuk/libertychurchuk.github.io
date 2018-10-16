@@ -57,4 +57,5 @@ fields:
   - message
   hidden: true
 pages:
+- _messages/2017-01-29-celebrate-your-wins-finish-well.md
 - _posts/2018-06-11-listen-camp.md
