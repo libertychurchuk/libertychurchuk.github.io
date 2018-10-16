@@ -6,20 +6,24 @@ fields:
 - type: text
   name: title
   label: Title
+  config:
+    required: true
 - type: select
   name: author
   config:
     source:
       type: pages
       section: authors
+    required: true
   label: Speaker
-  description: The person that preached.
+  description: The person that preached the message.
 - type: datetime
   name: date
   label: Date
   config:
     time_format: h:mm
     date_format: DD/MM/YYYY
+    required: true
   description: The date that the message was preached.
 - type: textarea
   name: description
@@ -29,6 +33,8 @@ fields:
 - type: text
   name: file
   label: File
+  config:
+    required: true
 - type: text
   name: duration
   label: Duration
