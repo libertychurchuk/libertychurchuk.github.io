@@ -18,10 +18,13 @@ fields:
   label: Date
   config:
     time_format: h:mm
-    date_format: MM/DD/YYYY
+    date_format: DD/MM/YYYY
+  description: The date that the message was preached.
 - type: textarea
   name: description
-  label: Description
+  label: Summary
+  description: A short summary of the message. Displayed in iTunes, Google Podcasts
+    and listing on the website.
 - type: text
   name: file
   label: File
@@ -29,6 +32,8 @@ fields:
   name: duration
   label: Duration
   hidden: false
+  description: The length of the message in minutes and seconds, separated by a colon
+    e.g. 25:22
 - type: file
   name: image
   label: Image
