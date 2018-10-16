@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: _messages
   label: Messages
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - message
