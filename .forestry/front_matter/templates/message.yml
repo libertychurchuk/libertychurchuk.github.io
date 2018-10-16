@@ -17,6 +17,7 @@ fields:
     required: true
   label: Speaker
   description: The person that preached the message.
+  default: _authors/gaz-hillier.md
 - type: datetime
   name: date
   label: Date
@@ -48,7 +49,7 @@ fields:
 - type: number
   name: length
   label: Length
-  hidden: true
+  hidden: false
 - type: tag_list
   name: categories
   label: Categories
