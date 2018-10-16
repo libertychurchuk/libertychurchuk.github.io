@@ -1,6 +1,7 @@
 ---
 title: Liberty Church, Newport, South Wales
 timezone: UTC
+collections_dir: collections
 collections:
   testimonies:
     title: Testimony
