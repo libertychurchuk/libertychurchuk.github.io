@@ -1,5 +1,6 @@
 ---
-hide_body: true
+label: message
+hide_body: false
 is_partial: false
 fields:
 - type: text
@@ -24,6 +25,10 @@ fields:
 - type: text
   name: file
   label: File
+- type: number
+  name: length
+  label: Length
+  hidden: false
 - type: tag_list
   name: categories
   label: Categories
@@ -34,12 +39,8 @@ fields:
   name: duration
   label: Duration
   hidden: true
-- type: number
-  name: length
-  label: Length
-  hidden: true
 pages:
-- _posts/2017-01-29-celebrate-your-wins-finish-well.md
-- _posts/2017-02-05-cath-woolridge.md
-- _posts/2018-06-11-listen-camp.md
 - _posts/2016-08-07-two-directors-two-outcomes.md
+- _posts/2018-06-11-listen-camp.md
+- _posts/2017-02-05-cath-woolridge.md
+- _posts/2017-01-29-celebrate-your-wins-finish-well.md
