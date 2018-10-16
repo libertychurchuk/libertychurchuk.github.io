@@ -1,10 +1,11 @@
 ---
 title: Keep your love on - part two
-date: 2016-09-25 00:00:00 Z
+date: 2016-09-25 00:00:00 +0000
 category: message
 file: "/2016/25-09-2016.mp3"
-author: Heath Van Staden
+author: _authors/heath-van-staden.md
 duration: '53:32'
-length: '77106379'
-description:
+length: 77106379
+description: 
+
 ---
