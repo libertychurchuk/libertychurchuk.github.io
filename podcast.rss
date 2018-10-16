@@ -32,7 +32,7 @@
     	<itunes:category text="Christianity" />
     </itunes:category>
 		<itunes:explicit>clean</itunes:explicit>
-		{% for item in site.categories.message %}
+		{% for item in site.messages %}
 		<item>
 		<title>{{ item.title | xml_escape }}</title>
 		<itunes:author>{{ site.data.authors[item.author].name }}</itunes:author>
