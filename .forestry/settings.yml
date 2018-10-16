@@ -17,7 +17,7 @@ sections:
   templates:
   - author
 - type: jekyll-posts
-  label: Posts
+  label: Blog
   create: documents
 - type: jekyll-pages
   label: Pages
