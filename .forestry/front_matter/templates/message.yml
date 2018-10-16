@@ -50,12 +50,6 @@ fields:
   name: length
   label: Length
   hidden: false
-- type: tag_list
-  name: categories
-  label: Categories
-  default:
-  - message
-  hidden: true
 pages:
 - _messages/2016-09-25-keep-your-love-on-part-two.md
 - _messages/2017-01-29-celebrate-your-wins-finish-well.md
