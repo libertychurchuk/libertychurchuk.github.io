@@ -3,7 +3,7 @@ title: 'Liberty Worship: You Are Here, lyric video'
 date: 2017-01-31 00:00:00 Z
 category: worship
 author: Adam Howard
-image: "/images/blog/worship.jpg"
+image: "/assets/images/blog/worship.jpg"
 description:
 ---
 

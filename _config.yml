@@ -1,5 +1,6 @@
 ---
 title: Liberty Church, Newport, South Wales
+subtitle: Liberty Church UK
 timezone: UTC
 collections_dir: collections
 collections:
@@ -38,6 +39,7 @@ description: As a local church we are a community of everyday people in which Je
   is central, in all we do, as we seek to embrace our city and nation we live in.
 url: https://www.libertychurchuk.com
 author: Liberty Church
+email: web@libertychurchuk.com
 twitter:
   username: LibertyChurchUK
 facebook:
