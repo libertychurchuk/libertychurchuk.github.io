@@ -1,0 +1,27 @@
+---
+title: Messages
+layout: default
+description: Messages from Liberty church.
+pagination: 
+  enabled: true
+  collection: messages
+---
+
+{% include /header-blocks/messages.html %}
+
+Subscribe
+<ul>
+  <li><a href="">iTunes</a></li>
+  <li><a href="">Google</a></li>
+  <li><a href="">Spotify</a></li>
+</ul>
+
+
+<section class="blog">
+  <div class="row block-grid">
+    {% for item in paginator.posts %}
+        {% include items/message.html %}
+    {% endfor %}
+  </div>
+  {% include item-pagination.html %}
+</section>Ì

@@ -5,7 +5,6 @@ file: "/2017/05-02-2017.mp3"
 author: _authors/cath-woolridge.md
 duration: '01:17:42'
 length: 111904435
-categories:
-- message
+category: message
 description: ''
 ---
