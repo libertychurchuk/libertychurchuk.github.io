@@ -18,7 +18,7 @@ sections:
   - author
 - type: jekyll-posts
   label: Posts
-  create: all
+  create: documents
 - type: jekyll-pages
   label: Pages
   create: all
