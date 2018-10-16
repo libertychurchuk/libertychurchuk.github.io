@@ -25,19 +25,23 @@ fields:
 - type: text
   name: file
   label: File
+- type: text
+  name: duration
+  label: Duration
+  hidden: false
+- type: file
+  name: image
+  label: Image
+  description: A custom image to display for the message
 - type: number
   name: length
   label: Length
-  hidden: false
+  hidden: true
 - type: tag_list
   name: categories
   label: Categories
   default:
   - message
-  hidden: true
-- type: text
-  name: duration
-  label: Duration
   hidden: true
 pages:
 - _posts/2016-08-07-two-directors-two-outcomes.md
