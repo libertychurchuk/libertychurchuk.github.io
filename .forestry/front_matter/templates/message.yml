@@ -57,6 +57,7 @@ fields:
   - message
   hidden: true
 pages:
+- _messages/this-is-my-title-for-my-message.md
 - _posts/2016-08-07-two-directors-two-outcomes.md
 - _posts/2018-06-11-listen-camp.md
 - _posts/2017-02-05-cath-woolridge.md
