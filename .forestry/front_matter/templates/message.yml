@@ -12,7 +12,8 @@ fields:
     source:
       type: pages
       section: authors
-  label: Author
+  label: Speaker
+  description: The person that preached.
 - type: datetime
   name: date
   label: Date
