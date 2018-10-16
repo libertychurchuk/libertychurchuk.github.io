@@ -9,8 +9,6 @@ sections:
   label: Messages
   create: documents
   match: "**/*"
-  templates:
-  - message
 - type: directory
   path: _authors
   label: Authors
