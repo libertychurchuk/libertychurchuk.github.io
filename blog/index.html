@@ -11,12 +11,12 @@ pagination:
 {% include /header-blocks/blog.html %}
 
 <section class="blog">
-  <ul>
+  <!-- <ul>
     <li><a href="#">Messages</a></li>
     <li><a href="#">Articles</a></li>
     <li><a href="#">Testimony</a></li>
 
-  </ul>
+  </ul> -->
   <div class="row block-grid">
     {% for item in paginator.posts %}
       {% if item.category == "message" %}
