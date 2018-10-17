@@ -1,5 +1,5 @@
 ---
 title: Andy Hawthorne
 name: Andy Hawthorne
-avatar: "/images/authors/andy-hawthorne.jpg"
+avatar: "/assets/images/authors/andy-hawthorne.jpg"
 ---

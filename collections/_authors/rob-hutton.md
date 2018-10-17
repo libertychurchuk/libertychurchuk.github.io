@@ -1,5 +1,5 @@
 ---
 title: Rob Hutton
 name: Rob Hutton
-avatar: "/images/authors/rob-hutton.jpg"
+avatar: "/assets/images/authors/rob-hutton.jpg"
 ---
