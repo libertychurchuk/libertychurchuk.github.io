@@ -8,16 +8,6 @@ fields:
   label: Title
   config:
     required: true
-- type: select
-  name: author
-  config:
-    source:
-      type: pages
-      section: authors
-    required: true
-  label: Speaker
-  description: The person that preached the message.
-  default: collections/_authors/gaz-hillier.md
 - type: datetime
   name: date
   label: Date
@@ -50,5 +40,12 @@ fields:
   name: length
   label: Length
   hidden: false
+- type: select
+  config:
+    source:
+      type: documents
+      section: authors
+  label: Speaker
+  name: author
 pages:
 - collections/_messages/2017-04-09-image-bearers.md
