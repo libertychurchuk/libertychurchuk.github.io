@@ -50,3 +50,5 @@ fields:
   name: length
   label: Length
   hidden: false
+pages:
+- collections/_messages/2017-04-09-image-bearers.md
