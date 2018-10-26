@@ -22,5 +22,3 @@ fields:
     as an avatar on author pages, blog posts and messages.
   config:
     maxSize: '1'
-pages:
-- collections/_authors/joe-blogs.md
