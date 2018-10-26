@@ -1,5 +1,5 @@
 ---
-label: author
+label: Person
 hide_body: false
 is_partial: false
 fields:
@@ -8,11 +8,17 @@ fields:
   label: Title
   config:
     required: true
+  hidden: true
 - type: text
   name: name
-  label: Name
+  label: Full name
+  config:
+    required: true
+  default: Dr Martyn Lloyd Jones
 - type: file
   name: avatar
   label: Avatar
-pages:
-- _authors/adam-howard.md
+  description: The avatar should ideally be a square image 256x256px. It will be displayed
+    as an avatar on author pages, blog posts and messages.
+  config:
+    maxSize: '1'
