@@ -17,3 +17,7 @@ fields:
 - type: file
   name: avatar
   label: Avatar
+  description: This image will be displayed as an avatar on author pages, blog posts
+    and messages. It should ideally be a square image 256x256px
+  config:
+    maxSize: '1'
