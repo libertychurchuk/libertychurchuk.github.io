@@ -1,5 +1,5 @@
 ---
-label: message
+label: Message
 hide_body: false
 is_partial: false
 fields:
@@ -17,7 +17,7 @@ fields:
     required: true
   label: Speaker
   description: The person that preached the message.
-  default: _authors/gaz-hillier.md
+  default: collections/_authors/gaz-hillier.md
 - type: datetime
   name: date
   label: Date
