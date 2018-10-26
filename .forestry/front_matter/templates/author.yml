@@ -14,7 +14,7 @@ fields:
   label: Full name
   config:
     required: true
-  default: Joe  Blogs
+  default: Dr Martyn Lloyd Jones
 - type: file
   name: avatar
   label: Avatar
