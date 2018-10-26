@@ -5,17 +5,17 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: collections/_posts
+  path: _posts
   label: Blog
   create: documents
   match: "**/*"
 - type: directory
-  path: collections/_messages
+  path: _messages
   label: Messages
   create: documents
   match: "**/*"
 - type: directory
-  path: collections/_authors
+  path: _authors
   label: People
   create: documents
   match: "**/*"
