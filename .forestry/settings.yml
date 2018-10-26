@@ -5,13 +5,6 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: collections/_person
-  label: Person
-  create: all
-  match: "**/*"
-  templates:
-  - person
-- type: directory
   path: collections/_posts
   label: Blog
   create: documents
@@ -23,7 +16,7 @@ sections:
   match: "**/*"
 - type: directory
   path: collections/_authors
-  label: Authors
+  label: People
   create: documents
   match: "**/*"
   templates:
