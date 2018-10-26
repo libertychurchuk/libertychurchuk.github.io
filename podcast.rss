@@ -39,7 +39,7 @@
     <itunes:subtitle>{{ item.subtitle }}</itunes:subtitle>
     <itunes:summary>{{ item.scripture | xml_escape }}</itunes:summary>
     <itunes:image href="{{ site.url }}/assets/images/itunes.png" />
-    <enclosure url="https://messages.libertychurchuk.com.s3.eu-west-2.amazonaws.com/data{{ item.file }}" length="{{ item.length }}" type="audio/mp3"/>
+    <enclosure url="https://s3.eu-west-2.amazonaws.com/messages.libertychurchuk.com/data{{ item.file }}" length="{{ item.length }}" type="audio/mp3"/>
     <guid isPermaLink="true">{{ site.url }}{{ item.url }}</guid>
     <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
     <itunes:duration>{{ item.duration }}</itunes:duration>
