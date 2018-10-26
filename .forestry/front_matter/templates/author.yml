@@ -14,6 +14,7 @@ fields:
   label: Full name
   config:
     required: true
+  default: Joe  Blogs
 - type: file
   name: avatar
   label: Avatar
