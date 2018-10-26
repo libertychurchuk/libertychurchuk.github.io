@@ -143,7 +143,7 @@
     width: 80px;
     height: 80px;
     margin: -40px 0 0 -40px;
-    background: url("images/mejs-controls.svg") no-repeat;
+    background: url("assets/images/mejs-controls.svg") no-repeat;
     background-position: 0 -39px;
     overflow: hidden;
     z-index: 1;
@@ -166,7 +166,7 @@
     display: block;
     width: 80px;
     height: 80px;
-    background: transparent url("images/mejs-controls.svg") -160px -40px no-repeat;
+    background: transparent url("assets/images/mejs-controls.svg") -160px -40px no-repeat;
     -webkit-animation: mejs-loading-spinner 1s linear infinite;
     -moz-animation: mejs-loading-spinner 1s linear infinite;
     animation: mejs-loading-spinner 1s linear infinite;
