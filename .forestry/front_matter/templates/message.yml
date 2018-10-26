@@ -8,16 +8,6 @@ fields:
   label: Title
   config:
     required: true
-- type: select
-  name: author
-  config:
-    source:
-      type: pages
-      section: authors
-    required: true
-  label: Speaker
-  description: The person that preached the message.
-  default: collections/_authors/gaz-hillier.md
 - type: datetime
   name: date
   label: Date
