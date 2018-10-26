@@ -47,5 +47,16 @@ fields:
       section: authors
   label: Speaker
   name: author
+- type: list
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: authors
+    max: '1'
+  label: Speaker
+  name: speaker
+  default:
+  - _authors/rob-hutton.md
 pages:
 - _messages/2017-04-23-holy-spirit-we-are-ministers-of-his-supply.md
