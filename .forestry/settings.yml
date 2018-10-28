@@ -10,6 +10,11 @@ sections:
   create: documents
   match: "**/*"
 - type: directory
+  path: _testimonies
+  label: Testimony
+  create: documents
+  match: "**/*"
+- type: directory
   path: _messages
   label: Messages
   create: documents
