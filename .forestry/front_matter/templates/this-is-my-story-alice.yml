@@ -30,5 +30,3 @@ fields:
       type: pages
       section: authors
   label: Author
-pages:
-- _testimonies/rich.md
