@@ -9,6 +9,15 @@ sections:
   label: Blog
   create: documents
   match: "**/*"
+  templates:
+  - blog
+- type: directory
+  path: _testimonies
+  label: Testimonies
+  create: documents
+  match: "**/*"
+  templates:
+  - this-is-my-story-alice
 - type: directory
   path: _messages
   label: Messages
