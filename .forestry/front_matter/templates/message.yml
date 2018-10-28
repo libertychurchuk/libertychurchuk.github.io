@@ -21,11 +21,23 @@ fields:
   label: Summary
   description: A short summary of the message. Displayed in iTunes, Google Podcasts
     and listing on the website.
+- type: select
+  config:
+    source:
+      type: pages
+      section: authors
+    required: true
+  label: Speaker
+  name: author
+  default: _authors/rob-hutton.md
+  description: Select an exisiting speaker, if the speaker is not available you can
+    add a new person from the sidebar.
 - type: text
   name: file
   label: File
   config:
     required: true
+  description: The folder name and filename for the podcast episode e.g. /2018/2018-10-28.mp3
 - type: text
   name: duration
   label: Duration
@@ -40,24 +52,6 @@ fields:
   name: length
   label: Length
   hidden: false
-- type: select
-  config:
-    source:
-      type: pages
-      section: authors
-  label: Speaker
-  name: author
-- type: list
-  config:
-    use_select: true
-    source:
-      type: pages
-      section: authors
-    max: '1'
-  label: Speaker
-  name: speaker
-  default:
-  - _authors/rob-hutton.md
 pages:
 - _messages/2017-04-23-holy-spirit-we-are-ministers-of-his-supply.md
 - _messages/2017-04-09-image-bearers.md
