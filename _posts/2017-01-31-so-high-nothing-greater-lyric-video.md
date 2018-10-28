@@ -3,7 +3,7 @@ title: 'Liberty Kids: So High (Nothing Greater), lyric video'
 date: 2017-01-31 00:00:00 Z
 published: false
 category: worship
-author: Adam Howard
+author: _authors/adam-howard.md
 description:
 ---
 

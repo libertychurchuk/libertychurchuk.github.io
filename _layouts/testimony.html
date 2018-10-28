@@ -20,7 +20,7 @@ layout: default
 
     <footer class="article__footer">
 
-      {% assign author = site.authors | where: 'name', page.author | first %}
+      {% assign author = site.authors | where: 'relative_path', page.author | first %}
       {% if author %}
       <div class="author">
         <figure class="author__image">

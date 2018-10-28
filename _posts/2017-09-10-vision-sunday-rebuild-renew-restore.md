@@ -2,7 +2,7 @@
 title: 'Vision Sunday 2017'
 date: 2017-09-10 00:00:00 Z
 image: "/uploads/2017/09/vision-sunday.jpg"
-author: Richard Saunders
+author: _authors/richard-saunders.md
 description: "Rebuild | Renew | Restore"
 ---
 
