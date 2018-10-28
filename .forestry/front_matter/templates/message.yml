@@ -44,14 +44,15 @@ fields:
   hidden: false
   description: The length of the message in minutes and seconds, separated by a colon
     e.g. 25:22
+- type: number
+  name: length
+  label: File size
+  hidden: false
+  description: This is used by iTunes
 - type: file
   name: image
   label: Image
   description: A custom image to display for the message
-- type: number
-  name: length
-  label: Length
-  hidden: false
 pages:
 - _messages/2017-04-23-holy-spirit-we-are-ministers-of-his-supply.md
 - _messages/2017-04-09-image-bearers.md
