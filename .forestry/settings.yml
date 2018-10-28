@@ -9,6 +9,8 @@ sections:
   label: Blog
   create: documents
   match: "**/*"
+  templates:
+  - blog
 - type: directory
   path: _testimonies
   label: Testimonies
