@@ -27,6 +27,9 @@ sections:
   match: "**/*"
   templates:
   - author
+- type: jekyll-pages
+  label: Pages
+  create: documents
 - type: heading
   label: Podcast
 - type: directory
@@ -39,9 +42,6 @@ sections:
   label: Message Series
   create: documents
   match: "**/*"
-- type: jekyll-pages
-  label: Pages
-  create: documents
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
