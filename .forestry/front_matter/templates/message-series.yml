@@ -13,5 +13,6 @@ fields:
   name: image
   label: Series artwork
 pages:
+- _series/rhythm-of-destiny.md
 - _series/maturity.md
 - _series/claim-to-fame.md
