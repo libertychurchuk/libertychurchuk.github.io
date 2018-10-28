@@ -1,0 +1,35 @@
+---
+label: Blog
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: datetime
+  name: date
+  label: Date
+- type: select
+  config:
+    source:
+      type: pages
+      section: authors
+    required: true
+  label: Author
+  name: author
+  default: _authors/rob-hutton.md
+- type: select
+  name: category
+  config:
+    source:
+      type: simple
+    options:
+    - Worship
+    - News
+    - Mission
+  label: Category
+- type: file
+  name: image
+  label: Post image
+  description: This image is displayed in listing pages and used for social sharing
+    should ideally be 480x270px
