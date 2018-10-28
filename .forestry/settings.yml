@@ -14,6 +14,8 @@ sections:
   label: Testimonies
   create: documents
   match: "**/*"
+  templates:
+  - this-is-my-story-alice
 - type: directory
   path: _messages
   label: Messages
