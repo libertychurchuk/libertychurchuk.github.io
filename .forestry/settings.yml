@@ -11,7 +11,7 @@ sections:
   match: "**/*"
 - type: directory
   path: _testimonies
-  label: Testimony
+  label: Testimonies
   create: documents
   match: "**/*"
 - type: directory
