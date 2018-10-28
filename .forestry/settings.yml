@@ -19,17 +19,24 @@ sections:
   templates:
   - this-is-my-story-alice
 - type: directory
-  path: _messages
-  label: Messages
-  create: documents
-  match: "**/*"
-- type: directory
   path: _authors
   label: People
   create: documents
   match: "**/*"
   templates:
   - author
+- type: heading
+  label: Podcast
+- type: directory
+  path: _messages
+  label: Messages
+  create: documents
+  match: "**/*"
+- type: directory
+  path: _series
+  label: Message Series
+  create: documents
+  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: documents
