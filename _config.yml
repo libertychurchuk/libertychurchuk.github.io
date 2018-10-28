@@ -18,6 +18,10 @@ collections:
     title: Messages
     output: true
     permalink: /messages/:path/
+  series:
+    title: Series
+    output: true
+    permalink: /messages/series/:path/
 defaults:
   - scope:
       path: ""
@@ -34,6 +38,11 @@ defaults:
       type: "testimonies"
     values:
       layout: "testimony"
+  - scope:
+      path: ""
+      type: "series"
+    values:
+      layout: "series"
 description: As a local church we are a community of everyday people in which Jesus
   is central, in all we do, as we seek to embrace our city and nation we live in.
 url: https://www.libertychurchuk.com
