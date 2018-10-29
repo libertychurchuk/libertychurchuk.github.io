@@ -9,7 +9,8 @@ collections:
     permalink: /testimony/:year/:month/:day/:title/
   authors:
     title: Authors
-    output: false
+    output: true
+    permalink: /authors/:path/
   posts:
     title: Posts
     output: true
@@ -21,7 +22,7 @@ collections:
   series:
     title: Series
     output: true
-    permalink: /messages/series/:path/
+    permalink: /series/:path/
 defaults:
   - scope:
       path: ""
@@ -43,6 +44,11 @@ defaults:
       type: "series"
     values:
       layout: "series"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "authors"
 description: As a local church we are a community of everyday people in which Jesus
   is central, in all we do, as we seek to embrace our city and nation we live in.
 url: https://www.libertychurchuk.com

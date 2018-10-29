@@ -1,5 +1,5 @@
 ---
-title: Leah van Staden
-name: Leah van Staden
+title: Leah Van Staden
+name: Leah Van Staden
 avatar: "/assets/images/authors/leah-van-staden.jpg"
 ---

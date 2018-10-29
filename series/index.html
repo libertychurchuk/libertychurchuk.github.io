@@ -1,0 +1,28 @@
+---
+title: Series Index for Messages | Liberty Church UK
+layout: default
+description: Messages series from Liberty church.
+pagination: 
+  enabled: true
+  collection: series
+---
+
+{% include /header-blocks/messages.html %}
+
+
+<!-- <div class="tc mb4">
+  Subscribe
+  <a href="#" title="Language" class="dib ph2 link">iTunes</a>
+  <a href="#" title="Terms" class="dib ph2 link">Google Podcasts</a>
+  <a href="#" title="Privacy" class="dib ph2 link">Spotify</a>
+</div> -->
+
+
+<section class="blog">
+  <div class="row block-grid">
+    {% for item in paginator.posts %}
+        {% include items/message.html %}
+    {% endfor %}
+  </div>
+  {% include item-pagination.html %}
+</section>Ì

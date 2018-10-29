@@ -1,0 +1,43 @@
+{% if item.image %}
+<article class="card card--message">
+  <a class="card-inner" href="{{ item.url }}">
+    <div class="card__image">
+      <div class="card__labels">
+        <div class="card__labels-inner">
+          <div class="card__labels-label">
+            <svg class="icon icon--light">
+              <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#audio"></use>
+            </svg> {{ item.category }}
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <article class="card card--message card--noimage">
+        <a class="card-inner" href="{{ item.url }}">
+          <div class="card__image">
+            <div class="card__labels">
+              <div class="card__labels-inner">
+                <div class="card__labels-label">
+                  <svg class="icon icon--light">
+                    <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#audio"></use>
+                  </svg> {{ item.category }}
+                </div>              </div>
+            </div>
+      {% endif %}
+
+
+      {% if item.image %}
+      <img src="{{ item.image }}" alt="{{ item.title }}" />
+      {% endif %}
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">{{ item.title }}</h3>
+      {% if item.description %}
+        <div class="card__text">{{ item.bio }}</div>
+      {% endif %}
+    </div>
+    <div class="card__footer">
+      {% include items/card-author.html %}
+    </div>
+  </a>
+</article>
