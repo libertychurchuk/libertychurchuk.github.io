@@ -1,5 +1,5 @@
 ---
-title: Claim 2 fame - Part 1
+title: Part 1 - Claim 2 fame
 author: _authors/heath-van-staden.md
 date: 2018-09-23 12:02:15 +0000
 description: ''
