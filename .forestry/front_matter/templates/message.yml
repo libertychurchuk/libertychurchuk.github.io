@@ -8,6 +8,9 @@ fields:
   label: Title
   config:
     required: true
+- type: text
+  name: scripture
+  label: Key Scripture
 - type: datetime
   name: date
   label: Date
