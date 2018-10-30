@@ -54,8 +54,8 @@ fields:
   label: Image
   description: A custom image to display for the message
 pages:
+- _messages/claim-2-fame-part-1.md
 - _messages/2016-11-13-keep-your-love-on-trust.md
 - _messages/2017-01-08-discipleship-authority-and-experts.md
 - _messages/2016-11-27-discipleship-new-priority.md
 - _messages/2017-04-23-holy-spirit-we-are-ministers-of-his-supply.md
-- _messages/2017-04-09-image-bearers.md
