@@ -8,6 +8,6 @@ duration: '24:15'
 length: 35404286
 image: ''
 scripture: ''
-category: ''
+category: message
 
 ---

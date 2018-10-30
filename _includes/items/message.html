@@ -1,4 +1,4 @@
-{% if item.image %}
+{% if item.image.size > 1  %}
 <article class="card card--message">
   <a class="card-inner" href="{{ item.url }}">
     <div class="card__image">
@@ -7,10 +7,11 @@
           <div class="card__labels-label">
             <svg class="icon icon--light">
               <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#audio"></use>
-            </svg> {{ item.category }}
+            </svg> Message
           </div>
         </div>
       </div>
+      <img src="{{ item.image }}" alt="{{ item.title }}" />
       {% else %}
       <article class="card card--message card--noimage">
         <a class="card-inner" href="{{ item.url }}">
@@ -20,14 +21,10 @@
                 <div class="card__labels-label">
                   <svg class="icon icon--light">
                     <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#audio"></use>
-                  </svg> {{ item.category }}
+                  </svg> Message
                 </div>              </div>
             </div>
-      {% endif %}
-
-
-      {% if item.image %}
-      <img src="{{ item.image }}" alt="{{ item.title }}" />
+      
       {% endif %}
     </div>
     <div class="card__body">
@@ -35,10 +32,10 @@
       {% if item.date %}
       <time class="card__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
       {% endif %}
-      {% if item.scripture %}
+      {% if item.scripture.size > 1 %}
         <div class="card__text"><strong>Scripture:</strong> {{ item.scripture }}</div>
       {% endif %}
-      {% if item.description %}
+      {% if item.description.size > 1 %}
         <div class="card__text">{{ item.description }}</div>
       {% endif %}
     </div>

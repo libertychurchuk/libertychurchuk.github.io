@@ -1,7 +1,7 @@
 <article class="card card--blog">
   <a class="card-inner" href="{{ item.url }}">
     <div class="card__image">
-      {% if item.image %}
+      {% if item.image.size > 1 %}
       <div class="card__labels">
         <div class="card__labels-inner">
           {% if item.category %}  
@@ -10,7 +10,7 @@
         </div>
       </div>
       {% endif %}
-      {% if item.image %}
+      {% if item.image.size > 1 %}
       <img src="{{ item.image }}" alt="{{ item.title }}" />
       {% endif %}
     </div>

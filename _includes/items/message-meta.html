@@ -1,6 +1,6 @@
 <ul class="article-meta">
 
-  {% if page.scripture %}
+  {% if page.scripture.size > 1 %}
   <li class="item__scripture">
     <svg class="icon">
       <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#bible"></use>
@@ -8,7 +8,7 @@
   </li>
   {% endif %}
 
-  {% if page.duration %}
+  {% if page.duration.size > 1 %}
   <li class="item__duration">
     <svg class="icon">
       <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#duration"></use>
@@ -16,7 +16,7 @@
   </li>
   {% endif %}
 
-  {% if page.file %}
+  {% if page.file.size > 1 %}
   <li class="item__download">
     <svg class="icon">
       <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#download"></use>
