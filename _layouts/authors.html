@@ -20,10 +20,10 @@ pagination:
     {% assign messages = site.messages | where: 'author', page.relative_path %}
     {% assign articles = site.posts | where: 'author', page.relative_path %}
 
-    {% assign resources = messages | concat: articles %}
+    {% assign resources = messages | concat: articles  %}
 
 
-    {% for post in resources %}
+    {% for post in resources reversed %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </div>
