@@ -9,5 +9,6 @@ duration: '31:30'
 length: 45845624
 image: ''
 category: message
+series: _series/claim-to-fame.md
 
 ---
