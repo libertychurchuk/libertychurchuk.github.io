@@ -1,5 +1,5 @@
 ---
-title: Claim 2 fame - Part 3 - Hunger and thirst
+title: Part 3 - Claim 2 fame - Hunger and thirst
 author: _authors/heath-van-staden.md
 date: 2018-10-07 12:13:05 +0000
 scripture: ''
