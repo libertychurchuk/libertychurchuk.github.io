@@ -1,5 +1,5 @@
 ---
-title: Claim 2 fame - Part 2
+title: Part 2 - Claim 2 fame
 author: _authors/heath-van-staden.md
 date: 2018-09-29 23:00:00 +0000
 scripture: Acts 8:4-8
