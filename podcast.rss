@@ -46,14 +46,10 @@
 		<itunes:keywords>{{ item.keywords }}</itunes:keywords>
     <link>{{ site.url }}{{ item.url }}</link>
 		<description>
-
-			{% if item.author %}
-				{{ site.data.authors[item.author].name }}
-			{% endif %}
-
-			{% if item.scripture %}
-				,{{ item.scripture | xml_escape }}
-			{% endif %}
+		{% assign series = site.series | where: 'relative_path', item.series | first %}	
+		{% assign author = site.authors | where: 'relative_path', item.author | first %}
+		
+		{% if item.series %}{{ series.title }}, {% endif %}{% if item.author.size > 1 %}{{ author.name }}{% endif %}{% if item.scripture.size > 1 %}, {{ item.scripture | xml_escape }}{% endif %}
 		</description>
 		</item>
 		{% endfor %}

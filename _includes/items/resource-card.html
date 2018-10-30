@@ -1,0 +1,29 @@
+<article class="card card--blog">
+  <a class="card-inner" href="{{ item.url }}">
+    <div class="card__image">
+      {% if item.image.size > 1 %}
+      <div class="card__labels">
+        <div class="card__labels-inner">
+          {% if item.category %}  
+          <div class="card__labels-label">{{ item.category }}</div>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+      {% if item.image.size > 1 %}
+      <img src="{{ item.image }}" alt="{{ item.title }}" />
+      {% endif %}
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">{{ item.title }}</h3>
+      {% if item.date %}
+      <time class="card__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
+      {% endif %}
+
+      {% if item.description %}
+        <div class="card__text">{{ item.description }}</div>
+      {% endif %}
+    </div>
+
+  </a>
+</article>

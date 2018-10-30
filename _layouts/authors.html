@@ -22,10 +22,11 @@ pagination:
 
     {% assign resources = messages | concat: articles  %}
 
-
-    {% for post in resources reversed %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+    <div class="row">
+      {% for item in resources reversed %}
+        {% include items/resource-card.html %}
+      {% endfor %}
+    </div>
   </div>
 
 
