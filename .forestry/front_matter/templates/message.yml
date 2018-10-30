@@ -56,6 +56,16 @@ fields:
   name: image
   label: Image
   description: A custom image to display for the message
+- type: select
+  config:
+    source:
+      type: simple
+    options:
+    - Message
+  hidden: true
+  label: Category
+  name: category
+  default: Message
 pages:
 - _messages/claim-2-fame-part-2.md
 - _messages/claim-2-fame-part-1.md
