@@ -35,6 +35,14 @@ fields:
   default: _authors/rob-hutton.md
   description: Select an exisiting speaker, if the speaker is not available you can
     add a new person from the sidebar.
+- type: select
+  config:
+    source:
+      type: pages
+      section: message-series
+  label: Series
+  name: series
+  description: Is this message a part of a series?
 - type: text
   name: file
   label: File
