@@ -7,6 +7,5 @@ file: "/2018/2018-09-23.mp3"
 duration: '24:15'
 length: 35404286
 image: ''
-published: false
 
 ---
