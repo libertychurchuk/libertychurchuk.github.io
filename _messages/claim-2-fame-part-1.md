@@ -9,5 +9,6 @@ length: 35404286
 image: ''
 scripture: ''
 category: message
+series: _series/claim-to-fame.md
 
 ---
