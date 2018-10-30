@@ -8,6 +8,7 @@ file: "/2018/2018-10-30.mp3"
 duration: '31:30'
 length: 45845624
 image: ''
+category: ''
 published: false
 
 ---
