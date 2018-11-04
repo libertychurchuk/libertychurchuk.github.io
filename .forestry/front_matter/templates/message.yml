@@ -75,6 +75,7 @@ fields:
   name: category
   default: Message
 pages:
+- _messages/part-5-claim-2-fame-courage.md
 - _messages/responsibilities-of-being-a-disciple.md
 - _messages/7-signs-of-immaturity.md
 - _messages/magic-to-tragic.md
