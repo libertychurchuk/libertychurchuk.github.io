@@ -10,6 +10,5 @@ file: "/2018/2018-10-21.mp3"
 duration: '39:55'
 length: 57572676
 image: ''
-published: false
 
 ---
