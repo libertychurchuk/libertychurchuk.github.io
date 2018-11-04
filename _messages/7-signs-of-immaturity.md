@@ -10,6 +10,5 @@ file: "/2018/2018-01-14.mp3"
 duration: '39:28'
 length: 57327934
 image: ''
-published: false
 
 ---
