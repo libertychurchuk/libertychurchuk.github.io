@@ -1,8 +1,15 @@
 ---
 title: Responsibilities of being a disciple
-author: _authors/rob-hutton.md
+author: _authors/phil-boalch.md
 category: Message
-date: 2018-11-04 00:00:00 +0000
+date: 2018-01-21 00:00:00 +0000
+scripture: ''
+description: ''
+series: _series/maturity.md
+file: "/2018/2018-01-21.mp3"
+duration: '34:43'
+length: 50074615
+image: ''
 published: false
 
 ---
