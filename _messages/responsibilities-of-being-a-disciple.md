@@ -10,6 +10,5 @@ file: "/2018/2018-01-21.mp3"
 duration: '34:43'
 length: 50074615
 image: ''
-published: false
 
 ---
