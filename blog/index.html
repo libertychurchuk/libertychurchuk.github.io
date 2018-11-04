@@ -19,7 +19,8 @@ pagination:
 
   <div class="row block-grid">
     {% for item in paginator.posts %}
-      {% if item.category == "message" %}
+    
+      {% if item.collection == "messages" %}
         {% include items/message.html %}
       {% else %}
         {% include items/article.html %}
