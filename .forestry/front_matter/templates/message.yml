@@ -75,6 +75,7 @@ fields:
   name: category
   default: Message
 pages:
+- _messages/magic-to-tragic.md
 - _messages/claim-2-fame-part-4-richness-fullness-overflowing.md
 - _messages/claim-2-fame-part-3.md
 - _messages/claim-2-fame-part-2.md
