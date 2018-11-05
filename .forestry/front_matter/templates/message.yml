@@ -65,6 +65,7 @@ fields:
   label: Image
   description: A custom image to display for the message
 pages:
+- _messages/perplexed.md
 - _messages/the-start-the-mature-the-embrace.md
 - _messages/perseverance-in-maturity.md
 - _messages/the-secret-place.md
