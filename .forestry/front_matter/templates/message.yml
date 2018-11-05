@@ -65,6 +65,7 @@ fields:
   label: Image
   description: A custom image to display for the message
 pages:
+- _messages/perseverance-in-maturity.md
 - _messages/the-mature-church.md
 - _messages/the-myths-about-disciplship.md
 - _messages/faith-in-maturity.md
