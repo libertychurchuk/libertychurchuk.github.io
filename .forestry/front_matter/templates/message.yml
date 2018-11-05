@@ -65,6 +65,7 @@ fields:
   label: Image
   description: A custom image to display for the message
 pages:
+- _messages/the-myths-about-disciplship.md
 - _messages/faith-in-maturity.md
 - _messages/responsibilities-of-being-a-disciple.md
 - _messages/7-signs-of-immaturity.md
