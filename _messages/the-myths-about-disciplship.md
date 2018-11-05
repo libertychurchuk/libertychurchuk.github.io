@@ -1,6 +1,6 @@
 ---
 title: The myths about disciplship
-author: _authors/rob-hutton.md
+author: _authors/dr-stavros-ignatiou.md
 date: 2018-02-11 09:17:45 +0000
 scripture: ''
 description: Stavros bring clarity, cleaning away the cobwebs of the myths we have
