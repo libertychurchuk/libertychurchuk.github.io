@@ -1,7 +1,7 @@
 ---
 title: Calling
 date: 2016-08-28 00:00:00 Z
-category: message
+
 file: "/2016/2016-08-28.mp3"
 author: _authors/graham-sheppard.md
 duration: '41:08'

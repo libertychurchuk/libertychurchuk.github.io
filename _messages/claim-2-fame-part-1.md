@@ -8,7 +8,7 @@ duration: '24:15'
 length: 35404286
 image: ''
 scripture: ''
-category: message
+
 series: _series/claim-to-fame.md
 
 ---

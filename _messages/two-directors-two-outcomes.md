@@ -6,5 +6,5 @@ author: _authors/heath-van-staden.md
 duration: '42:52'
 length: 102882368
 description: 
-category: message
+
 ---

@@ -8,7 +8,7 @@ file: "/2018/2018-09-30.mp3"
 duration: '31:30'
 length: 45845624
 image: ''
-category: message
+
 series: _series/claim-to-fame.md
 
 ---

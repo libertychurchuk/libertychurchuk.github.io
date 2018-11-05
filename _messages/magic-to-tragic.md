@@ -1,7 +1,7 @@
 ---
 title: Magic to tragic
 author: _authors/heath-van-staden.md
-category: Message
+
 date: 2018-01-07 10:13:00 +0000
 scripture: ''
 description: ''
