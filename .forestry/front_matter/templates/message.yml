@@ -65,6 +65,7 @@ fields:
   label: Image
   description: A custom image to display for the message
 pages:
+- _messages/dependence-independence-interdependence.md
 - _messages/past-or-promise.md
 - _messages/perplexed.md
 - _messages/the-start-the-mature-the-embrace.md
