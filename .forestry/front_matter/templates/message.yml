@@ -32,7 +32,7 @@ fields:
     required: true
   label: Speaker
   name: author
-  default: _authors/rob-hutton.md
+  default: ''
   description: Select an exisiting speaker, if the speaker is not available you can
     add a new person from the sidebar.
 - type: select
