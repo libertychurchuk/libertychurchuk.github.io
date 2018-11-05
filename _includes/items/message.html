@@ -32,6 +32,7 @@
       {% if item.date %}
       <time class="card__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
       {% endif %}
+
       {% if item.scripture.size > 1 %}
         <div class="card__text"><strong>Scripture:</strong> {{ item.scripture }}</div>
       {% endif %}

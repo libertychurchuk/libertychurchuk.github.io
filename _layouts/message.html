@@ -16,9 +16,8 @@ layout: default
         <div class="article__subheading">{{ page.subtitle }}</div>
       </div>
 
-      {% if page.category == "message" %}
-        {% include items/message-meta.html %}
-      {% endif %}
+      {% include items/message-meta.html %}
+    
     </header>
 
     <div class="article__body">
@@ -27,19 +26,10 @@ layout: default
 
     <footer class="article__footer">
 
-      {% assign author = site.authors | where: 'relative_path', page.author | first %}
-      {% if author %}
-      <div class="author">
-        <figure class="author__image">
-          <img src="{{ author.avatar }}" title="{{ author.name }}" />
-          <figcaption>{{ author.name }}</figcaption>
-        </figure>
-        <div class="author__bio">
-          <p>{{ author.content }}</p>
-        </div>
-      </div>
-      {% endif %}
+      {% include items/footer-author.html %}
+
     </footer>
+    
   </article>
 
   {% include post-navigation.html %}

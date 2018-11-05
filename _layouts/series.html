@@ -1,41 +1,31 @@
 ---
 layout: default
+pagination:
+  enabled: true
+  collection: series
 ---
 
-  <article class="article">
+<article class="article">
 
-    <header class="article__header">
-
-      <div class="article__titles">
-        <time class="article__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B, %Y" }}</time>
-        <h1 class="article__heading">{{ page.title }}</h1>
-        <div class="article__subheading">{{ page.subtitle }}</div>
-      </div>
-
-      {% if page.category == "message" %}
-        {% include items/message-meta.html %}
-      {% endif %}
-    </header>
-
-    <div class="article__body">
-      {{ content }}
+  <header class="article__header">
+    <div class="article__titles">
+      <h1 class="article__heading">{{ page.title }}</h1>
+      <div class="article__subheading">{{ page.subtitle }}</div>
     </div>
+  </header>
 
-    <footer class="article__footer">
+  <div class="article__body">
 
-      {% assign author = site.authors | where: 'relative_path', page.author | first %}
-      {% if author %}
-      <div class="author">
-        <figure class="author__image">
-          <img src="{{ author.avatar }}" title="{{ author.name }}" />
-          <figcaption>{{ author.name }}</figcaption>
-        </figure>
-        <div class="author__bio">
-          <p>{{ author.content }}</p>
-        </div>
-      </div>
-      {% endif %}
-    </footer>
-  </article>
+    {% assign series = site.messages | where: 'series', page.relative_path %}
 
-  {% include post-navigation.html %}
+    <div class="row">
+      {% for item in series reversed %}
+        {% include items/resource-card.html %}
+      {% endfor %}
+    </div>
+    
+  </div>
+
+</article>
+
+{% include post-navigation.html %}

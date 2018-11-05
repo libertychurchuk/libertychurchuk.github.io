@@ -1,0 +1,28 @@
+{% if item.image.size > 1  %}
+<article class="card card--message">
+  <a class="card-inner" href="{{ item.url }}">
+    <div class="card__image">
+      <img src="{{ item.image }}" alt="{{ item.title }}" />
+      {% else %}
+      <article class="card card--message card--noimage">
+        <a class="card-inner" href="{{ item.url }}">
+          <div class="card__image">
+      
+      {% endif %}
+    </div>
+    
+    <div class="card__body">
+      <h3 class="card__title">{{ item.title }}</h3>
+
+      {% assign series = site.series | where: 'relative_path', item.series %}
+      {% if item.series.size > 1 %}
+        <div class="card__text"><strong>Series:</strong> {{ series.title }}</div>
+      {% endif %}
+      
+      {% if item.description.size > 1 %}
+        <div class="card__text">{{ item.description }}</div>
+      {% endif %}
+    </div>
+
+  </a>
+</article>
