@@ -1,7 +1,15 @@
 ---
 title: The myths about disciplship
 author: _authors/rob-hutton.md
-date: 2018-11-05 00:00:00 +0000
+date: 2018-02-11 09:17:45 +0000
+scripture: ''
+description: Stavros bring clarity, cleaning away the cobwebs of the myths we have
+  created around discipleship.
+series: _series/maturity.md
+file: "/2018/2018-02-11.mp3"
+duration: '47:01'
+length: 67785129
+image: ''
 published: false
 
 ---
