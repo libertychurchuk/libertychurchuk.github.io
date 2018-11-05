@@ -10,6 +10,5 @@ file: "/2018/2018-02-11.mp3"
 duration: '47:01'
 length: 67785129
 image: ''
-published: false
 
 ---
