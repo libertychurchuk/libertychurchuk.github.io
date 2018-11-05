@@ -1,6 +1,6 @@
 <ul class="article-meta">
 
-  {% assign series = site.series | where: 'relative_path', item.series | first %}
+  {% assign series = site.series | where: 'relative_path', page.series | first %}
 
   {% if page.series.size > 1 %}
   <li class="item__series">
