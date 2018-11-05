@@ -9,6 +9,5 @@ file: "/2018/2018-04-01.mp3"
 duration: '26:26'
 length: 38136642
 image: ''
-published: false
 
 ---
