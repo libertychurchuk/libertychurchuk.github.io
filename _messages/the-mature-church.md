@@ -1,7 +1,14 @@
 ---
 title: The mature church
-author: _authors/rob-hutton.md
-date: 2018-11-05 00:00:00 +0000
+author: _authors/heath-van-staden.md
+date: 2018-02-18 17:39:35 +0000
+scripture: ''
+description: ''
+series: _series/maturity.md
+file: "/2018/2018-02-18.mp3"
+duration: '47:32'
+length: 68532139
+image: ''
 published: false
 
 ---
