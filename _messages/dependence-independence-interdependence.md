@@ -9,6 +9,5 @@ file: "/2018/2018-04-15.mp3"
 duration: '35:38'
 length: 51397929
 image: ''
-published: false
 
 ---
