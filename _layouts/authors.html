@@ -20,7 +20,7 @@ pagination:
 
     {% assign resources = messages | concat: articles  %}
 
-    <div class="row">
+    <div class="row card-list-view">
       {% for item in resources reversed %}
         {% include items/resource-card.html %}
       {% endfor %}

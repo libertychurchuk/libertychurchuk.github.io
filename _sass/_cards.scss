@@ -109,3 +109,23 @@ float: left;
 margin-right: $gutterwidth / 2;
 margin-top: -3px;
 }
+
+
+.card-list-view {
+
+  .card__image {
+    width: 50%;
+  }
+
+  .card-inner {
+    padding-bottom: 0;
+  }
+  .card__labels {
+    padding: 1em;
+  }
+
+  .card__body {
+    position: absolute;
+    left: 50%;
+  }
+}
