@@ -1,5 +1,5 @@
 ---
-title: Claim 2 fame - Part 6
+title: Part 6 - Claim 2 fame
 date: 2018-10-28 11:30:11 +0000
 scripture: ''
 description: ''
