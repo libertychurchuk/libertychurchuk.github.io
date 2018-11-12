@@ -15,10 +15,10 @@ pagination:
 
 
 <section class="authors">
-  <ul>
-      {% assign authors = site.authors | sort: 'title' %}
+  <div class="row block-grid">
+    {% assign authors = site.authors | sort: 'title' %}
       {% for author in authors %}
-        <li><a href="{{author.url}}">{{author.name}}</a></li>
+        {% include items/card-author.html %}
       {% endfor %}
-  </ul>
-</section>
+    </div>
+  </section>
