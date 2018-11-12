@@ -6,8 +6,8 @@ description: ''
 author: _authors/phil-boalch.md
 series: ''
 file: "/2018/2018-11-11.mp3"
-duration: ''
-length: ''
+duration: '42:58'
+length: 61965494
 image: ''
 published: false
 
