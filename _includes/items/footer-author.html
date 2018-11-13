@@ -3,7 +3,7 @@
 {% if author %}
 <div class="author">
   <figure class="author__image">
-    <img src="{{ author.avatar }}" title="{{ author.name }}" />
+    <img src="{{ site.cloudinary_url }}/w_48/f_auto/{{ author.avatar }}" title="{{ author.name }}" />
     <figcaption>{{ author.name }}</figcaption>
   </figure>
   <div class="author__bio">
