@@ -9,6 +9,5 @@ file: "/2018/2018-08-19.mp3"
 duration: '51:47'
 length: 75054368
 image: ''
-published: false
 
 ---
