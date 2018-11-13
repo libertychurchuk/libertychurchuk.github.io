@@ -50,8 +50,8 @@ sections:
   create: none
   match: "**/*.{json,yaml,yml}"
 upload_dir: ''
-public_path: ''
+public_path: https://res.cloudinary.com/libertychurchuk/image/upload
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path: true
 file_template: ":filename:"
 custom_preview: true
