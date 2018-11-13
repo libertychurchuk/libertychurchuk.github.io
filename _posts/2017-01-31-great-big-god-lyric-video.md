@@ -1,11 +1,11 @@
 ---
 title: 'Liberty Kids: Great Big God, lyric video'
-date: 2017-01-31 00:00:00 Z
-category: worship
+date: 2017-01-31 00:00:00 +0000
+category: Worship
 author: _authors/adam-howard.md
-image: "/uploads/2017/01/great-big-god.jpg"
----
+image: "/v1542093512/great-big-god.jpg"
 
+---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pfba0Qqysyw" frameborder="0" allowfullscreen></iframe>
 
 He is a great big God  
