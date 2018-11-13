@@ -1,14 +1,14 @@
 ---
 title: 'This is my story: Claire'
-date: 2017-08-23 00:00:00 Z
+date: 2017-08-23 00:00:00 +0000
 category: testimony
 image: "/v1542093512/tims-claire.jpg"
 author: _authors/richard-saunders.md
-description: "I love how God knows us, knows the details of our lives and where we are at."
+description: I love how God knows us, knows the details of our lives and where we
+  are at.
+
 ---
-
-
-![A photo of Claire with a blurred background](/v1542093512/tims-claire.jpg)
+![](https://res.cloudinary.com/libertychurchuk/image/upload/v1542093511/tims-claire.jpg)
 
 This is my story…
 
