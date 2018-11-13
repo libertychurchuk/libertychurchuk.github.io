@@ -8,6 +8,6 @@ series: ''
 file: "/2018/2018-11-04.mp3"
 duration: '39:21'
 length: 56736095
-image: ''
+image: "/v1542115135/shane-rounce-615895-unsplash.jpg"
 
 ---
