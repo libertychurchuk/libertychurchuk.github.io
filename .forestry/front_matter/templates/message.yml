@@ -65,6 +65,7 @@ fields:
   label: Image
   description: A custom image to display for the message
 pages:
+- _messages/part-1-from-now-on.md
 - _messages/activating-amazing-grace.md
 - _messages/claim-2-fame-part-6.md
 - _messages/understanding-the-place-of-grace.md
