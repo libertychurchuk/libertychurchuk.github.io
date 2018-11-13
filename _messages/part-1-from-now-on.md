@@ -8,6 +8,6 @@ series: ''
 file: "/2018/2018-08-26.mp3"
 duration: '47:10'
 length: 68404002
-image: "/v1542117921/frank-mckenna-282509-unsplash.jpg"
+image: "/v1542117919/brooke-cagle-170054-unsplash.jpg"
 
 ---
