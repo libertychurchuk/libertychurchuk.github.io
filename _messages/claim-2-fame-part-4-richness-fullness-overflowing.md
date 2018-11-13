@@ -7,8 +7,7 @@ description: ''
 file: "/2018/2018-10-14.mp3"
 duration: '42:07'
 length: 61144101
-image: ''
-
+image: "/v1542115683/andy-mai-68715-unsplash.jpg"
 series: _series/claim-to-fame.md
 
 ---
