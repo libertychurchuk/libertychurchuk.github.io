@@ -65,6 +65,7 @@ fields:
   label: Image
   description: A custom image to display for the message
 pages:
+- _messages/maturity-in-chains.md
 - _messages/part-2-from-now-on.md
 - _messages/part-1-from-now-on.md
 - _messages/activating-amazing-grace.md
