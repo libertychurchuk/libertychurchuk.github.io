@@ -8,6 +8,6 @@ series: ''
 file: "/2018/2018-03-11.mp3"
 duration: '35:38'
 length: 85605787
-image: "/v1542119490/fonsi-fernandez-726000-unsplash.jpg"
+image: "/v1542119557/filip-mroz-272164-unsplash.jpg"
 
 ---
