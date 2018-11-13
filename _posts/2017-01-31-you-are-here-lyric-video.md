@@ -1,12 +1,12 @@
 ---
 title: 'Liberty Worship: You Are Here, lyric video'
-date: 2017-01-31 00:00:00 Z
-category: worship
+date: 2017-01-31 00:00:00 +0000
+category: Worship
 author: _authors/adam-howard.md
-image: "/assets/images/blog/worship.jpg"
-description:
----
+image: "/v1542093769/worship-blog.jpg"
+description: 
 
+---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZqYdLkQo3o" frameborder="0" allowfullscreen></iframe>
 
 _Original Key – E // 160BPM_
