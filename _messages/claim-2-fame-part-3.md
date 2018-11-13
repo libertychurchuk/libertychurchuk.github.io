@@ -7,8 +7,7 @@ description: ''
 file: "/2018/2018-10-07.mp3"
 duration: '39:15'
 length: 57017625
-image: ''
-
+image: "/v1542115584/iswanto-arif-726203-unsplash.jpg"
 series: _series/claim-to-fame.md
 
 ---
