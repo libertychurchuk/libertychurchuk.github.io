@@ -1,0 +1,49 @@
+---
+label: social.json
+hide_body: 
+is_partial: 
+fields:
+- name: twitter
+  label: Twitter
+  type: field_group
+  fields:
+  - name: username
+    label: Username
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: vimeo
+  label: Vimeo
+  type: field_group
+  fields:
+  - name: username
+    label: Username
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: facebook
+  label: Facebook
+  type: field_group
+  fields:
+  - name: username
+    label: Username
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: instagram
+  label: Instagram
+  type: field_group
+  fields:
+  - name: username
+    label: Username
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
