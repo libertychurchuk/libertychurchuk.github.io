@@ -9,6 +9,6 @@ series: ''
 file: "/2018/2018-09-02.mp3"
 duration: '45:24'
 length: 65857539
-image: ''
+image: "/v1542117921/frank-mckenna-282509-unsplash.jpg"
 
 ---
