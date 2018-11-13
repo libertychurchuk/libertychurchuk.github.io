@@ -9,6 +9,5 @@ file: "/2018/2018-08-12.mp3"
 duration: '30:15'
 length: 44050734
 image: ''
-published: false
 
 ---
