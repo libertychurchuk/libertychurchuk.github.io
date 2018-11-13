@@ -1,0 +1,18 @@
+---
+label: Social Networks
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: instagram
+  label: Instagram username
+- type: text
+  name: facebook
+  label: Facebook username
+  default: ''
+- type: text
+  name: vimeo
+  label: Vimeo username
+- type: text
+  name: twitter
+  label: Twitter username
