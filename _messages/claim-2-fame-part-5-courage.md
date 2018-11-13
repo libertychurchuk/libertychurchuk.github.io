@@ -8,5 +8,6 @@ series: _series/claim-to-fame.md
 file: "/2018/2018-10-21.mp3"
 duration: '39:55'
 length: 57572676
-image: ''
+image: "/v1542115303/oliver-cole-232552-unsplash.jpg"
+
 ---
