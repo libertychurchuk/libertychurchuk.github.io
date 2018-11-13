@@ -1,5 +1,5 @@
 ---
 title: Phil Boalch
 name: Phil Boalch
-avatar: "/assets/images/authors/phil-boalch.jpg"
+avatar: "/v1542093512/phil-boalch.jpg"
 ---

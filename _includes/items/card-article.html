@@ -11,7 +11,7 @@
       </div>
       {% endif %}
       {% if item.image.size > 1 %}
-      <img src="{{ item.image }}" alt="{{ item.title }}" />
+      <img src="{{ site.cloudinary_url }}/w_480/f_auto{{ item.image }}" alt="{{ item.title }}" />
       {% endif %}
     </div>
     <div class="card__body">

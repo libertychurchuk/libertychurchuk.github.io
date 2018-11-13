@@ -68,6 +68,7 @@ social:
   - https://www.facebook.com/libertychurchfamily
   - https://instagram.com/libertychurchuk
   - https://vimeo.com/libertychurchuk
+cloudinary_url: https://res.cloudinary.com/libertychurchuk/image/upload
   
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem

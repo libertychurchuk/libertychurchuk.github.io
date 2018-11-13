@@ -2,12 +2,12 @@
 title: 'This is my story: Rachel'
 date: 2017-07-30 00:00:00 Z
 category: testimony
-image: "/uploads/2017/07/tims-rachel.jpg"
+image: /v1542093512/tims-rachel.jpg"
 author: _authors/richard-saunders.md
 description: On Friday last week, my friend Abi suffered a stroke down her right side, which resulted in her being rushed into hospital.
 ---
 
-![A photo of Rachel with text of Revelation 12:11 overlaid](/uploads/2017/07/tims-rachel.jpg)
+![A photo of Rachel with text of Revelation 12:11 overlaid](/v1542093512/tims-rachel.jpg)
 
 This is my story…
 

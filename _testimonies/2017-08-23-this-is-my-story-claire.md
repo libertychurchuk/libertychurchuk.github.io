@@ -2,13 +2,13 @@
 title: 'This is my story: Claire'
 date: 2017-08-23 00:00:00 Z
 category: testimony
-image: "/uploads/2017/08/tims-claire.jpg"
+image: "/v1542093512/tims-claire.jpg"
 author: _authors/richard-saunders.md
 description: "I love how God knows us, knows the details of our lives and where we are at."
 ---
 
 
-![A photo of Claire with a blurred background](/uploads/2017/08/tims-claire.jpg)
+![A photo of Claire with a blurred background](/v1542093512/tims-claire.jpg)
 
 This is my story…
 

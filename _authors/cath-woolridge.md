@@ -1,5 +1,5 @@
 ---
 title: Cath Woolridge
 name: Cath Woolridge
-avatar: "/assets/images/authors/cath-woolridge.jpg"
+avatar: "/v1542093512/cath-woolridge.jpg"
 ---

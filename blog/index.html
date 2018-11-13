@@ -21,9 +21,9 @@ pagination:
     {% for item in paginator.posts %}
     
       {% if item.collection == "messages" %}
-        {% include items/message.html %}
+        {% include items/card-message.html %}
       {% else %}
-        {% include items/article.html %}
+        {% include items/card-article.html %}
       {% endif %}
     {% endfor %}
   </div>

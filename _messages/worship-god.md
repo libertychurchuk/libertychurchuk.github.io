@@ -6,5 +6,5 @@ file: "/2017/2017-02-26.mp3"
 author: _authors/heath-van-staden.md
 duration: '43:21'
 length: '62439825'
-image: "/uploads/2017/02/worship.jpg"
+image: "/v1542093512/worship.jpg"
 ---

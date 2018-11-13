@@ -1,5 +1,5 @@
 ---
 title: David West
 name: David West
-avatar: "/assets/images/authors/david-west.jpg"
+avatar: "/v1542093512/david-west.jpg"
 ---

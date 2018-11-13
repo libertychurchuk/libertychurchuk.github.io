@@ -1,9 +1,8 @@
 {% assign author = site.authors | where: 'relative_path', item.author | first %}
 
-<div class="card card__author">
+<div class="card__author">
   <div class="card__author-image">
-    <img src="{{ author.avatar }}" alt="{{ author.name }}" />
+    <img src="{{ site.cloudinary_url }}/w_32/f_auto/{{ author.avatar }}" alt="{{ author.name }}" />
   </div>
-  <a href="{{ author.url }}">{{author.name }}</a> 
-  {% if author.bio.size > 1 %}<p>{{author.bio }}</p>{% endif %} 
+  {{author.name }}
 </div>

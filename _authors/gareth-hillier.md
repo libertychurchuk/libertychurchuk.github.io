@@ -1,5 +1,5 @@
 ---
 title: Gareth Hillier
 name: Gareth Hillier
-avatar: "/assets/images/authors/gaz-hillier.jpg"
+avatar: "/v1542093512/gaz-hillier.jpg"
 ---

@@ -2,13 +2,13 @@
 title: 'This is my story: Alice'
 date: 2017-08-16 00:00:00 Z
 category: testimony
-image: "/uploads/2017/08/tims-alice.jpg"
+image: "/v1542093512/tims-alice.jpg"
 author: _authors/richard-saunders.md
 description: "A short while ago I felt God was leading me to take a leap of faith and really trust Him!"
 ---
 
 
-![A photo of Alice with a blurred background](/uploads/2017/08/tims-alice.jpg)
+![A photo of Alice with a blurred background](/v1542093512/tims-alice.jpg)
 
 This is my story…
 

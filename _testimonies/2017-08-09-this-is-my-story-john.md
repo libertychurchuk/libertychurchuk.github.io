@@ -2,13 +2,13 @@
 title: 'This is my story: John'
 date: 2017-08-09 00:00:00 Z
 category: testimony
-image: "/uploads/2017/08/tims-john.jpg"
+image: "/v1542093512/tims-john.jpg"
 author: _authors/richard-saunders.md
 description: My niece was diagnosed with an aggressive cancer on 17th May. The cancer was in her lymph nodes and so spread incredibly fast. She started chemo on 29th May.
 ---
 
 
-![A photo of John with a blurred background](/uploads/2017/08/tims-john.jpg)
+![A photo of John with a blurred background](/v1542093512/tims-john.jpg)
 
 This is my story…
 

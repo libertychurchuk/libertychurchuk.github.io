@@ -1,5 +1,5 @@
 ---
 title: Leah Van Staden
 name: Leah Van Staden
-avatar: "/assets/images/authors/leah-van-staden.jpg"
+avatar: "/v1542093512/leah-van-staden.jpg"
 ---

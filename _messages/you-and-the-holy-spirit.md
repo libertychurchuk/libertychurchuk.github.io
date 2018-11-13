@@ -6,5 +6,5 @@ file: "/2017/2017-03-19.mp3"
 author: _authors/phil-boalch.md
 duration: '48:15'
 length: '69489575'
-image: "/uploads/2017/03/holy-spirit.jpg"
+image: "/v1542093512/holy-spirit.jpg"
 ---

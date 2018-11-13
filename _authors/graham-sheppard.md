@@ -1,5 +1,5 @@
 ---
 title: Graham Sheppard
 name: Graham Sheppard
-avatar: "/assets/images/authors/graham-sheppard.jpg"
+avatar: "/v1542093512/graham-sheppard.jpg"
 ---
