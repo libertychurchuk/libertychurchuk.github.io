@@ -8,6 +8,6 @@ series: ''
 file: "/2018/2018-11-11.mp3"
 duration: '42:58'
 length: 61965494
-image: ''
+image: "/v1542115067/ian-espinosa-243798-unsplash.jpg"
 
 ---
