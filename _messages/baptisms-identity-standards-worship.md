@@ -8,6 +8,6 @@ series: ''
 file: "/2018/2018-06-24.mp3"
 duration: '23:06'
 length: 33749541
-image: ''
+image: "/v1542118574/ryan-loughlin-765211-unsplash.jpg"
 
 ---
