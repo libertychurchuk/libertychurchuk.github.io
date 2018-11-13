@@ -8,6 +8,6 @@ series: _series/claim-to-fame.md
 file: "/2018/2018-10-28.mp3"
 duration: '34:31'
 length: 49803074
-image: ''
+image: "/v1542120141/alex-perez-572087-unsplash.jpg"
 
 ---
