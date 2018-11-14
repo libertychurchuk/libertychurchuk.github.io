@@ -25,7 +25,7 @@ pagination:
 <section class="blog">
   <div class="row block-grid">
     {% for item in paginator.posts %}
-        {% include items/series.html %}
+        {% include items/card-series.html %}
     {% endfor %}
   </div>
   {% include item-pagination.html %}

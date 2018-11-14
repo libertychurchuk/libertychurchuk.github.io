@@ -1,4 +1,4 @@
-<article class="card card--blog">
+<article class="card">
   <a class="card-inner" href="{{ item.url }}">
     <div class="card__image">
       {% if item.image.size > 1 %}
@@ -6,12 +6,14 @@
         <div class="card__labels-inner">
           {% if item.category %}  
           <div class="card__labels-label">{{ item.category }}</div>
+          {% elsif site.collection == message %}
+          <div class="card__labels-label">Message</div>
           {% endif %}
         </div>
       </div>
       {% endif %}
       {% if item.image.size > 1 %}
-      <img src="{{ item.image }}" alt="{{ item.title }}" />
+      <img src="{{ site.cloudinary_url }}/w_480,h_270,c_fill/f_auto{{ item.image }}" alt="{{ item.title }}" />
       {% endif %}
     </div>
     <div class="card__body">
@@ -19,8 +21,10 @@
       {% if item.date %}
       <time class="card__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
       {% endif %}
-
-      {% if item.description %}
+      {% if item.scripture.size > 1 %}
+        <div class="card__text">Scripture: {{ item.scripture }}</div>
+      {% endif %}
+      {% if item.description.size > 1 %}
         <div class="card__text">{{ item.description }}</div>
       {% endif %}
     </div>
