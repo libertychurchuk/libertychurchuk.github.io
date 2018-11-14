@@ -9,6 +9,5 @@ file: "/2018/2018-05-13.mp3"
 duration: '29:20'
 length: 42332480
 image: ''
-published: false
 
 ---
