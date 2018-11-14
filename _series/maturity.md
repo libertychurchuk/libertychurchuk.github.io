@@ -1,6 +1,6 @@
 ---
 title: Maturity
-description: 
-image: 
+description: ''
+image: "/v1542187151/roadtrip.jpg"
 
 ---
