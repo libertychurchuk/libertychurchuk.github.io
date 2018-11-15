@@ -10,3 +10,6 @@ fields:
 - type: text
   name: subtitle
   label: Subtitle
+- type: file
+  name: background_image
+  label: Background image
