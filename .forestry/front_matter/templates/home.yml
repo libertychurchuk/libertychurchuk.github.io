@@ -23,3 +23,5 @@ fields:
   name: body
   template_types:
   - block
+pages:
+- index.html
