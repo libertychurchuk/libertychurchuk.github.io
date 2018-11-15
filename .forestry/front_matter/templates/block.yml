@@ -17,3 +17,11 @@ fields:
   name: call_to_action
   label: Call to action
   template: call-to-action
+- type: field_group_list
+  label: CTA
+  name: cta
+  fields:
+  - type: include
+    name: button
+    label: Button
+    template: call-to-action
