@@ -13,13 +13,9 @@ fields:
 - type: file
   name: background_image
   label: Background image
-- type: include
-  name: call_to_action
-  label: Call to action
-  template: call-to-action
 - type: field_group_list
-  label: CTA
-  name: cta
+  label: Call to action
+  name: call_to_action
   fields:
   - type: include
     name: button
