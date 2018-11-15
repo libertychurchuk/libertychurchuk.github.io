@@ -1,7 +1,7 @@
 ---
 label: Home
-hide_body: 
-is_partial: 
+hide_body: true
+is_partial: false
 fields:
 - name: title
   label: Title
@@ -18,3 +18,8 @@ fields:
   type: textarea
   hidden: false
   default: ''
+- type: blocks
+  label: Body
+  name: body
+  template_types:
+  - block
