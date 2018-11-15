@@ -16,3 +16,4 @@ fields:
 - type: include
   name: call_to_action
   label: Call to action
+  template: call-to-action
