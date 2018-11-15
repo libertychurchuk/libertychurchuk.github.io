@@ -55,3 +55,6 @@ front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
 custom_preview: true
+build: 
+  custom_preview: true    
+  preview_command: bundle exec jekyll serve --port 8080 --bind 0.0.0.0
