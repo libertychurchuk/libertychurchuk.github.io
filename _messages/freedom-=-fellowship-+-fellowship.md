@@ -1,7 +1,7 @@
 ---
 title: Freedom = fellowship + fellowship
 date: 2018-05-13 10:30:52 +0000
-scripture: ''
+scripture: S
 description: ''
 author: _authors/heath-van-staden.md
 series: _series/maturity.md
