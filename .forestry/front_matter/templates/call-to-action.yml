@@ -1,0 +1,28 @@
+---
+label: Call to action
+hide_body: false
+is_partial: true
+display_field: button_text
+fields:
+- type: text
+  name: button_text
+  label: Button text
+- type: select
+  name: button_type
+  config:
+    source:
+      type: simple
+    options:
+    - Outline
+    - Solid
+  label: Button type
+  default: Solid
+- type: select
+  config:
+    source:
+      type: pages
+  label: Link to exisiting content
+  name: internal_link
+- type: text
+  label: External link
+  name: external_link
