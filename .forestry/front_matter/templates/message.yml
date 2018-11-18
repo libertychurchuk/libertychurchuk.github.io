@@ -65,6 +65,7 @@ fields:
   label: Image
   description: A custom image to display for the message
 pages:
+- _messages/how-to-love-jesus.md
 - _messages/freedom-=-fellowship-+-fellowship.md
 - _messages/baptisms-identity-standards-worship.md
 - _messages/love-what-jesus-loves.md
