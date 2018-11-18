@@ -20,7 +20,7 @@ pagination:
   <div class="row block-grid">
     {% assign authors = site.authors | sort: 'title' %}
       {% for author in authors %}
-        {% include items/card-author.html %}
+        {% include items/card-authors.html %}
       {% endfor %}
     </div>
   </section>

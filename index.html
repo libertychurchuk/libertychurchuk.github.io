@@ -4,7 +4,7 @@ layout: default
 description: As a local church we are a community of everyday people in which Jesus
   is central, in all we do, as we seek to embrace our city and nation we live in.
 body:
-- template: block
+- template: content_block
   title: New to church
   subtitle: If you’re new to church, interested in the Christian faith or simply want
     to know what it means to be part of the Liberty family.
@@ -13,7 +13,7 @@ body:
   - button_text: Find out more
     button_type: Solid
     internal_link: new-to-church/index.html
-- template: block
+- template: content_block
   subtitle: Catch up with the latest messages from our Sunday meetings and mid week
     sessions.
   title: Messages
@@ -22,7 +22,7 @@ body:
   - button_text: Catch up
     button_type: Solid
     internal_link: messages/index.html
-- template: block
+- template: content_block
   title: Extend
   subtitle: To reach and influence the world by building a large Christ-centered,
     Bible-based church, changing mindsets and empowering people to lead and impact
@@ -38,3 +38,26 @@ body:
 {% include /blocks/messages.html %}
 {% include /blocks/extend.html %}
 </section>
+
+<!-- <div>
+{% for block in page.body %}
+    {% assign template = block.template %}
+    {% case template %}
+    {% when 'content_block' %}
+
+    <article class="content-block content-block--overlay-messages theme-dark content-block--image" style="background-image: url('{{ site.cloudinary_url }}/{{ block.background_image }}')">
+      <div class="content-block-inner">
+        <h2 class="content-block__heading">{{ block.title }}</h2>
+        <div class="content-block__content">
+          <p>{{ block.subtitle }}</p>
+        </div>
+        <div class="content-block__footer"><a class="btn" href="{{ block.call_to_action.internal_link }}" target="_blank" rel="external noopener">{{ block.button_text}}</a></div>
+      </div>
+    </article>
+    
+        
+    {% when 'call-to-action' %}
+    test
+    {% endcase %}
+{% endfor %}
+</div> -->
