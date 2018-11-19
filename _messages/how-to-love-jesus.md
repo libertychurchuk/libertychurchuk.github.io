@@ -9,6 +9,5 @@ file: "/2018/2018-11-18.mp3"
 duration: ''
 length: ''
 image: "/v1542548317/how-to-love-jesus.jpg"
-published: false
 
 ---
