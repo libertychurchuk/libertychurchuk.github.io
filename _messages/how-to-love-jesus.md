@@ -6,8 +6,8 @@ description: ''
 author: _authors/jonathan-stanfield.md
 series: ''
 file: "/2018/2018-11-18.mp3"
-duration: ''
-length: ''
+duration: '42:30'
+length: 67200000
 image: "/v1542548317/how-to-love-jesus.jpg"
 
 ---
