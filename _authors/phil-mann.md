@@ -1,7 +1,8 @@
 ---
 title: Phil Mann
-name: Dr Martyn Lloyd Jones
+name: Phil Mann
 date: 2018-11-24 18:04:52 +0000
+avatar: ''
 published: false
 
 ---
