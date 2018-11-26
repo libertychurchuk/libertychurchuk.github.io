@@ -8,6 +8,6 @@ series: ''
 file: "/2018/2018-11-25.mp3"
 duration: '42:57'
 length: 56800000
-image: ''
+image: "/v1542115683/andy-mai-68715-unsplash.jpg"
 
 ---
