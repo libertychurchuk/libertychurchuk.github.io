@@ -9,6 +9,5 @@ file: "/2018/2018-11-25.mp3"
 duration: '42:57'
 length: 5680000
 image: ''
-published: false
 
 ---
