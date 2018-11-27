@@ -1,7 +1,7 @@
 ---
 title: Understanding the place of grace
 date: 2018-11-04 11:30:49 +0000
-scripture: ''
+scripture: Ephesians 2:8-9
 description: ''
 author: _authors/phil-boalch.md
 series: ''
