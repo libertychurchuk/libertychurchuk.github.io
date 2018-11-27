@@ -1,7 +1,7 @@
 ---
 title: Activating amazing grace
 date: 2018-11-11 11:30:00 +0000
-scripture: ''
+scripture: Romans 5:2
 description: ''
 author: _authors/phil-boalch.md
 series: ''
