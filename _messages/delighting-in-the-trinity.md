@@ -9,6 +9,5 @@ file: "/2018/2018-12-02.mp3"
 duration: '43:04'
 length: 57232078
 image: ''
-published: false
 
 ---
