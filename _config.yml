@@ -60,7 +60,7 @@ facebook:
   app_id: 
   publisher: 
   admins: 
-logo: "/images/logos/liberty-church-logo.png"
+logo: "/assets/images/logos/liberty-church-logo.png"
 lang: en-GB
 social:
   links:
@@ -69,6 +69,10 @@ social:
   - https://instagram.com/libertychurchuk
   - https://vimeo.com/libertychurchuk
 cloudinary_url: https://res.cloudinary.com/libertychurchuk/image/upload
+webmaster_verifications:
+    google: 
+    bing: 
+    alexa: 
   
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem

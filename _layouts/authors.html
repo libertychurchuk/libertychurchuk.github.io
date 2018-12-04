@@ -8,9 +8,15 @@ pagination:
 <article class="article">
 
   <header class="article__header">
-    <div class="article__titles">
-      <h1 class="article__heading">{{ page.title }}</h1>
+    <div class="article__titles mb4">
+      <div class="article__author"><img src="{{ site.cloudinary_url }}/w_128,h_128,r_max/q_60/f_auto/{{ page.avatar }}" title="{{ page.name }}" /></div>
+      <h1 class="article__heading mb2 ">{{ page.title }}</h1>
     </div>
+    {% if page.content.size > 1  %}
+    <div class="author__bio tc mw7 center">
+      {{ content }}
+    </div>
+    {% endif %}
   </header>
 
   <div class="article__body">
@@ -19,6 +25,8 @@ pagination:
     {% assign articles = site.posts | where: 'author', page.relative_path %}
 
     {% assign resources = messages | concat: articles  %}
+
+
 
     <div class="row card-list-view">
       {% for item in resources reversed %}
