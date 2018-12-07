@@ -63,3 +63,10 @@ for (var i = 0; i < closeMenu.length; i++) {
     preventScroll.classList.toggle("off-canvas-no-scroll");
   });
 }
+
+// -----------------------------------------------------------------------------
+// Register service worker
+// -----------------------------------------------------------------------------
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('/serviceworker.js');
+}
