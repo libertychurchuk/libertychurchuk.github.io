@@ -3,7 +3,7 @@ addEventListener('install', installEvent => {
       caches.open('Johnny')
       .then( JohnnyCache => {
         JohnnyCache.addAll([
-         '/offline/index.html',
+         '/offline.html',
          '/style.css',
          '/main.js'
         ]); // end addAll
@@ -32,7 +32,7 @@ addEventListener('fetch', fetchEvent => {
          // and it's a request for a web page
          if (request.headers.get('Accept').includes('text/html')) {
            // show the custom offline page instead
-           return caches.match('/offline/index.html');
+           return caches.match('/offline.html');
          } // end if
        } // end if/else
      }) // end match.then
