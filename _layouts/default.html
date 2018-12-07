@@ -44,7 +44,12 @@ layout: compress
     {% include footer.html %}
     {% include nav-off-canvas.html %}
 
+
+
     {% include google-analytics.html %}
+
+
+
 
     {% comment %} Only use jQuery / Media Player JS where a file is present in front matter {% endcomment %}
     {% if page.file %}
@@ -54,7 +59,19 @@ layout: compress
 
     <script src="{{ site.baseurl }}/assets/js/modernizr.js" defer></script>
     <script src="{{ site.baseurl }}/main.js" defer></script>
-
+    
+    <script>
+      // Register the service worker
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+          // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      }
+    </script>
 
   </body>
 </html>
