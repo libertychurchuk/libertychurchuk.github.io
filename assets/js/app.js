@@ -67,15 +67,13 @@ for (var i = 0; i < closeMenu.length; i++) {
 // -----------------------------------------------------------------------------
 // Register service worker
 // -----------------------------------------------------------------------------
-if (navigator.serviceWorker) {
-    window.addEventListener('load', function() {
-        if (navigator.serviceWorker.controller) {
-            navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
-        } else {
-            navigator.serviceWorker.register('/serviceworker.js', {
-                scope: '/'
-            });
-        }
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
+    // Registration was successful
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+}).catch(function(err) {
+    // registration failed :(
+    	console.log('ServiceWorker registration failed: ', err);
     });
 }
 
