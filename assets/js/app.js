@@ -67,6 +67,18 @@ for (var i = 0; i < closeMenu.length; i++) {
 // -----------------------------------------------------------------------------
 // Register service worker
 // -----------------------------------------------------------------------------
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/serviceworker.js');
-}
+window.addEventListener('load', () => {
+  if (!('serviceWorker' in navigator)) {
+    // service workers not supported 😣
+    return
+  }
+
+  navigator.serviceWorker.register('/serviceworker.js').then(
+    () => {
+      // registered! 👍🏼
+    },
+    err => {
+      console.error('SW registration failed! 😱', err)
+    }
+  )
+})
