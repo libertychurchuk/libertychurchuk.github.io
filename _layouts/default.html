@@ -45,7 +45,18 @@ layout: compress
     {% include nav-off-canvas.html %}
 
     {% include google-analytics.html %}
-
+    <script>
+      // Register the service worker
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./serviceworker.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+          // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      }
+      </script>
     {% comment %} Only use jQuery / Media Player JS where a file is present in front matter {% endcomment %}
     {% if page.file %}
     <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
