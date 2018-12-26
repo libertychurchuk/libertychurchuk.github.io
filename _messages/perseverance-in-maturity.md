@@ -8,6 +8,6 @@ series: _series/maturity.md
 file: "/2018/2018-02-25.mp3"
 duration: '43:29'
 length: 62693845
-image: ''
+image: "/v1545324614/mariam-soliman-690003-unsplash.jpg"
 
 ---
