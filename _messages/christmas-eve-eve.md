@@ -8,6 +8,6 @@ series: ''
 file: "/2018/2018-12-23.mp3"
 duration: '32:59'
 length: 56623054
-image: ''
+image: "/v1546111867/annie-spratt-469222-unsplash.jpg"
 
 ---
