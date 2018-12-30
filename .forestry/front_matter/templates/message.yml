@@ -65,6 +65,7 @@ fields:
   label: Image
   description: A custom image to display for the message
 pages:
+- _messages/20nineteen-gods-declaration-mans-response.md
 - _messages/understanding-the-place-of-grace.md
 - _messages/activating-amazing-grace.md
 - _messages/how-to-love-jesus.md
