@@ -8,7 +8,7 @@ series: ''
 file: "/2019/2019-01-06.mp3"
 duration: '47:33'
 length: ''
-image: ''
+image: "/v1546865798/B66A29BD-EE25-4C6D-AA12-7E2A50FC8F0B.jpg"
 published: false
 
 ---
