@@ -6,7 +6,7 @@ description: ''
 author: _authors/phil-boalch.md
 series: ''
 file: "/2019/2019-01-06.mp3"
-duration: ''
+duration: '47:33'
 length: ''
 image: ''
 published: false
