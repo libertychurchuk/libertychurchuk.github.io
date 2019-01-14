@@ -34,4 +34,13 @@
   </li>
   {% endif %}
 
+  {% if page.notes.size > 1 %}
+  <li class="item__notes">
+    <svg class="icon">
+      <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#download"></use>
+    </svg>
+    <a href="https://res.cloudinary.com/libertychurchuk/image/upload{{ page.notes }}">Notes</a>
+  </li>
+  {% endif %}
+
 </ul>
