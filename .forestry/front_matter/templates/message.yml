@@ -32,7 +32,7 @@ fields:
     required: true
   label: Speaker
   name: author
-  default: ''
+  default: _authors/phil-mann.md
   description: Select an exisiting speaker, if the speaker is not available you can
     add a new person from the sidebar.
 - type: select
@@ -64,6 +64,9 @@ fields:
   name: image
   label: Image
   description: A custom image to display for the message
+- type: image_gallery
+  name: notes
+  label: Notes
 pages:
 - _messages/understanding-the-place-of-grace.md
 - _messages/activating-amazing-grace.md
