@@ -64,7 +64,7 @@ fields:
   name: image
   label: Image
   description: A custom image to display for the message
-- type: image_gallery
+- type: file
   name: notes
   label: Notes
 pages:
