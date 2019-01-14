@@ -1,5 +1,6 @@
 ---
 title: Leah Van Staden
-name: Leah Van Staden
+name: Leah van Staden
 avatar: "/v1542093512/leah-van-staden.jpg"
+
 ---
