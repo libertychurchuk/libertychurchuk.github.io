@@ -9,6 +9,5 @@ file: "/2019/2019-01-13.mp3"
 duration: '43:11'
 length: 61082752
 image: ''
-published: false
 
 ---
