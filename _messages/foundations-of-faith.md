@@ -1,10 +1,10 @@
 ---
-title: Foundations of faith
+title: The necessity of foundations
 scripture: Hebrews 6:1-6
 date: 2019-01-06 00:00:00 +0000
 description: ''
 author: _authors/phil-boalch.md
-series: ''
+series: _series/hebrews-6-primary-biblical-foundations.md
 file: "/2019/2019-01-06.mp3"
 duration: '47:33'
 length: ''
