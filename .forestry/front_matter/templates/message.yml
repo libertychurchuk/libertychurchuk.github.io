@@ -66,7 +66,6 @@ fields:
   description: A custom image to display for the message
 pages:
 - _messages/understanding-the-place-of-grace.md
-- _messages/20nineteen-gods-declaration-mans-response.md
 - _messages/activating-amazing-grace.md
 - _messages/how-to-love-jesus.md
 - _messages/claim-2-fame-part-6.md
@@ -77,6 +76,7 @@ pages:
 - _messages/part-1-from-now-on.md
 - _messages/love-what-jesus-loves.md
 - _messages/foundations-of-faith.md
+- _messages/20nineteen-gods-declaration-mans-response.md
 - _messages/the-secret-place.md
 - _messages/perseverance-in-maturity.md
 - _messages/magic-to-tragic.md
