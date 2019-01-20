@@ -1,6 +1,6 @@
 ---
 author: _authors/esther-james.md
-title: Foundations of faith
+title: Faith towards God
 scripture: Hebrews 6:1-6
 date: 2019-01-20 00:00:00 +0000
 description: ''
