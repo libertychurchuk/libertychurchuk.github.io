@@ -10,6 +10,5 @@ duration: '33:42'
 length: ''
 image: ''
 notes: ''
-published: false
 
 ---
