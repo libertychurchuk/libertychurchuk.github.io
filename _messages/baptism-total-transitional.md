@@ -1,7 +1,5 @@
 ---
-author:
-  value: _authors/heath-van-staden.md
-  label: Heath Van Staden
+author:_authors/heath-van-staden.md
 title: Baptism, total, transitional
 scripture: ''
 date: 2019-02-03 00:00:00 +0000
