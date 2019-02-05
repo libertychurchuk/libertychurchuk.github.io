@@ -49,6 +49,7 @@ fields:
   config:
     required: true
   description: The folder name and filename for the podcast episode e.g. /2018/2018-10-28.mp3
+  default: "/2019/2019-"
 - type: text
   name: duration
   label: Duration
