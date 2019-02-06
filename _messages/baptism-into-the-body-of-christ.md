@@ -1,7 +1,7 @@
 ---
 title: Baptism into the body of Christ
 date: 2019-02-03 00:00:00 +0000
-scripture: ''
+scripture: 1 Corinthians 12:13
 description: ''
 author: _authors/heath-van-staden.md
 series: _series/hebrews-6-primary-biblical-foundations.md
