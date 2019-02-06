@@ -1,6 +1,6 @@
 ---
 title: The necessity of foundations
-scripture: Hebrews 6:1-6
+scripture: Hebrews 5:11-14, 6:1-3
 date: 2019-01-06 00:00:00 +0000
 description: ''
 author: _authors/phil-boalch.md
@@ -9,6 +9,6 @@ file: "/2019/2019-01-06.mp3"
 duration: '47:33'
 length: ''
 image: "/v1546865798/B66A29BD-EE25-4C6D-AA12-7E2A50FC8F0B.jpg"
-notes: "/v1547478340/repentance-from-dead-works.pdf"
+notes: "/v1549448188/the-necessity-of-foundations.pdf"
 
 ---
