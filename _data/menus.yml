@@ -1,34 +1,26 @@
 ---
 sidebar:
-  - url: /
-    title: Home
-    weight: 1
-  - url: /new-to-church
-    title: I'm new
-    weight: 2
-  - url: /our-story
-    title: Our story
-    weight: 3
-  - url: /blog
-    title: Blog
-    weight: 4
-  - url: /messages
-    title: Messages
-    weight: 5
-  - url: /get-involved
-    title: Get involved
-    weight: 6
-  - url: /our-vision
-    title: Vision
-    weight: 7
-  - url: /what-we-believe
-    title: What we believe
-    weight: 8
-  - url: /giving
-    title: Giving
-    weight: 9
-  - url: /privacy-policy
-    title: Privacy policy
-    weight: 10
----
-
+- url: "/privacy-policy"
+  title: Privacy policy
+  weight: 10
+- url: "/giving"
+  title: Giving
+  weight: 9
+- url: "/what-we-believe"
+  title: What we believe
+  weight: 8
+- url: "/our-vision"
+  title: Vision
+  weight: 7
+- url: "/get-involved"
+  title: Get involved
+  weight: 6
+- url: "/messages"
+  title: Messages
+  weight: 5
+- url: "/blog"
+  title: Blog
+  weight: 4
+- url: "/our-story"
+  title: Our story
+  weight: 3
