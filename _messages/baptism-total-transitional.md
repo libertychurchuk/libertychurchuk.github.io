@@ -1,5 +1,5 @@
 ---
-title: 'Baptism, total, transitional'
+title: Baptism, total, transitional
 date: 2019-02-03 00:00:00 +0000
 scripture: ''
 description: ''
