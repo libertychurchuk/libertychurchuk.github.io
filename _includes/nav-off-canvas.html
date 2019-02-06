@@ -7,8 +7,8 @@
     </div>
     <ul class="off-canvas__nav">
       {% for item in site.menus.sidebar %}
-        <li class="off-canvas__link">
-          <a href="{{ site.baseurl }}{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+        <li>
+          <a class="off-canvas__link" href="{{ site.baseurl }}{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
         </li>
       {% endfor %}
          <li><a class="off-canvas__link js-nav-close" href="#contact">Contact</a></li>
