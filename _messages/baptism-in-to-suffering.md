@@ -6,8 +6,8 @@ date: 2019-02-10 11:30:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
 series: _series/hebrews-6-primary-biblical-foundations.md
-duration: ''
-length: ''
+duration: '50:41'
+length: 70607392
 image: ''
 notes: ''
 published: false
