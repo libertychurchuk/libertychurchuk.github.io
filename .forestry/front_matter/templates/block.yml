@@ -11,6 +11,10 @@ fields:
   name: subtitle
   label: Subtitle
 - type: file
+  name: logo
+  label: Logo
+  description: The logo to be displayed in the block
+- type: file
   name: background_image
   label: Background image
 - type: field_group_list
