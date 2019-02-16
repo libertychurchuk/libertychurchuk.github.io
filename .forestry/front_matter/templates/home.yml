@@ -21,7 +21,6 @@ fields:
 - type: blocks
   label: Body
   name: body
-  template_types:
-  - block
+  template_types: []
 pages:
 - index.html
