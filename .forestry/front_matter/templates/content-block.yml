@@ -13,3 +13,8 @@ fields:
 - type: file
   name: background_image
   label: Background image
+- type: include
+- type: include
+  template: call-to-action
+  label: Call to action
+  name: call_to_action
