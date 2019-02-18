@@ -10,15 +10,16 @@ fields:
   description: Set the headline of the content block
   config:
     required: true
+  default: e.g. New to church
+- type: textarea
+  name: subtitle
+  label: Subtitle
+  description: " (Optional) The subtitle / description is displayed below the headline. "
 - type: file
   label: Logo
   name: logo
   description: "(Optional) Choose / upload a logo that should be use in place of a
     headline"
-- type: text
-  name: subtitle
-  label: Subtitle
-  description: "(Optional) The subtitle / description is displayed below the headline."
 - type: file
   name: background_image
   label: Image
