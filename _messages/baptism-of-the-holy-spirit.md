@@ -1,6 +1,6 @@
 ---
 file: "/2019/2019-02-17.mp3"
-title: The Baptism of the Holy Spirit
+title: Baptism of the Holy Spirit
 scripture: ''
 date: 2019-02-17 11:30:00 +0000
 description: ''
