@@ -18,3 +18,5 @@ fields:
   label: Call to action
   template_types:
   - call-to-action
+  config:
+    max: '4'
