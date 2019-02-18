@@ -18,10 +18,9 @@ fields:
   type: textarea
   hidden: false
   default: ''
-- type: blocks
+- type: include
   name: body
   label: Body
-  template_types:
-  - content-block
+  template: content-block
 pages:
 - index.html
