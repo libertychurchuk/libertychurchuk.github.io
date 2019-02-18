@@ -6,13 +6,23 @@ display_field: title
 fields:
 - type: text
   name: title
-  label: Title
+  label: Headline
+  description: Set the headline of the content block
+  config:
+    required: true
+- type: file
+  label: Logo
+  name: logo
+  description: "(Optional) Choose / upload a logo that should be use in place of a
+    headline"
 - type: text
   name: subtitle
   label: Subtitle
+  description: "(Optional) The subtitle / description is displayed below the headline."
 - type: file
   name: background_image
-  label: Background image
+  label: Image
+  description: Choose an image that should be displayed behind the content block
 - type: blocks
   name: call_to_action
   label: Call to action
