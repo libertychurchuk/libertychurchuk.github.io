@@ -9,6 +9,6 @@ series: _series/hebrews-6-primary-biblical-foundations.md
 duration: '46:14'
 length: 60472864
 image: ''
-notes: ''
+notes: "/v1550663768/baptism-in-the-holy-spirit.pdf"
 
 ---
