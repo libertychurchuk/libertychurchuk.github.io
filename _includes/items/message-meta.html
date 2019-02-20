@@ -39,7 +39,7 @@
     <svg class="icon">
       <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#download"></use>
     </svg>
-    <a href="https://res.cloudinary.com/libertychurchuk/image/upload{{ page.notes }}">Notes</a>
+    <a href="https://res.cloudinary.com/libertychurchuk/image/upload{{ page.notes }}" ga('send', 'event', 'PDF Downloads', 'Notes Downloaded', '{{ page.title}}');>Notes</a>
   </li>
   {% endif %}
 
