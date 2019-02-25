@@ -24,5 +24,5 @@ fields:
   template_types:
   - content-block
 pages:
-- index.html
 - get-involved/index.html
+- index.html
