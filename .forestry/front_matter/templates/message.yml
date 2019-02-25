@@ -69,7 +69,7 @@ fields:
   name: notes
   label: Notes
 pages:
-- _messages/family-service.md
+- _messages/hide-and-seek.md
 - _messages/baptism-of-the-holy-spirit.md
 - _messages/baptism-in-to-suffering.md
 - _messages/foundations-of-faith.md
