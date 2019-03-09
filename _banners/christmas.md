@@ -1,5 +1,6 @@
 ---
 title: Christmas
-subtitle: 
-background_image:
+subtitle: This is a sub title
+background_image: 
+
 ---

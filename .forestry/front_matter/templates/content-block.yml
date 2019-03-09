@@ -30,3 +30,5 @@ fields:
   - call-to-action
   config:
     max: '4'
+pages:
+- _banners/christmas.md
