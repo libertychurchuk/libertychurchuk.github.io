@@ -20,9 +20,10 @@ sections:
   match: "**/*"
 - type: heading
   label: Content
-- type: document
-  path: _banners/**/*
+- type: directory
+  path: _banners
   label: Banners
+  create: documents
   match: "**/*"
 - type: directory
   path: _posts
