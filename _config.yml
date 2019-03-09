@@ -23,6 +23,9 @@ collections:
     title: Series
     output: true
     permalink: /series/:path/
+  banners:
+    title: Banners
+    output: false
 defaults:
   - scope:
       path: ""
@@ -133,6 +136,7 @@ pagination:
   indexpage: 'index'
 
 ############################################################
+
 sass:
   style: :compressed
 plugins:
