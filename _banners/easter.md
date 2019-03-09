@@ -1,7 +1,7 @@
 ---
-title: Easter
+title: Easter sunday
 subtitle: ''
-background_image: "/v1542119842/valeriy-andrushko-406370-unsplash.jpg"
+background_image: "/v1552166318/bg-easter-sunday.jpg"
 logo: ''
 call_to_action: []
 
