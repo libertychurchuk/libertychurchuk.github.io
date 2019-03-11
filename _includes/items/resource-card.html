@@ -5,9 +5,9 @@
       <div class="card__labels">
         <div class="card__labels-inner">
           {% if item.category %}  
-          <div class="card__labels-label">{{ item.category }}</div>
+          <div class="card__labels-label ttu">{{ item.category }}</div>
           {% elsif site.collection == message %}
-          <div class="card__labels-label">Message</div>
+          <div class="card__labels-label ttu">Message</div>
           {% endif %}
         </div>
       </div>
@@ -19,7 +19,7 @@
     <div class="card__body">
       <h3 class="card__title">{{ item.title }}</h3>
       {% if item.date %}
-      <time class="card__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
+      <time class="card__date db ttu" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
       {% endif %}
       {% if item.scripture.size > 1 %}
         <div class="card__text">Scripture: {{ item.scripture }}</div>
