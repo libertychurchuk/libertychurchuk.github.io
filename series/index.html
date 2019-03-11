@@ -23,7 +23,7 @@ pagination:
 
 
 <section class="blog">
-  <div class="row block-grid">
+  <div class="row flex flex-row flex-wrap block-grid">
     {% for item in paginator.posts %}
         {% include items/card-series.html %}
     {% endfor %}

@@ -2,7 +2,7 @@
 
 {% if author %}
 <div class="author">
-  <figure class="author__image">
+  <figure class="author__image flex items-center ma0">
     <img src="{{ site.cloudinary_url }}/w_48/f_auto/{{ author.avatar }}" title="{{ author.name }}" />
     <figcaption><a href="{{ author.url }}">{{ author.name }}</a></figcaption>
   </figure>

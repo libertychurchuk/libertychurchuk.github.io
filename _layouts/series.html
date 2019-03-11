@@ -18,7 +18,7 @@ pagination:
 
     {% assign series = site.messages | where: 'series', page.relative_path %}
 
-    <div class="row">
+    <div class="row flex flex-row flex-wrap">
       {% for item in series reversed %}
         {% include items/resource-card.html %}
       {% endfor %}
