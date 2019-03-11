@@ -4,7 +4,7 @@ author: _authors/heath-van-staden.md
 file: "/2019/2019-03-10.mp3"
 duration: '40:00'
 length: 53499520
-title: Fake news?
+title: Fake news? Risen Jesus
 scripture: 1 Corinthians 15:1-9
 description: ''
 series: ''
