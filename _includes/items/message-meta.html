@@ -1,16 +1,16 @@
-<ul class="article-meta">
+<ul class="article-meta db tc">
 
   {% assign series = site.series | where: 'relative_path', page.series | first %}
 
   {% if page.series.size > 1 %}
-  <li class="item__series">
+  <li class="item__series dib">
     <a href="/series/{{series.slug}}">{{ series.title }}</a>
   </li>
   {% endif %}
 
 
   {% if page.scripture.size > 1 %}
-  <li class="item__scripture">
+  <li class="item__scripture dib">
     <svg class="icon">
       <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#bible"></use>
     </svg> {{ page.scripture }}
@@ -18,7 +18,7 @@
   {% endif %}
 
   {% if page.duration.size > 1 %}
-  <li class="item__duration">
+  <li class="item__duration dib">
     <svg class="icon">
       <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#duration"></use>
     </svg> {{ page.duration }}
@@ -26,7 +26,7 @@
   {% endif %}
   
   {% if page.file.size > 1 %}
-  <li class="item__download">
+  <li class="item__download dib">
     <svg class="icon">
       <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#download"></use>
     </svg>
@@ -35,7 +35,7 @@
   {% endif %}
 
   {% if page.notes.size > 1 %}
-  <li class="item__notes">
+  <li class="item__notes dib">
     <svg class="icon">
       <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#download"></use>
     </svg>

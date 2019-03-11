@@ -84,13 +84,6 @@ margin-bottom: $baselineheight * 2;
   border-bottom: 1px solid $bordercolor;
 }
 
-// .author {
-// overflow: hidden;
-// text-overflow: ellipsis;
-// white-space: nowrap;
-// }
-
-
 .author__image img {
 border-radius: 50%;
 width: 48px;
@@ -100,14 +93,11 @@ margin-right: $gutterwidth / 2;
 
 
 .article-meta {
-display: block;
-text-align: center;
 margin: 0 auto;
 margin-bottom: 1.6em;
 padding: 0;
 
   li {
-  display: inline-block;
   margin-bottom: 0;
   margin-right: 0.5em;
 
