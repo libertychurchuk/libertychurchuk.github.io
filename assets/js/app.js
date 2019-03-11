@@ -63,3 +63,35 @@ for (var i = 0; i < closeMenu.length; i++) {
     preventScroll.classList.toggle("off-canvas-no-scroll");
   });
 }
+
+// -----------------------------------------------------------------------------
+// Faithlife Reftagger
+// -----------------------------------------------------------------------------
+
+var refTagger = {
+  settings: {
+    bibleVersion: "ESV",			
+    roundCorners: true,
+    socialSharing: [],
+    customStyle : {
+      heading: {
+        backgroundColor : "#313640",
+        color : "#f2f2f2",
+        fontSize : "14px"
+      },
+      body   : {
+        color : "#555555"
+      }
+    }
+  }
+};
+
+(function(d, t) {
+  var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  g.src = "//api.reftagger.com/v2/RefTagger.js";
+  s.parentNode.insertBefore(g, s);
+}(document, "script"));
+
+// -----------------------------------------------------------------------------
+// Glide Slider
+// -----------------------------------------------------------------------------
