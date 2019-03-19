@@ -9,6 +9,6 @@ scripture: 1 Corinthians 15:1-9
 description: ''
 series: ''
 image: ''
-notes: ''
+notes: "/v1552982161/Fake%20News%20Resurrection%20from%20Dead.pdf"
 
 ---
