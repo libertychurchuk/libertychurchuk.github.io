@@ -8,7 +8,7 @@ author: _authors/gareth-hillier.md
 series: ''
 duration: '19:27'
 length: 24752992
-image: ''
+image: "/v1552995877/annie-spratt-697526-unsplash.jpg"
 notes: ''
 
 ---
