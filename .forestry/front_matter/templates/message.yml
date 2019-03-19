@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/risen-jesus-resurrection-of-the-dead.md
 - _messages/fake-news-risen-jesus.md
 - _messages/laying-on-of-hands.md
 - _messages/hide-and-seek.md

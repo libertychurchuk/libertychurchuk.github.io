@@ -1,0 +1,15 @@
+---
+file: "/2019/2019-03-17.mp3"
+title: 'Risen Jesus: Resurrection of the dead'
+scripture: ''
+date: 2019-03-17 00:00:00 +0000
+description: ''
+author: _authors/heath-van-staden.md
+series: 
+duration: '47:13'
+length: 63707200
+image: ''
+notes: ''
+published: false
+
+---
