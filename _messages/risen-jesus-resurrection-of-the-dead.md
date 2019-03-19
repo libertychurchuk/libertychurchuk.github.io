@@ -1,11 +1,11 @@
 ---
 file: "/2019/2019-03-17.mp3"
 title: 'Risen Jesus: Resurrection of the dead'
-scripture: ''
+scripture: 2 Peter 3:5-9
 date: 2019-03-17 00:00:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
-series: 
+series: ''
 duration: '47:13'
 length: 63707200
 image: ''
