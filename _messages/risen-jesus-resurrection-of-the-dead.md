@@ -9,6 +9,6 @@ series: ''
 duration: '47:13'
 length: 63707200
 image: ''
-notes: ''
+notes: "/v1552982121/Risen%20Jesus%20Resurrection%20of%20the%20Dead.pdf"
 
 ---
