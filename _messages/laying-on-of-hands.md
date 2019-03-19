@@ -8,7 +8,7 @@ author: _authors/heath-van-staden.md
 series: _series/hebrews-6-primary-biblical-foundations.md
 duration: '35:40'
 length: 48387808
-image: ''
+image: "/v1552995733/rosie-fraser-592594-unsplash.jpg"
 notes: "/v1551712652/laying-on-of-hands.pdf"
 
 ---
