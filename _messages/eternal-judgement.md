@@ -8,7 +8,7 @@ author: _authors/phil-boalch.md
 series: _series/hebrews-6-primary-biblical-foundations.md
 duration: '45:04'
 length: 58717792
-image: ''
+image: "/v1553542876/tom-morel-686560-unsplash.jpg"
 notes: ''
 published: false
 
