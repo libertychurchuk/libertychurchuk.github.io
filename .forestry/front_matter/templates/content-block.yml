@@ -30,6 +30,3 @@ fields:
   - call-to-action
   config:
     max: '4'
-pages:
-- _banners/easter.md
-- _banners/christmas.md
