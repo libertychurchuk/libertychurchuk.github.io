@@ -1,0 +1,24 @@
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      {% for item in site.banners %}
+      <li class="glide__slide"><img src="{{ site.cloudinary_url }}/{{ item.background_image }}" alt="{{item.title}}" />
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% if site.banners.size > 1 %}
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+      <span class="sr-only">Previous</span>
+      <svg class="icon icon--light">
+        <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#left-chevron"></use>
+      </svg></button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+      <span class="sr-only">Next</span>
+      <svg class="icon icon--light">
+        <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#right-chevron"></use>
+      </svg></button>
+  </div>
+  {% endif %}
+</div>

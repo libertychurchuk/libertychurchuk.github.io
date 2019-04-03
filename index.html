@@ -36,41 +36,16 @@ body:
     button_text: Extend network
 
 ---
+
 <section>
 {% include /header-blocks/header-home.html %}
+
+{% if site.banners.size > 0 %}
+  {% include /components/slider.html %}
+{% endif %}
+
 {% include /blocks/new.html %}
 {% include /blocks/messages.html %}
 {% include /blocks/extend.html %}
+
 </section>
-
-<!--<div>
-{% for block in page.body %}
-    {% assign template = block.template %}
-
-    {% case template %}
-    {% when 'content_block' %}
-
-    <article class="content-block content-block--overlay-messages theme-dark content-block--image" style="background-image: url('{{ site.cloudinary_url }}/{{ block.background_image }}')">
-      <div class="content-block-inner">
-        <h2 class="content-block__heading">{{ block.title }}</h2>
-        <div class="content-block__content">
-          <p>{{ block.subtitle }}</p>
-        </div>
-      </div>
-      <div class="content-block__footer">
-          {% for item in block.call_to_action %}
-            {% if item.internal_link %}
-            <a class="btn {% if item.button_type == 'Outline' %} btn--outline {% endif %}" href="{{ item.internal_link }}">{{ item.button_text }}</a>
-            {% endif %}
-            {% if item.external_link %}
-            <a class="btn {% if item.button_type == 'Outline' %} btn--outline {% endif %}" href="{{ item.external_link }}" rel="external noopener">{{ item.button_text }}</a>
-            {% endif %}
-          {% endfor%}
-      </div>
-    </article>
-    
-        
-
-    {% endcase %}
-{% endfor %}
-</div>-->
