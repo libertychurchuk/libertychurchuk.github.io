@@ -31,5 +31,6 @@ fields:
   config:
     max: '4'
 pages:
+- _banners/good-friday-easter-egg-hunt.md
 - _banners/worship-night-good-friday.md
 - _banners/easter-sunday-21st-april.md
