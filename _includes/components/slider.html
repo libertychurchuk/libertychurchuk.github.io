@@ -2,7 +2,7 @@
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
       {% for item in site.banners %}
-      <li class="glide__slide"><img src="{{ site.cloudinary_url }}/{{ item.background_image }}" alt="{{item.title}}" />
+      <li class="glide__slide"><img src="{{ site.cloudinary_url }}/w_1280,c_fill/f_auto/{{ item.background_image }}" alt="{{item.title}}" />
       </li>
       {% endfor %}
     </ul>
