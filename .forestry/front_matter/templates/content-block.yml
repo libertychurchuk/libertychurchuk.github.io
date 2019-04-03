@@ -31,4 +31,5 @@ fields:
   config:
     max: '4'
 pages:
+- _banners/worship-night-good-friday.md
 - _banners/easter-sunday-21st-april.md
