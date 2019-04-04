@@ -1,6 +1,7 @@
 ---
 title: Worship Night, Good Friday
-subtitle: A creative night and open space to worship and reflect on god’s goodness
+subtitle: 7.30pm at St Pauls Church, Bridge street, newport. A creative night and
+  open space to worship and reflect on god’s goodness
 logo: ''
 background_image: "/v1554308537/easter-worship.jpg"
 call_to_action: []
