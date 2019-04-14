@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/hearing-from-god.md
 - _messages/the-church.md
 - _messages/eternal-judgement.md
 - _messages/a-better-dream.md
