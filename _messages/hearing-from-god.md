@@ -6,8 +6,8 @@ date: 2019-04-13 23:00:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
 series: ''
-duration: ''
-length: ''
+duration: '51:02'
+length: 68572000
 image: ''
 notes: ''
 published: false
