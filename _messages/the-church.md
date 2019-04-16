@@ -8,7 +8,7 @@ author: _authors/heath-van-staden.md
 series: ''
 duration: '36:52'
 length: 48982624
-image: ''
+image: "/v1555419341/Church%205%20indicators%20of%20God%20speaking.001.jpg"
 notes: ''
 
 ---
