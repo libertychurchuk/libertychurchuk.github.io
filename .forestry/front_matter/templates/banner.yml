@@ -20,3 +20,12 @@ fields:
 - type: datetime
   name: date
   label: date
+- name: expiry_date
+  type: datetime
+  label: Expiry Date
+  description: When this banner should expire and no longer be displayed on the site.
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: 
