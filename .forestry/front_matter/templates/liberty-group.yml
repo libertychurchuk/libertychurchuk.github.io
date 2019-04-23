@@ -26,3 +26,5 @@ fields:
 - type: text
   name: description
   label: description
+pages:
+- _groups/pete-gwyn-bolland.md
