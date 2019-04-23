@@ -8,7 +8,7 @@ author: _authors/heath-van-staden.md
 series: ''
 duration: '47:13'
 length: 63707200
-image: "/v1552995511/bruno-van-der-kraan-596107-unsplash.jpg"
+image: "/v1556029302/eddie-howell-606929-unsplash.jpg"
 notes: "/v1552982121/Risen%20Jesus%20Resurrection%20of%20the%20Dead.pdf"
 
 ---

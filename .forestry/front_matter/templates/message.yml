@@ -68,9 +68,12 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/risen-jesus-resurrection-of-the-dead.md
+- _messages/easter-it-is-finished.md
+- _messages/hearing-from-god.md
+- _messages/the-church.md
 - _messages/eternal-judgement.md
 - _messages/a-better-dream.md
-- _messages/risen-jesus-resurrection-of-the-dead.md
 - _messages/fake-news-risen-jesus.md
 - _messages/laying-on-of-hands.md
 - _messages/hide-and-seek.md

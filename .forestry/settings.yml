@@ -25,6 +25,8 @@ sections:
   label: Banners
   create: documents
   match: "**/*"
+  templates:
+  - banner
 - type: directory
   path: _posts
   label: Blog

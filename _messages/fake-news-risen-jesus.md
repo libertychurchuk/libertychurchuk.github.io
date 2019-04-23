@@ -8,7 +8,7 @@ title: Fake news? Risen Jesus
 scripture: 1 Corinthians 15:1-9
 description: ''
 series: ''
-image: ''
+image: "/v1556029458/fake-news.jpg"
 notes: "/v1552982161/Fake%20News%20Resurrection%20from%20Dead.pdf"
 
 ---
