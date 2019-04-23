@@ -15,6 +15,6 @@ published: false
 ---
 ![](https://res.cloudinary.com/libertychurchuk/image/upload/v1556025944/maxresdefault.jpg)
 
-Check out the story on the Bible Societies YouTube Channel.
+The message followed the reading of 'Three friends and the Miracle Man', if you weren't able to make it on Sunday check out the story on the Bible Society's YouTube Channel.
 
 [https://www.youtube.com/watch?v=Aj0K_iUitGQ](https://www.youtube.com/watch?v=Aj0K_iUitGQ "https://www.youtube.com/watch?v=Aj0K_iUitGQ")
