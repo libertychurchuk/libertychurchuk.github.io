@@ -28,6 +28,11 @@ sections:
   templates:
   - banner
 - type: directory
+  path: _groups
+  label: Liberty groups
+  create: documents
+  match: "**/*"
+- type: directory
   path: _posts
   label: Blog
   create: documents
