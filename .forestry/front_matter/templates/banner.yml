@@ -1,0 +1,22 @@
+---
+label: Banner
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: text
+  name: logo
+  label: logo
+- type: file
+  name: background_image
+  label: background_image
+- type: list
+  name: call_to_action
+  label: call_to_action
+- type: datetime
+  name: date
+  label: date
