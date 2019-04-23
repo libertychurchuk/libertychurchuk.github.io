@@ -5,15 +5,21 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: text
   name: day
   label: day
+  config:
+    required: true
 - type: text
   name: time
   label: time
 - type: text
   name: location
   label: location
+  config:
+    required: true
 - type: text
   name: started
   label: started
