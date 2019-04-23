@@ -8,7 +8,7 @@ author: _authors/heath-van-staden.md
 series: ''
 duration: '14:04'
 length: 18928288
-image: ''
+image: "/v1552995511/bruno-van-der-kraan-596107-unsplash.jpg"
 notes: ''
 
 ---
