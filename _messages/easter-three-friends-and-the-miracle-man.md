@@ -13,6 +13,8 @@ notes: ''
 published: false
 
 ---
+![](https://res.cloudinary.com/libertychurchuk/image/upload/v1556025944/maxresdefault.jpg)
+
 Check out the story on the Bible Societies YouTube Channel.
 
 [https://www.youtube.com/watch?v=Aj0K_iUitGQ](https://www.youtube.com/watch?v=Aj0K_iUitGQ "https://www.youtube.com/watch?v=Aj0K_iUitGQ")
