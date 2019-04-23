@@ -2,7 +2,7 @@
 file: "/2019/2019-04-21.mp3"
 title: Easter - It is finished
 scripture: ''
-date: 2019-04-20 23:00:00 +0000
+date: 2019-04-21 11:30:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
 series: ''
