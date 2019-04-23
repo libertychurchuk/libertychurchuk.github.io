@@ -32,6 +32,8 @@ sections:
   label: Liberty groups
   create: documents
   match: "**/*"
+  templates:
+  - liberty-group
 - type: directory
   path: _posts
   label: Blog
