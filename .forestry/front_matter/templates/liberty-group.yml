@@ -1,0 +1,22 @@
+---
+label: Liberty Group
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: day
+  label: day
+- type: text
+  name: time
+  label: time
+- type: text
+  name: location
+  label: location
+- type: text
+  name: started
+  label: started
+- type: text
+  name: description
+  label: description
