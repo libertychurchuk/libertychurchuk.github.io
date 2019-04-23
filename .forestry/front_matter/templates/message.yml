@@ -32,7 +32,7 @@ fields:
   label: Speaker
   name: author
   default: 
-  description: Select an exisiting speaker, if the speaker is not available you can
+  description: Select an existing speaker, if the speaker is not available you can
     add a new person from the sidebar.
 - type: select
   config:
