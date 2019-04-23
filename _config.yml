@@ -7,6 +7,9 @@ collections:
     title: Testimony
     output: true
     permalink: /testimony/:year/:month/:day/:title/
+  groups:
+    title: Groups
+    output: false
   authors:
     title: Authors
     output: true
