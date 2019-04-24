@@ -39,6 +39,7 @@ fields:
   label: Photo
   description: A photo of the group leaders
 pages:
+- _groups/dean-nat-johnson.md
 - _groups/byron-and-esther-james.md
 - _groups/sam-lana-fisher.md
 - _groups/phil-julie-boalch.md
