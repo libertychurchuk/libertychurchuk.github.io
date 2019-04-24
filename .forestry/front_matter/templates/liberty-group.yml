@@ -33,5 +33,6 @@ fields:
   label: Photo
   description: A photo of the group leaders
 pages:
+- _groups/chris-noreen-griffin.md
 - _groups/alex-cassandra-burton.md
 - _groups/pete-gwyn-bolland.md
