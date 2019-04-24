@@ -33,6 +33,7 @@ fields:
   label: Photo
   description: A photo of the group leaders
 pages:
+- _groups/phil-julie-boalch.md
 - _groups/graham-daryl-sheppard.md
 - _groups/dylan-jody-jones.md
 - _groups/chris-noreen-griffin.md
