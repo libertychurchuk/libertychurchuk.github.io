@@ -26,5 +26,11 @@ fields:
 - type: text
   name: description
   label: description
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Photo
+  description: A photo of the group leaders
 pages:
 - _groups/pete-gwyn-bolland.md
