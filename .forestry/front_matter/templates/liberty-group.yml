@@ -33,4 +33,5 @@ fields:
   label: Photo
   description: A photo of the group leaders
 pages:
+- _groups/alex-cassandra-burton.md
 - _groups/pete-gwyn-bolland.md
