@@ -4,28 +4,34 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Leaders names
   config:
     required: true
+  description: What are the leaders names?
 - type: text
   name: day
-  label: day
+  label: Day
   config:
     required: false
+  description: What days does the group meet?
 - type: text
   name: time
-  label: time
+  label: Time
+  description: What time does the group meet?
 - type: text
   name: location
-  label: location
+  label: Location
   config:
     required: false
+  description: Where does the group meet?
 - type: text
   name: started
-  label: started
+  label: Date started
+  description: When did the group start? e.g. December 2014
 - type: text
   name: description
-  label: description
+  label: Description/bio
+  description: What is the groups aim?
 - name: image
   type: file
   config:
