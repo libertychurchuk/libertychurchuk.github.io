@@ -2,7 +2,7 @@
 title: Dean & Nat Johnson
 day: ''
 time: ''
-location: ''
+location: Handpost
 started: ''
 description: ''
 image: ''
