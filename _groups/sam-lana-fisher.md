@@ -2,7 +2,7 @@
 title: Sam & Lana Fisher
 day: ''
 time: ''
-location: ''
+location: Malpas
 started: ''
 description: ''
 image: ''
