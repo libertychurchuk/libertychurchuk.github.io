@@ -2,7 +2,7 @@
 title: Alex & Cassandra Burton
 day: ''
 time: ''
-location: ''
+location: Thornhill, Cwmbran
 started: ''
 description: ''
 image: ''
