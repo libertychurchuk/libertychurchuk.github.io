@@ -2,7 +2,7 @@
 title: Phil & Julie Boalch
 day: ''
 time: ''
-location: ''
+location: Oakfield, Cwmbran
 started: ''
 description: ''
 image: ''
