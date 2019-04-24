@@ -2,7 +2,7 @@
 title: Graham & Daryl Sheppard
 day: ''
 time: ''
-location: ''
+location: Langstone, Newport
 started: ''
 description: ''
 image: ''
