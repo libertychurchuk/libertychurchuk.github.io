@@ -11,7 +11,7 @@ fields:
   name: day
   label: day
   config:
-    required: true
+    required: false
 - type: text
   name: time
   label: time
@@ -19,7 +19,7 @@ fields:
   name: location
   label: location
   config:
-    required: true
+    required: false
 - type: text
   name: started
   label: started
