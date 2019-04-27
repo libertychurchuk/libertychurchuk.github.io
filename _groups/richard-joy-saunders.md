@@ -5,6 +5,5 @@ time: 7:30pm
 location: Allt-yr-yn
 started: ''
 description: ''
-published: false
 
 ---
