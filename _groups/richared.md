@@ -1,5 +1,5 @@
 ---
-title: Richared
+title: Richard
 day: ''
 time: ''
 location: ''
