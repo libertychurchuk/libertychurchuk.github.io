@@ -6,6 +6,6 @@ location: Thornhill, Cwmbran
 started: ''
 description: ''
 image: ''
-date: 2019-04-24 13:41:09 +0000
+date: '2019-04-24T13:41:09+00:00'
 
 ---
