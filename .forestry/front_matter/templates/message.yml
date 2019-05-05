@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/generous-living-1.md
 - _messages/generous-living.md
 - _messages/risen-jesus-resurrection-of-the-dead.md
 - _messages/easter-it-is-finished.md
