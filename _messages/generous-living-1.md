@@ -1,13 +1,13 @@
 ---
-file: "/2019/2019-04-28.mp4"
+file: "/2019/2019-05-05.mp4"
 title: Generous living - part 2
 scripture: ''
-date: 2019-04-27 23:00:00 +0000
+date: 2019-05-04 23:00:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
 series: ''
-duration: '48:38'
-length: 64790464
+duration: ''
+length: 
 image: ''
 notes: ''
 published: false
