@@ -39,6 +39,7 @@ fields:
   label: Photo
   description: A photo of the group leaders
 pages:
+- _groups/nat-emma-smith.md
 - _groups/sue-willis.md
 - _groups/morne-maritza-van-aswegen.md
 - _groups/chris-noreen-griffin.md
