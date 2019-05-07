@@ -1,5 +1,5 @@
 ---
-file: "/2019/2019-04-28.mp4"
+file: "/2019/2019-04-28.mp3"
 title: Generous living - Part I
 scripture: ''
 date: 2019-04-27 23:00:00 +0000
