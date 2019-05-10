@@ -6,6 +6,5 @@ location: Marshfield, Newport
 started: ''
 description: ''
 image: ''
-published: false
 
 ---
