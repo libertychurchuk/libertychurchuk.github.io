@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/joy.md
 - _messages/going-on-to-maturity.md
 - _messages/generous-living-1.md
 - _messages/the-church.md
