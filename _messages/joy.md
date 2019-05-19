@@ -16,3 +16,5 @@ published: false
 Acts 16:25
 
 Job 1:20-21
+
+Hebrews 12:2
