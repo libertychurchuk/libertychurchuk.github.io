@@ -1,7 +1,7 @@
 ---
 file: "/2019/2019-05-19.mp3"
 title: Joy, It is well with my soul
-scripture: ''
+scripture: John 15:11
 date: 2019-05-18 23:00:00 +0000
 description: ''
 author: _authors/gareth-hillier.md
@@ -13,6 +13,8 @@ notes: ''
 published: false
 
 ---
+John 15:11
+
 Acts 16:25
 
 Job 1:20-21
