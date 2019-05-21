@@ -10,7 +10,6 @@ duration: '35:38'
 length: 46013920
 image: "/v1558263604/9BD50215-A184-4A14-9A05-4B1175CEA0F1.jpg"
 notes: ''
-published: false
 
 ---
 John 15:11
