@@ -1,7 +1,7 @@
 ---
 file: "/2019/2019-05-26.mp3"
-title: Discipleship
-scripture: ''
+title: 'Discipleship: optional extras'
+scripture: Acts 2:1-47
 date: 2019-05-25 23:00:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
