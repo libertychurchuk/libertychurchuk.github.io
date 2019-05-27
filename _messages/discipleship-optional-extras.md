@@ -8,7 +8,7 @@ author: _authors/heath-van-staden.md
 series: ''
 duration: '44:08'
 length: 58261600
-image: ''
+image: "/v1558984377/Optional%20Extras.001.jpg"
 notes: ''
 published: false
 
