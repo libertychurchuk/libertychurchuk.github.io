@@ -22,8 +22,8 @@ fields:
   config:
     maxSize: '1'
 pages:
-- _authors/dr-stavros-ignatiou.md
-- _authors/ryan-termorshuizen.md
-- _authors/esther-james.md
-- _authors/phil-mann.md
 - _authors/jonathan-stanfield.md
+- _authors/phil-mann.md
+- _authors/esther-james.md
+- _authors/ryan-termorshuizen.md
+- _authors/dr-stavros-ignatiou.md
