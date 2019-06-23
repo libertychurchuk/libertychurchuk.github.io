@@ -8,7 +8,7 @@ author: _authors/heath-van-staden.md
 series: ''
 duration: ''
 length: 
-image: ''
+image: "/v1561290196/6F7772A8-3259-45A3-8861-A5109228F8EE.jpg"
 notes: ''
 published: false
 
