@@ -6,8 +6,8 @@ date: 2019-06-22 23:00:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
 series: ''
-duration: ''
-length: 
+duration: '30:54'
+length: 41055136
 image: "/v1561290196/6F7772A8-3259-45A3-8861-A5109228F8EE.jpg"
 notes: ''
 published: false
