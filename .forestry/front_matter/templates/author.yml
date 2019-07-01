@@ -13,7 +13,7 @@ fields:
   label: Full name
   config:
     required: true
-  default: Dr Martyn Lloyd Jones
+  default: ''
 - type: file
   name: avatar
   label: Avatar
