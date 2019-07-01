@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/power-knowing-who-is-in-you.md
 - _messages/baptism-a-prophetic-declaration.md
 - _messages/are-we-willing-to-be-vulnerable-for-god.md
 - _messages/discipleship-preparation-are-we-ready.md
