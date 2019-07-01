@@ -2,6 +2,5 @@
 name: Koby Pokus
 title: ''
 avatar: "/v1561980526/1935833_10154054058802174_7038430046969860891_n.jpg"
-published: false
 
 ---
