@@ -8,5 +8,6 @@ description: Our group exists to love God and to equip each other to faithfully 
   and bless our families, friends and colleagues. We love to worship,  pray and gather
   around Gods word. We also love to just hang out wether that’s going for a walk or
   having a BBQ.
+image: "/v1563218030/IMG_7030.jpg"
 
 ---
