@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/right-conclusion-requires-right-action.md
 - _messages/remind-us-humility-snares-part-2.md
 - _messages/remind-us-humility-and-snares.md
 - _messages/humility-and-surrender.md
