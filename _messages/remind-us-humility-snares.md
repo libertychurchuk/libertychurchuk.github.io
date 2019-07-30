@@ -1,13 +1,13 @@
 ---
-file: "/2019/2019-07-14.mp3"
-title: Remind us; humility & snares
-scripture: 2 Timothy 2:14-26
-date: 2019-07-13 23:00:00 +0000
+file: "/2019/2019-07-21.mp3"
+title: Remind us; humility & snares - part 2
+scripture: 2 Timothy 2:7-14
+date: 2019-07-20 23:00:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
 series: ''
-duration: '45:06'
-length: 60045664
+duration: '44:32'
+length: 6004562345824
 image: ''
 notes: ''
 published: false
