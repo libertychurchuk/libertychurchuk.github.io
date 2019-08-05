@@ -8,7 +8,7 @@ author: _authors/phil-boalch.md
 series: ''
 duration: '45:24'
 length: 64594816
-image: ''
+image: "/v1565020272/tim-foster-lSegRSDBMLw-unsplash_un7php.jpg"
 notes: ''
 
 ---
