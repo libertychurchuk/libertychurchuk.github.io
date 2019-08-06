@@ -5,7 +5,7 @@ time: ''
 location: Oakfield, Cwmbran
 started: ''
 description: ''
-image: ''
-date: 2019-04-24 13:43:19 +0000
+image: "/v1565123376/phil-julie_b7pt4o.png"
+date: '2019-04-24T13:43:19.000+00:00'
 
 ---
