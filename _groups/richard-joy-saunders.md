@@ -8,5 +8,6 @@ description: Our group exists to love God and to equip each other to faithfully 
   around Gods word. We also love to just hang out wether that’s going for a walk or
   having a BBQ.
 image: "/v1563218474/joy-richard-saunders-cropped.jpg"
+when: Fortnightly on a Wednesday at 7.30pm
 
 ---
