@@ -25,10 +25,6 @@ fields:
     required: false
   description: Where does the group meet?
 - type: text
-  name: started
-  label: Date started
-  description: When did the group start? e.g. December 2014
-- type: text
   name: description
   label: Description/bio
   description: What is the groups aim?

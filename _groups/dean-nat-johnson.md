@@ -3,7 +3,6 @@ title: Dean & Natalie Johnson
 day: ''
 time: ''
 location: Allt-yr-yn, Newport
-started: ''
 description: Our group exists to build community how Jesus wants us to, Colossians
   3:12. We want to edify and equip each other. We love to worship together and allow
   the Holy Spirit time to move. We also love family and friends, spending time, having

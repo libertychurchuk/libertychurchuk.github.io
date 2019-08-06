@@ -58,7 +58,15 @@ display: block;
     height: auto;
   }
 }
+.card__image--bnw img {
+filter: grayscale(100%);
+transition: all 300ms ease-in-out;
 
+&:hover {
+  filter: grayscale(0);
+
+}
+}
 .card__body {
 position: relative;
 top: 0;

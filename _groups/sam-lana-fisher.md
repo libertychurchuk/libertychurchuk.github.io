@@ -3,7 +3,6 @@ title: Sam & Lana Fisher
 day: ''
 time: ''
 location: Malpas
-started: ''
 description: We love to promote connection with others, building relationships that
   support and uplift you through day to day life. We love to dig deeper into Gods
   word, worship and pray together as well as hanging out as families.

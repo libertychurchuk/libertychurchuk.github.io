@@ -3,7 +3,6 @@ title: Byron & Esther James
 day: ''
 time: ''
 location: Caerleon
-started: ''
 description: Our group is very informal, the aim is to spend time together and build
   relationships. We discuss what we have been learning in church and share our faith
   journey with each other. We really enjoy having food together, playing games and
