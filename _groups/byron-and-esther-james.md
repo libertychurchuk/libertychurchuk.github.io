@@ -1,5 +1,5 @@
 ---
-title: Byron and Esther James
+title: Byron & Esther James
 day: ''
 time: ''
 location: Caerleon
