@@ -8,6 +8,6 @@ description: We love to promote connection with others, building relationships t
   word, worship and pray together as well as hanging out as families.
 image: "/v1565123206/sam-lana_qkuffa.png"
 date: '2019-04-24T14:08:08.000+00:00'
-when: Wednesday evenings at 7:30 twice a month
+when: Fortnightly on a Wednesday at 7.30pm
 
 ---
