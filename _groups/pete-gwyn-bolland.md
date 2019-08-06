@@ -9,6 +9,6 @@ description: We are a group of older followers of Jesus who seek to glorify Him 
   and sow into God’s Kingdom. We engage in more sedate social activities to suit children
   of the sixties and seventies!
 date: '2019-04-23T14:58:35.000+00:00'
-image: ''
+image: "/v1565123246/pete-gwyn_gtvvdv.png"
 
 ---
