@@ -8,25 +8,19 @@
     <div class="card__body">
       <h3 class="card__title">{{ item.title }}</h3>
 
-      {% if item.day.size > 1 %}
-      <div><b>Day:</b> {{ item.day }}</div>
-      {% endif %}
-
-      {% if item.time.size > 1 %}
-      <div><b>Time:</b> {{ item.time }}</div>
-      {% endif %}
-
       {% if item.location.size > 1 %}
       <div><b>Location:</b> {{ item.location }}</div>
       {% endif %}
 
-      {% if item.started.size > 1 %}
-      <div><b>Started:</b> {{ item.started }}</div>
+      {% if item.when.size > 1 %}
+      <div><b>When:</b> {{ item.when }}</div>
       {% endif %}
 
       {% if item.description.size > 1 %}
+      <hr>
       <div class="mt3">{{ item.description }}</div>
       {% endif %}
+
 
     </div>
   </div>
