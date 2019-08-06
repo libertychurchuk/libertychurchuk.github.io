@@ -9,16 +9,6 @@ fields:
     required: true
   description: What are the leaders names?
 - type: text
-  name: day
-  label: Day
-  config:
-    required: false
-  description: What days does the group meet?
-- type: text
-  name: time
-  label: Time
-  description: What time does the group meet?
-- type: text
   name: location
   label: Location
   config:
@@ -34,10 +24,20 @@ fields:
     maxSize: 250
   label: Photo
   description: A photo of the group leaders
+- name: when
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: When
+  description: When does the group meet?
 pages:
+- _groups/dean-nat-johnson.md
 - _groups/graham-daryl-sheppard.md
 - _groups/phil-julie-boalch.md
-- _groups/dean-nat-johnson.md
 - _groups/pete-gwyn-bolland.md
 - _groups/sam-lana-fisher.md
 - _groups/byron-and-esther-james.md
