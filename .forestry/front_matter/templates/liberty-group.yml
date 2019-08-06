@@ -14,16 +14,6 @@ fields:
   config:
     required: false
   description: Where does the group meet?
-- type: text
-  name: description
-  label: Description/bio
-  description: What is the groups aim?
-- name: image
-  type: file
-  config:
-    maxSize: 250
-  label: Photo
-  description: A photo of the group leaders
 - name: when
   type: textarea
   default: ''
@@ -34,6 +24,16 @@ fields:
       format: markdown
   label: When
   description: When does the group meet?
+- type: text
+  name: description
+  label: Description/bio
+  description: What is the groups aim?
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Photo
+  description: A photo of the group leaders
 pages:
 - _groups/dean-nat-johnson.md
 - _groups/graham-daryl-sheppard.md
