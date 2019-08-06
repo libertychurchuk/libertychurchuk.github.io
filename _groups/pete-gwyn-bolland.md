@@ -2,7 +2,7 @@
 title: Pete & Gwyn Bolland
 day: Wednesday
 time: ''
-location: St Julians
+location: St Julians, Newport
 description: We are a group of older followers of Jesus who seek to glorify Him in
   our fellowship together. We want to encourage one another to worship, pray, read,
   serve and sow into God’s Kingdom. We engage in more sedate social activities to
