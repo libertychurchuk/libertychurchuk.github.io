@@ -35,6 +35,7 @@ fields:
   label: Photo
   description: A photo of the group leaders
 pages:
+- _groups/chris-noreen-griffin.md
 - _groups/phil-julie-boalch.md
 - _groups/sam-lana-fisher.md
 - _groups/dean-nat-johnson.md
@@ -42,4 +43,3 @@ pages:
 - _groups/byron-and-esther-james.md
 - _groups/graham-daryl-sheppard.md
 - _groups/alex-cassandra-burton.md
-- _groups/chris-noreen-griffin.md
