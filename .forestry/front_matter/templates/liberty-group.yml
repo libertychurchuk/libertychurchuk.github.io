@@ -39,6 +39,7 @@ fields:
   label: Photo
   description: A photo of the group leaders
 pages:
+- _groups/pete-gwyn-bolland.md
 - _groups/byron-and-esther-james.md
 - _groups/dean-nat-johnson.md
 - _groups/graham-daryl-sheppard.md
@@ -48,6 +49,5 @@ pages:
 - _groups/chris-noreen-griffin.md
 - _groups/nat-emma-smith.md
 - _groups/phil-julie-boalch.md
-- _groups/pete-gwyn-bolland.md
 - _groups/sue-willis.md
 - _groups/morne-maritza-van-aswegen.md
