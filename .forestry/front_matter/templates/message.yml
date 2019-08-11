@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/it-s-a-simple-gospel.md
 - _messages/power-knowing-who-is-in-you.md
 - _messages/humility-and-surrender.md
 - _messages/right-conclusion-requires-right-action.md
