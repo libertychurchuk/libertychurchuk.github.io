@@ -8,7 +8,7 @@ author: _authors/graham-sheppard.md
 series: ''
 duration: '40:04'
 length: 55436512
-image: ''
+image: "/v1565605930/rod-long-TzgZrZQFVPc-unsplash_vjiroq.jpg"
 notes: ''
 published: false
 
