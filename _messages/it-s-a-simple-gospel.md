@@ -6,8 +6,8 @@ date: 2019-08-10 23:00:00 +0000
 description: ''
 author: _authors/graham-sheppard.md
 series: ''
-duration: ''
-length: 
+duration: '40:04'
+length: 55436512
 image: ''
 notes: ''
 published: false
