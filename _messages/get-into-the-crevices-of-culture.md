@@ -6,8 +6,8 @@ date: 2019-08-17 23:00:00 +0000
 description: ''
 author: _authors/gary-morgan.md
 series: ''
-duration: ''
-length: 
+duration: '51:32'
+length: 68384128
 image: "/v1566156982/mustard-seed_nbdhpf.jpg"
 notes: ''
 published: false
