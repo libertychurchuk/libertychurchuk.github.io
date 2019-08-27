@@ -8,7 +8,7 @@ author: _authors/esther-james.md
 series: ''
 duration: '36:38'
 length: 48736576
-image: "/v1566911803/priscilla-du-preez-nF8xhLMmg0c-unsplash_lcbb3a.jpg"
+image: "/v1566925396/manuel-nageli-p60mNTW5glI-unsplash_pcpfzv.jpg"
 notes: ''
 
 ---
