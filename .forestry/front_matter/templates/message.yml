@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/living-in-harmony.md
 - _messages/get-into-the-crevices-of-culture.md
 - _messages/it-s-a-simple-gospel.md
 - _messages/power-knowing-who-is-in-you.md
