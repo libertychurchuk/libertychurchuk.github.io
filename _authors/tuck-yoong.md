@@ -1,6 +1,6 @@
 ---
 title: ''
-name: Pastor Yang (Tuck Yoong)
+name: Pastor Yang
 avatar: ''
 published: false
 
