@@ -1,6 +1,6 @@
 ---
 title: ''
 name: Pastor Yang
-avatar: "/v1567424491/PY_600x400_e3aanp.jpg"
+avatar: "/v1567424814/pastor-yang_udntk8.jpg"
 
 ---
