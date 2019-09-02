@@ -8,7 +8,7 @@ author: _authors/tuck-yoong.md
 series: ''
 duration: '41:54'
 length: 56387488
-image: ''
+image: "/v1567424867/james-pond-HUiSySuofY0-unsplash_sp4ypr.jpg"
 notes: ''
 
 ---
