@@ -68,10 +68,10 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/get-into-the-crevices-of-culture.md
 - _messages/communing-together-for-the-king-and-his-kingdom.md
 - _messages/the-head-of-goliath.md
 - _messages/living-in-harmony.md
-- _messages/get-into-the-crevices-of-culture.md
 - _messages/it-s-a-simple-gospel.md
 - _messages/power-knowing-who-is-in-you.md
 - _messages/humility-and-surrender.md
