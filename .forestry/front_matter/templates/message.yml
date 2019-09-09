@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/communing-together-for-the-king-and-his-kingdom.md
 - _messages/the-head-of-goliath.md
 - _messages/living-in-harmony.md
 - _messages/get-into-the-crevices-of-culture.md
