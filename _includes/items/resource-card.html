@@ -14,7 +14,7 @@
       {% endif %}
       {% if item.image.size > 1 %}
       <img src="{{ site.cloudinary_url }}/w_480,h_270,c_fill/f_auto{{ item.image }}" alt="{{ item.title }}" />
-      {% else %}
+      {% elsif item.image.size %}
       <img src="{{ site.baseurl }}/assets/images/podcast-default.png" alt="{{ An image of a bible and headphones with the church logo overlaid }}" />
       {% endif %}
     </div>
