@@ -8,7 +8,7 @@ author: _authors/heath-van-staden.md
 series: ''
 duration: '53:42'
 length: 71769184
-image: ''
+image: "/v1568029038/zach-reiner-Jwuv9ngb3UE-unsplash_fkbivy.jpg"
 notes: ''
 published: false
 
