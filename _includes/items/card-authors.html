@@ -6,13 +6,11 @@
     <div class="card__image">
       <img src="{{ site.cloudinary_url }}/w_250,h_250,c_fill,g_face,r_max/f_auto{{ author.avatar }}" alt="A portrait photo of {{ author.title }}" />
       {% else %}
-      <article class="card card--author">
+      <article class="card card--author card--noimage">
         <a class="card-inner" href="{{ author.url }}">
           <div class="card__image">
       
       {% endif %}
-      <img src="{{ site.baseurl }}/assets/images/podcast-default.png" alt="{{ An image of a bible and headphones with the church logo overlaid }}" />
-
     </div>
     
 
