@@ -1,7 +1,7 @@
 ---
 label: Person
-hide_body: true
-display_field: name
+hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
