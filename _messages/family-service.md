@@ -5,7 +5,7 @@ scripture: Ephesians 2:18, 1 Corinthians 12:12-27
 date: 2019-09-14 23:00:00 +0000
 description: ''
 author: _authors/gareth-hillier.md
-series: ''
+series: _series/family-service.md
 duration: ''
 length: 
 image: ''
