@@ -6,8 +6,8 @@ date: 2019-09-14 23:00:00 +0000
 description: ''
 author: _authors/gareth-hillier.md
 series: _series/family-service.md
-duration: ''
-length: 
+duration: '26:48'
+length: 34138624
 image: ''
 notes: ''
 published: false
