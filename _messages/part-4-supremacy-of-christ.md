@@ -1,6 +1,6 @@
 ---
 file: "/2016/2016-02-21.mp3"
-title: 'Part 4: Supremacy of God'
+title: 'Part 4: Supremacy of Christ'
 scripture: ''
 date: 2016-02-21 00:00:00 +0000
 description: God was pleased that His fulness dwelt in His son. Jesus formed us, He
