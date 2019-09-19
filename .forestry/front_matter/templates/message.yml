@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/supremacy-of-christ.md
 - _messages/why-the-difference.md
 - _messages/part-3-the-nature-of-god.md
 - _messages/who-would-live-in-a-house-like-this.md
