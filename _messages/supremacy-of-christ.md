@@ -8,7 +8,7 @@ description: Taken from the book of Colossians, we begin the new year look at th
 author: _authors/heath-van-staden.md
 series: _series/supremacy-of-christ.md
 duration: ''
-length: 
+length: 49244918
 image: ''
 notes: ''
 published: false
