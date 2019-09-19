@@ -1,7 +1,7 @@
 ---
 file: "/2016/2016-01-17.mp3"
 title: 'Part 2: Supremacy of Christ'
-scripture: ''
+scripture: Colossians 1:15-20
 date: 2016-01-17 00:00:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
