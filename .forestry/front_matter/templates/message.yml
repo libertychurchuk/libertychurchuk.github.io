@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/part-3-supremacy-of-christ-1.md
 - _messages/part-6-supremacy-of-christ-2-edged-sword-1.md
 - _messages/part-6-supremacy-of-christ-2-edged-sword.md
 - _messages/part-3-supremacy-of-christ.md
