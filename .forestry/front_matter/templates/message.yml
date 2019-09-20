@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/everything-for-life-godliness.md
 - _messages/our-god-is-powerful.md
 - _messages/the-great-commission.md
 - _messages/it-s-worth-waiting-for.md
