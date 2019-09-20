@@ -5,10 +5,10 @@ scripture: ''
 date: 2016-06-25 23:00:00 +0000
 description: Availability is the fuel of building relationships and functioning in
   our calling.
-author: _authors/adam-howard.md
+author: _authors/justin-lowe.md
 series: ''
 duration: '38:57'
-length: 
+length: 56108037
 image: ''
 notes: ''
 published: false
