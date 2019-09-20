@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/the-great-commission.md
 - _messages/it-s-worth-waiting-for.md
 - _messages/part-1-the-nature-of-god-1.md
 - _messages/part-1-the-nature-of-god.md
