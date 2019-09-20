@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/are-you-available.md
 - _messages/raising-a-generation-of-fathers.md
 - _messages/missional-church.md
 - _messages/part-1-everything-for-life-and-godliness.md
