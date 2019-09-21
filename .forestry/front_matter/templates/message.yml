@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/foundation-building-well.md
 - _messages/peace-hug-or-rebuke.md
 - _messages/exceedingly-abundantly.md
 - _messages/people-places-purpose.md
