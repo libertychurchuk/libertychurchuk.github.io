@@ -8,7 +8,7 @@ author: _authors/james-aladiran.md
 series: ''
 duration: '50:44'
 length: 68020576
-image: ''
+image: "/v1569235131/james-barr-lf8nwCdrx00-unsplash_tzf2cf.jpg"
 notes: ''
 
 ---
