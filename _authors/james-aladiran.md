@@ -1,6 +1,6 @@
 ---
 title: James Aladiran
-avatar: ''
+avatar: "/v1569234525/james-aladarin_lt8ywn.jpg"
 published: false
 
 ---
