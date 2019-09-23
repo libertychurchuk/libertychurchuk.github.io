@@ -3,7 +3,7 @@ title: Series Index for Messages | Liberty Church UK
 layout: default
 description: Messages series from Liberty church.
 pagination: 
-  enabled: true
+  enabled: false
   collection: series
 ---
 
@@ -24,7 +24,7 @@ pagination:
 
 <section class="blog">
   <div class="row flex flex-row flex-wrap block-grid">
-    {% for item in paginator.posts %}
+    {% for item in paginator.posts reversed %}
         {% include items/card-series.html %}
     {% endfor %}
   </div>
