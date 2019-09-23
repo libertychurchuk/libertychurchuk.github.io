@@ -17,6 +17,7 @@ fields:
   config:
     maxSize: '1'
 pages:
+- _authors/james-aladiran.md
 - _authors/clyde-thomas.md
 - _authors/justin-lowe.md
 - _authors/andrew-butcher.md
