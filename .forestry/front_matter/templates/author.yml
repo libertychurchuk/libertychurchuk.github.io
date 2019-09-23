@@ -1,20 +1,14 @@
 ---
 label: Person
-hide_body: true
-display_field: name
+hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
-  label: Title
-  config:
-    required: true
-  hidden: true
-- type: text
-  name: name
   label: Full name
   config:
     required: true
-  default: ''
+  hidden: false
 - type: file
   name: avatar
   label: Avatar
@@ -23,11 +17,15 @@ fields:
   config:
     maxSize: '1'
 pages:
+- _authors/james-aladiran.md
+- _authors/clyde-thomas.md
+- _authors/justin-lowe.md
+- _authors/andrew-butcher.md
 - _authors/tuck-yoong.md
 - _authors/gary-morgan.md
-- _authors/ryan-termorshuizen.md
+- _authors/esther-james.md
 - _authors/koby-pokus.md
+- _authors/ryan-termorshuizen.md
 - _authors/jonathan-stanfield.md
 - _authors/phil-mann.md
-- _authors/esther-james.md
 - _authors/dr-stavros-ignatiou.md
