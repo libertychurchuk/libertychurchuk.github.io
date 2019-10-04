@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/romans-1.md
 - _messages/this-is-a-journey-of-faith.md
 - _messages/part-2-everything-for-life-and-godliness.md
 - _messages/supremacy-of-christ.md
