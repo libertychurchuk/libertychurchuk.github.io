@@ -12,6 +12,7 @@ fields:
   name: image
   label: Series artwork
 pages:
+- _series/romans.md
 - _series/supremacy-of-christ.md
 - _series/family-service.md
 - _series/hebrews-6-primary-biblical-foundations.md
