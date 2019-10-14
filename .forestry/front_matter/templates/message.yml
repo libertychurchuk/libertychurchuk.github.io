@@ -68,6 +68,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/i-am-not-ashamed-of-the-gospel.md
 - _messages/romans-1.md
 - _messages/romans-1-1-7.md
 - _messages/this-is-a-journey-of-faith.md
