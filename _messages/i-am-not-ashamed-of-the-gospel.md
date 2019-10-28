@@ -1,9 +1,9 @@
 ---
 file: "/2019/2019-10-13.mp3"
 title: I am not ashamed of the gospel
-scripture: ''
+scripture: Romans 1:24-25
 date: 2019-10-13 22:00:00 +0000
-description: ''
+description: There is hope in the coming back.
 author: _authors/heath-van-staden.md
 series: _series/romans.md
 duration: '45:58'
