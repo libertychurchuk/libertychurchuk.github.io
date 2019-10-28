@@ -1,6 +1,6 @@
 ---
 title: Clyde Thomas
-avatar: ''
+avatar: "/v1572253503/ckyde-thomas_nza0vd.png"
 published: false
 
 ---
