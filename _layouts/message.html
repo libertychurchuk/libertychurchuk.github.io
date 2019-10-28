@@ -4,10 +4,6 @@ layout: default
 
   <article class="article">
 
-    {% if page.file %}
-      {% include items/message-player.html %}
-    {% endif %}
-
     <header class="article__header">
 
       <div class="article__titles">
@@ -22,6 +18,10 @@ layout: default
       {% include items/message-meta.html %}
     
     </header>
+
+    {% if page.file %}
+      {% include items/message-player.html %}
+    {% endif %}
 
     {% if page.content.size > 1 %}
     <div class="article__body">
