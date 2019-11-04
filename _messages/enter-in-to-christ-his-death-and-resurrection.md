@@ -7,8 +7,8 @@ description: 'Are we ready to step off the ladder and run to Christ, and enter i
   Him. '
 author: _authors/phil-boalch.md
 series: _series/romans.md
-duration: ''
-length: 
+duration: '52:44'
+length: 68422720
 image: ''
 notes: ''
 published: false
