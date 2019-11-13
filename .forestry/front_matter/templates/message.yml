@@ -69,6 +69,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/romans-4.md
 - _messages/enter-in-to-christ-his-death-and-resurrection.md
 - _messages/beauty-and-the-brokenness.md
 - _messages/living-radically-changed-lives.md
