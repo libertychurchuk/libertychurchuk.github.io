@@ -6,8 +6,8 @@ date: 2019-11-24 00:00:00 +0000
 description: ''
 author: _authors/heath-van-staden.md
 series: _series/romans.md
-duration: ''
-length: 
+duration: '38:22'
+length: 51192256
 image: ''
 notes: ''
 published: false
