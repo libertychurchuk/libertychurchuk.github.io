@@ -9,5 +9,6 @@ description: Our group exists to love God and to equip each other to faithfully 
   having a BBQ.
 image: "/v1563218474/joy-richard-saunders-cropped.jpg"
 when: Fortnightly on a Wednesday at 7.30pm.
+published: false
 
 ---
