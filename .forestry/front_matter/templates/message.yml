@@ -69,8 +69,9 @@ fields:
   name: notes
   label: Notes
 pages:
-- _messages/stop-dating-jesus-be-all-in-for-christ.md
+- _messages/romans-6.md
 - _messages/romans-5.md
+- _messages/stop-dating-jesus-be-all-in-for-christ.md
 - _messages/romans-4.md
 - _messages/enter-in-to-christ-his-death-and-resurrection.md
 - _messages/beauty-and-the-brokenness.md
