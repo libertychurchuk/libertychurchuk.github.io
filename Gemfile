@@ -2,11 +2,12 @@
 
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+gem "jekyll", "~> 3.8.6"
 
 # gem "rails"
-gem "jekyll"
-gem "jekyll-sitemap"
-gem "jekyll-seo-tag"
-gem "jekyll-paginate-v2"
-gem "jekyll-menus"
+group :jekyll_plugins do
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+  gem "jekyll-paginate-v2"
+  gem "jekyll-menus"
+end

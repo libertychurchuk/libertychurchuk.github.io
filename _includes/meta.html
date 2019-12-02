@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="google-site-verification" content="Bfu2xNQL-HuV21rtmKrt1eal0NSlGglb1EAFOJO9eVc" />
 <meta name="apple-itunes-app" content="app-id=1236882329" />
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
 
 
 {% if page.date %}
@@ -31,3 +32,48 @@
   <meta content="{{ tag }}" property="article:tag">
   {% endfor %}
 {% endif %}
+
+
+<!-- Custom meta -->
+<title>Home | Liberty Church, Newport, South Wales</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Home" />
+<meta name="author" content="Liberty Church" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description"
+    content="{{ site.description }}" />
+<meta property="og:description"
+    content="{{ site.description }}" />
+<meta property="og:url" content="{{ site.title }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="{{ site.twitter.username }}" />
+<meta name="twitter:creator" content="{{ site.twitter.username }}" />
+<script
+    type="application/ld+json"> {
+      "name": "{{ site.title }}",
+      "description": "{{ site.description }}",
+      "author": {
+          "@type": "Person",
+          "name": "Liberty Church"
+      },
+      "@type": "WebSite",
+      "url": "http://localhost:4000/",
+      "publisher": {
+          "@type": "Organization",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "http://localhost:4000/assets/images/logos/liberty-church-logo.png"
+          },
+          "name": "Liberty Church"
+      },
+      "headline": "Home",
+      "sameAs": [
+          "https://twitter.com/LibertyChurchUK",
+          "https://www.facebook.com/libertychurchfamily",
+          "https://instagram.com/libertychurchuk",
+          "https://vimeo.com/libertychurchuk"
+      ],
+      "@context": "http://schema.org"
+  }</script>
+<!-- End Custom meta -->
