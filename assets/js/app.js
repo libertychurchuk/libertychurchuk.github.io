@@ -98,6 +98,8 @@ var refTagger = {
 
 var glide = new Glide('.glide', {
   type: 'carousel',
+  autoplay: 3000,
+  hoverpause: true,
   perView: 2,
   gap: 0,
   breakpoints: {
