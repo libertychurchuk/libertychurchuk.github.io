@@ -110,4 +110,4 @@ var glide = new Glide('.glide', {
   }
 })
 
-glide.mount()
+glide.mount({Autoplay})
