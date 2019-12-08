@@ -69,6 +69,7 @@ fields:
   name: notes
   label: Notes
 pages:
+- _messages/romans-7.md
 - _messages/romans-6.md
 - _messages/romans-5.md
 - _messages/stop-dating-jesus-be-all-in-for-christ.md
