@@ -6,9 +6,9 @@ date: 2019-12-08 00:00:00 +0000
 description: 'The law falls short of what God wants for us. The spirit takes us to
   higher places than the law through faith in Him and His grace. '
 author: _authors/phil-boalch.md
-series: ''
-duration: ''
-length: 
+series: _series/romans.md
+duration: '51:17'
+length: 66064000
 image: ''
 notes: ''
 published: false
