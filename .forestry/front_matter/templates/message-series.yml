@@ -12,11 +12,11 @@ fields:
   name: image
   label: Series artwork
 pages:
-- _series/romans.md
-- _series/supremacy-of-christ.md
+- _series/claim-to-fame.md
 - _series/family-service.md
 - _series/hebrews-6-primary-biblical-foundations.md
-- _series/claim-to-fame.md
-- _series/rhythm-of-destiny.md
-- _series/nature-of-god.md
 - _series/maturity.md
+- _series/nature-of-god.md
+- _series/rhythm-of-destiny.md
+- _series/romans.md
+- _series/supremacy-of-christ.md

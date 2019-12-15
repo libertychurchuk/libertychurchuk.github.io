@@ -35,12 +35,12 @@ fields:
   label: Photo
   description: A photo of the group leaders
 pages:
-- _groups/graham-daryl-sheppard.md
-- _groups/gaz-lois-hillier.md
 - _groups/alex-cassandra-burton.md
-- _groups/chris-noreen-griffin.md
-- _groups/pete-gwyn-bolland.md
 - _groups/byron-and-esther-james.md
+- _groups/chris-noreen-griffin.md
+- _groups/dean-nat-johnson.md
+- _groups/gaz-lois-hillier.md
+- _groups/graham-daryl-sheppard.md
+- _groups/pete-gwyn-bolland.md
 - _groups/phil-julie-boalch.md
 - _groups/sam-lana-fisher.md
-- _groups/dean-nat-johnson.md
