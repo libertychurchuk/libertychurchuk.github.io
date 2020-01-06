@@ -7,8 +7,8 @@ description: 'A call to remember the covenant that we are in with God, commune w
   Him. '
 author: _authors/heath-van-staden.md
 series: ''
-duration: ''
-length: 
+duration: " 1:03"
+length: 83588800
 image: ''
 notes: ''
 published: false
