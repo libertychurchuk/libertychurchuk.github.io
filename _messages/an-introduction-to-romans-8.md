@@ -1,7 +1,7 @@
 ---
 file: "/2020/2020-01-19.mp3"
 title: An introduction to Romans 8
-scripture: Romans 8:1-11
+scripture: Romans 8:1-11, Genesis 1:26, Genesis 2:7
 date: 2020-01-19 00:00:00 +0000
 description: ''
 author: _authors/phil-boalch.md
