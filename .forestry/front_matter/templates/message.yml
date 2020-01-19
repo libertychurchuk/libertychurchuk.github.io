@@ -19,6 +19,7 @@ fields:
     required: true
     display_utc: true
   description: The date that the message was preached.
+  default: now
 - type: textarea
   name: description
   label: Summary
@@ -49,7 +50,7 @@ fields:
   config:
     required: true
   description: The folder name and filename for the podcast episode e.g. /2018/2018-10-28.mp3
-  default: "/2019/2019-"
+  default: "/2020/2020-"
 - type: text
   name: duration
   label: Duration
