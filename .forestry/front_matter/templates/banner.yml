@@ -10,14 +10,6 @@ fields:
 - type: text
   name: subtitle
   label: subtitle
-- type: file
-  name: background_image
-  label: background_image
-  description: Upload an image of the following dimensions 1280x720
-- type: text
-  name: logo
-  label: logo
-  hidden: true
 - type: datetime
   name: date
   label: date
@@ -26,6 +18,14 @@ fields:
     order they are placed on the homepage.
   config:
     required: true
+- type: file
+  name: background_image
+  label: background_image
+  description: Upload an image of the following dimensions 1280x720
+- type: text
+  name: logo
+  label: logo
+  hidden: true
 - type: list
   name: call_to_action
   label: call_to_action
