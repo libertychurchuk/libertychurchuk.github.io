@@ -1,5 +1,5 @@
 ---
-title: 5th Birthday
+title: Liberty Church 5th Birthday 2020
 subtitle: ''
 logo: ''
 background_image: "/v1579788345/website_5th_birthday_b1ppxj.png"
