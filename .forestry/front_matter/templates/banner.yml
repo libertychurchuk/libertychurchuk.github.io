@@ -5,21 +5,29 @@ fields:
 - type: text
   name: title
   label: title
+  description: Ensure the title provides an overview of what the event or banner is
+    describing
 - type: text
   name: subtitle
   label: subtitle
-- type: text
-  name: logo
-  label: logo
 - type: file
   name: background_image
   label: background_image
-- type: list
-  name: call_to_action
-  label: call_to_action
+  description: Upload an image of the following dimensions 1280x720
+- type: text
+  name: logo
+  label: logo
+  hidden: true
 - type: datetime
   name: date
   label: date
+  hidden: false
+  description: Enter the date for the main event of the banner, this also sets the
+    order they are placed on the homepage.
+- type: list
+  name: call_to_action
+  label: call_to_action
+  description: The call to action can be used to link the banner to an external website.
 - name: expiry_date
   type: datetime
   label: Expiry Date
@@ -29,6 +37,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: 
+  hidden: true
 pages:
 - _banners/5th-birthday.md
 - _banners/candle-lit-service-at-gaer-christian-centre.md
