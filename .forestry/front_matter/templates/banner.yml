@@ -24,6 +24,8 @@ fields:
   hidden: false
   description: Enter the date for the main event of the banner, this also sets the
     order they are placed on the homepage.
+  config:
+    required: true
 - type: list
   name: call_to_action
   label: call_to_action
