@@ -9,6 +9,6 @@ description: We are a group of older followers of Jesus who seek to glorify Him 
   suit children of the sixties and seventies!
 date: '2019-04-23T14:58:35.000+00:00'
 image: "/v1565123246/pete-gwyn_gtvvdv.png"
-when: Fortnightly on a Wednesday at 7.30pm.
+when: Fortnightly on a Thursday at 7.30pm.
 
 ---
