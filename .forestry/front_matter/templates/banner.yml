@@ -30,6 +30,7 @@ fields:
     time_format: 
     display_utc: 
 pages:
+- _banners/5th-birthday.md
 - _banners/candle-lit-service-at-gaer-christian-centre.md
 - _banners/christmas-production-at-llanwern-high-school.md
 - _banners/december-after-service-festive-fun.md
