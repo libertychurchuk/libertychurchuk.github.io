@@ -6,10 +6,9 @@ scripture: Romans 8:1-14, Ephesians 2:1-3, Proverbs 23:7
 description: 'Our body and soul need to be under control. '
 author: _authors/phil-boalch.md
 series: _series/romans.md
-duration: ''
-length: 
+duration: '44:17'
+length: 58598773
 image: "/v1570217406/049BE3F7-9911-4FEA-A03A-6869ECC676B7_fviz1a.jpg"
 notes: ''
-published: false
 
 ---
