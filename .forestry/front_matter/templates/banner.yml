@@ -41,5 +41,4 @@ fields:
     display_utc: 
   hidden: true
 pages:
-- _banners/5th-birthday.md
 - _banners/join-us-tomorrow.md
