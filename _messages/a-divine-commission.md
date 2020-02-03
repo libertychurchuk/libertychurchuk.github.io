@@ -6,8 +6,8 @@ scripture: John:21, Acts 20:28, Luke 22:31-34
 description: ''
 author: _authors/rob-hutton.md
 series: ''
-duration: ''
-length: 
+duration: '48:42'
+length: 66480267
 image: ''
 notes: ''
 published: false
