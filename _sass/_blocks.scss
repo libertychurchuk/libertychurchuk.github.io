@@ -182,6 +182,7 @@ z-index: 0;
 .content-block--overlay-messages,
 .content-block--overlay-new-to-church,
 .content-block--overlay-after-service,
+.content-block--overlay-five-years,
 .content-block--overlay-part-of-us {
 @include z-index(content-overlay);
 
@@ -225,6 +226,15 @@ z-index: 0;
 
   &:before {
   background: rgba(61, 74, 94, 0.6);
+  }
+
+}
+
+.content-block--overlay-five-years {
+min-height: 500px;
+
+  &:before {
+  background: rgba(61, 74, 94, 0.8);
   }
 
 }
