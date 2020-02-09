@@ -2,7 +2,7 @@
 date: 2020-02-09 11:25:36 +0000
 file: "/2020/2020-02-09.mp3"
 title: Living in the spirit
-scripture: ''
+scripture: Romans 8:14-17, Galatians 3:27-28, Genesis 5:1-2
 description: ''
 author: _authors/phil-boalch.md
 series: _series/romans.md
