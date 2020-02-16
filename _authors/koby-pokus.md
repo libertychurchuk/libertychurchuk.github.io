@@ -1,6 +1,6 @@
 ---
 name: Koby Pokus
 title: Kobby Pokus
-avatar: "/v1561982387/1935833_10154054058802174_7038430046969860891_n.jpg"
+avatar: "/v1581853408/A7DC6A93-6CE9-4E5E-9575-70191A32FC76_aiawj7.jpg"
 
 ---
