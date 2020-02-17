@@ -7,8 +7,8 @@ description: Are you operating in the you, according with God. Or the you accord
   to you?
 author: _authors/koby-pokus.md
 series: ''
-duration: ''
-length: 
+duration: '52:06'
+length: 68177717
 image: ''
 notes: ''
 published: false
