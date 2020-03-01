@@ -1,5 +1,5 @@
 ---
-date: 2020-03-01 11:40:24 +0000
+date: 2020-01-03 12:00:00 +0000
 file: "/2020/2020-03-01.mp3"
 title: Prayer, Worship & Fasting - Journey in the midst of Faith
 scripture: 2 Chronicles 20:1-25
