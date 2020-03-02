@@ -6,8 +6,8 @@ scripture: 2 Chronicles 20:1-25
 description: ''
 author: _authors/heath-van-staden.md
 series: ''
-duration: ''
-length: 
+duration: '41:30'
+length: 55570588
 image: ''
 notes: ''
 published: false
