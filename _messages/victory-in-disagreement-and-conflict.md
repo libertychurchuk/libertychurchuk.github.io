@@ -2,7 +2,7 @@
 date: 2020-03-08 11:52:54 +0000
 file: "/2020/2020-03-08.mp3"
 title: Victory in disagreement and conflict
-scripture: James 4:1-10
+scripture: James 4:1-10, Matthew 5:21-25, Matthew 18:15-18
 description: ''
 author: _authors/heath-van-staden.md
 series: ''
