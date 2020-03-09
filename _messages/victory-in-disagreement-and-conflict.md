@@ -6,8 +6,8 @@ scripture: James 4:1-10, Matthew 5:21-25, Matthew 18:15-19
 description: ''
 author: _authors/heath-van-staden.md
 series: ''
-duration: ''
-length: 
+duration: '41:30'
+length: 55570588
 image: ''
 notes: ''
 published: false
