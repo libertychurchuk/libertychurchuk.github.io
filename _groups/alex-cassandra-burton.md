@@ -10,6 +10,6 @@ description: We believe in the building of relationships and the power of Gods w
   games nights and even the golf range.
 image: "/v1566458692/IMG_0092_thfpyp.png"
 date: '2019-04-24T13:41:09+00:00'
-when: Fortnightly on a Wednesday at 19:30
+when: Fortnightly on a Wednesday at 7:30pm
 
 ---
