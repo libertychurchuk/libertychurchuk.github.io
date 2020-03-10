@@ -1,6 +1,6 @@
 ---
 title: Gaz & Lois Hillier
-location: Lysaght, Newport
+location: Lysaghts, Newport
 when: Fortnightly on a Sunday for lunch at 2pm.
 description: 'We are a mixed adult age group including some couples with children.
   We love to gather around all things food and coffee, have a lot of fun and laughter
