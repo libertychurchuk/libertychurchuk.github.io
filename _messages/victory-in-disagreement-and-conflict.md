@@ -10,7 +10,6 @@ duration: '44:52'
 length: 64575055
 image: ''
 notes: ''
-published: false
 
 ---
 • We will have disagreements
