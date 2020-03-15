@@ -2,7 +2,7 @@
 date: 2020-03-15 11:20:11 +0000
 file: "/2020/2020-03-15.mp3"
 title: Substitution and transformation
-scripture: ''
+scripture: 2 Corinthians 10:7-10
 description: ''
 author: _authors/heath-van-staden.md
 series: ''
