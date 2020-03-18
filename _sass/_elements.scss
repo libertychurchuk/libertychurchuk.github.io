@@ -73,3 +73,28 @@ p {
   }
 }
 
+
+.global-alert {
+  background-color: $shiraz;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  @include z-index(global-alert);
+
+  a {
+    color: $white;
+    
+    &:hover,
+    &:focus {
+      background-color: lighten($shiraz, 10%);
+      color: $white;
+    }
+    
+  }
+
+  
+
+}
+
