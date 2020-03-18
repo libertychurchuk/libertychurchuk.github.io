@@ -11,6 +11,20 @@ fields:
 - type: text
   name: description
   label: description
+- name: video
+  type: text
+  config:
+    required: false
+  label: Video
+  description: Add the Vimeo URL here
 - type: file
   name: image
   label: image
+- name: last_updated
+  type: datetime
+  label: Last updated
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
