@@ -82,6 +82,9 @@ p {
   width: 100%;
   position: relative;
   @include z-index(global-alert);
+  padding: 1em;
+
+  p {margin: 0;}
 
   a {
     color: $white;
