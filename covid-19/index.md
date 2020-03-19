@@ -12,7 +12,7 @@ menu:
 ---
 <iframe src="https://player.vimeo.com/video/398633537?title=0&byline=0&portrait=0" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-We are excited to bring you this information and encourage you to thank Jesus for His goodness and kindness this season. We together are a people full of faith and full of the Holy Spirit who are adaptable and flexible to not let circumstances be the biggest voice, but rather allow Jesus to be glorified through this season.
+We are excited to bring you this information and encourage you to thank Jesus for His goodness and kindness this season. We together are a people full of faith and full of the Holy Spirit who are adaptable, and flexible to not let circumstances be the biggest voice, but rather allow Jesus to be glorified through this season.
 
 Here are some practical changes which we are putting in place to help.
 
@@ -20,7 +20,7 @@ We want to remind you that you are free and powerful people who are able to make
 
 We are continuing to monitor [government guidelines](https://www.gov.uk/government/topical-events/coronavirus-covid-19-uk-government-response) on how people can gather.
 
-We want to honour what is being said while also understanding what are suggestions and what is law. So the information below is subject to change as the government may decide to implement further restrictions on gatherings in the coming days.
+We want to honour what is being said, whilst also understanding what are suggestions and what is law. So the information below is subject to change as the government may decide to implement further restrictions on gatherings in the coming days.
 
 ## Information for the coming week
 
@@ -29,7 +29,7 @@ We want to honour what is being said while also understanding what are suggestio
 
 ### Sunday Morning Service: 22nd March (AM)
 
-10.30am We will have some worship and Word online on Sunday morning which you can access via social media.
+10\.30am We will have some worship and Word online on Sunday morning which you can access via social media.
 
 Details will follow later this week.
 
@@ -65,18 +65,18 @@ These dates will be adjusted and sent out. These will all be online Zoom courses
 
 ### Extra
 
-- Please make sure you are checking and receiving our emails - if you do not receive them, please [subscribe](#newsletter).
-- Keep in contact with Church family.
-- Please email us at [admin@libertychurchuk.com](mailto:admin@libertychurchuk.com) if you need anything or have any questions.
+* Please make sure you are checking and receiving our emails - if you do not receive them, please [subscribe](#newsletter).
+* Keep in contact with Church family.
+* Please email us at [admin@libertychurchuk.com](mailto:admin@libertychurchuk.com) if you need anything or have any questions.
 
----
+***
 
 Whatever we decide to do as a church, I am sure there will be some who agree and some who criticise. Please understand we have never led through a situation like this and our hearts desire is to look after you well and also hear the voice of God above the voice of Coronavirus in this.
 
 If you decide to visit someone or attend one of the provisions, please understand this is your choice. We love you and want to support you in your decisions.
 If you need something at this time, are worried and concerned or maybe you have an idea on how to help people, we are available to be contacted.
 
----
+***
 
 ## Here are some guidelines to remember
 
@@ -84,12 +84,12 @@ If you are in the vulnerable category as advised by the government, with regards
 
 ### Remember to…
 
-- **Catch it** – sneeze into a tissue.
-- **Bin it** – bin the tissue.
-- **Kill it** – wash your hands.
-- **Do not touch your face** unless you’ve washed your hands.
+* **Catch it** – sneeze into a tissue.
+* **Bin it** – bin the tissue.
+* **Kill it** – wash your hands.
+* **Do not touch your face** unless you’ve washed your hands.
 
----
+***
 
 For those that will be gathering together, please remember to greet each other with a foot tap or elbow bump!
 
