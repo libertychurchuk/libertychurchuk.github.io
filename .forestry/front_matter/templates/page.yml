@@ -24,5 +24,3 @@ fields:
   label: Layout
   default: page
   hidden: false
-pages:
-- test-title.md
