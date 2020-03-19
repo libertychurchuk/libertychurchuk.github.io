@@ -11,6 +11,8 @@
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
 {% endif %}
 
+<meta property="og:type" content="article" />
+
 {% if page.image %}
   <meta property="og:image" content="{{ site.cloudinary_url }}/w_1200,h_630,c_fill/f_auto{{ page.image }}">
 {% else %}
