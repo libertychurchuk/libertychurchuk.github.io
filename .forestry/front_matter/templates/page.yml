@@ -23,6 +23,6 @@ fields:
     required: false
   label: Layout
   default: page
-  hidden: true
+  hidden: false
 pages:
 - test-title.md
