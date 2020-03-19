@@ -3,7 +3,7 @@ title: Coronavirus
 subtitle: 'Coronavirus: A response - prayer, fasting and action'
 layout: page-narrow
 description: 'Coronavirus: A response - prayer, fasting and action'
-image: ''
+image: "/v1584611260/COVID-19update_1920x1080_m8pz01.png"
 menu:
   sidebar:
     title: Coronavirus (COVID-19)
