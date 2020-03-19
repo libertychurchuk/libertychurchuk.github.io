@@ -1,4 +1,19 @@
 ---
 label: Page
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Social sharing image
