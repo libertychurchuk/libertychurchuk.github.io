@@ -17,5 +17,12 @@ fields:
   config:
     maxSize: 250
   label: Social sharing image
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: page
+  hidden: true
 pages:
 - test-title.md
