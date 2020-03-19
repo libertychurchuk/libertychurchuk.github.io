@@ -1,15 +1,15 @@
 ---
-title: "Coronavirus"
-subtitle: "Coronavirus: A response - prayer, fasting and action"
+title: Coronavirus
+subtitle: 'Coronavirus: A response - prayer, fasting and action'
 layout: page-narrow
-description: "Coronavirus: A response - prayer, fasting and action"
-image: og-covid-19.jpg
+description: 'Coronavirus: A response - prayer, fasting and action'
+image: ''
 menu:
   sidebar:
     title: Coronavirus (COVID-19)
     weight: 1
----
 
+---
 <iframe src="https://player.vimeo.com/video/398633537?title=0&byline=0&portrait=0" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 We are excited to bring you this information and encourage you to thank Jesus for His goodness and kindness this season. We together are a people full of faith and full of the Holy Spirit who are adaptable and flexible to not let circumstances be the biggest voice, but rather allow Jesus to be glorified through this season.
