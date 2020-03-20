@@ -99,36 +99,6 @@ border-bottom: 1px solid $bordercolor;
 
 }
 
-.theme-marriage {
-background-color: lighten($marriagepurple, 20%);
-border-bottom: 1px solid $bordercolor;
-
-  .btn {
-  background-color: $marriagepurple;
-  color: $whitesmoke;
-
-    &:hover,
-    &:focus {  background-color: darken($marriagepurple, 10%);}
-
-  }
-
-  .btn--outline {
-  background: transparent;
-  border-color: $marriagepurple;
-  color: $marriagepurple;
-
-    &:hover,
-    &:focus {
-    background: transparent;
-    border-color: darken($marriagepurple, 10%);
-    color: darken($marriagepurple, 10%);
-    }
-
-  }
-
-}
-
-
 .theme-kids {
 background-color: $kidsblue;
 color: $white;
@@ -187,45 +157,6 @@ color: $youthtext;
   }
 }
 
-
-// Foundation Course
-.theme-foundation {
-background-color: $foundationblue;
-color: $white;
-
-  .content-block__heading,
-  .content-block__subheading {
-  color: $foundationgreen;
-  margin-bottom: 0;
-  }
-
-  .content-block__subheading {
-  font-size: 1.5rem;
-  }
-
-  .btn {
-  background-color: $foundationgreen;
-  color: $foundationblue;
-
-    &:hover,
-    &:focus {  background-color: darken($foundationgreen, 5);}
-
-  }
-
-  .btn--outline {
-  background: transparent;
-  border-color: $foundationgreen;
-  color: $foundationgreen;
-
-    &:hover,
-    &:focus {
-    background: transparent;
-    border-color: darken($foundationgreen, 5);
-    color: darken($foundationgreen, 5);
-    }
-
-  }
-}
 
 .theme-lambs {
 background-color: $lambs;
