@@ -35,9 +35,7 @@ Details will follow later this week.
 
 ### Sunday Evening: 22nd March (PM)
 
-7:30 - 8:30pm We will be having a worship and prayer meeting for those who would like to come. It will be held at the Gaer Christian Centre, where there is ample space.
-
-Again please consider your health conditions and there is no pressure for you to be there.
+Our evening gathering is now cancelled.
 
 ### Courageous Women Breakfast: 21st March
 
