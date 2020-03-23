@@ -53,9 +53,7 @@ This provision is currently unavailable due to council building regulations.
 
 ### Tuesday Prayer
 
-We will be having 2 prayer meetings on Tuesday. 9:30 - 10:30am and 7:30pm - 8:30pm. These will be held at the [Gaer Christian Centre](https://goo.gl/maps/uG9vVFF9GiEqZjHg9).
-
-Again please consider your health conditions before attending.
+We will be fasting and praying throughout the day on Tuesday 24th March.
 
 ### Upcoming courses (marriage, leadership)
 
