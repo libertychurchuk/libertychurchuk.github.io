@@ -7,8 +7,10 @@ image: ''
 file: "/2020/2020-03-22.mp3"
 description: ''
 duration: '15:28'
-length: '21841120'
+length: 21841120
 scripture: Proverbs 21:1, Proverbs 21:5
+series: ''
+notes: ''
 published: false
 
 ---

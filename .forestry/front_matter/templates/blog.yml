@@ -32,5 +32,3 @@ fields:
   label: Post image
   description: This image is displayed in listing pages and used for social sharing
     should ideally be 480x270px
-pages:
-- _messages/be-diligent-in-this-season.md
