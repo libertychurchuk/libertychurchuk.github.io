@@ -11,7 +11,6 @@ length: 21841120
 scripture: Proverbs 21:1, Proverbs 21:5
 series: ''
 notes: ''
-published: false
 
 ---
 <iframe src="https://player.vimeo.com/video/400554381?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
