@@ -1,6 +1,6 @@
 ---
 author: _authors/heath-van-staden.md
-title: Be diligent in this season
+title: Diligence leads to abundance
 date: 2020-03-22 12:53:52 +0000
 category: ''
 image: ''
