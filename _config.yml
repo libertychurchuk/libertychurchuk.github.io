@@ -7,6 +7,10 @@ collections:
     title: Testimony
     output: true
     permalink: /testimony/:year/:month/:day/:title/
+  devotionals:
+    title: Devotional
+    output: true
+    permalink: /devotionals/:year/:month/:day/:title/
   groups:
     title: Groups
     output: false
@@ -45,6 +49,11 @@ defaults:
       type: "testimonies"
     values:
       layout: "testimony"
+  - scope:
+      path: ""
+      type: "devotionals"
+    values:
+      layout: "devotional"
   - scope:
       path: ""
       type: "series"

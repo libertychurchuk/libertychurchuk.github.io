@@ -1,11 +1,11 @@
 ---
-title: Testimonies
-subtitle: Testimonies from Liberty church
+title: Devotionals
+subtitle: A series of daily devotionals
 layout: default
-description: A collection of testimonies from members of Liberty Church where they have seen God work in their lives and situations.
+description: Daily devotionals to encourage you in your quiet times
 pagination: 
   enabled: true
-  collection: testimonies
+  collection: devotionals
 ---
 
 <header class="content-block content-block--header">
@@ -18,7 +18,7 @@ pagination:
 <section class="blog">
   <div class="row flex flex-row flex-wrap block-grid">
     {% for item in paginator.posts %}
-        {% include items/card-message.html %}
+        {% include items/card-devotional.html %}
     {% endfor %}
   </div>
   {% include item-pagination.html %}

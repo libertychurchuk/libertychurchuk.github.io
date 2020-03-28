@@ -1,22 +1,30 @@
 ---
-title: Blog
+title: Journal
+subtitle: Life of the Church
 layout: default
 description: The Liberty Church blog. Stories, updates, thoughts and articles about
   what Jesus is doing in our lives and local communities.
 pagination:
   enabled: true
-  collection: posts, messages, testimonies
+  collection: posts, messages, testimonies, devotionals
 menu:
   sidebar:
     weight: 4
 
 ---
-{% include /header-blocks/blog.html %}
+<header class="content-block content-block--header">
+  <div class="content-block-inner">
+    <h1 class="header-block__heading">{{ page.title }}</h1>
+    <h2 class="content-block__subheading">{{ page.subtitle }}</h2>
+  </div>
+</header>
 
 <div class="tc mb4">
     <a href="/messages/" class="dib ph2 link">Messages</a>
     <a href="/testimony/" class="dib ph2 link">Testimonies</a>
-</div>
+    <a href="/devotionals/" class="dib ph2 link">Devotionals</a>
+
+  </div>
 
 <section class="blog">
 
@@ -25,6 +33,8 @@ menu:
     
       {% if item.collection == "messages" %}
         {% include items/card-message.html %}
+      {% else if item.collection == "devotionals"%}
+        {% include items/card-devotional.html %}
       {% else %}
         {% include items/card-article.html %}
       {% endif %}

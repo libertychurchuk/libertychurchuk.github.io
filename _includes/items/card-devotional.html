@@ -1,0 +1,45 @@
+{% if item.image.size > 1  %}
+<article class="card card--message">
+  <a class="card-inner" href="{{ item.url }}">
+    <div class="card__image">
+      <div class="card__labels">
+        <div class="card__labels-inner">
+          <div class="card__labels-label ttu">
+            <svg class="icon icon--light">
+              <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#bible"></use>
+            </svg> Devotional
+          </div>
+        </div>
+      </div>
+      <img src="{{ site.cloudinary_url }}/w_480,h_270,c_fill/f_auto{{ item.image }}" alt="{{ item.title }}" />
+      {% else %}
+      <article class="card card--message">
+        <a class="card-inner" href="{{ item.url }}">
+          <div class="card__image">
+            <div class="card__labels">
+              <div class="card__labels-inner">
+                <div class="card__labels-label ttu">
+                  <svg class="icon icon--light">
+                    <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#bible"></use>
+                  </svg> Devotional
+                </div>              </div>
+            </div>
+            <img src="{{ site.baseurl }}/assets/images/devotional-default.png" alt="{{ An image of a field wheat with the text daily devotional overlaid  }}" />
+
+      {% endif %}
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">{{ item.title }}</h3>
+      {% if item.date %}
+      <time class="card__date db ttu" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
+      {% endif %}
+
+      {% if item.description.size > 1 %}
+        <div class="card__text mt2">{{ item.description }}</div>
+      {% endif %}
+    </div>
+    <div class="card__footer">
+      {% include items/card-author.html %}
+    </div>
+  </a>
+</article>
