@@ -33,7 +33,7 @@ fields:
     required: true
   label: Speaker
   name: author
-  default: 
+  default: _authors/heath-van-staden.md
   description: Select an existing speaker, if the speaker is not available you can
     add a new person from the sidebar.
 - type: select
