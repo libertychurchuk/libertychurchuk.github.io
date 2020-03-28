@@ -19,7 +19,7 @@ sections:
   create: documents
   match: "**/*"
 - type: heading
-  label: Content
+  label: Structured content
 - type: directory
   path: _banners
   label: Banners
@@ -62,6 +62,8 @@ sections:
   match: "**/*"
   templates:
   - this-is-my-story-alice
+- type: heading
+  label: Pages
 - type: jekyll-pages
   label: Pages
   create: documents
