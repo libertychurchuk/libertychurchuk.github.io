@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: _devotionals
-  label: Devotionals
-  create: documents
-  match: "**/*"
 - type: heading
   label: Podcast
 - type: directory
@@ -33,13 +28,6 @@ sections:
   templates:
   - banner
 - type: directory
-  path: _groups
-  label: Liberty groups
-  create: documents
-  match: "**/*"
-  templates:
-  - liberty-group
-- type: directory
   path: _posts
   label: Blog
   create: documents
@@ -47,12 +35,19 @@ sections:
   templates:
   - blog
 - type: directory
-  path: _testimonies
-  label: Testimonies
+  path: _devotionals
+  label: Devotionals
   create: documents
   match: "**/*"
   templates:
-  - this-is-my-story-alice
+  - devotional
+- type: directory
+  path: _groups
+  label: Liberty groups
+  create: documents
+  match: "**/*"
+  templates:
+  - liberty-group
 - type: directory
   path: _authors
   label: People
@@ -60,6 +55,13 @@ sections:
   match: "**/*"
   templates:
   - author
+- type: directory
+  path: _testimonies
+  label: Testimonies
+  create: documents
+  match: "**/*"
+  templates:
+  - this-is-my-story-alice
 - type: jekyll-pages
   label: Pages
   create: documents
