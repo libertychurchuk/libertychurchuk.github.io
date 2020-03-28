@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Title
-  description: The title of the devotional. This will become th ename for the page,
+  description: The title of the devotional. This will become the name for the page,
     and will be displayed when sharing on social media.
 - name: description
   type: textarea
