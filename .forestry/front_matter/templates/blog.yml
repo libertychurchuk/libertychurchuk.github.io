@@ -26,6 +26,7 @@ fields:
     - Worship
     - News
     - Mission
+    - Devotional
   label: Category
 - type: file
   name: image
