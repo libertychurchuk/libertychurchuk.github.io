@@ -7,15 +7,8 @@ fields:
   config:
     required: false
   label: Title
-- name: date
-  type: datetime
-  label: Date
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
+  description: The title of the devotional. This will become th ename for the page,
+    and will be displayed when sharing on social media.
 - name: description
   type: textarea
   default: ''
@@ -24,12 +17,10 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
+    max: '158'
   label: Search engine / social description
-- name: image
-  type: file
-  config:
-    maxSize: 250
-  label: Image
+  description: 'The description that is shown when sharing a post on social media
+    and shown in Google search results. '
 - name: author
   type: select
   default: []
@@ -42,3 +33,22 @@ fields:
       file: 
       path: 
   label: Author
+  description: 'Select an existing author, if the author is not available you can
+    add a new person from the sidebar. '
+- name: date
+  type: datetime
+  label: Date
+  description: 'The date that the devotional was made available. '
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Optional image
+  description: This image is displayed in listing pages and used for social sharing
+    should. It should ideally be 1920x1080px
