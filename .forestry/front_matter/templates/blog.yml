@@ -5,18 +5,13 @@ fields:
 - type: text
   name: title
   label: Title
-- type: datetime
-  name: date
-  label: Date
-- type: select
+- name: description
+  type: text
   config:
-    source:
-      type: pages
-      section: authors
-    required: true
-  label: Author
-  name: author
-  default: _authors/rob-hutton.md
+    required: false
+  description: " The description that is shown when sharing a post on social media
+    and shown in Google search results. "
+  label: Search engine / social description
 - type: select
   name: category
   config:
@@ -28,6 +23,22 @@ fields:
     - Mission
     - Devotional
   label: Category
+  description: Select the type of blog post that the content relates to.
+- type: datetime
+  name: date
+  label: Date
+  default: now
+- type: select
+  config:
+    source:
+      type: pages
+      section: authors
+    required: true
+  label: Author
+  name: author
+  default: _authors/rob-hutton.md
+  description: The author of the blog post, select from a list of people. If you need
+    to add someone new, add a new person from the sidebar.
 - type: file
   name: image
   label: Post image
