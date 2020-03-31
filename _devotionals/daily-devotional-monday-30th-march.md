@@ -1,7 +1,7 @@
 ---
 author: _authors/phil-boalch.md
 date: 2020-03-30 07:30:02 +0000
-title: 'Daily Devotional: Monday 30th March'
+title: 'Daily Devotional: Monday 30th March 2020'
 description: ''
 image: ''
 
