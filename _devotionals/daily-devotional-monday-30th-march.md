@@ -7,7 +7,7 @@ image: ''
 scripture: Job 22:21, 1 John 4:18-19
 
 ---
-<iframe src="https://player.vimeo.com/video/402088935" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/402463289" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ***
 
