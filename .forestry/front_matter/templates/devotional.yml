@@ -9,6 +9,13 @@ fields:
   label: Title
   description: The title of the devotional. This will become the name for the page,
     and will be displayed when sharing on social media.
+- name: scripture
+  type: text
+  config:
+    required: false
+  label: Scripture
+  description: Add the scripture reference(s) for the devotional separated by commas..  e.g.
+    Job 22:23-25, Psalm 63:1-2
 - name: description
   type: textarea
   default: ''
