@@ -5,6 +5,5 @@ title: Dean Johnson
 description: ''
 image: ''
 scripture: ''
-published: false
 
 ---
