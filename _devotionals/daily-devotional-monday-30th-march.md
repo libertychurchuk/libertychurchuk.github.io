@@ -17,3 +17,5 @@ Now acquaint yourself with Him, and be at peace;
 Thereby good will come to you.
 
 ## 1 John 4:18-19
+
+There is no fear in love; but perfect love casts out fear, because fear involves torment. But he who fears has not been made perfect in love. We love Him because He first loved us.
