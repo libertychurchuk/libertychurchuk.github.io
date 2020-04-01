@@ -11,11 +11,11 @@ scripture: Job 22:21, 1 John 4:18-19
 
 ***
 
-## Job 22:21
+## Job 22:21 (NKJV)
 
 Now acquaint yourself with Him, and be at peace;  
 Thereby good will come to you.
 
-## 1 John 4:18-19
+## 1 John 4:18-19 (NKJV)
 
 There is no fear in love; but perfect love casts out fear, because fear involves torment. But he who fears has not been made perfect in love. We love Him because He first loved us.
