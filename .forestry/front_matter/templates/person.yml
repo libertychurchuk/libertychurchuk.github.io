@@ -1,4 +1,17 @@
 ---
 label: Person
 hide_body: false
-fields: []
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Name
+  description: The persons full name
+- name: avatar
+  type: file
+  config:
+    maxSize: '25'
+  label: Image
+  description: Upload an image that is 256x256px to be used on authors profiles.

@@ -54,7 +54,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
-  - author
+  - person
 - type: directory
   path: _testimonies
   label: Testimonies
