@@ -1,9 +1,10 @@
 ---
 author: ''
-date: 
+date: ''
 title: Dean Johnson
 description: ''
 image: ''
 scripture: ''
+avatar: ''
 
 ---
