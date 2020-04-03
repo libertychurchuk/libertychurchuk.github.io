@@ -5,7 +5,6 @@ title: 'Daily Devotional: Friday 3rd April 2020'
 description: ''
 image: ''
 scripture: ''
-published: false
 
 ---
 <iframe src="https://player.vimeo.com/video/403481355" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
