@@ -1,6 +1,6 @@
 ---
 author: _authors/julie-boalch-1.md
-date: 2020-04-02 07:30:02 +0000
+date: 2020-04-03 07:30:02 +0000
 title: 'Daily Devotional: Friday 3rd April 2020'
 description: ''
 image: ''
