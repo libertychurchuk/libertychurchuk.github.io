@@ -15,3 +15,5 @@ fields:
     maxSize: '25'
   label: Image
   description: Upload an image that is 256x256px to be used on authors profiles.
+pages:
+- _authors/julie-boalch-1.md
