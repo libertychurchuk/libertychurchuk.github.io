@@ -9,6 +9,7 @@ fields:
   label: Title
   description: The title of the devotional. This will become the name for the page,
     and will be displayed when sharing on social media.
+  default: 'Daily Devotional:'
 - name: scripture
   type: text
   config:
