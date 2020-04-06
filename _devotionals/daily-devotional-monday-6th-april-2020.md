@@ -1,7 +1,7 @@
 ---
 author: _authors/phil-boalch.md
 date: 2020-04-06 07:30:02 +0000
-title: 'Daily Devotional: Friday 6th April 2020'
+title: 'Daily Devotional: Monday 6th April 2020'
 description: ''
 image: ''
 scripture: ''
