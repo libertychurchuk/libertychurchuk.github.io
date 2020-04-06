@@ -1,5 +1,0 @@
----
-title: Julie Boalch
-avatar: ''
-
----
