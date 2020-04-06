@@ -1,6 +1,6 @@
 ---
-author: _authors/julie-boalch-1.md
-date: 2020-04-03 07:30:02 +0000
+author: _authors/phil-boalch.md
+date: 2020-04-06 07:30:02 +0000
 title: 'Daily Devotional: Friday 3rd April 2020'
 description: ''
 image: ''
@@ -8,4 +8,4 @@ scripture: ''
 published: false
 
 ---
-<iframe src="https://player.vimeo.com/video/403481355" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/404379274" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
