@@ -1,5 +1,5 @@
 ---
 title: Julie Boalch
-avatar: "/v1585899089/julie_lffxx3.png"
+avatar: "/v1586255024/julie_k7d8we.png"
 
 ---
