@@ -2,7 +2,7 @@
 title: 'Daily Devotional: 7th April 2020'
 author: _authors/koby-pokus.md
 date: 2020-04-07 09:30:11 +0000
-scripture: ''
+scripture: Job 22:30
 description: ''
 image: ''
 
