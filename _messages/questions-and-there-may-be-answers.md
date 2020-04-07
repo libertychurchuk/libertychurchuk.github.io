@@ -6,8 +6,8 @@ title: Questions and there may be answers
 scripture: Haggai 2:1-9
 description: ''
 series: ''
-duration: ''
-length: 
+duration: '25:16'
+length: 37195552
 image: ''
 notes: ''
 published: false
