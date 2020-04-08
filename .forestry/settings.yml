@@ -21,6 +21,13 @@ sections:
 - type: heading
   label: Structured content
 - type: directory
+  path: _alerts/**/*
+  label: Alerts
+  create: documents
+  match: "**/*"
+  templates:
+  - alert
+- type: directory
   path: _banners
   label: Banners
   create: documents
