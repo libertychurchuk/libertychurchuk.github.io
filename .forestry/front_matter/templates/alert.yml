@@ -1,4 +1,22 @@
 ---
 label: Alert
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: The title describing the alert e.g. School closed, COVID-19 etc
+- name: summary
+  type: text
+  config:
+    required: false
+  label: Message
+  description: Provide a short message to be displayed in the alert.
+- name: button
+  type: include
+  config: {}
+  template: call-to-action
+  label: Button
+  description: Call to action button
