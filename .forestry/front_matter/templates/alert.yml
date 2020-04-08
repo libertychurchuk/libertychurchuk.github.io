@@ -20,3 +20,5 @@ fields:
   template: call-to-action
   label: Button
   description: Call to action button
+pages:
+- _alerts/**/*/covid-19.md
