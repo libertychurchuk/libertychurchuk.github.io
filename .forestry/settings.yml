@@ -21,7 +21,7 @@ sections:
 - type: heading
   label: Structured content
 - type: directory
-  path: _alerts/**/*
+  path: _alerts
   label: Alerts
   create: documents
   match: "**/*"
