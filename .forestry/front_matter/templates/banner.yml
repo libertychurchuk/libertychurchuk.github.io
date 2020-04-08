@@ -41,4 +41,5 @@ fields:
     display_utc: 
   hidden: true
 pages:
+- _banners/easter-at-liberty-church.md
 - _banners/join-us-tomorrow.md
