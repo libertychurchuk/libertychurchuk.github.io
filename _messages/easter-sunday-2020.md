@@ -10,7 +10,6 @@ duration: '24:46'
 length: 33907168
 image: ''
 notes: ''
-published: false
 
 ---
 <iframe src="https://player.vimeo.com/video/406814315" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
