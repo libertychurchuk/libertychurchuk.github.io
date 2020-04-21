@@ -10,7 +10,6 @@ menu:
   sidebar:
     title: Coronavirus (COVID-19)
     weight: 1
-published: false
 
 ---
 <iframe src="https://player.vimeo.com/video/398633537?title=0&byline=0&portrait=0" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
