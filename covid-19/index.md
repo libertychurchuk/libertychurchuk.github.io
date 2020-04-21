@@ -12,8 +12,6 @@ menu:
     weight: 1
 
 ---
-<iframe src="https://player.vimeo.com/video/398633537?title=0&byline=0&portrait=0" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
 During this season we encourage you to thank Jesus for His goodness and kindness. We together are a people full of faith and full of the Holy Spirit who are adaptable, and flexible to not let circumstances be the biggest voice, but rather allow Jesus to be glorified through this season.
 
 During this time, our diary looks a little different, here’s what’s happening during the week:
