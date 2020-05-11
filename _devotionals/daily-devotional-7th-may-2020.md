@@ -1,6 +1,6 @@
 ---
 title: 'Daily Devotional: 7th May 2020'
-author: []
+author: _authors/phil-boalch.md
 date: 2020-05-07 07:01:24 +0000
 scripture: Ephesians 6:16
 description: ''
