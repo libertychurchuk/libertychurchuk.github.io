@@ -6,10 +6,9 @@ title: Step out of your retirement
 scripture: Acts 1:12-26
 description: ''
 series: ''
-duration: ''
-length: 
+duration: '25:56'
+length: 33958048
 image: ''
 notes: ''
-published: false
 
 ---
