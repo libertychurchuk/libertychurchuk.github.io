@@ -6,10 +6,9 @@ title: The right conversation…
 scripture: Acts 1:1-11
 description: ''
 series: ''
-duration: ''
-length: 
+duration: '25:58'
+length: 36020128
 image: ''
 notes: ''
-published: false
 
 ---
