@@ -2,7 +2,7 @@
 title: 'Daily Devotional: 18th May 2020'
 author: _authors/julie-boalch.md
 date: 2020-05-18 06:41:22 +0000
-scripture: Galatians 5:13-14
+scripture: Galatians 5:22-23
 description: ''
 image: "/v1589784998/DailyDevotion_start_1920x1080_v2_g1tvzj.png"
 
