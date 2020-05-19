@@ -2,7 +2,7 @@
 title: 'Daily Devotional: 14th May 2020'
 author: _authors/gareth-hillier.md
 date: 2020-05-14 07:00:38 +0000
-scripture: Galatians 5:13-14
+scripture: Galatians 5:22-23
 description: ''
 image: "/v1589439014/DailyDevotion_start_1920x1080_v2_uwjauw.png"
 
