@@ -17,4 +17,5 @@ fields:
   description: Upload an image that is 256x256px to be used on authors profiles.
 pages:
 - _authors/julie-boalch.md
+- _authors/lana-fisher.md
 - _authors/lois-hillier.md
