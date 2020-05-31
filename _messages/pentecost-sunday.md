@@ -4,7 +4,7 @@ author: _authors/heath-van-staden.md
 file: "/2020/2020-05-31.mp3"
 title: Pentecost Sunday
 scripture: Acts 2:1-8
-description: ''
+description: What is the echo that you are hearing?
 series: ''
 duration: ''
 length: 
