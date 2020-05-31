@@ -8,7 +8,7 @@ description: ''
 series: ''
 duration: ''
 length: 
-image: ''
+image: "/v1590918007/mandy-henry-2F0vQgzjFGA-unsplash_2_zauqtg.jpg"
 notes: ''
 published: false
 
