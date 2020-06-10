@@ -41,6 +41,7 @@ fields:
     display_utc: 
   hidden: true
 pages:
+- _banners/church-online.md
 - _banners/easter-at-liberty-church.md
 - _banners/easter-sunday-liberty-kids-live-online.md
 - _banners/easter-sunday-service-online.md
