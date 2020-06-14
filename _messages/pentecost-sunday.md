@@ -6,8 +6,8 @@ title: Pentecost Sunday
 scripture: Acts 2:1-8
 description: What is the echo that you are hearing and declaring?
 series: ''
-duration: ''
-length: 
+duration: '20:56'
+length: 39323776
 image: "/v1590918007/mandy-henry-2F0vQgzjFGA-unsplash_2_zauqtg.jpg"
 notes: ''
 published: false
