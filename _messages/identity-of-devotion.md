@@ -1,7 +1,7 @@
 ---
 date: 2020-05-31 09:49:38 +0000
 author: _authors/gary-morgan.md
-file: "/2020/2020-"
+file: "/2020/2020-05-31.mp3"
 title: Identity of devotion
 scripture: ''
 description: ''
