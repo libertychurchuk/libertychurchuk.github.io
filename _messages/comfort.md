@@ -8,7 +8,7 @@ description: '3 ways that God comforts us. His presence, His Word, His people. '
 series: ''
 duration: ''
 length: 
-image: ''
+image: "/v1592129412/ben-white-e92L8PwcHD4-unsplash_bmrjvl.jpg"
 notes: ''
 published: false
 
