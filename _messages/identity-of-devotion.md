@@ -6,8 +6,8 @@ title: Identity of devotion
 scripture: ''
 description: ''
 series: ''
-duration: ''
-length: 
+duration: '28:44'
+length: 39323776
 image: ''
 notes: ''
 published: false
