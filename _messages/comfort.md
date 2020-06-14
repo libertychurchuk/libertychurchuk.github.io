@@ -6,8 +6,8 @@ title: Comfort
 scripture: 2 Corinthians 1:1-7, Matthew 7:24-27
 description: '3 ways that God comforts us. His presence, His Word, His people. '
 series: ''
-duration: ''
-length: 
+duration: '36:22'
+length: 54096736
 image: "/v1592129412/ben-white-e92L8PwcHD4-unsplash_bmrjvl.jpg"
 notes: ''
 published: false
