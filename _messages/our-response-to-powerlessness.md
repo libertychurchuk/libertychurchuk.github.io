@@ -4,7 +4,8 @@ author: _authors/rob-hutton.md
 file: "/2020/2020-"
 title: Our response to powerlessness
 scripture: ''
-description: ''
+description: There are powerful postures we have to take for the Gospel to go out
+  in a powerless world. Are we willing to partner with the Holy Spirit.
 series: ''
 duration: ''
 length: 
