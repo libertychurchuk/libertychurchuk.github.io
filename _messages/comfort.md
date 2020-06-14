@@ -1,5 +1,5 @@
 ---
-date: 2020-06-14 09:42:22 +0000
+date: 2020-06-14 00:00:00 +0000
 author: _authors/ryan-termorshuizen.md
 file: "/2020/2020-"
 title: Comfort
