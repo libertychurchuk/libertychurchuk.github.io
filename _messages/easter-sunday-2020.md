@@ -8,7 +8,7 @@ description: ''
 series: ''
 duration: '24:46'
 length: 33907168
-image: ''
+image: "/v1592138010/bruno-van-der-kraan-v2HgNzRDfII-unsplash_qcukfs.jpg"
 notes: ''
 
 ---
