@@ -1,6 +1,6 @@
 ---
 date: 2020-06-07 09:48:23 +0000
-author: _authors/gary-morgan.md
+author: _authors/rob-hutton.md
 file: "/2020/2020-"
 title: Our response to powerlessness
 scripture: ''
