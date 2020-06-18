@@ -4,19 +4,19 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: author
-  label: author
+  label: Author
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: text
   name: scripture
-  label: scripture
+  label: Key scripture
 - type: text
   name: description
-  label: description
+  label: Description
 - type: file
   name: image
-  label: image
+  label: Image
