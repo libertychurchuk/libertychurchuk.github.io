@@ -20,3 +20,5 @@ fields:
 - type: file
   name: image
   label: Image
+pages:
+- _studies/bible-study-1st-june-2020.md

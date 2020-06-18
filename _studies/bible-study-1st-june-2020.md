@@ -1,10 +1,9 @@
 ---
-title: 'Bible Study One'
+title: Bible Study One
 author: _authors/koby-pokus.md
-date: 2020-06-01 06:58:37 +0000
+date: 2020-06-01T06:58:37.000+00:00
 scripture: Proverbs 3:7-8
 description: ''
-image: "/v1590994753/DailyDevotion_start_1920x1080_v3_nc37fq.png"
+image: ''
 
 ---
-<iframe src="https://player.vimeo.com/video/424591022" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
