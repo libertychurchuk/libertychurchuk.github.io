@@ -42,6 +42,11 @@ sections:
   templates:
   - blog
 - type: directory
+  path: _studies
+  label: Bible studies
+  create: documents
+  match: "**/*"
+- type: directory
   path: _devotionals
   label: Devotionals
   create: documents
