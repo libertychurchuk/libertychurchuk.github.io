@@ -1,24 +1,39 @@
 ---
-label: Buble study
+label: Bible study
 hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
   label: Title
 - type: text
-  name: author
+  name: scripture
+  label: Key scripture
+- name: author
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: authors
+      file: 
+      path: 
   label: Author
 - type: datetime
   name: date
   label: Date
-- type: text
-  name: scripture
-  label: Key scripture
 - type: text
   name: description
   label: Description
 - type: file
   name: image
   label: Image
+- name: notes
+  type: file
+  config:
+    maxSize: 64
+  label: Notes
 pages:
 - _studies/bible-study-1st-june-2020.md
