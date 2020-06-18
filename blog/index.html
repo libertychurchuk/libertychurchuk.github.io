@@ -6,7 +6,7 @@ description: The Liberty Church blog. Stories, updates, thoughts and articles ab
   what Jesus is doing in our lives and local communities.
 pagination:
   enabled: true
-  collection: posts, messages, testimonies, devotionals
+  collection: posts, messages, testimonies, devotionals, studies
 menu:
   sidebar:
     weight: 4
@@ -23,7 +23,7 @@ menu:
     <a href="/messages/" class="dib ph2 link">Messages</a>
     <a href="/testimony/" class="dib ph2 link">Testimonies</a>
     <a href="/devotionals/" class="dib ph2 link">Devotionals</a>
-
+    <a href="/bible-studies/" class="dib ph2 link">Bible studies</a>
   </div>
 
 <section class="blog">
@@ -35,6 +35,8 @@ menu:
         {% include items/card-message.html %}
       {% else if item.collection == "devotionals"%}
         {% include items/card-devotional.html %}
+      {% else if item.collection == "studies"%}
+        {% include items/card-studies.html %}
       {% else %}
         {% include items/card-article.html %}
       {% endif %}

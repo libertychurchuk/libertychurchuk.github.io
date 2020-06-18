@@ -1,0 +1,20 @@
+<ul class="article-meta db tc">
+
+  {% if page.scripture.size > 1 %}
+  <li class="item__scripture dib">
+    <svg class="icon">
+      <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#bible"></use>
+    </svg> {{ page.scripture }}
+  </li>
+  {% endif %}
+
+  {% if page.notes.size > 1 %}
+  <li class="item__notes dib">
+    <svg class="icon">
+      <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#download"></use>
+    </svg>
+    <a href="https://res.cloudinary.com/libertychurchuk/image/upload{{ page.notes }}" ga('send', 'event', 'PDF Downloads', 'Notes Downloaded', '{{ page.title}}');>Notes</a>
+  </li>
+  {% endif %}
+
+</ul>

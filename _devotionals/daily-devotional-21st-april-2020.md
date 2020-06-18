@@ -2,7 +2,7 @@
 title: 'Daily Devotional: 21st April 2020'
 author: _authors/lois-hillier.md
 date: 2020-04-21 07:30:21 +0000
-scripture: PSalm 91:11-12
+scripture: Psalm 91:11-12
 description: ''
 image: ''
 

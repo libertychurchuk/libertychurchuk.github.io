@@ -1,0 +1,25 @@
+---
+title: Bible studies
+subtitle: A series of daily devotionals
+layout: default
+description: Bible 
+pagination: 
+  enabled: true
+  collection: studies
+---
+
+<header class="content-block content-block--header">
+  <div class="content-block-inner">
+    <h1 class="header-block__heading">{{ page.title }}</h1>
+    <h2 class="content-block__subheading">{{ page.subtitle }}</h2>
+  </div>
+</header>
+
+<section class="blog">
+  <div class="row flex flex-row flex-wrap block-grid">
+    {% for item in paginator.posts %}
+        {% include items/card-studies.html %}
+    {% endfor %}
+  </div>
+  {% include item-pagination.html %}
+</section>

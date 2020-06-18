@@ -26,12 +26,19 @@ collections:
     title: Messages
     output: true
     permalink: /messages/:path/
+  studies:
+    title: Studies
+    output: true
+    permalink: /bible-studies/:path/
   series:
     title: Series
     output: true
     permalink: /series/:path/
   banners:
     title: Banners
+    output: false
+  alerts:
+    title: Alerts
     output: false
 defaults:
   - scope:
@@ -54,6 +61,11 @@ defaults:
       type: "devotionals"
     values:
       layout: "devotional"
+  - scope:
+      path: ""
+      type: "studies"
+    values:
+      layout: "study"
   - scope:
       path: ""
       type: "series"
