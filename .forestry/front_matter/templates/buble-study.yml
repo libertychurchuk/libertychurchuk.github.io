@@ -37,5 +37,3 @@ fields:
     maxSize: 64
   label: Notes
   description: Add any supporting notes to go along with this Bible study.
-pages:
-- _studies/bible-study-1st-june-2020.md
