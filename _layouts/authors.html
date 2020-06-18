@@ -23,8 +23,10 @@ pagination:
     
     {% assign messages = site.messages | where: 'author', page.relative_path %}
     {% assign articles = site.posts | where: 'author', page.relative_path %}
+    {% assign devotionals = site.devotionals | where: 'author', page.relative_path %}
+    {% assign studies = site.studies | where: 'author', page.relative_path %}
 
-    {% assign resources = messages | concat: articles  %}
+    {% assign resources = messages | concat: articles | concat: devotionals | concat: studies  %}
 
 
 
