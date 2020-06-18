@@ -1,0 +1,22 @@
+---
+label: Buble study
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: author
+  label: author
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: scripture
+  label: scripture
+- type: text
+  name: description
+  label: description
+- type: file
+  name: image
+  label: image
