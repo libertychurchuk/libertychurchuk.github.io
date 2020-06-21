@@ -6,8 +6,8 @@ title: The heart of the Father is sacrifice
 scripture: 1 Corinthians 4:14-15, 2 Timothy 4, Malachi 4:4-6
 description: ''
 series: ''
-duration: ''
-length: 
+duration: '34:36'
+length: 47696704
 image: "/v1592732616/daiga-ellaby-7edWO30e32k-unsplash_twhemu.jpg"
 notes: ''
 published: false
