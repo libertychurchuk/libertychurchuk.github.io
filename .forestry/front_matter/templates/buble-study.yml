@@ -37,3 +37,5 @@ fields:
     maxSize: 64
   label: Notes
   description: Add any supporting notes to go along with this Bible study.
+pages:
+- _studies/bible-study-session-1-god-is-good.md
