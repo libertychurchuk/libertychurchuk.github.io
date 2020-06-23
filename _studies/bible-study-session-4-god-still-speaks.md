@@ -2,7 +2,7 @@
 author: _authors/phil-boalch.md
 title: 'Bible Study Session 4: God Still Speaks'
 scripture: ''
-date: 2020-06-01 15:00:00 +0000
+date: 2020-06-23 15:00:00 +0000
 description: Bible Study around our values at Liberty Church
 image: "/v1592909549/4_i16o0j.png"
 notes: ''
