@@ -2,7 +2,7 @@
 author: _authors/phil-boalch.md
 title: 'Bible Study Session 1: God is Good'
 scripture: ''
-date: 2020-06-23 11:00:00 +0000
+date: 2020-06-23 12:00:00 +0000
 description: Bible Study around our values at Liberty Church
 image: "/v1592905052/1_tkrrnw.png"
 notes: ''
