@@ -1,7 +1,7 @@
 ---
 date: 2020-06-26 00:00:00 +0000
 author: _authors/phil-boalch.md
-file: "/2020/2020-"
+file: "/our-values/our-values-session-01.mp3"
 title: 'Our Values: 1. God is Good'
 scripture: ''
 description: 'A study around our values at Liberty Church: 1. God is Good'
