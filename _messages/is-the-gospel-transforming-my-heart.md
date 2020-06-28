@@ -1,0 +1,15 @@
+---
+date: 2020-06-28 09:28:55 +0000
+author: _authors/heath-van-staden.md
+file: "/2020/2020-06-28.mp3"
+title: 'Is the gospel transforming my heart? '
+scripture: Proverbs 21:21, Jeremiah 17:7, Ephesians 4:16, Proverbs 18:1, Hebrews 3:12
+description: ''
+series: ''
+duration: ''
+length: 
+image: ''
+notes: ''
+published: false
+
+---
