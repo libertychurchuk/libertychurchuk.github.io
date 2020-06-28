@@ -19,3 +19,4 @@ published: false
 4. Unbelieving, falling away, hardened heart
 5. Sin is fundamentally deceptive
 6. Love, worship, glorify Jesus
+7. Heart and life transformation
