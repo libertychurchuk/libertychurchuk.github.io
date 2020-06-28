@@ -17,3 +17,5 @@ published: false
 2. The rest of us are The Body
 3. Humble myself or justify myself
 4. Unbelieving, falling away, hardened heart
+5. Sin is fundamentally deceptive
+6. 
