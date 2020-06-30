@@ -4,7 +4,8 @@ author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-06.mp3"
 title: 'Our Values: 6. A Devoted People'
 scripture: ''
-description: ''
+description: During this study we look at the characteristics of a people who have
+  had their lives changed by the Lord and Saviour of mankind.
 series: _series/our-values.md
 duration: '48:01'
 length: 93687208

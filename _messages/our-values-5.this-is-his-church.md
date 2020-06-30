@@ -4,7 +4,9 @@ author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-05.mp3"
 title: 'Our Values: 5. This is His Church'
 scripture: ''
-description: ''
+description: The church exists because of Jesus, for Jesus and through Jesus. He is
+  the head of His church and we are His body here on earth. May we never forget who
+  we serve and why we serve Him.
 series: _series/our-values.md
 duration: '50:09'
 length: 98070254
