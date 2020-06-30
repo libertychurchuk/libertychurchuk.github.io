@@ -10,7 +10,7 @@ series: _series/our-values.md
 duration: '46:06'
 length: 89994601
 image: "/v1593514373/VimeoholderBS2_1920x1080_kfnfm6.png"
-notes: ''
+notes: "/v1593546206/our-values-session-02_unz0di.pdf"
 published: false
 
 ---
