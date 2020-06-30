@@ -4,7 +4,10 @@ author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-03.mp3"
 title: 'Our Values: 3. God''s Word Transforms'
 scripture: ''
-description: ''
+description: 'If we were honest, most of us would agree that humanity needs something
+  greater than self help programs, motivational speakers, government policies or even
+  religion to make the changes needed in our world. In this study we look at the one
+  and only true answer to humanities deepest need. '
 series: _series/our-values.md
 duration: '50:19'
 length: 98320881
