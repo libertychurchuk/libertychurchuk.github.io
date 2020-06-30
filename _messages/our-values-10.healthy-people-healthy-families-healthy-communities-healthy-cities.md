@@ -5,7 +5,9 @@ file: "/our-values/our-values-session-10.mp3"
 title: 'Our Values: 10. Healthy People, Healthy Families, Healthy Communities, Healthy
   Cities'
 scripture: ''
-description: ''
+description: 'During this study we look at the original plan of God for mankind, how
+  it has unfolded over the centuries and what we believe God wants to do in our world
+  today. '
 series: _series/our-values.md
 duration: '41:52'
 length: 81704321

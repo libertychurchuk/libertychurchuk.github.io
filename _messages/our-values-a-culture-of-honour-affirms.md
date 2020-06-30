@@ -4,7 +4,9 @@ author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-09.mp3"
 title: 'Our Values: 9. A Culture of honour, affirms'
 scripture: ''
-description: ''
+description: 'What does Biblical honour look like? How do we walk in honour towards
+  each other? How do we create a culture of honour within the society in which we
+  live? These and more questions are answered during this study. '
 series: _series/our-values.md
 duration: '47:04'
 length: 91886552
