@@ -2,7 +2,7 @@
 date: 2020-05-24 20:00:25 +0000
 author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-09.mp3"
-title: 'Our Values: A Culture of honour, affirms'
+title: 'Our Values: 9. A Culture of honour, affirms'
 scripture: ''
 description: ''
 series: _series/our-values.md
