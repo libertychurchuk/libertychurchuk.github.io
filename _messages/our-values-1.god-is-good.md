@@ -4,7 +4,7 @@ author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-01.mp3"
 title: 'Our Values: 1. God is Good'
 scripture: ''
-description: 'A study around our values at Liberty Church: 1. God is Good'
+description: ''
 series: _series/our-values.md
 duration: '26:13'
 length: 50865309
