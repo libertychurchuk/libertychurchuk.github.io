@@ -4,7 +4,9 @@ author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-08.mp3"
 title: 'Our Values: 8. A Generous People'
 scripture: ''
-description: ''
+description: Generosity is the hall mark of our creator. In this study we look at
+  the generosity of God displayed throughout history and His call to us, to be like
+  Him.
 series: _series/our-values.md
 duration: '47:55'
 length: 93569537
