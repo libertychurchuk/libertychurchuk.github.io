@@ -4,7 +4,8 @@ author: _authors/phil-boalch.md
 file: "/our-values/our-value-session-02.mp3"
 title: 'Our Values: 2. Jesus has come to set us free'
 scripture: ''
-description: ''
+description: 'What does freedom look like? Why do we need to be set free? What do
+  we need to be set free from? Who can set us free? '
 series: _series/our-values.md
 duration: '46:06'
 length: 89994601
