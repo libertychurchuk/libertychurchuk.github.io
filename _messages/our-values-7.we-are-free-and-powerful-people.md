@@ -4,7 +4,9 @@ author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-07.mp3"
 title: 'Our Values: 7. We are free and powerful people'
 scripture: ''
-description: ''
+description: 'What does the bible say about who we really are and what we are born
+  to do? This study looks into our identity, purpose and the incredible gift we have
+  been given, of a free will to choose. '
 series: _series/our-values.md
 duration: '47:32'
 length: 92948859
