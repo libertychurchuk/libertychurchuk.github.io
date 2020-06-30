@@ -1,5 +1,5 @@
 ---
-date: 2020-04-12 20:00:11 +0000
+date: 2020-04-19 20:00:11 +0000
 author: _authors/heath-van-staden.md
 file: "/our-values/our-values-session-04.mp3"
 title: 'Our Values: 4. God Still Speaks'
