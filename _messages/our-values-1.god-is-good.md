@@ -4,7 +4,9 @@ author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-01.mp3"
 title: 'Our Values: 1. God is Good'
 scripture: ''
-description: ''
+description: 'Have you ever wondered how God can be described as good when we see
+  so much hardship in the world today? Please join us as we delve into the Bible to
+  answer this question. '
 series: _series/our-values.md
 duration: '26:13'
 length: 50865309
