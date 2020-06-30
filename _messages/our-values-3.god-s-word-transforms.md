@@ -1,5 +1,5 @@
 ---
-date: 2020-06-30 10:54:10 +0000
+date: 2020-04-12 20:00:10 +0000
 author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-03.mp3"
 title: 'Our Values: 3. God''s Word Transforms'
