@@ -1,5 +1,5 @@
 ---
-title: 'Daily Devotional: 25th June 2020'
+title: 'Daily Devotional: 26th June 2020'
 author: _authors/phil-boalch.md
 date: 2020-06-26 07:00:55 +0000
 scripture: Psalm 139:5-6
