@@ -17,6 +17,7 @@ fields:
   description: Upload an image that is 256x256px to be used on authors profiles.
 pages:
 - _authors/allen-carter.md
+- _authors/annajo-terrill.md
 - _authors/jonathan-white.md
 - _authors/joshua-packett.md
 - _authors/julie-boalch.md
