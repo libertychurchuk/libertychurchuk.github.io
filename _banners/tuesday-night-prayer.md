@@ -6,6 +6,5 @@ background_image: "/v1591794247/WebsitePrayer_1920x1080_lj1tjh.png"
 logo: ''
 call_to_action: []
 expiry_date: 
-published: false
 
 ---
