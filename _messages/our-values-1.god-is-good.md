@@ -12,7 +12,6 @@ duration: '26:13'
 length: 50865309
 image: "/v1593180627/VimeoholderBS1_1920x1080_copy_a9bofr.png"
 notes: "/v1593546188/our-values-session-01_gkz75i.pdf"
-published: false
 
 ---
 <iframe src="https://player.vimeo.com/video/431738479" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
