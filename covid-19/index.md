@@ -14,55 +14,9 @@ menu:
 ---
 During this season we encourage you to thank Jesus for His goodness and kindness. We together are a people full of faith and full of the Holy Spirit who are adaptable, and flexible to not let circumstances be the biggest voice, but rather allow Jesus to be glorified through this season.
 
-During this time, our diary looks a little different, here’s what’s happening during the week:
+During this time, our diary looks a little different subscribe to our weekly email and visit our social media sites to keep up to date with what's going on.
 
-**Tuesday**
-
-The King and His Kingdom prayer and fasting day.
-
-Facebook.com/thekingandhiskingdomwales
-
-Prayer Meeting via ZOOM at 7.45pm
-
-Meeting ID: 981 389 4644
-
-**Wednesday**
-
-Liberty Lambs LIVE craft time at 10.45am.
-
-Facebook.com/libertylambs
-
-**Thursday**
-
-Liberty Lambs LIVE sing-a-long at 10.45am.
-
-Facebook.com/libertylambs
-
-**Friday**
-
-Liberty Youth On Line (YOLO) on their Instagram LIVE at 6.30pm
-
-Instagram: LibertyYouthUK
-
-**Sunday**
-
-Church Online LIVE on Facebook at 10am plus an opportunity to connect and pray with each other straight after the service via ZOOM
-
-facebook.com/libertychurchfamily
-
-ZOOM Meeting ID: 981 389 4644
-
-Liberty Kids LIVE on Facebook at 4pm.
-
-Facebook.com/libertychurchfamily
-
-Bible Study via ZOOM at 8pm
-
-Meeting ID: 963 445 557 Password: 025407
-
-In this season, where we cant physically meet together, there are many opportunities to stay connected.
-
-Please make sure you are checking and receiving our emails - if you do not receive them, please [subscribe](#newsletter). Please email us at [admin@libertychurchuk.com](mailto:admin@libertychurchuk.com) if you need anything or have any questions.
+Subscribe to our email here: [subscribe](#newsletter). Please email us at [admin@libertychurchuk.com](mailto:admin@libertychurchuk.com) if you need anything or have any questions.
 
 Love you and bless you,
 
