@@ -12,7 +12,6 @@ duration: '52:17'
 length: 102431986
 image: "/v1593514682/VimeoholderBS4_1920x1080_k9nx3v.png"
 notes: "/v1595585960/our-values-session-04_r3wj6t.pdf"
-published: false
 
 ---
 <iframe src="https://player.vimeo.com/video/431752088" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

@@ -13,7 +13,6 @@ duration: '50:19'
 length: 98320881
 image: "/v1593514467/VimeoholderBS3_1920x1080_fr22yo.png"
 notes: "/v1595585940/our-values-session-03_qzxu4e.pdf"
-published: false
 
 ---
 <iframe src="https://player.vimeo.com/video/431750031" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
