@@ -7,11 +7,11 @@ scripture: ''
 description: If God really exists then surely He has something to say about the life
   we live and the world around us. During this study we look at the reality of a God
   who is never silent and is interested in speaking into every detail our lives.
-series: ''
+series: _series/our-values.md
 duration: '52:17'
 length: 102431986
 image: "/v1593514682/VimeoholderBS4_1920x1080_k9nx3v.png"
-notes: ''
+notes: "/v1595585960/our-values-session-04_r3wj6t.pdf"
 published: false
 
 ---
