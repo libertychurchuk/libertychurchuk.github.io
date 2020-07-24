@@ -1,6 +1,6 @@
 ---
 date: 2020-04-19 20:00:11 +0000
-author: _authors/heath-van-staden.md
+author: _authors/phil-boalch.md
 file: "/our-values/our-values-session-04.mp3"
 title: 'Our Values: 4. God Still Speaks'
 scripture: ''
