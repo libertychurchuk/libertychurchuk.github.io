@@ -12,7 +12,6 @@ duration: '50:09'
 length: 98070254
 image: "/v1593515006/VimeoholderBS5_1920x1080_hqr9vx.png"
 notes: "/v1595586915/our-values-session-05_hftwoq.pdf"
-published: false
 
 ---
  <iframe src="https://player.vimeo.com/video/431754562" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

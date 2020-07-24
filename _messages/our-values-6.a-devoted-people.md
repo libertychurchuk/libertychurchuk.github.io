@@ -11,7 +11,6 @@ duration: '48:01'
 length: 93687208
 image: "/v1593516879/VimeoholderBS6_1920x1080_zrwcsp.png"
 notes: "/v1595586932/our-values-session-06_eeijjx.pdf"
-published: false
 
 ---
 <iframe src="https://player.vimeo.com/video/431758581" width="640" height="361" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
