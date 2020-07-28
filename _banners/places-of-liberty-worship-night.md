@@ -6,6 +6,5 @@ background_image: "/v1595940698/worshipnight31july2020_website_1280.720_copy_j76
 logo: ''
 call_to_action: []
 expiry_date: 
-published: false
 
 ---
