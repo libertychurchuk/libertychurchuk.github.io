@@ -11,8 +11,7 @@ series: _series/our-values.md
 duration: '47:55'
 length: 93569537
 image: "/v1593517269/VimeoholderBS8_1920x1080_cyvnh9.png"
-notes: ''
-published: false
+notes: "/v1596540386/our-values-session-08_ridhbl.pdf"
 
 ---
 <iframe src="https://player.vimeo.com/video/431766399" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
