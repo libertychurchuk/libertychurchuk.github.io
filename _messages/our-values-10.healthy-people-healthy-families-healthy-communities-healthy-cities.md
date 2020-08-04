@@ -12,8 +12,7 @@ series: _series/our-values.md
 duration: '41:52'
 length: 81704321
 image: "/v1593517641/VimeoholderBS10_1920x1080_ebrorx.png"
-notes: ''
-published: false
+notes: "/v1596540428/our-values-session-10_t3u6lk.pdf"
 
 ---
 <iframe src="https://player.vimeo.com/video/431779111" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
