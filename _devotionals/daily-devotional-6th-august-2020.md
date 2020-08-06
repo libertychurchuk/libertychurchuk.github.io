@@ -1,6 +1,6 @@
 ---
 title: 'Daily Devotional: 6th August 2020'
-author: ''
+author: _authors/peter-bolland.md
 date: 2020-08-06 07:12:51 +0000
 scripture: " Joshua 1:8"
 description: ''
