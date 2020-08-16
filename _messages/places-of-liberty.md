@@ -10,7 +10,6 @@ duration: '26:48'
 length: 34622464
 image: ''
 notes: ''
-published: false
 
 ---
 1. I am God
