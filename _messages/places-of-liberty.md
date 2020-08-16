@@ -6,8 +6,8 @@ title: Places of Liberty
 scripture: Genesis 26:18, John 4
 description: Are we being the well that God had called me to be?
 series: ''
-duration: ''
-length: 
+duration: '26:48'
+length: 34622464
 image: ''
 notes: ''
 published: false
