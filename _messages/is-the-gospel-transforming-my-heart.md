@@ -10,7 +10,6 @@ duration: '19:06'
 length: 25839712
 image: ''
 notes: ''
-published: false
 
 ---
 1. Jesus is the head of the Body
