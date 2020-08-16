@@ -6,10 +6,9 @@ title: It is raining…
 scripture: Romans 4:20
 description: ''
 series: ''
-duration: ''
-length: 
+duration: '24:06'
+length: 31656832
 image: "/v1596361130/guillaume-bourdages-m8q2I_jPYzI-unsplash_acrcqh.jpg"
 notes: ''
-published: false
 
 ---
