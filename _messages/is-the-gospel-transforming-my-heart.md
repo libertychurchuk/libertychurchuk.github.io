@@ -6,8 +6,8 @@ title: 'Is the gospel transforming my heart? '
 scripture: Proverbs 21:21, Jeremiah 17:7, Ephesians 4:16, Proverbs 18:1, Hebrews 3:12
 description: ''
 series: ''
-duration: ''
-length: 
+duration: '19:06'
+length: 25839712
 image: ''
 notes: ''
 published: false
