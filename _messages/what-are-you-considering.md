@@ -6,10 +6,9 @@ title: What are you considering?
 scripture: Mark 6:37-38, Proverbs 23:7, Matthew 14:27-31, Mark 11:23
 description: ''
 series: ''
-duration: ''
-length: 
+duration: '26:14'
+length: 34998496
 image: ''
 notes: ''
-published: false
 
 ---
