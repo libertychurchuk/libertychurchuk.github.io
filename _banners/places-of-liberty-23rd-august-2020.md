@@ -7,6 +7,5 @@ background_image: "/v1597601054/placesofliberty23August_websiteDUFFRYN_fzwbff.pn
 logo: ''
 call_to_action: []
 expiry_date: 
-published: false
 
 ---
