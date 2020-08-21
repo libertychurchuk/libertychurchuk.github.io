@@ -22,14 +22,17 @@ fields:
   name: background_image
   label: background_image
   description: Upload an image of the following dimensions 1280x720
+- name: link
+  type: text
+  config:
+    required: false
+  label: Link
+  description: Add a link to a page in the site, an external link such as facebook
+    or eventbrite.
 - type: text
   name: logo
   label: logo
   hidden: true
-- type: list
-  name: call_to_action
-  label: call_to_action
-  description: The call to action can be used to link the banner to an external website.
 - name: expiry_date
   type: datetime
   label: Expiry Date
