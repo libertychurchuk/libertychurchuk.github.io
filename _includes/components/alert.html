@@ -1,0 +1,13 @@
+{% for item in site.alerts %}
+
+{% if item.show_alert == true %}
+  <div class="global-alert">
+    <p>
+      {% if item.summary %}{{ item.summary }}{% endif %}
+      {% if item.button_text %}
+      <a class="btn {% if item.button_type == 'Outline' %}btn--outline{% endif %}" href="{% if item.internal_link.size > 1 %}{{ site.baseurl}}/{{ item.internal_link | remove: 'index.md' }}{% endif %}{% if item.external_link.size > 1 %}{{ item.external_link }}{% endif %}">{{ item.button_text }}</a>
+      {% endif %}
+    </p>
+  </div>
+{% endif %}
+{% endfor %}
