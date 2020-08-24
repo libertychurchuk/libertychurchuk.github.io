@@ -1,5 +1,5 @@
 ---
-title: Daily Devotional:Daily Devotional - A Devoted People, (Day 1)
+title: Daily Devotional A Devoted People, (Day 1)
 author: _authors/gareth-hillier.md
 date: 2020-08-24 07:45:48 +0000
 scripture: Matt 22:36-40
