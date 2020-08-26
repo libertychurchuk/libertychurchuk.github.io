@@ -1,11 +1,12 @@
 ---
-title: 'Places of Liberty: 23rd August 2020'
-subtitle: Join us at Duffryn Community Centre on Sunday 23rd August at either 3pm
-  or 4.30pm!
-date: 2020-08-22 23:00:00 +0000
-background_image: "/v1597601054/placesofliberty23August_websiteDUFFRYN_fzwbff.png"
+title: 'Places of Liberty: 30th August 2020'
+subtitle: Join us at Beechwood Park & Rogerstone Welfare Grounds on Sunday 30th August
+  at 4pm!
+date: 2020-08-30 14:00:00 +0000
+background_image: "/v1598426748/75ECA017-5B6E-48F5-B412-54F5E2C2197A_jgp4wa.png"
 logo: ''
 call_to_action: []
 expiry_date: 
+link: ''
 
 ---
