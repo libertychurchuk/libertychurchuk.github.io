@@ -14,11 +14,13 @@ fields:
       section: jekyll-pages
   label: Internal link
   description: Select a page that this content block should link to
-- type: text
-  name: external_link
-  label: External link
-  description: If this content block links to an external site enter the URL here
 - name: video_link
   type: boolean
   label: Video link
-  description: Is this a video link?
+  description: Is this a video link? The video will play in a lightbox and display
+    the video icon next to the button.
+- name: external_link
+  type: boolean
+  label: External link
+  description: Is this URL an external site, if so turn this on as the page will open
+    in a new window.
