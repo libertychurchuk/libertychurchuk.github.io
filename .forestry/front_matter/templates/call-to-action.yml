@@ -7,16 +7,6 @@ fields:
   name: button_text
   label: Button text
 - type: select
-  name: button_type
-  config:
-    source:
-      type: simple
-    options:
-    - Solid
-    - Outline
-  label: Button type
-  default: Outline
-- type: select
   name: internal_link
   config:
     source:
