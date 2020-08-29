@@ -1,11 +1,11 @@
-{%if cta.internal_link.size !=0 %}
-    <a href="{{site.baseurl}}{{ cta.internal_link | remove_first: "_" | remove_first: ".md"  }}" class="btn btn--outline  internal">{{ cta.button_text }}</a>
-{% elsif cta.external_link and cta.video_link == true %}
-    <a href="{{ cta.external_link }}" class="btn mediabox" aria-label="{{ cta.button_text }}">
+{%if cta.link and cta.video_link == true %}
+    <a href="{{ cta.link }}" class="btn mediabox" aria-label="{{ cta.button_text }}">
         <svg class="icon icon--large icon--light">
         <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#video"></use>
         </svg> {{ cta.button_text }}
     </a>
-{% else %}
-    <a href="{{ cta.external_link }}" class="btn btn--outline" target="_blank" rel="external noopener">{{ cta.button_text }}</a>
+{% elsif cta.link and cta.external_link == true %}
+    <a href="{{ cta.link }}" class="btn btn--outline" target="_blank" rel="external noopener">{{ cta.button_text }}</a>
+{% else cta.link %}
+    <a href="{{ cta.link }}" class="btn btn--outline ">{{ cta.button_text }}</a>
 {% endif %}
