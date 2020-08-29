@@ -23,6 +23,7 @@ fields:
   label: Body
   template_types:
   - content-block
+  - solid-block
 pages:
 - get-involved/index.html
 - index.html
