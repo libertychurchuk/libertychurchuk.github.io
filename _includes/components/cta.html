@@ -1,8 +1,11 @@
-{%if cta.external_link.size > 1 %}
-    <a href="{{ cta.external_link }}" class="btn btn--outline" target="_blank" rel="external noopener">{{ cta.button_text }}</a>
+{%if cta.internal_link.size !=0 %}
+    <a href="{{ cta.internal_link }}" class="btn btn--outline  internal">{{ cta.button_text }}</a>
+{% elsif cta.external_link and cta.video_link == true %}
+    <a href="{{ cta.external_link }}" class="btn mediabox" aria-label="{{ cta.button_text }}">
+        <svg class="icon icon--large icon--light">
+        <use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#video"></use>
+        </svg> {{ cta.button_text }}
+    </a>
 {% else %}
-    <a href="{{ cta.internal_link }}" class="btn btn--outline">{{ cta.button_text }}</a>
+    <a href="{{ cta.external_link }}" class="btn btn--outline" target="_blank" rel="external noopener">{{ cta.button_text }}</a>
 {% endif %}
-
-
-
