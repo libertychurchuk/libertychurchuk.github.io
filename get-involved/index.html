@@ -18,9 +18,10 @@ body:
   call_to_action:
   - template: call-to-action
     button_type: Outline
-    internal_link: get-involved/liberty-groups/index.html
+    internal_link: _messages/places-of-liberty.md
     button_text: Find a group
     external_link: ''
+    video_link: false
 - template: solid-block
   title: Liberty Lambs
   description: "<p>Liberty Lambs is a parent and toddler group that meets in two different
@@ -35,6 +36,7 @@ body:
     button_text: Facebook
     external_link: https://www.facebook.com/LibertyLambs
     internal_link: ''
+    video_link: false
   subtitle: ''
 - template: solid-block
   title: Liberty Kids
@@ -49,6 +51,7 @@ body:
     button_text: Parents Facebook group
     external_link: https://www.facebook.com/groups/928137027266471/
     internal_link: ''
+    video_link: false
   subtitle: ''
 - template: solid-block
   title: Liberty Youth
@@ -64,9 +67,18 @@ body:
     button_text: Liberty Youth Instagram
     external_link: https://www.instagram.com/libertyyouthuk/
     internal_link: ''
+    video_link: false
   subtitle: ''
 menu:
   sidebar:
     weight: 6
 
 ---
+<section>
+{% include /header-blocks/get-involved.html %}
+{% include /blocks/groups.html %}
+{% include /grids/kids.html %}
+{% include /blocks/youth.html %}
+{% include /blocks/women.html %}
+{% include /blocks/warrior.html %}
+</section>
