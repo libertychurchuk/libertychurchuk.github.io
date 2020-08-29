@@ -1,4 +1,38 @@
 ---
 label: Solid block
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+- name: logo
+  type: file
+  config:
+    maxSize: 64
+  label: Logo
+- name: background_colour
+  type: color
+  config:
+    required: false
+    color_format: Hex
+  label: Background colour
+- name: call_to_action
+  type: blocks
+  label: Call to action
+  template_types:
+  - call-to-action
+  config:
+    min: 
+    max: 
