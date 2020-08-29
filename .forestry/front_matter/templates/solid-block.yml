@@ -1,5 +1,5 @@
 ---
-label: Solid block
+label: 'Block: Solid color hero'
 hide_body: true
 display_field: title
 fields:
@@ -12,7 +12,7 @@ fields:
   type: text
   config:
     required: false
-  label: Subtitle
+  label: Subtitle (optional)
 - name: description
   type: textarea
   default: ''
