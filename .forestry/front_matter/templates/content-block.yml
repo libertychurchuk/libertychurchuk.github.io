@@ -23,6 +23,24 @@ fields:
   name: background_image
   label: Image
   description: Choose an image that should be displayed behind the content block
+- name: height
+  type: select
+  default: Default
+  config:
+    required: false
+    options:
+    - Default
+    - Medium
+    - Large
+    - XLarge
+    - Screen Height
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Height
+  description: Set the height the block should occupy
 - name: overlay_colour
   type: color
   label: Overlay colour
