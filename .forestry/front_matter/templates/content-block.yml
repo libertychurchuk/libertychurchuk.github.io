@@ -1,5 +1,5 @@
 ---
-label: Content block
+label: Image block
 hide_body: false
 display_field: title
 fields:
@@ -18,11 +18,41 @@ fields:
   label: Logo
   name: logo
   description: "(Optional) Choose / upload a logo that should be use in place of a
-    headline"
+    headline and subtitle"
 - type: file
   name: background_image
   label: Image
   description: Choose an image that should be displayed behind the content block
+- name: overlay_colour
+  type: color
+  label: Overlay colour
+  config:
+    required: false
+    color_format: RGB
+  description: Ideally choose a primary colour from the background image to produce
+    a better blend
+- name: overlay_opacity
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Opacity 10
+    - Opacity 20
+    - Opacity 30
+    - Opacity 40
+    - Opacity 50
+    - Opacity 60
+    - Opacity 70
+    - Opacity 80
+    - Opacity 90
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Overlay opacity
+  description: Choose an overlay opacity for the colour overlay
 - type: blocks
   name: call_to_action
   label: Call to action
