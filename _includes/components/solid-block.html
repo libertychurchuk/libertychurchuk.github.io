@@ -1,12 +1,4 @@
-<article class="c-block">
-
-    {% if block.background_image.size > 1 %}
-    <img src="{{ site.cloudinary_url }}/{{ block.background_image }}" class="c-block-img" alt=""/>
-    {% endif %}
-    
-    {% if block.overlay_colour.size > 1 %}
-    <div class="c-block-overlay {% if block.overlay_opacity.size > 1 %}c-block-overlay-{{ block.overlay_opacity | slugify }}{% endif %}" role="presentation" style="background-color: {{ block.overlay_colour }};"></div>
-    {% endif %}
+<article class="c-block" style="background-color: {{ block.background_colour }};">
 
     <div class="c-block-inner {% if block.size.size > 1 %}c-block-size-{{ block.size | downcase }}{% endif %}" >
     
@@ -23,7 +15,7 @@
         {% if block.description.size > 1 %}
             {{ block.description }}
         {% endif %}
-
+        
         {% if block.call_to_action.size !=0 %}
         <div class="c-block-actions">
         {% for cta in block.call_to_action %}

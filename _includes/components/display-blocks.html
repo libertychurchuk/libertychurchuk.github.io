@@ -1,0 +1,18 @@
+<section>
+
+    {% for block in page.body %}
+      {% assign template = block.template %}
+      {% case template %}
+      {% when 'content-block' %}
+        {% include components/image-block.html %}
+      {% when 'solid-block' %}
+        {% include components/solid-block.html %}
+      {% when 'carousel' %}
+        {% include components/block-carousel.html %}
+      {% when 'block-large-page-title' %}
+        {% include components/block-large-page-title.html %}
+      {% endcase %}
+    {% endfor %}
+    
+  
+  </section>

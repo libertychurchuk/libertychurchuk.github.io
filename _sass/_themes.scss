@@ -244,8 +244,6 @@ color: $whitesmoke;
   }
 
   .header-block__heading {
-  font-size: 5em;
-  margin-bottom: 0.25em;
   z-index: 1;
   color: #fff;
 
@@ -255,7 +253,7 @@ color: $whitesmoke;
     }
 
     @include large {
-    font-size: 8em;
+    //font-size: 8em;
     }
 
   }
