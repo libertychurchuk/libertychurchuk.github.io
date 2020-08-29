@@ -1,8 +1,11 @@
 $z-index: (
-  mediabox           : 5,
-  off-canvas         : 4,
-  sticky-header      : 3,
+  mediabox           : 7,
+  off-canvas         : 6,
+  sticky-header      : 5,
   global-alert       : 2,
+  block-inner        : 3,
+  block-overlay      : 2,
+  block-image        : 1,
   content-block      : 1,
   topbar             : 1,
   content-overlay    : 0

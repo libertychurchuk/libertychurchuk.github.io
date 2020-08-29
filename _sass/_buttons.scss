@@ -7,6 +7,7 @@ display: inline-block;
 font-weight: bold;
 transition: background 0.3s ease;
 cursor: pointer;
+color: $white;  
 }
 
 
@@ -14,4 +15,8 @@ cursor: pointer;
 border-width: 2px;
 border-style: solid;
 transition: border-color, background-color 0.3s ease;
+
+    &:hover {
+        background: $white;
+    }
 }
