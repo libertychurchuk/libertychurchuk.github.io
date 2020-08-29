@@ -25,6 +25,7 @@ fields:
   - content-block
   - solid-block
   - carousel
+  - block-large-page-title
 pages:
 - get-involved/index.html
 - index.html
