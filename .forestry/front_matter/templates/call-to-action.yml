@@ -7,13 +7,14 @@ fields:
   name: button_text
   label: Button text
 - type: select
-  name: internal_link
+  name: link
   config:
     source:
       type: pages
       section: jekyll-pages
-  label: Internal link
-  description: Select a page that this content block should link to
+  label: Link
+  description: Enter a relative URL to a page on the site e.g. /get-involved/ or a
+    full external URL https://www.bbc.co.uk
 - name: video_link
   type: boolean
   label: Video link
