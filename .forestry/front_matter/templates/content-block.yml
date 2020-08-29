@@ -32,7 +32,7 @@ fields:
   name: background_image
   label: Image
   description: Choose an image that should be displayed behind the content block
-- name: height
+- name: size
   type: select
   default: Default
   config:
