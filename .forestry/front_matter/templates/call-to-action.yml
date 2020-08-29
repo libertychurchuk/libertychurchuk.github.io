@@ -28,3 +28,7 @@ fields:
   name: external_link
   label: External link
   description: If this content block links to an external site enter the URL here
+- name: video_link
+  type: boolean
+  label: Video link
+  description: Is this a video link?
