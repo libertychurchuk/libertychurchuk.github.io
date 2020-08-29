@@ -22,7 +22,7 @@ body:
   - template: call-to-action
     button_type: Outline
     button_text: Places of Liberty
-    internal_link: ''
+    internal_link: _messages/places-of-liberty.md
     external_link: ''
   logo: "/v1598693232/rrr-light_omdoyu.svg"
   description: "<p>They will rebuild the ancient ruins and restore place long devastated;
@@ -78,3 +78,24 @@ body:
     external_link: ''
 
 ---
+<section>
+{% include /header-blocks/header-home.html %}
+
+
+{% if site.banners.size == 1 %}
+  {% for item in site.banners %}
+  <img class="relative w-100" src="{{ site.cloudinary_url }}/w_1280,c_fill/f_auto/{{ item.background_image }}" alt="{{ item.title }}">
+  {% endfor %}
+{% endif %}
+
+{% if site.banners.size > 1 %}
+  {% include /components/slider.html %}
+{% endif %}
+
+
+{% include /grids/covid-19.html %}
+{% include /blocks/five-years.html %}
+{% include /blocks/new.html %}
+{% include /blocks/messages.html %}
+
+</section>
