@@ -15,7 +15,7 @@ fields:
     - Solid
     - Outline
   label: Button type
-  default: Solid
+  default: Outline
 - type: select
   name: internal_link
   config:
