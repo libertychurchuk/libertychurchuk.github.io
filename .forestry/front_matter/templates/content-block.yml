@@ -15,9 +15,13 @@ fields:
   label: Subtitle
   description: " (Optional) The subtitle / description is displayed below the headline. "
 - name: description
-  type: text
+  type: textarea
+  default: ''
   config:
     required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
   label: Description
 - type: file
   label: Logo
