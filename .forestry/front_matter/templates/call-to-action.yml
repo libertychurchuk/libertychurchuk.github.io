@@ -11,7 +11,7 @@ fields:
   config:
     source:
       type: pages
-      section: ''
+      section: jekyll-pages
   label: Internal link
   description: Select a page that this content block should link to
 - type: text
