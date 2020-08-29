@@ -34,15 +34,15 @@ fields:
   description: Choose an image that should be displayed behind the content block
 - name: size
   type: select
-  default: Default
+  default: Small
   config:
     required: false
     options:
-    - Default
+    - Small
     - Medium
     - Large
-    - XLarge
-    - Screen Height
+    - Xlarge
+    - Fill
     source:
       type: simple
       section: 
