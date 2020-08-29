@@ -1,4 +1,8 @@
 ---
 label: Carousel
 hide_body: true
-fields: []
+fields:
+- name: display_carousel
+  type: boolean
+  label: Display carousel
+  default: true
