@@ -1,4 +1,14 @@
 ---
 label: 'Block: Large page title'
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: subtitle
+  type: text
+  config:
+    required: true
+  label: Subtitle
