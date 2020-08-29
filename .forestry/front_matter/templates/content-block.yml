@@ -50,6 +50,9 @@ fields:
       path: 
   label: Height
   description: Set the height the block should occupy
+- name: add_overlay_
+  type: boolean
+  label: Add overlay?
 - name: overlay_colour
   type: color
   label: Overlay colour
@@ -59,6 +62,9 @@ fields:
   description: Ideally choose a primary colour from the background image to produce
     a better blend
   default: rgb(49, 54, 64)
+  showOnly:
+    field: add_overlay_
+    value: true
 - name: overlay_opacity
   type: select
   default: Opacity 30
@@ -81,6 +87,9 @@ fields:
       path: 
   label: Overlay opacity
   description: Choose an overlay opacity for the colour overlay
+  showOnly:
+    field: add_overlay_
+    value: true
 - type: blocks
   name: call_to_action
   label: Call to action
