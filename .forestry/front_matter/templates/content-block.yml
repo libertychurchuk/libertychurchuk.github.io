@@ -49,6 +49,7 @@ fields:
     color_format: RGB
   description: Ideally choose a primary colour from the background image to produce
     a better blend
+  default: rgb(49, 54, 64)
 - name: overlay_opacity
   type: select
   default: []
