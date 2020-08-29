@@ -13,9 +13,13 @@ fields:
     required: false
   label: Subtitle
 - name: description
-  type: text
+  type: textarea
+  default: ''
   config:
     required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
   label: Description
 - name: logo
   type: file
