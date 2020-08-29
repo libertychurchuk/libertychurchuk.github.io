@@ -52,7 +52,7 @@ fields:
   default: rgb(49, 54, 64)
 - name: overlay_opacity
   type: select
-  default: []
+  default: Opacity 30
   config:
     required: false
     options:
