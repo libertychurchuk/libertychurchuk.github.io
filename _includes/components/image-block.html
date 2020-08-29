@@ -27,7 +27,13 @@
         {% if block.call_to_action.size !=0 %}
         <div class="c-block-actions">
         {% for cta in block.call_to_action %}
-            {% include components/cta.html %}
+            {% assign template = cta.template %}
+            {% case template %}
+            {% when 'call-to-action' %}
+                {% include components/cta.html %}
+            {% when 'call-to-action-video' %}
+                {% include components/cta-video.html %}
+            {% endcase %}
         {% endfor %}
         </div>
         {% endif %}
