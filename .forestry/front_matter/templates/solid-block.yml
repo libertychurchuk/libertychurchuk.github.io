@@ -12,7 +12,7 @@ fields:
   type: text
   config:
     required: false
-  label: Subtitle
+  label: Subtitle (optional)
 - name: description
   type: textarea
   default: ''
