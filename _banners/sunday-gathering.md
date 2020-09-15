@@ -1,8 +1,8 @@
 ---
 title: Sunday Gathering
-subtitle: Join us this Sunday, 9.30am, 11am or 4pm at The Gaer Christian Centre, Newport.
-date: 2020-09-13 08:30:00 +0000
-background_image: "/v1599644084/placesofliberty13thsept_website_pzrs6y.png"
+subtitle: Join us this Sunday, 9.30am or 11amat The Gaer Christian Centre, Newport.
+date: 2020-09-20 08:30:00 +0000
+background_image: "/v1600182034/placesofliberty20thsept_website_elrbis.png"
 link: https://www.eventbrite.co.uk/o/liberty-church-10849545889
 logo: ''
 expiry_date: 
