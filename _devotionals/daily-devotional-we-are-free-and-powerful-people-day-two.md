@@ -1,7 +1,7 @@
 ---
-title: 'Daily Devotional: We are Free and Powerful People (Day Two) '
+title: 'Daily Devotional: We are free and powerful people (Day 2) '
 author: _authors/lizzy-howard.md
-date: 2020-09-01 07:18:32 +0000
+date: 2020-09-01T07:18:32.000+00:00
 scripture: " Gen 4:6-7"
 description: ''
 image: "/v1598944839/DD_value7_day2_1920x1080_r2lu9n.png"
