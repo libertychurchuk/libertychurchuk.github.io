@@ -1,0 +1,14 @@
+---
+label: Redirects
+hide_body: true
+fields:
+- type: field_group_list
+  name: redirects
+  label: redirects
+  fields:
+  - type: text
+    name: from
+    label: from
+  - type: text
+    name: to
+    label: to
