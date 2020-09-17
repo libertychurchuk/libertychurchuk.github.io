@@ -95,6 +95,7 @@ fields:
   label: Call to action
   template_types:
   - call-to-action
+  - file-download
   config:
     max: '4'
 pages:
