@@ -24,3 +24,16 @@ fields:
   label: External link
   description: Is this URL an external site, if so turn this on as the page will open
     in a new window.
+- name: file_download
+  type: boolean
+  label: File download
+  description: Should this button download a file?
+- name: download
+  type: file
+  config:
+    maxSize: 20
+  label: Download
+  description: Add an asset download to this button.
+  showOnly:
+    field: file_download
+    value: true
