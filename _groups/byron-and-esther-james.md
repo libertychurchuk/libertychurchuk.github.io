@@ -11,5 +11,6 @@ image: "/v1565123187/byron-esther_umhnlv.png"
 date: '2019-04-24T14:13:14.000+00:00'
 when: Sunday evenings at 7:30pm for adults (2nd week of the month) and Sunday afternoons
   at 1:30pm for families ( 4th week of the month).
+published: false
 
 ---
