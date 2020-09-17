@@ -1,0 +1,25 @@
+---
+label: Redirects
+hide_body: true
+fields:
+- type: field_group_list
+  name: redirects
+  fields:
+  - type: text
+    name: from
+    label: From
+    description: The short URL needs to represent everything after www.libertychurchuk.com
+      e.g. <strong>/placesofliberty</strong>
+    config:
+      required: true
+    default: "/"
+  - type: text
+    name: to
+    label: To
+    description: The URL you want to redirect visitors to. Needs to represent everything
+      after www.libertychurchuk.com e.g. <strong>/get-involved/places-of-liberty</strong>
+    config:
+      required: true
+  label: Short URL
+pages:
+- netlify.toml

@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: _redirects
-  label: Redirects
-  match: "**/*"
 - type: heading
   label: Podcast
 - type: directory
@@ -88,6 +84,9 @@ sections:
   label: Data
   create: none
   match: "**/*.{json,yaml,yml}"
+- type: document
+  path: netlify.toml
+  label: Redirects (Short URLs)
 upload_dir: ''
 public_path: https://res.cloudinary.com/libertychurchuk/image/upload
 front_matter_path: ''
