@@ -8,15 +8,16 @@ fields:
   - type: text
     name: from
     label: From
-    description: The short URL needs to represent everything after the .com e.g. /placeofliberty
+    description: The short URL needs to represent everything after www.libertychurchuk.com
+      e.g. <strong>/placesofliberty</strong>
     config:
       required: true
     default: "/"
   - type: text
     name: to
     label: To
-    description: The URL you want to redirect to. This needs to be everything after
-      the .com
+    description: The URL you want to redirect visitors to. Needs to represent everything
+      after www.libertychurchuk.com e.g. <strong>/get-involved/places-of-liberty</strong>
     config:
       required: true
   label: Short URL
