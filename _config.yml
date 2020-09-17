@@ -168,7 +168,3 @@ plugins:
 - jekyll-seo-tag
 - jekyll-paginate-v2
 - jekyll-menus
-
-
-include:
-- _redirects
