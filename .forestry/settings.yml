@@ -5,9 +5,8 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: _redirects
+  path: netlify.toml
   label: Redirects
-  match: "**/*"
 - type: heading
   label: Podcast
 - type: directory
