@@ -1,6 +1,7 @@
 ---
 label: File download
 hide_body: true
+display_field: button_text
 fields:
 - name: button_text
   type: text
