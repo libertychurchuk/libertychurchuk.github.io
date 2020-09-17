@@ -86,7 +86,7 @@ sections:
   match: "**/*.{json,yaml,yml}"
 - type: document
   path: netlify.toml
-  label: Redirects
+  label: Redirects (Short URLs)
 upload_dir: ''
 public_path: https://res.cloudinary.com/libertychurchuk/image/upload
 front_matter_path: ''
