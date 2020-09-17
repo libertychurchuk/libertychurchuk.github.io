@@ -1,5 +1,5 @@
 ---
-title: 'Daily Devotional: We are free and powerful people (Day One)'
+title: 'Daily Devotional: We are free and powerful people (Day 1)'
 author: _authors/dean-johnson.md
 date: 2020-08-31T06:36:49.000+00:00
 scripture: " Gen 1:26"
