@@ -4,11 +4,19 @@ hide_body: true
 fields:
 - type: field_group_list
   name: redirects
-  label: redirects
   fields:
   - type: text
     name: from
-    label: from
+    label: From
+    description: The short URL needs to represent everything after the .com e.g. /placeofliberty
+    config:
+      required: true
+    default: "/"
   - type: text
     name: to
-    label: to
+    label: To
+    description: The URL you want to redirect to. This needs to be everything after
+      the .com
+    config:
+      required: true
+  label: Short URL
