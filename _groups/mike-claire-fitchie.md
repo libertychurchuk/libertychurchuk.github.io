@@ -8,5 +8,6 @@ description: We are a big family and our aim is to welcome you AND your kids int
   to us. Food, friendship building and fun is always high on our agenda!
 image: "/v1565123225/mike-claire_vqterg.png"
 when: Fortnightly on a Sunday at 4.00pm
+published: false
 
 ---
