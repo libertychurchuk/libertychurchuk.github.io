@@ -27,7 +27,7 @@ fields:
   label: Logo
   name: logo
   description: "(Optional) Choose / upload a logo that should be use in place of a
-    headline and subtitle"
+    headline and subtitle. Maximum width of 400px wide."
 - type: file
   name: background_image
   label: Image
