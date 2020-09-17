@@ -1,7 +1,7 @@
 ---
-title: 'Daily Devotional: A Culture of Honour Affirms (Day1)'
+title: 'Daily Devotional: A Culture of Honour Affirms (Day 1)'
 author: _authors/phil-boalch.md
-date: 2020-09-14 08:29:18 +0000
+date: 2020-09-14T08:29:18.000+00:00
 scripture: " Rom 12:10-11"
 description: ''
 image: ''

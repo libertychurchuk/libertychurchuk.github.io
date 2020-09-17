@@ -1,7 +1,7 @@
 ---
-title: 'Daily Devotional: A Culture of Honour Affirms (Day2)'
+title: 'Daily Devotional: A Culture of Honour Affirms (Day 2)'
 author: _authors/nat-smith.md
-date: 2020-09-15 07:40:11 +0000
+date: 2020-09-15T07:40:11.000+00:00
 scripture: " Matt 20:25-28"
 description: ''
 image: "/v1600155653/DD_value9_day2_1920x1080_momlrc.png"
