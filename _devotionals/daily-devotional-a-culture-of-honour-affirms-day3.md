@@ -1,7 +1,7 @@
 ---
-title: 'Daily Devotional: A Culture of Honour Affirms (Day3)'
+title: 'Daily Devotional: A Culture of Honour Affirms (Day 3)'
 author: _authors/annajo-terrill.md
-date: 2020-09-16 08:18:02 +0000
+date: 2020-09-16T08:18:02.000+00:00
 scripture: " Hebrews 13:7"
 description: ''
 image: "/v1600244345/DD_value9_day3_1920x1080_wujz2o.png"
