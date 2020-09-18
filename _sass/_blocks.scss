@@ -347,7 +347,11 @@ min-height: 400px;
 }
 
 .c-grid {
-  display: grid;
+
+  @include medium {
+    display: grid;
+  }
+  
 }
 
 .c-grid--two {
