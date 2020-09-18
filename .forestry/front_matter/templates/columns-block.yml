@@ -1,7 +1,15 @@
 ---
 label: 'Columns: Block'
 hide_body: true
+display_field: display_name
 fields:
+- name: display_name
+  type: text
+  config:
+    required: false
+  label: Display name
+  description: A name to identify the site section. This is to help you understand
+    what the content is in the forestry editor.
 - name: columns
   type: blocks
   label: 'Columns: Blocks'
