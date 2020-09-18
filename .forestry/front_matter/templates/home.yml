@@ -12,7 +12,7 @@ fields:
   type: file
   config:
     maxSize: 64
-  label: Social Sharing Image
+  label: SEO / Sharing image
 - name: description
   label: SEO / Search description
   type: textarea
