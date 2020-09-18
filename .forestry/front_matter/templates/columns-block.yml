@@ -1,4 +1,13 @@
 ---
 label: 'Columns: Block'
 hide_body: true
-fields: []
+fields:
+- name: columns
+  type: blocks
+  label: 'Columns: Blocks'
+  template_types:
+  - solid-block
+  - content-block
+  config:
+    min: 1
+    max: 3
