@@ -11,3 +11,19 @@ fields:
   config:
     min: 1
     max: 3
+- name: row_columns
+  type: select
+  default: Two
+  config:
+    required: false
+    options:
+    - Two
+    - Three
+    - Four
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Row columns
+  description: How many columns should be displayed in a row?
