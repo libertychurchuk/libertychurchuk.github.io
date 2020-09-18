@@ -1,6 +1,7 @@
 ---
 label: 'Block: Icon'
 hide_body: true
+display_field: title
 fields:
 - name: icon
   type: file
