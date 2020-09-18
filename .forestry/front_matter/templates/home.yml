@@ -1,5 +1,5 @@
 ---
-label: Blocks page
+label: 'Page: Blocks'
 hide_body: true
 display_field: title
 fields:
@@ -13,11 +13,6 @@ fields:
   config:
     maxSize: 64
   label: Social Sharing Image
-- name: layout
-  label: Layout
-  type: text
-  hidden: true
-  default: ''
 - name: description
   label: SEO / Search description
   type: textarea
@@ -31,6 +26,11 @@ fields:
   - solid-block
   - carousel
   - block-large-page-title
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: ''
 pages:
 - get-involved/index.html
 - get-involved/places-of-liberty/index.html
