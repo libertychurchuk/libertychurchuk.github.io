@@ -1,6 +1,6 @@
 ---
 title: New to church
-layout: blocks
+layout: default
 description: Liberty Church is for everyone no matter your background or age. It's
   not easy starting out on a new journey, so we hope you come and visit us soon.
 image: bg-new-to-church.jpg
@@ -53,6 +53,26 @@ body:
       video_link: false
       external_link: false
   row_columns: Two
+  display_name: What we believe / vision statement
+- template: columns-block
+  row_columns: Two
+  display_name: FAQs
+  columns:
+  - template: block-icon
+    icon: ''
+    title: ''
+    subtitle: ''
+    description: ''
+  - template: block-icon
+    icon: ''
+    title: ''
+    subtitle: ''
+    description: ''
+  - template: block-icon
+    icon: ''
+    title: ''
+    subtitle: ''
+    description: ''
 - template: content-block
   title: After the service
   size: Medium
@@ -85,8 +105,10 @@ menu:
 
 ---
 <section>
+  {% include /header-blocks/new.html %}
+   {% include /blocks/service.html %}
   {% include /grids/service-faq.html %}
-  <div class="grid">
+  <div class="row flex flex-row flex-wrap mw-none">
     <div class="column">
       <article class="content-block theme-deep">
         <div class="content-block-inner">
@@ -124,4 +146,7 @@ menu:
       </article>
     </div>
   </div>
+
+  {% include /blocks/after-service.html %}
+  {% include /blocks/be-part-of-us.html %}
 </section>
