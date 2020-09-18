@@ -19,7 +19,7 @@ fields:
   hidden: false
   default: ''
 - name: description
-  label: Description
+  label: SEO / Search description
   type: textarea
   hidden: false
   default: ''
