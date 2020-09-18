@@ -120,70 +120,10 @@ min-height: 400px;
 
 }
 
-.content-block--home-image {
-background-position: center;
-background-size: cover;
-height: 60vh;
-}
-
-.content-block--home-image {
-background-attachment: fixed;
-background: url("assets/images/bg-river-usk-newport-from-above.jpg") no-repeat center center;
-background-size: cover;
-
-  &::after {
-  background-color: rgba($blackrock, 0.6);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  content: " ";}
-
-}
-
-.no-touch .content-block--home-image {
-overflow: hidden; // added for pseudo-element
-position: relative; // added for pseudo-element
-z-index: 0;
-
-  // Fixed-position background image
-  &::before {
-  content: " ";
-  position: fixed; // instead of background-attachment
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: $white;
-  background: url("assets/images/bg-river-usk-newport-from-above.jpg") no-repeat center center;
-  background-size: cover;
-  will-change: transform; // creates a new paint layer
-  z-index: -1;}
-
-  // &::after {
-  // background-color: rgba($blackrock, 0.6);
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  // width: 100%;
-  // height: 100%;
-  // display: block;
-  // content: " ";}
-
-}
-
-
 .content-block--overlay,
 .content-block--overlay-shiraz,
 .content-block--overlay-dark,
-.content-block--overlay-blackrock,
-.content-block--overlay-messages,
-.content-block--overlay-new-to-church,
-.content-block--overlay-after-service,
-.content-block--overlay-five-years,
-.content-block--overlay-part-of-us {
+.content-block--overlay-blackrock {
 @include z-index(content-overlay);
 
   &:before {
@@ -202,47 +142,6 @@ z-index: 0;
 
   &:before {
   background: rgba($black, 0.2);
-  }
-
-}
-
-.content-block--overlay-messages {
-
-  &:before {
-  background-color: rgba($blackrock, 0.4);
-  }
-
-}
-
-.content-block--overlay-after-service {
-
-  &:before {
-  background-color: rgba(132, 149, 125, 0.4);
-  }
-
-}
-
-.content-block--overlay-new-to-church {
-
-  &:before {
-  background: rgba(61, 74, 94, 0.6);
-  }
-
-}
-
-.content-block--overlay-five-years {
-min-height: 500px;
-
-  &:before {
-  background: rgba(61, 74, 94, 0.8);
-  }
-
-}
-
-.content-block--overlay-part-of-us {
-
-  &:before {
-  background: rgba(97, 109, 125, 0.65);
   }
 
 }
@@ -445,4 +344,20 @@ min-height: 500px;
     }
 
   }
+}
+
+.c-grid {
+  display: grid;
+}
+
+.c-grid--two {
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+.c-grid--three {
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+}
+
+.c-grid--four {
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
 }

@@ -1,0 +1,13 @@
+{% if block.columns.size != 0 %}
+    <div class="c-grid {% if block.row_columns.size > 1 %}c-grid-size-{{ block.row_columns | downcase }}{% endif %}">
+        {% for block in block.columns %}
+            {% assign template = block.template %}
+            {% case template %}
+            {% when 'solid-block' %}
+                {% include components/solid-block.html %}
+            {% when 'image-block' %}
+                {% include components/image-block.html %}
+            {% endcase %}
+        {% endfor %}
+    </div>
+{% endif %}
