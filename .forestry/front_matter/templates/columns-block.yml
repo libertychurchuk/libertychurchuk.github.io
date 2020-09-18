@@ -19,7 +19,7 @@ fields:
   - block-icon
   config:
     min: 1
-    max: 3
+    max: 6
 - name: row_columns
   type: select
   default: Two
