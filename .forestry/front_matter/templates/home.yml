@@ -27,6 +27,7 @@ fields:
   - carousel
   - block-large-page-title
   - columns-block
+  - block-icon
 - name: layout
   label: Layout
   type: text
