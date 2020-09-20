@@ -44,3 +44,5 @@ fields:
     maxSize: 64
   label: Photo
   description: A photo of the group leaders
+pages:
+- _groups/family-group-newport.md
