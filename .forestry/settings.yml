@@ -55,7 +55,7 @@ sections:
   - devotional
 - type: directory
   path: _groups
-  label: Liberty groups
+  label: Small groups
   create: documents
   match: "**/*"
   templates:
