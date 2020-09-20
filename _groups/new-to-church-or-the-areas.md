@@ -1,5 +1,5 @@
 ---
-title: New to church or the areas
+title: New to church or the area
 leaders: Gaz an Lois Hillier
 description: If you’ve recently started attending Liberty Church or are new to the
   area, we would love to connect with you and your family. We will be gathering online
@@ -10,6 +10,5 @@ location: Online via Zoom / Outdoors
 day: Wednesdays
 time: 7.45pm
 image: ''
-published: false
 
 ---
