@@ -2,8 +2,13 @@
 label: Small Group
 hide_body: true
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - type: text
-  name: title
+  name: leaders
   label: Leaders names
   config:
     required: true
