@@ -14,16 +14,16 @@ fields:
   config:
     required: false
   description: Where does the group meet?
-- name: when
-  type: textarea
-  default: ''
+- name: day
+  type: text
   config:
     required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: When
-  description: When does the group meet?
+  label: Day
+- name: time
+  type: text
+  config:
+    required: false
+  label: Time
 - type: text
   name: description
   label: Description/bio
