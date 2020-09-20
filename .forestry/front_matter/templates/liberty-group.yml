@@ -1,5 +1,5 @@
 ---
-label: Liberty Group
+label: Small Group
 hide_body: true
 fields:
 - type: text
@@ -31,7 +31,7 @@ fields:
 - name: image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: Photo
   description: A photo of the group leaders
 pages:
