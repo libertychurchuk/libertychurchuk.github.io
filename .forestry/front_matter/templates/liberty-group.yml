@@ -8,6 +8,15 @@ fields:
   config:
     required: true
   description: What are the leaders names?
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
 - type: text
   name: location
   label: Location
@@ -24,10 +33,6 @@ fields:
   config:
     required: false
   label: Time
-- type: text
-  name: description
-  label: Description/bio
-  description: What is the groups aim?
 - name: image
   type: file
   config:
