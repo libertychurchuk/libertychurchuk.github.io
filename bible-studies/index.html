@@ -16,7 +16,7 @@ pagination:
 </header>
 
 <section class="blog">
-  <div class="row flex flex-row flex-wrap block-grid">
+  <div class="row c-grid c-grid--four">
     {% for item in paginator.posts %}
         {% include items/card-studies.html %}
     {% endfor %}

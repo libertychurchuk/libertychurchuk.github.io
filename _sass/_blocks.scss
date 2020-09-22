@@ -276,7 +276,6 @@ min-height: 400px;
   align-items: center;
   justify-content: center;
   @include z-index(block-inner);
-  text-align: center;
 }
 
 // Set height of block
@@ -295,6 +294,13 @@ min-height: 400px;
 }
 .c-block-size-fill {
   min-height: 100vh;
+}
+
+
+// Text alignment
+
+.c-block-align-left {
+text-align: left;
 }
 
 
@@ -320,6 +326,12 @@ min-height: 400px;
 
 .bg-charcoal {
   background-color: #1e1e1e;
+}
+
+
+.c-block-theme-light {
+  background-color: #fff;
+  color: $textcolor;
 }
 
 .white {

@@ -1,0 +1,21 @@
+<article class="c-block c-block-theme-light c-block-align-left">
+
+    <div class="c-block-inner" >
+    
+        {% if block.icon.size > 1 %}
+        <h2 class="sr-only">{{ block.title }}</h2>
+        <img src="{{ site.cloudinary_url }}/{{ block.icon }}" alt="{{ block.title }}" />
+        {% else %}
+            <h2 class="c-block-heading">{{ block.title }}</h2>
+            {% if block.subtitle.size > 1 %}
+            <p role="doc-subtitle">{{ block.subtitle }}</p>
+            {% endif %}
+        {% endif %}
+        
+        {% if block.description.size > 1 %}
+            {{ block.description }}
+        {% endif %}
+    
+    </div>
+
+  </article>

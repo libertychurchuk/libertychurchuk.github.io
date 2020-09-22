@@ -23,7 +23,7 @@ pagination:
 
 
 <section class="blog">
-  <div class="row flex flex-row flex-wrap block-grid">
+  <div class="row c-grid c-grid--four">
     {% for item in paginator.posts reversed %}
         {% include items/card-series.html %}
     {% endfor %}

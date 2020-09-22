@@ -17,7 +17,7 @@ pagination:
 
 
 <section class="authors">
-  <div class="row flex flex-row flex-wrap block-grid">
+  <div class="row c-grid c-grid--four">
     {% assign authors = site.authors | sort: 'title' %}
       {% for author in authors %}
         {% include items/card-authors.html %}
