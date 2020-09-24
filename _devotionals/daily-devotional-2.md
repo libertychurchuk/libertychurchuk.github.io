@@ -1,5 +1,6 @@
 ---
-title: 'Daily Devotional:'
+title: 'Daily Devotional: Healthy People, healthy families, healthy communities, healthy
+  cities (Day4)'
 author: _authors/lana-fisher.md
 date: 2020-09-24 07:41:23 +0000
 scripture: " 1 Peter 2:4-5"
