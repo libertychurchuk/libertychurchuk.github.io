@@ -6,7 +6,6 @@ date: 2020-09-25 06:20:33 +0000
 scripture: " Deut 6:10-12"
 description: ''
 image: "/v1601014868/DD_value10_day5_1920x1080_emfndv.png"
-published: false
 
 ---
 <iframe src="[https://player.vimeo.com/video/461298482](https://player.vimeo.com/video/461298482 "https://player.vimeo.com/video/461298482")" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
