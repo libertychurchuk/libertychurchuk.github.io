@@ -17,25 +17,21 @@
 				<h3>Service address</h3>
 				
 					<div class="adr">
-					<div class="time"><time>10.30am</time> at </div>
-					 <div class="street-address">Llanwern High School</div>
-					 <div class="street-address">Hartridge Farm Road,</div>
-					 <div class="locality">Newport, <span class="postal-code">NP18 2YE</span>
-</div>
-					 <div class="country-name">United Kingdom</div>
+					<div class="time"><span>{{ site.contact.service-time }}</span> at </div>
+					 {{ site.contact.service-address }}
 					</div>
 			</div>
 			<div class="column contentinfo__contact--tel">
 					<svg class="icon icon--large icon--light">
 						<use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#phone"></use>
 					</svg>
-					<a href="tel:+447943501007">Call us +44 7943 501007</a>
+					<a href="tel:{{ site.contact.telephone }}">Call us {{ site.contact.telephone }}</a>
 			</div>
 			<div class="column contentinfo__contact--email">
 				<svg class="icon icon--large icon--light">
 					<use xlink:href="{{ site.baseurl }}/assets/images/icons/svg-icons.svg#email"></use>
 				</svg>
- 				<a href="mailto:hello@libertychurchuk.com">hello@libertychurchuk.com</a>
+ 				<a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
 			</div>
 			<div class="column contentinfo__contact--address">
 				<svg class="icon icon--large icon--light">
@@ -43,10 +39,7 @@
 				</svg>
 				<h3>Admin address</h3>
 					<div class="adr">
-					 <div class="street-address">42 Bryngwyn Road,</div>
-					 <div class="locality">Newport, <span class="postal-code">NP20 4JT</span>
-</div>
-					 <div class="country-name">United Kingdom</div>
+					 {{ site.contact.admin-address }}
 					</div>
 			</div>
 
@@ -65,11 +58,11 @@
 <div class="contentinfo__smallprint row flex flex-row flex-wrap mw-none">
 
 	<div class="column contentinfo__charitystatus">
-		<small>Liberty Church is a registered charity in England and Wales 1161640</small>
+		<small>{{ site.charity }}</small>
 	</div>
 
 	<div class="column contentinfo__copyright">
-		<small>Copyright © 2018 Liberty Church. All rights reserved. <a href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a></small>
+		<small>{{ site.copyright }} <a href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a></small>
 	</div>
 
 
