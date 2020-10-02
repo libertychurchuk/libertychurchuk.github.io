@@ -17,6 +17,7 @@ fields:
   - solid-block
   - content-block
   - block-icon
+  - image-text-block
   config:
     min: 1
     max: 6
