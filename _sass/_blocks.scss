@@ -194,7 +194,7 @@
   }
 }
 
-.c-block-img {
+.c-block-bg-img {
   position: absolute;
   display: block;
   object-fit: cover;
@@ -202,6 +202,7 @@
   height: 100%;
   @include z-index(block-image);
 }
+
 
 // Overlays
 // -------------------------------------------------------

@@ -1,7 +1,7 @@
-<article class="c-block">
+<article class="c-block c-grid c-grid--two">
 
     {% if block.image.size > 1 %}
-    <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img" alt=""/>
+    <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img-cover" alt=""/>
     {% endif %}
     
     <div class="c-block-inner {% if block.size.size > 1 %}c-block-size-{{ block.size | downcase }}{% endif %}" >
