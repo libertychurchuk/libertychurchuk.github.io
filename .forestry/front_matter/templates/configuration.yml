@@ -1,0 +1,298 @@
+---
+label: Configuration
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: text
+  name: timezone
+  label: timezone
+- type: field_group
+  name: collections
+  label: collections
+  fields:
+  - type: field_group
+    name: testimonies
+    label: testimonies
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+    - type: text
+      name: permalink
+      label: permalink
+  - type: field_group
+    name: devotionals
+    label: devotionals
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+    - type: text
+      name: permalink
+      label: permalink
+  - type: field_group
+    name: groups
+    label: groups
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+  - type: field_group
+    name: authors
+    label: authors
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+    - type: text
+      name: permalink
+      label: permalink
+  - type: field_group
+    name: posts
+    label: posts
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+    - type: text
+      name: permalink
+      label: permalink
+  - type: field_group
+    name: messages
+    label: messages
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+    - type: text
+      name: permalink
+      label: permalink
+  - type: field_group
+    name: studies
+    label: studies
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+    - type: text
+      name: permalink
+      label: permalink
+  - type: field_group
+    name: series
+    label: series
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+    - type: text
+      name: permalink
+      label: permalink
+  - type: field_group
+    name: banners
+    label: banners
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+  - type: field_group
+    name: alerts
+    label: alerts
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: output
+      label: output
+- type: field_group_list
+  name: defaults
+  label: defaults
+  fields:
+  - type: field_group
+    name: scope
+    label: scope
+    fields:
+    - type: text
+      name: path
+      label: path
+    - type: text
+      name: type
+      label: type
+  - type: field_group
+    name: values
+    label: values
+    fields:
+    - type: text
+      name: layout
+      label: layout
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: url
+  label: url
+- type: text
+  name: author
+  label: author
+- type: text
+  name: email
+  label: email
+- type: field_group
+  name: twitter
+  label: twitter
+  fields:
+  - type: text
+    name: username
+    label: username
+- type: field_group
+  name: facebook
+  label: facebook
+  fields:
+  - type: text
+    name: app_id
+    label: app_id
+  - type: text
+    name: publisher
+    label: publisher
+  - type: text
+    name: admins
+    label: admins
+- type: file
+  name: logo
+  label: logo
+- type: text
+  name: lang
+  label: lang
+- type: field_group
+  name: social
+  label: social
+  fields:
+  - type: list
+    name: links
+    label: links
+- type: text
+  name: cloudinary_url
+  label: cloudinary_url
+- type: text
+  name: copyright
+  label: copyright
+- type: text
+  name: charity
+  label: charity
+- type: field_group
+  name: contact
+  label: contact
+  fields:
+  - type: text
+    name: email
+    label: email
+  - type: text
+    name: telephone
+    label: telephone
+  - type: text
+    name: service-time
+    label: service-time
+  - type: text
+    name: service-address
+    label: service-address
+  - type: text
+    name: admin-address
+    label: admin-address
+- type: field_group
+  name: pagination
+  label: pagination
+  fields:
+  - type: boolean
+    name: enabled
+    label: enabled
+  - type: boolean
+    name: debug
+    label: debug
+  - type: text
+    name: collection
+    label: collection
+  - type: number
+    name: per_page
+    label: per_page
+  - type: text
+    name: permalink
+    label: permalink
+  - type: text
+    name: title
+    label: title
+  - type: number
+    name: limit
+    label: limit
+  - type: text
+    name: sort_field
+    label: sort_field
+  - type: boolean
+    name: sort_reverse
+    label: sort_reverse
+  - type: text
+    name: category
+    label: category
+  - type: text
+    name: tag
+    label: tag
+  - type: text
+    name: locale
+    label: locale
+  - type: field_group
+    name: trail
+    label: trail
+    fields:
+    - type: number
+      name: before
+      label: before
+    - type: number
+      name: after
+      label: after
+  - type: text
+    name: extension
+    label: extension
+  - type: text
+    name: indexpage
+    label: indexpage
+- type: field_group
+  name: sass
+  label: sass
+  fields:
+  - type: text
+    name: style
+    label: style
+- type: list
+  name: plugins
+  label: plugins
