@@ -53,4 +53,3 @@ fields:
   - file-download
   config:
     max: '4'
-pages:
