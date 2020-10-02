@@ -88,9 +88,8 @@ sections:
   path: netlify.toml
   label: Redirects (Short URLs)
 - type: document
-  path: config.yml
+  path: _config.yml
   label: Config
-  match: "**/*"
 upload_dir: ''
 public_path: https://res.cloudinary.com/libertychurchuk/image/upload
 front_matter_path: ''
