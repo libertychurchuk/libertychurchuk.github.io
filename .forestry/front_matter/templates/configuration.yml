@@ -136,6 +136,7 @@ fields:
     - type: boolean
       name: output
       label: output
+  hidden: true
 - type: field_group_list
   name: defaults
   label: defaults
