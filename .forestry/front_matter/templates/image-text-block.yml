@@ -26,7 +26,8 @@ fields:
 - type: file
   name: image
   label: Image
-  description: Choose a primary image that should be displayed along with the text content.
+  description: Choose a primary image that should be displayed along with the text
+    content.
 - name: size
   type: select
   default: Small
