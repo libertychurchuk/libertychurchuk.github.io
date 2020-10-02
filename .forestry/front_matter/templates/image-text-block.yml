@@ -28,24 +28,22 @@ fields:
   label: Image
   description: Choose a primary image that should be displayed along with the text
     content.
-- name: size
+- name: position
   type: select
-  default: Small
+  default: Right
   config:
     required: false
     options:
-    - Small
-    - Medium
-    - Large
-    - Xlarge
-    - Fill
+    - Right
+    - Left
+    - Top
     source:
       type: simple
       section: 
       file: 
       path: 
-  label: Height
-  description: Set the height the block should occupy
+  label: Position
+  description: Set the position of the image
 - type: blocks
   name: call_to_action
   label: Call to action
