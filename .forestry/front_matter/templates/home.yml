@@ -23,6 +23,7 @@ fields:
   label: Body
   template_types:
   - content-block
+  - image-text-block
   - solid-block
   - carousel
   - block-large-page-title
