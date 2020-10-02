@@ -1,0 +1,36 @@
+<article class="c-block c-block-theme-light">
+
+    {% if block.image.size > 1 %}
+        <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
+    {% endif %}
+    
+    
+    <div class="c-block-inner">
+    
+        <h2 class="c-block-heading">{{ block.title }}</h2>
+        {% if block.subtitle.size > 1 %}
+        <p role="doc-subtitle" class="c-block-subheading">{{ block.subtitle }}</p>
+        {% endif %}
+
+        
+        {% if block.description.size > 1 %}
+            {{ block.description }}
+        {% endif %}
+
+        {% if block.call_to_action.size !=0 %}
+        <div class="c-block-actions">
+        {% for cta in block.call_to_action %}
+            {% assign template = cta.template %}
+            {% case template %}
+            {% when 'call-to-action' %}
+                {% include components/cta.html %}
+            {% when 'file-download' %}
+                {% include components/cta-download.html %}
+            {% endcase %}
+        {% endfor %}
+        </div>
+        {% endif %}
+    
+    </div>
+
+  </article>

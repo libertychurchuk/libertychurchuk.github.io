@@ -1,5 +1,5 @@
 ---
-label: 'Block: Image and text'
+label: 'Block: Top image and text'
 hide_body: true
 display_field: title
 fields:
@@ -9,7 +9,7 @@ fields:
   description: Set the headline of the content block
   config:
     required: true
-  default: e.g. New to church
+  default:
 - type: textarea
   name: subtitle
   label: Subtitle
@@ -28,22 +28,6 @@ fields:
   label: Image
   description: Choose a primary image that should be displayed along with the text
     content.
-- name: image_position
-  type: select
-  default: Right
-  config:
-    required: false
-    options:
-    - Right
-    - Left
-    - Top
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Position
-  description: Set the position of the image
 - type: blocks
   name: call_to_action
   label: Call to action
