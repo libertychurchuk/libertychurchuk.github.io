@@ -1,0 +1,56 @@
+---
+label: 'Block: Image and text'
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Headline
+  description: Set the headline of the content block
+  config:
+    required: true
+  default: e.g. New to church
+- type: textarea
+  name: subtitle
+  label: Subtitle
+  description: " (Optional) The subtitle / description is displayed below the headline. "
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Description
+- type: file
+  name: image
+  label: Image
+  description: Choose a primary image that should be displayed along with the text content.
+- name: size
+  type: select
+  default: Small
+  config:
+    required: false
+    options:
+    - Small
+    - Medium
+    - Large
+    - Xlarge
+    - Fill
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Height
+  description: Set the height the block should occupy
+- type: blocks
+  name: call_to_action
+  label: Call to action
+  template_types:
+  - call-to-action
+  - file-download
+  config:
+    max: '4'
+pages:
