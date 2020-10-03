@@ -1,4 +1,23 @@
 ---
 label: Donate button
 hide_body: true
-fields: []
+fields:
+- name: button_text
+  type: text
+  config:
+    required: false
+  label: Button text
+  description: What do you want the button text to day e.g. Donate, Give, Support,
+    Sponsor etc
+  default: Give
+- name: donation_amount
+  type: number
+  label: Donation amount
+  description: If you want to specify a specific donation amount set it here. for
+    £50 just type 50.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
