@@ -67,7 +67,6 @@ fields:
     options:
     - Right
     - Left
-    - Top
     source:
       type: simple
       section: 
