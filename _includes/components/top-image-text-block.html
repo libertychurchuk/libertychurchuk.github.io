@@ -1,7 +1,9 @@
 <article class="c-block c-block-theme-light">
 
     {% if block.image.size > 1 %}
+    <div class="c-block-image">
         <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
+    </div>
     {% endif %}
     
     

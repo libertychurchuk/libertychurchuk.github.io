@@ -1,15 +1,7 @@
-<article class="c-block c-block-theme-light c-grid c-grid--two">
+<article class="c-block c-block-theme-light c-block--two-column c-block-image-{{ block.image_position | downcase}}">
 
-    {% if block.image_position == "Left" or  block.image_position == "Top"%}
-        {% if block.image.size > 1 %}
-            <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
-        {% endif %}
-    {% endif %}
+    <div class="c-block-inner">
     
-    
-    <div class="c-block-inner{% if block.image_position == "Right" %} c-block-order-2{% endif %}">
-    
-       
         <h2 class="c-block-heading">{{ block.title }}</h2>
         {% if block.subtitle.size > 1 %}
         <p role="doc-subtitle" class="c-block-subheading">{{ block.subtitle }}</p>
@@ -36,10 +28,10 @@
     
     </div>
 
-    {% if block.image_position == "Right" %}
-        {% if block.image.size > 1 %}
-            <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
-        {% endif %}
+    {% if block.image.size > 1 %}
+    <div class="c-block-image">
+        <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
+    </div>
     {% endif %}
 
   </article>

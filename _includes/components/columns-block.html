@@ -1,5 +1,5 @@
 {% if block.columns.size != 0 %}
-    <div class="c-grid {% if block.row_columns.size > 1 %}c-grid--{{ block.row_columns | downcase }}{% endif %}">
+    <div class="c-grid {% if block.row_columns.size > 1 %}c-grid--{{ block.row_columns | downcase }}{% endif %} c-grid-align-start">
         {% for block in block.columns %}
             {% assign template = block.template %}
             {% case template %}
