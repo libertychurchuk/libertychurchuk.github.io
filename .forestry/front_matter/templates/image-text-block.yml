@@ -81,5 +81,6 @@ fields:
   template_types:
   - call-to-action
   - file-download
+  - donate-button
   config:
     max: '4'
