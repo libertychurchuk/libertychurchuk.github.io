@@ -1,4 +1,4 @@
-<article class="c-block c-block-theme-light">
+<article class="c-block theme-{{ block.theme | downcase}}">
 
     {% if block.image.size > 1 %}
     <div class="c-block-image">
@@ -28,7 +28,7 @@
                 {% include components/cta.html %}
             {% when 'file-download' %}
                 {% include components/cta-download.html %}
-            {% when 'donate' %}
+            {% when 'donate-button' %}
                 {% include components/cta-donate.html %}
             {% endcase %}
         {% endfor %}

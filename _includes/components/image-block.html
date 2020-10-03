@@ -1,4 +1,4 @@
-<article class="c-block">
+<article class="c-block theme-dark">
 
     {% if block.background_image.size > 1 %}
     <img src="{{ site.cloudinary_url }}/{{ block.background_image }}" class="c-block-img--bg" alt=""/>
@@ -33,7 +33,7 @@
                 {% include components/cta.html %}
             {% when 'file-download' %}
                 {% include components/cta-download.html %}
-            {% when 'donate' %}
+            {% when 'donate-button' %}
                 {% include components/cta-donate.html %}
             {% endcase %}
         {% endfor %}

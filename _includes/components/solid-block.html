@@ -1,4 +1,4 @@
-<article class="c-block" style="background-color: {{ block.background_colour }};">
+<article class="c-block theme-dark" style="background-color: {{ block.background_colour }};">
 
     <div class="c-block-inner" >
     
@@ -25,7 +25,7 @@
                 {% include components/cta.html %}
             {% when 'file-download' %}
                 {% include components/cta-download.html %}
-            {% when 'donate' %}
+            {% when 'donate-button' %}
                 {% include components/cta-donate.html %}
             {% endcase %}
         {% endfor %}

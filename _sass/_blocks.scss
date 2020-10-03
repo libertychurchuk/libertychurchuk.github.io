@@ -188,10 +188,6 @@
   text-align: center;
   justify-content: center;
 
-  a {
-    color: $whitesmoke;
-  }
-
   iframe {
     margin-bottom: 0;
   }
@@ -334,6 +330,7 @@ flex-direction: column-reverse; // Ensures image is displayed before text block
   margin: 0;
   font-size: 1.5rem; //24/16
   font-weight: 100;
+  margin-bottom: 1rem;
 }
 
 .c-block-media-object {
@@ -360,11 +357,6 @@ flex-direction: column-reverse; // Ensures image is displayed before text block
 
 .bg-charcoal {
   background-color: #1e1e1e;
-}
-
-.c-block-theme-light {
-  background-color: #fff;
-  color: $textcolor;
 }
 
 .white {

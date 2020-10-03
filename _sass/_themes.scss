@@ -14,45 +14,6 @@ color: $whitesmoke;
 }
 
 .theme-dark {
-background-color: $codgrey;
-color: $whitesmoke;
-
-  .btn {
-  background-color: $shiraz;
-  color: $whitesmoke;
-
-    &:hover,
-    &:focus {background-color: lighten($shiraz, 10%);}
-
-  }
-
-  .btn--outline {
-  background-color: rgba($shiraz, 0);
-  color: $whitesmoke;
-
-    &:hover,
-    &:focus {background-color: lighten($shiraz, 10%);}
-
-  }
-
-  &.collapsible {
-  border-left-color: lighten($shipcove, 10%);
-  border-right-color: lighten($shipcove, 10%);
-  border-top-color: lighten($shipcove, 10%);
-  }
-
-  .collapsible-header {
-  background-color: $shipcove;
-  border-bottom-color: lighten($shipcove, 10%);
-  }
-
-  .collapsible-body {
-  background-color: $white;
-  color: $textcolor;
-  }
-}
-
-.theme-deep {
   background-color: $blackrock;
   color: $whitesmoke;
 
@@ -68,12 +29,15 @@ color: $whitesmoke;
     &:focus {background-color: lighten($shiraz, 10%);}
 
   }
+
+  .c-block-inner a {
+    color: $white;
+  }
 }
 
 .theme-light {
-background-color: $whitesmoke;
-color: $black;
-border-bottom: 1px solid $bordercolor;
+background-color: $white;
+color: $textcolor;
 
   .btn {
   background-color: $shipcove;
@@ -97,94 +61,6 @@ border-bottom: 1px solid $bordercolor;
 
   }
 
-}
-
-.theme-kids {
-background-color: $kidsblue;
-color: $white;
-
-  .btn {
-  background-color: $kidsorange;
-  color: $white;
-
-    &:hover,
-    &:focus {  background-color: $white; color: $kidsblue;}
-
-  }
-
-  .btn--outline {
-  background: transparent;
-  border-color: $white;
-  color: $white;
-
-    &:hover,
-    &:focus {
-    background: $kidsorange;
-    border-color: $kidsorange;
-    color: $white;
-    }
-
-  }
-
-}
-
-.theme-youth {
-background: $youthbg;
-color: $youthtext;
-
-
-  .btn {
-  background-color: $youthgreen;
-  color: $black;
-
-    &:hover,
-    &:focus {  background-color: darken($youthgreen, 10);}
-
-  }
-
-  .btn--outline {
-  background: transparent;
-  border-color: $youthgreen;
-  color: $youthgreen;
-
-    &:hover,
-    &:focus {
-      background: transparent;
-    border-color: darken($youthgreen, 10);
-    color: darken($youthgreen, 10);
-    }
-
-  }
-}
-
-
-.theme-lambs {
-background-color: $lambs;
-color: $white;
-
-
-    .btn {
-    background-color: $lambsmint;
-    color: $white;
-
-      &:hover,
-      &:focus {  background-color: darken($lambsmint, 10);}
-
-    }
-
-    .btn--outline {
-    background: transparent;
-    border-color: $lambsmint;
-    color: $lambsmint;
-
-      &:hover,
-      &:focus {
-      background: transparent;
-      border-color: darken($lambsmint, 5);
-      color: darken($lambsmint, 5);
-      }
-
-    }
 }
 
 
