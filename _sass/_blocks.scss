@@ -225,6 +225,10 @@
   height: 100%;
 }
 
+.c-block-img--contain {
+  object-fit: contain;
+}
+
 // Overlays
 // -------------------------------------------------------
 
@@ -285,6 +289,12 @@
   @include medium {
     padding: 3rem;
   }
+}
+
+.c-block-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .c-block-image-left {

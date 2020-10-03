@@ -31,9 +31,17 @@
     </div>
 
     {% if block.image.size > 1 %}
-    <div class="c-block-image">
-        <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
-    </div>
+
+        <div class="c-block-image">
+
+            {% if block.image_type == "Contain" %}
+                <img src="{{ site.cloudinary_url }}/w_480,h_270,c_fill/f_auto{{ block.image }}" width="480" class="c-block-img--contain" alt=""/>
+            {% else %}
+                <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
+            {% endif %}
+
+        </div>
+
     {% endif %}
 
   </article>
