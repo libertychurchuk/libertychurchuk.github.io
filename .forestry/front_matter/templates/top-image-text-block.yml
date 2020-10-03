@@ -3,6 +3,20 @@ label: 'Block: Top image and text'
 hide_body: true
 display_field: title
 fields:
+- name: theme
+  type: select
+  default: Light
+  config:
+    required: false
+    options:
+    - Light
+    - Dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
 - type: text
   name: title
   label: Headline
