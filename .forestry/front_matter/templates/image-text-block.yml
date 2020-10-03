@@ -74,6 +74,23 @@ fields:
       path: 
   label: Image position
   description: Set the position of the image
+- name: image_type
+  type: select
+  default: Cover
+  config:
+    required: false
+    options:
+    - Cover
+    - Contain
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Image display
+  description: Set the way the image should be displayed. Cover sets the image to
+    fill the block whilst contain keeps the original aspect ratio and centres the
+    image in the block.
 - type: blocks
   name: call_to_action
   label: Call to action
