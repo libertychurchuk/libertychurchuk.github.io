@@ -13,10 +13,14 @@
         {% include components/top-image-text-block.html %}
       {% when 'carousel' %}
         {% include components/block-carousel.html %}
-      {% when 'block-large-page-title' %}
-        {% include components/block-large-page-title.html %}
+      {% when 'page-title' %}
+        {% include components/page-title.html %}
       {% when 'columns-block' %}
         {% include components/columns-block.html %}
+      {% when 'text' %}
+        {% include components/text.html %}
+      {% when 'section-title' %}
+        {% include components/section-title.html %}
       {% endcase %}
     {% endfor %}
     

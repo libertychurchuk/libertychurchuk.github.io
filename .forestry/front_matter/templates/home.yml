@@ -26,9 +26,10 @@ fields:
   - image-text-block
   - solid-block
   - carousel
-  - block-large-page-title
+  - page-title
   - columns-block
   - block-icon
+  - text
 - name: layout
   label: Layout
   type: text
@@ -40,4 +41,5 @@ pages:
 - index.html
 - new-to-church/index.html
 - our-story/index.html
+- giving/index.html
 - styleguide/index.html
