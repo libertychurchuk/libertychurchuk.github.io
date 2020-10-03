@@ -308,6 +308,23 @@
   }
 }
 
+// Text alignment of a block
+
+.c-block-text-left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.c-block-text-center {
+  align-items: center;
+  text-align: center;
+}
+
+.c-block-text-right {
+  align-items: flex-end;
+  text-align: right;
+}
+
 // Set height of block
 
 .c-block-size-small {

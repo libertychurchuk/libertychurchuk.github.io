@@ -1,6 +1,6 @@
-<article class="c-block c-block--two-column c-block-image-{{ block.image_position | downcase}} theme-{{ block.theme | downcase}}">
+<article class="{% if block.display == "Wide" %}row{% endif %} c-block c-block--two-column c-block-image-{{ block.image_position | downcase}} theme-{{ block.theme | downcase}}">
 
-    <div class="c-block-inner">
+    <div class="c-block-inner c-block-text-{{ block.text_alignment | downcase}}">
     
         <h2 class="c-block-heading">{{ block.title }}</h2>
         {% if block.subtitle.size > 1 %}
