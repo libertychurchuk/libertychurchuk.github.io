@@ -9,7 +9,7 @@ fields:
   description: Set the headline of the content block
   config:
     required: true
-  default:
+  default: 
 - type: textarea
   name: subtitle
   label: Subtitle

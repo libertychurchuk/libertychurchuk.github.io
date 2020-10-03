@@ -1,5 +1,5 @@
 ---
-label: 'Block: Large page title'
+label: Page title
 hide_body: true
 display_field: title
 fields:
