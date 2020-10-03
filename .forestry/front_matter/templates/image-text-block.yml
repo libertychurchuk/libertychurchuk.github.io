@@ -3,6 +3,21 @@ label: 'Block: Image and text'
 hide_body: true
 display_field: title
 fields:
+- name: theme
+  type: select
+  default: Light
+  config:
+    required: false
+    options:
+    - Light
+    - Dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+  description: What theme should this block use?
 - type: text
   name: title
   label: Headline
@@ -23,6 +38,22 @@ fields:
     schema:
       format: html-blocks
   label: Description
+- name: text_alignment
+  type: select
+  default: Center
+  config:
+    required: false
+    options:
+    - Left
+    - Center
+    - Right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Text alignment
+  description: Set the alignment of the text for this block.
 - type: file
   name: image
   label: Image
@@ -42,7 +73,7 @@ fields:
       section: 
       file: 
       path: 
-  label: Position
+  label: Image position
   description: Set the position of the image
 - type: blocks
   name: call_to_action
