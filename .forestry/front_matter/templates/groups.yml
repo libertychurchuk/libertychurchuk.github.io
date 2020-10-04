@@ -1,4 +1,9 @@
 ---
 label: Groups
 hide_body: true
-fields: []
+fields:
+- name: display
+  type: boolean
+  label: Display groups
+  default: true
+  description: Should the groups be displayed on the page?
