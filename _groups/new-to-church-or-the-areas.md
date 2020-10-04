@@ -1,6 +1,6 @@
 ---
-title: New to church or the area
-leaders: Gaz an Lois Hillier
+title: New to Church or the area
+leaders: Gaz & Lois Hillier
 description: If you’ve recently started attending Liberty Church or are new to the
   area, we would love to connect with you and your family. We will be gathering online
   on Wednesday evenings to learn more about Liberty Church, talk around the Word on
