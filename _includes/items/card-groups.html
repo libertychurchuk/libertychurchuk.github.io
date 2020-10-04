@@ -1,27 +1,29 @@
-<article class="card card--group">
-  <div class="card-inner">
-    
-    <div class="card__image card__image--bnw">
-      <img src="{{ site.cloudinary_url }}/w_480,h_480,c_fill/f_auto{{ item.image }}" alt="{{ item.title }}" />
-    </div>
-  
-    <div class="card__body">
-      <h3 class="card__title">{{ item.title }}</h3>
+<article class="c-block theme-light">
 
-      {% if item.location.size > 1 %}
-      <div><b>Location:</b> {{ item.location }}</div>
-      {% endif %}
+  <div class="c-block-inner c-block-text-left">
 
-      {% if item.when.size > 1 %}
-      <div><b>When:</b> {{ item.when }}</div>
-      {% endif %}
+    <h2 class="c-block-small-heading">{{ item.title }}</h2>
+    {% if item.leaders.size > 1 %}
+    <p role="doc-subtitle" class="c-block-subheading">{{ item.leaders }}</p>
+    {% endif %}
 
-      {% if item.description.size > 1 %}
-      <hr>
-      <div class="mt3">{{ item.description }}</div>
-      {% endif %}
+    <ul class="list--nobullets mb3">
+    {% if item.location.size > 1 %}
+      <li><strong>Location:</strong> {{ item.location }}</li>
+    {% endif %}
 
+    {% if item.day.size > 1 %}
+      <li><strong>Day:</strong> {{ item.day }}</li>
+    {% endif %}
 
-    </div>
+    {% if item.time.size > 1 %}
+      <li><strong>Day:</strong> {{ item.time }}</li>
+    {% endif %}
+    </ul>
+
+    {% if item.description.size > 1 %}
+      <div>{{ item.description }}</div>
+    {% endif %}
+
   </div>
 </article>

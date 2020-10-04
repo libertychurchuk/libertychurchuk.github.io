@@ -1,0 +1,6 @@
+<section class="row c-grid c-grid--two c-grid-align-start">
+    {% for item in paginator.posts %}
+        {% include items/card-groups.html %}
+    {% endfor %}
+</section>
+{% include item-pagination.html %}
