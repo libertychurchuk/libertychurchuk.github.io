@@ -8,6 +8,5 @@ location: Online via Zoom
 day: Fridays
 time: 7.30-9pm
 image: ''
-published: false
 
 ---
