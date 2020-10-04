@@ -7,6 +7,6 @@ description: |-
 location: Online via Zoom
 day: Thursdays
 time: 7.45pm
-image: ''
+image: "/v1601669663/heath-leah_tfl4xo.jpg"
 
 ---
