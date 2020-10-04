@@ -3,20 +3,6 @@ label: Section title
 hide_body: true
 display_field: title
 fields:
-- name: theme
-  type: select
-  default: Dark
-  config:
-    required: false
-    options:
-    - Light
-    - Dark
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Theme
 - name: title
   type: text
   config:
@@ -27,4 +13,3 @@ fields:
   config:
     required: false
   label: Subtitle
-
