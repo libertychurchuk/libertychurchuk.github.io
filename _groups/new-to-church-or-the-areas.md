@@ -9,6 +9,6 @@ description: If you’ve recently started attending Liberty Church or are new to
 location: Online via Zoom / Outdoors
 day: Wednesdays
 time: 7.45pm
-image: ''
+image: "/v1601669788/gaz-lois_hyruqw.jpg"
 
 ---
