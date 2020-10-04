@@ -30,6 +30,7 @@ fields:
   - columns-block
   - block-icon
   - text
+  - groups
 - name: layout
   label: Layout
   type: text
