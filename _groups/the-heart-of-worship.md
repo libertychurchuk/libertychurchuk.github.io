@@ -8,6 +8,5 @@ location: Gaer Christian Centre, Newport (Upstairs)
 day: Tuesdays
 time: 7.30pm
 image: ''
-published: false
 
 ---
