@@ -1,7 +1,12 @@
 <article class="c-block theme-dark">
 
     {% if block.background_image.size > 1 %}
-    <img src="{{ site.cloudinary_url }}/{{ block.background_image }}" class="c-block-img--bg" alt=""/>
+    <img loading="lazy" srcset="{{ site.cloudinary_url }}image/upload/w_320,f_auto/{{ block.background_image }} 320w,
+                {{ site.cloudinary_url }}/w_512,f_auto/{{ block.background_image }} 512w,
+                {{ site.cloudinary_url }}/w_768,f_auto/{{ block.background_image }} 768w,
+                {{ site.cloudinary_url }}/w_1400,f_auto/{{ block.background_image }} 1400w",
+                {{ site.cloudinary_url }}/w_1920,f_auto/{{ block.background_image }} 1920w"
+                src="{{ site.cloudinary_url }}/w_320,f_auto/{{ block.background_image }}" class="c-block-img--bg" alt="" />
     {% endif %}
     
     {% if block.overlay_colour.size > 1 %}
