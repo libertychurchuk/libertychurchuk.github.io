@@ -36,12 +36,12 @@ margin: 2em 0;
 margin: 0;
 padding: 2rem;
 background: darken($blackrock, 5%);
-color: darken($whitesmoke, 25%);
+color: rgba($white, 0.8);
 font-size: 1rem;
-}
 
-.contentinfo__charitystatus {
-color: rgba($white, 0.7);
+a {
+  color: rgba($white, 0.8);
+}
 }
 
 .contentinfo__copyright {
