@@ -37,7 +37,12 @@
             {% if block.image_type == "Contain" %}
                 <img src="{{ site.cloudinary_url }}/w_480,h_270,c_fill/f_auto{{ block.image }}" width="480" class="c-block-img--contain" alt=""/>
             {% else %}
-                <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
+                    <img loading="lazy" srcset="{{ site.cloudinary_url }}image/upload/w_320,f_auto/{{ block.background_image }} 320w,
+                {{ site.cloudinary_url }}/w_512,f_auto/{{ block.background_image }} 512w,
+                {{ site.cloudinary_url }}/w_768,f_auto/{{ block.background_image }} 768w,
+                {{ site.cloudinary_url }}/w_1400,f_auto/{{ block.background_image }} 1400w",
+                {{ site.cloudinary_url }}/w_1920,f_auto/{{ block.background_image }} 1920w"
+                src="{{ site.cloudinary_url }}/w_320,f_auto/{{ block.background_image }}" class="c-block-img--bg" alt="" />
             {% endif %}
 
         </div>
