@@ -3,7 +3,7 @@
 {% if author %}
 <div class="author flex flex-column items-center">
   <figure class="author__image tc flex-ns flex-row items-center ma0">
-    <img src="{{ site.cloudinary_url }}/w_48/f_auto/{{ author.avatar }}" title="{{ author.name }}" />
+    <img loading="lazy" src="{{ site.cloudinary_url }}/w_48/f_auto/{{ author.avatar }}" title="{{ author.name }}" />
     <figcaption class="ml2-ns"><a href="{{ author.url }}">{{ author.title }}</a></figcaption>
   </figure>
   <div class="author__bio">

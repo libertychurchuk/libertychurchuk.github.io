@@ -4,7 +4,7 @@
     <ul class="glide__slides">
       {% for item in site.banners %}
       <li class="glide__slide" tabindex="1">
-        <img src="{{ site.cloudinary_url }}/w_1280,c_fill/f_auto/{{ item.background_image }}" alt="{{item.title}}" />
+        <img loading="lazy" src="{{ site.cloudinary_url }}/w_1280,c_fill/f_auto/{{ item.background_image }}" alt="{{item.title}}" />
 
         {% if item.subtitle %}
         <h2 class="sr-only">{{item.subtitle}}</h2>

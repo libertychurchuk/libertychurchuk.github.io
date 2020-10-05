@@ -9,7 +9,7 @@ pagination:
 
   <header class="article__header">
     <div class="article__titles mb4">
-      <div class="tc"><img src="{{ site.cloudinary_url }}/w_128,h_128,r_max/q_60/f_auto/{{ page.avatar }}" title="{{ page.name }}" /></div>
+      <div class="tc"><img loading="lazy" src="{{ site.cloudinary_url }}/w_128,h_128,r_max/q_60/f_auto/{{ page.avatar }}" title="{{ page.name }}" /></div>
       <h1 class="article__heading mb2 ">{{ page.title }}</h1>
     </div>
     {% if page.content.size > 1  %}

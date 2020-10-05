@@ -11,7 +11,7 @@
           </div>
         </div>
       </div>
-      <img src="{{ site.cloudinary_url }}/w_480,h_270,c_fill/f_auto{{ item.image }}" alt="{{ item.title }}" />
+      <img loading="lazy" src="{{ site.cloudinary_url }}/w_480,h_270,c_fill/f_auto{{ item.image }}" alt="{{ item.title }}" />
       {% else %}
       <article class="card card--message">
         <a class="card-inner" href="{{ item.url }}">
@@ -24,7 +24,7 @@
                   </svg> Devotional
                 </div>              </div>
             </div>
-            <img src="{{ site.baseurl }}/assets/images/devotional-default.png" alt="{{ An image of a field wheat with the text daily devotional overlaid  }}" />
+            <img loading="lazy" src="{{ site.baseurl }}/assets/images/devotional-default.png" alt="{{ An image of a field wheat with the text daily devotional overlaid  }}" />
 
       {% endif %}
     </div>

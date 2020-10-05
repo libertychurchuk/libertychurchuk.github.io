@@ -5,11 +5,11 @@
         <div class="c-block-image">
 
             {% if block.image_type == "Contain" %}
-                <img src="{{ site.cloudinary_url }}/w_400,c_fill/f_auto{{ block.image }}" width="480" class="c-block-img--contain" alt=""/>
+                <img loading="lazy" src="{{ site.cloudinary_url }}/w_400,c_fill/f_auto{{ block.image }}" width="480" class="c-block-img--contain" alt=""/>
             {% elsif block.image_type == "Rounded" %}
-                <img src="{{ site.cloudinary_url }}/w_400,h_400,c_fill,r_max/f_auto{{ block.image }}" width="400" class="c-block-img--rounded" alt=""/>
+                <img loading="lazy" src="{{ site.cloudinary_url }}/w_400,h_400,c_fill,r_max/f_auto{{ block.image }}" width="400" class="c-block-img--rounded" alt=""/>
             {% else %}
-                <img src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
+                <img loading="lazy" src="{{ site.cloudinary_url }}/{{ block.image }}" class="c-block-img--cover" alt=""/>
             {% endif %}
 
         </div>

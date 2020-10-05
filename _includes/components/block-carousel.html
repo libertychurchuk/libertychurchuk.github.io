@@ -1,6 +1,6 @@
 {% if site.banners.size == 1 %}
   {% for item in site.banners %}
-  <img class="relative w-100" src="{{ site.cloudinary_url }}/w_1280,c_fill/f_auto/{{ item.background_image }}" alt="{{ item.title }}">
+  <img loading="lazy" class="relative w-100" src="{{ site.cloudinary_url }}/w_1280,c_fill/f_auto/{{ item.background_image }}" alt="{{ item.title }}">
   {% endfor %}
 {% endif %}
 

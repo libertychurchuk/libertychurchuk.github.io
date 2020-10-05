@@ -4,7 +4,7 @@
     
         {% if block.logo.size > 1 %}
         <h2 class="sr-only">{{ block.title }}</h2>
-        <img src="{{ site.cloudinary_url }}/{{ block.logo }}" alt="" />
+        <img loading="lazy" src="{{ site.cloudinary_url }}/{{ block.logo }}" alt="" />
         {% else %}
             <h2 class="c-block-heading">{{ block.title }}</h2>
             {% if block.subtitle.size > 1 %}

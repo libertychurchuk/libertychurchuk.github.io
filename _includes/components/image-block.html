@@ -4,7 +4,7 @@
     <img loading="lazy" srcset="{{ site.cloudinary_url }}image/upload/w_320,f_auto/{{ block.background_image }} 320w,
                 {{ site.cloudinary_url }}/w_512,f_auto/{{ block.background_image }} 512w,
                 {{ site.cloudinary_url }}/w_768,f_auto/{{ block.background_image }} 768w,
-                {{ site.cloudinary_url }}/w_1400,f_auto/{{ block.background_image }} 1400w",
+                {{ site.cloudinary_url }}/w_1400,f_auto/{{ block.background_image }} 1400w,
                 {{ site.cloudinary_url }}/w_1920,f_auto/{{ block.background_image }} 1920w"
                 src="{{ site.cloudinary_url }}/w_320,f_auto/{{ block.background_image }}" class="c-block-img--bg" alt="" />
     {% endif %}
@@ -17,7 +17,7 @@
     
         {% if block.logo.size > 1 %}
         <h2 class="sr-only">{{ block.title }}</h2>
-        <img src="{{ site.cloudinary_url }}/{{ block.logo }}" alt="" />
+        <img loading="lazy" src="{{ site.cloudinary_url }}/{{ block.logo }}" alt="" />
         {% else %}
             <h2 class="c-block-heading">{{ block.title }}</h2>
             {% if block.subtitle.size > 1 %}

@@ -13,7 +13,7 @@
       </div>
       {% endif %}
       {% if item.image.size > 1 %}
-      <img src="{{ site.cloudinary_url }}//w_480,h_270,c_fill/f_auto/{{ item.image }}" alt="{{ item.title }}" />
+      <img loading="lazy" src="{{ site.cloudinary_url }}//w_480,h_270,c_fill/f_auto/{{ item.image }}" alt="{{ item.title }}" />
       {% endif %}
     </div>
     <div class="card__body">
