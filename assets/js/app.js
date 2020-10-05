@@ -47,11 +47,16 @@ var offCanvasMenu = document.querySelector(".off-canvas-wrapper");
 var openMenu = document.querySelector(".js-nav-open");
 var closeMenu = document.querySelectorAll(".js-nav-close");
 var preventScroll = document.querySelector("body");
+var offCanvasLinks = document.querySelectorAll(".off-canvas__link");
 
 // Open menu
 openMenu.onclick = function () {
   "use strict";
   offCanvasMenu.classList.toggle("is-visible");
+  offCanvasMenu.setAttribute('aria-expanded', 'true');
+  offCanvasLinks.forEach(element => {
+    element.removeAttribute('tabindex');
+  });
   preventScroll.classList.toggle("off-canvas-no-scroll");
 };
 
@@ -60,6 +65,11 @@ for (var i = 0; i < closeMenu.length; i++) {
   closeMenu[i].addEventListener("click", function(event) {
     "use strict";
     offCanvasMenu.classList.toggle("is-visible");
+    offCanvasMenu.setAttribute('aria-expanded', 'false');
+    offCanvasLinks.forEach(element => {
+      element.setAttribute('tabindex', -1);
+    });
+    offCanvasMenu.setAttribute('tabindex', -1);
     preventScroll.classList.toggle("off-canvas-no-scroll");
   });
 }
