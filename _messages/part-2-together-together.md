@@ -7,8 +7,8 @@ scripture: Ephesians 4:1-3, Genesis 11:1-8
 description: 'I don’t know you according to the flesh but according to the spirit.
   Speak the language of unity, the language of the new creation. '
 series: _series/together-together.md
-duration: ''
-length: 
+duration: '25:18'
+length: 39285952
 image: ''
 notes: ''
 published: false
