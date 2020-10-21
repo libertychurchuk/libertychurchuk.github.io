@@ -8,5 +8,6 @@ call_to_action:
 - https://www.eventbrite.co.uk/e/tuesday-28th-july-2020-evening-prayer-tickets-114649335248
 expiry_date: 
 link: http://www.eventbrite.co.uk/e/116595633679
+published: false
 
 ---
