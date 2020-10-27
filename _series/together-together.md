@@ -1,6 +1,6 @@
 ---
 title: Together…TOGETHER
 description: ''
-image: ''
+image: "/v1603806126/TogetherTogether2_copy_txcksu.png"
 
 ---
