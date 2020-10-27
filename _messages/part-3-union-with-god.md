@@ -1,6 +1,6 @@
 ---
 date: 2020-10-21 10:15:06 +0000
-author: _authors/koby-pokus.md
+author: _authors/koby-poku.md
 file: "/2020/2020-10-21.mp3"
 title: 'Part 3: Together…TOGETHER'
 scripture: John 20:21
