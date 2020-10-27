@@ -10,7 +10,7 @@ description: "The language of the new creation.\n\nI don’t know you according 
 series: _series/together-together.md
 duration: '25:18'
 length: 39285952
-image: ''
+image: "/v1603806126/TogetherTogether2_copy_txcksu.png"
 notes: ''
 
 ---
