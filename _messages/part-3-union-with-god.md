@@ -1,5 +1,5 @@
 ---
-date: 2020-10-23 14:35:06 +0000
+date: 2020-10-21 10:15:06 +0000
 author: _authors/koby-pokus.md
 file: "/2020/2020-10-21.mp3"
 title: 'Part 3: Together…TOGETHER'
