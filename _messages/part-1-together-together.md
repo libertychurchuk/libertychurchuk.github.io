@@ -8,7 +8,7 @@ description: The strength of the Church
 series: _series/together-together.md
 duration: '26:00'
 length: 34150336
-image: ''
+image: "/v1603806126/TogetherTogether2_copy_txcksu.png"
 notes: ''
 
 ---
