@@ -41,7 +41,7 @@
 		
 		<item>
 		<title>{{ item.title | xml_escape }}</title>
-		<itunes:author>{% if item.author.size > 1 %}{{ author.name }}{% endif %}</itunes:author>
+		<itunes:author>{% if item.author.size > 1 %}{{ author.title }}{% endif %}</itunes:author>
     <itunes:subtitle>{{ item.subtitle }}</itunes:subtitle>
     <itunes:summary>{{ item.scripture | xml_escape }}</itunes:summary>
     <itunes:image href="{{ site.url }}/assets/images/itunes.png" />
@@ -52,7 +52,12 @@
 		<itunes:keywords>{{ item.keywords }}</itunes:keywords>
     <link>{{ site.url }}{{ item.url }}</link>
 		<description>
-		{% if item.series.size > 1 %}{{ series.title }}, {% endif %}{% if item.author.size > 1 %}{{ author.name }}{% endif %}{% if item.scripture.size > 1 %}, {{ item.scripture | xml_escape }}{% endif %}
+		<ul>
+		{% if item.series.size > 1 %}<li>Series: {{ series.title }}</li>{% endif %}
+		{% if item.author.size > 1 %}<li>Speaker: {{ author.title }}</li>{% endif %}
+		{% if item.scripture.size > 1 %}<li>Scripture: {{ item.scripture | xml_escape }}</li>{% endif %}
+		</ul>
+		{% if item.description.size > 1 %}<p>{{ item.description | xml_escape }}</p>{% endif %}
 		</description>
 		</item>
 		{% endfor %}
