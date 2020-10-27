@@ -52,6 +52,7 @@
 		<itunes:keywords>{{ item.keywords }}</itunes:keywords>
     <link>{{ site.url }}{{ item.url }}</link>
 		<description>
+		<![CDATA[
 		{% if item.description.size > 1 %}{{ item.description | markdownify }}{% endif %}
 
 		<ul>
@@ -59,6 +60,7 @@
 		{% if item.author.size > 1 %}<li>Speaker: {{ author.title }}</li>{% endif %}
 		{% if item.scripture.size > 1 %}<li>Scripture: {{ item.scripture | xml_escape }}</li>{% endif %}
 		</ul>
+		]]>
 		</description>
 		</item>
 		{% endfor %}
