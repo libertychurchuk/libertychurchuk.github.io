@@ -1,6 +1,6 @@
 ---
 title: 'Daily Devotional: 23rd June 2020'
-author: _authors/koby-pokus.md
+author: _authors/koby-poku.md
 date: 2020-06-23 06:41:17 +0000
 scripture: Psalm 23:6
 description: ''

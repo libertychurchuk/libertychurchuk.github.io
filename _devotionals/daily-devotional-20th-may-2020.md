@@ -1,6 +1,6 @@
 ---
 title: 'Daily Devotional: 20th May 2020'
-author: _authors/koby-pokus.md
+author: _authors/koby-poku.md
 date: 2020-05-20 06:40:42 +0000
 scripture: Galatians 5:22-23
 description: ''

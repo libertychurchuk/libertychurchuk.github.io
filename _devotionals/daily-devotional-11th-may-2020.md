@@ -1,6 +1,6 @@
 ---
 title: 'Daily Devotional: 11th May 2020'
-author: _authors/koby-pokus.md
+author: _authors/koby-poku.md
 date: 2020-05-11 07:00:37 +0000
 scripture: ''
 description: Ephesians 6:17

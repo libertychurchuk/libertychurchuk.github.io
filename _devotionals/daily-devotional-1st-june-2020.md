@@ -1,6 +1,6 @@
 ---
 title: 'Daily Devotional: 1st June 2020'
-author: _authors/koby-pokus.md
+author: _authors/koby-poku.md
 date: 2020-06-01 06:58:37 +0000
 scripture: Proverbs 3:7-8
 description: ''

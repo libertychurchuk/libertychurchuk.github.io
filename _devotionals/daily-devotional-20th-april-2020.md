@@ -1,6 +1,6 @@
 ---
 title: 'Daily Devotional: 20th April 2020'
-author: _authors/koby-pokus.md
+author: _authors/koby-poku.md
 date: 2020-04-20 07:30:20 +0000
 scripture: Psalm 91:9-10
 description: ''

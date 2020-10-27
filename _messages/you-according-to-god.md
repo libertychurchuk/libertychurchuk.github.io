@@ -5,7 +5,7 @@ title: You, according to God
 scripture: Matthew 13:53-57, Jeremiah 1:5-10
 description: Are you operating in the you, according with God. Or the you according
   to you?
-author: _authors/koby-pokus.md
+author: _authors/koby-poku.md
 series: ''
 duration: '52:06'
 length: 68177717
