@@ -47,7 +47,8 @@ fields:
 - name: part
   type: number
   label: Part/session
-  description: The number of a series of messages.
+  description: If this message is part of a series, enter a number that represents
+    the part of the series.
   default: 0
   required: true
   config:
@@ -55,7 +56,7 @@ fields:
     max: 
     step: 
   showOnly:
-    field: series
+    value: 
 - type: text
   name: file
   label: File
