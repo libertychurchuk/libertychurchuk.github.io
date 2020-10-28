@@ -64,8 +64,8 @@
 			<![CDATA[
 				{{ item.description | markdownify }}
 				<ul>
-				{%- if item.author.size > 1 -%}<li>Speaker: {{ author.title }}</li>{%- endif -%}
-				{%- if item.scripture.size > 1 -%}<li>Scripture: {{ item.scripture }}</li>{%- endif -%}
+				{% if item.author.size > 1 %}<li>Speaker: {{ author.title }}</li>{% endif %}
+				{% if item.scripture.size > 1 %}<li>Scripture: {{ item.scripture }}</li>{% endif %}
 				</ul>
 			]]>
 			{%- else -%}	
