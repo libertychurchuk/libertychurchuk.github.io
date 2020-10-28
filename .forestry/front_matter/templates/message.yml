@@ -44,6 +44,18 @@ fields:
   label: Series
   name: series
   description: Is this message a part of a series?
+- name: part
+  type: number
+  label: Part/session
+  description: The number of a series of messages.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  showOnly:
+    field: series
 - type: text
   name: file
   label: File
