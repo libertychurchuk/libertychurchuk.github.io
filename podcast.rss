@@ -38,7 +38,7 @@
 		{%- assign series = site.series | where: 'relative_path', item.series | first -%}	
 		{% assign author = site.authors | where: 'relative_path', item.author | first %}
 		<item>
-			<title>{% if item.part.size > 1 %}Part {{ item.part }}: {% endif %} {% endif %}{{ item.title | lstrip | xml_escape }}</title>
+			<title>{% if item.part.size > 1 %}Part {{ item.part }}: {% endif %}{{ item.title | lstrip | xml_escape }}</title>
 			<itunes:author>{% if item.author.size > 1 %}{{ author.title }}{% endif %}</itunes:author>
 			<itunes:summary>
 				{%- if item.series.size > 1 -%}
