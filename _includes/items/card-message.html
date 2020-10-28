@@ -29,7 +29,7 @@
       {% endif %}
     </div>
     <div class="card__body">
-      <h3 class="card__title">{{ item.title }}</h3>
+      <h3 class="card__title">{% if item.part.size > 1 %}Part {{ item.part }}: {% endif %}{{ item.title }}</h3>
       {% if item.date %}
       <time class="card__date db ttu" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B, %Y" }}</time>
       {% endif %}
