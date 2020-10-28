@@ -59,7 +59,7 @@
 			<link>{{ site.url }}{{ item.url }}</link>
 			<description>
 			{%- if item.series.size > 1 -%}
-				This message is part {%- if item.part.size > 1 -%}{{ item.part }} {%- endif -%}of the series, {{ series.title }}. {%- if item.description.size > 1 -%}{{ item.description | strip_newlines | xml_escape }}{%- endif -%}
+				This message is part {% if item.part.size > 1 %}{{ item.part }} {% endif %}of the series, {{ series.title }}. {%if item.description.size > 1 %}{{ item.description | strip_newlines | xml_escape }}{% endif %}
 			{%- elsif item.description.size > 1 -%}
 			<![CDATA[
 				{{ item.description | markdownify }}
