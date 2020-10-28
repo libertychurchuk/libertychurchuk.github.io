@@ -1,14 +1,5 @@
 <ul class="article-meta db tc">
 
-  {% assign series = site.series | where: 'relative_path', page.series | first %}
-
-  {% if page.series.size > 1 %}
-  <li class="item__series dib">
-    <a href="/series/{{series.slug}}">{{ series.title }}</a>
-  </li>
-  {% endif %}
-
-
   {% if page.scripture.size > 1 %}
   <li class="item__scripture dib">
     <svg class="icon">

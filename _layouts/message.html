@@ -9,8 +9,11 @@ layout: default
       <div class="article__titles">
         <time class="article__date db ttu tc" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B, %Y" }}</time>
         <h1 class="article__heading">{% if page.part.size > 1 %}Part {{ page.part }}: {% endif %}{{ page.title }}</h1>
-        {% if page.subtitle.size > 1 %}
-        <div class="article__subheading">{{ page.subtitle }}</div>
+
+        {% assign series = site.series | where: 'relative_path', page.series | first %}
+
+        {% if page.series.size > 1 %}
+        <div class="article__subheading">Series: <a href="/series/{{series.slug}}">{{ series.title }}</a></div>   
         {% endif %}
 
       </div>
