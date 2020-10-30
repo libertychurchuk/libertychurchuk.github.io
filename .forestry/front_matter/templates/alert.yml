@@ -1,5 +1,5 @@
 ---
-label: Alert
+label: 'CT: Alert'
 hide_body: false
 fields:
 - name: title
