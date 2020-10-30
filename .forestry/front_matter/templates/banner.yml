@@ -1,5 +1,5 @@
 ---
-label: Banner
+label: 'CT: Banner'
 hide_body: true
 fields:
 - type: text

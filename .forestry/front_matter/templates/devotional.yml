@@ -56,7 +56,7 @@ fields:
 - name: image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: Optional image
   description: This image is displayed in listing pages and used for social sharing
     should. It should ideally be 1920x1080px
