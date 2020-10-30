@@ -8,8 +8,8 @@ scripture: Genesis 1:1; Matthew 3:16, Matthew 28, John 14:26, Acts 1:4, Ephesian
 description: ''
 series: _series/together-together.md
 duration: '27:06'
-length: 
-image: ''
+length: 38773408
+image: "/v1603806126/TogetherTogether2_copy_txcksu.png"
 notes: ''
 part: 4
 
