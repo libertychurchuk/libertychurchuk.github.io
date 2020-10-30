@@ -1,5 +1,5 @@
 ---
-label: Button
+label: 'Block: Button'
 hide_body: false
 display_field: button_text
 fields:
