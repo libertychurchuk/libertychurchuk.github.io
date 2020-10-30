@@ -12,6 +12,5 @@ length:
 image: ''
 notes: ''
 part: 4
-published: false
 
 ---
