@@ -7,10 +7,11 @@ scripture: Genesis 1:1; Matthew 3:16, Matthew 28, John 14:26, Acts 1:4, Ephesian
   2:18, 1 Peter 1:2
 description: ''
 series: _series/together-together.md
-duration: ''
+duration: '27:06'
 length: 
 image: ''
 notes: ''
+part: 4
 published: false
 
 ---
