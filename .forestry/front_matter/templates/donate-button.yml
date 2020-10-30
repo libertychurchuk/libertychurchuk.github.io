@@ -1,5 +1,5 @@
 ---
-label: Donate button
+label: 'Block: Donate button'
 hide_body: true
 fields:
 - name: button_text
