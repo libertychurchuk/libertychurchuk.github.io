@@ -45,6 +45,7 @@ fields:
   name: subtitle
   label: Subtitle
   description: " (Optional) The subtitle / description is displayed below the headline. "
+  default: ''
 - name: description
   type: textarea
   default: ''

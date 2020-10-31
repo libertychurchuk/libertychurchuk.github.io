@@ -39,3 +39,32 @@ fields:
     required: false
   label: Headline
   description: Set the headline of the content block.
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Subtitle
+  description: "(Optional) The subtitle / description is displayed below the headline."
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Description
+- name: call_to_action
+  type: blocks
+  label: Call to action
+  template_types:
+  - call-to-action
+  - file-download
+  - donate-button
+  config:
+    min: 
+    max: 4
