@@ -1,4 +1,41 @@
 ---
 label: 'Block: Text'
 hide_body: true
-fields: []
+fields:
+- name: theme
+  type: select
+  default: Light
+  config:
+    required: false
+    options:
+    - Light
+    - Dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+  description: What theme should this block use?
+- name: display
+  type: select
+  default: Wide
+  config:
+    required: false
+    options:
+    - Wide
+    - Fill
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Display
+  description: How do you want this block to display? Wide will display it centrally
+    in the site whilst fill will display across the full width of the page.
+- name: title
+  type: text
+  config:
+    required: false
+  label: Headline
+  description: Set the headline of the content block.
