@@ -31,6 +31,7 @@ fields:
   - block-icon
   - text
   - groups
+  - block-text
 - name: layout
   label: Layout
   type: text
