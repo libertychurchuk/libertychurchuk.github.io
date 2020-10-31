@@ -1,10 +1,10 @@
-<article class="{% if block.display == "Wide" %}row{% endif %} c-block theme-{{ block.theme | downcase}}"">
+<article class="{% if block.display == "Wide" %}row{% endif %} c-block theme-{{ block.theme | downcase}}">
 
     <div class="c-block-inner" >
     
         <h2 class="c-block-heading">{{ block.title }}</h2>
         {% if block.subtitle.size > 1 %}
-        <p role="doc-subtitle">{{ block.subtitle }}</p>
+        <h3 role="doc-subtitle">{{ block.subtitle }}</h3>
         {% endif %}
         
         {% if block.description.size > 1 %}

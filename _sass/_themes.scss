@@ -33,6 +33,7 @@ color: $whitesmoke;
   .c-block-inner a {
     color: $white;
   }
+
 }
 
 .theme-light {
@@ -53,13 +54,23 @@ color: $textcolor;
   border-color: $shipcove;
   color: $shipcove;
 
+    .icon--light {
+      fill: $shipcove;
+    }
+
     &:hover,
     &:focus {
     background-color: darken($shipcove, 10%);
     color: $whitesmoke;
+
+      .icon--light {
+        fill: $whitesmoke;
+      }
     }
 
   }
+
+
 
 }
 
