@@ -1,5 +1,5 @@
 ---
-date: 2020-10-30 07:10:15 +0000
+date: 2020-10-28 07:10:15 +0000
 author: _authors/koby-poku.md
 part: 5
 file: "/2020/2020-10-28.mp3"
