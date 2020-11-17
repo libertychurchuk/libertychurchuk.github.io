@@ -10,6 +10,6 @@ description: |-
 location: Gaer Christian Centre, Newport
 day: Mondays
 time: 7-9pm
-image: ''
+image: "/v1605628730/parenting_lvvuao.png"
 
 ---
