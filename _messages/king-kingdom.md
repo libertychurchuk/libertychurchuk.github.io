@@ -6,7 +6,7 @@ file: "/2020/2020-11-08.mp3"
 title: King & Kingdom
 scripture: ''
 description: ''
-series: ''
+series: _series/for-king-and-his-kingdom.md
 duration: '25:03'
 length: 35143552
 image: ''
