@@ -1,5 +1,5 @@
 ---
-title: The heart of worship
+title: The Heart of Worship
 leaders: Adam & Lizzy Howard
 description: These 8 weeks are for anyone with a heart for worship. We will explore
   what the Bible says about the power of worship through a mixture of teaching and
@@ -7,6 +7,6 @@ description: These 8 weeks are for anyone with a heart for worship. We will expl
 location: Gaer Christian Centre, Newport (Upstairs)
 day: Tuesdays
 time: 7.30pm
-image: "/v1605628667/Howards_jf1asm.png"
+image: "/v1605630626/Screenshot_2020-11-17_at_16.10.09_gx1t0z.png"
 
 ---
