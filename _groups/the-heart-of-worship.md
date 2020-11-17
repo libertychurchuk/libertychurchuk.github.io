@@ -7,6 +7,6 @@ description: These 8 weeks are for anyone with a heart for worship. We will expl
 location: Gaer Christian Centre, Newport (Upstairs)
 day: Tuesdays
 time: 7.30pm
-image: ''
+image: "/v1605628667/Howards_jf1asm.png"
 
 ---
