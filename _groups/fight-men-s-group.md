@@ -9,6 +9,6 @@ description: "<p>This study will uncover who you really are - men created in the
 location: Online via Zoom
 day: Wednesdays
 time: 8pm
-image: ''
+image: "/v1605631029/Screenshot_2020-08-14_at_16.46.45_gm3g0m.png"
 
 ---
