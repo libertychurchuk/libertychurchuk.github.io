@@ -10,6 +10,6 @@ description: |-
 location: Gaer Christian Centre, Newport
 day: Mondays
 time: 7-9pm
-image: ''
+image: "/v1605630777/Screenshot_2020-11-17_at_16.26.10_q7ikai.png"
 
 ---
