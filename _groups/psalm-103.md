@@ -7,6 +7,6 @@ description: Meeting on Thursday evenings to encourage each other and dive into 
 location: Online via Zoom
 day: Thursdays
 time: 7.30pm
-image: ''
+image: "/v1605630708/Screenshot_2020-11-17_at_16.26.01_jhahg5.png"
 
 ---
