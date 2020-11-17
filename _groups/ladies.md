@@ -7,6 +7,6 @@ description: Join us on Tuesday afternoons on Zoom or if the weather is good, a 
 location: Online via Zoom / Outdoor Walks
 day: Tuesdays
 time: 1pm
-image: ''
+image: "/v1605628759/ladies_xphcxe.png"
 
 ---
