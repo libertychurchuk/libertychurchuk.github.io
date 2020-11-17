@@ -9,5 +9,6 @@ location: Gaer Christian Centre, Newport
 day: Saturdays
 time: 9:30-11am
 image: ''
+published: false
 
 ---

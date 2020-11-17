@@ -10,6 +10,5 @@ location: Online via Zoom
 day: Wednesdays
 time: 8pm
 image: ''
-published: false
 
 ---
