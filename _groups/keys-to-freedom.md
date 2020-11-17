@@ -8,6 +8,6 @@ description: |-
 location: Online via Zoom
 day: Mondays
 time: 7.30pm
-image: ''
+image: "/v1605628879/McFarlanes_ivirfj.png"
 
 ---
