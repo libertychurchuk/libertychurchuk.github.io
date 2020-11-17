@@ -7,6 +7,6 @@ description: We will be discussing some of the real life questions men may ask a
 location: Online via Zoom
 day: Fridays
 time: 7.30-9pm
-image: ''
+image: "/v1605624396/Dave_Pete_eviqtr.png"
 
 ---
