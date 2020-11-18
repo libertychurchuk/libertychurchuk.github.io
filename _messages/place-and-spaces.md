@@ -1,7 +1,7 @@
 ---
 date: 2020-11-08 05:35:38 +0000
 author: _authors/gary-morgan.md
-part: 0
+part: 
 file: "/2020/2020-11-08.mp3"
 title: Places and spaces
 scripture: Ephesians 2
