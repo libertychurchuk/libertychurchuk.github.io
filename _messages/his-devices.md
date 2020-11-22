@@ -3,7 +3,7 @@ date: 2020-11-15 10:00:00 +0000
 author: _authors/koby-poku.md
 part: 8
 file: "/2020/2020-11-15.mp3"
-title: His Devices (His Device of DISCOURAGEMENT)
+title: 'His Devices: Discouragement'
 scripture: 2 Corinthians 2:11, Matthew 13:24-25, 1 Peter 5:8
 description: As defeated and powerless our adversary, the devil is, if we are ignorant
   of his devices, he gets advantage of us, frustrating the Unity of the Spirit we
