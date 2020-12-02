@@ -8,5 +8,6 @@ location: Online via Zoom / Outdoor Walks
 day: Tuesdays
 time: 1pm
 image: "/v1605630966/Screenshot_2020-11-17_at_16.26.17_d3wkom.png"
+published: false
 
 ---

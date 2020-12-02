@@ -8,5 +8,6 @@ location: Online via Zoom
 day: Thursdays
 time: 7.30pm
 image: "/v1605630708/Screenshot_2020-11-17_at_16.26.01_jhahg5.png"
+published: false
 
 ---

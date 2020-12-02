@@ -8,5 +8,6 @@ location: Online via Zoom
 day: Fridays
 time: 7.30-9pm
 image: "/v1605624396/Dave_Pete_eviqtr.png"
+published: false
 
 ---

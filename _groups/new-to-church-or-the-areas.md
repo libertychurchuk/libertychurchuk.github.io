@@ -10,5 +10,6 @@ location: Online via Zoom / Outdoors
 day: Wednesdays
 time: 7.45pm
 image: "/v1601669788/gaz-lois_hyruqw.jpg"
+published: false
 
 ---
