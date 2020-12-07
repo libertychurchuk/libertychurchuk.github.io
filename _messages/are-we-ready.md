@@ -9,7 +9,7 @@ description: ''
 series: _series/together-together.md
 duration: '29:12'
 length: 37190656
-image: ''
+image: "/v1603806126/TogetherTogether2_copy_txcksu.png"
 notes: ''
 published: false
 
