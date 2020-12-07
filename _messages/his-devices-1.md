@@ -1,7 +1,7 @@
 ---
 date: 2020-11-22 10:10:33 +0000
 author: _authors/koby-poku.md
-part: 
+part: 9
 file: "/2020/2020-11-22.mp3"
 title: His Device of Offence & Unforgiveness
 scripture: " 2 Corinthians 2:10-11, Matthew 13:24-25, Matthew 11:1-6"
