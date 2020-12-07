@@ -9,7 +9,7 @@ description: ''
 series: ''
 duration: '34:42'
 length: 44004640
-image: ''
+image: "/v1607335358/zach-lucero-x_x3RPpDbII-unsplash_sfqabe.jpg"
 notes: ''
 
 ---
