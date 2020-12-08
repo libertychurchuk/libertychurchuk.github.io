@@ -6,6 +6,5 @@ background_image: ''
 link: ''
 logo: ''
 expiry_date: 
-published: false
 
 ---
