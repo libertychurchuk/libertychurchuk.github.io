@@ -1,8 +1,8 @@
 ---
 title: Sunday 27th December
-subtitle: Join us on Sunday 27th December at one of our services, 9.30am or 11.15am!
-date: 2020-12-27 09:30:00 +0000
-background_image: "/v1607440047/Christmas2020_website4_wzjpeo.png"
+subtitle: Join us on Sunday 27th December at 10am on Facebook LIVE!
+date: 2020-12-27 10:00:00 +0000
+background_image: "/v1608043155/27thDec2020_website4_rxulud.png"
 link: ''
 logo: ''
 expiry_date: 
