@@ -45,6 +45,7 @@ fields:
   label: Photo
   description: A photo of the group leaders
 pages:
+- _groups/divine-healing-the-biblical-way.md
 - _groups/family-group-newport.md
 - _groups/family-group.md
 - _groups/fight-men-s-group.md
