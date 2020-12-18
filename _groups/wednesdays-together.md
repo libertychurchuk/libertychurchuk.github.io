@@ -10,6 +10,5 @@ location: Online via Zoom
 day: Wednesdays
 time: 7.45pm
 image: "/v1608288067/Hilliers_hz28oa.png"
-published: false
 
 ---
