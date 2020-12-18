@@ -1,16 +1,17 @@
 ---
-title: Positive Parenting Course
-leaders: Jody Jones & Maritza van Aswegen
-description: |-
-  Meeting on Monday evenings focusing on the Care for the Family Course: Time out for parents - children with additional needs.
-
-  These evenings provide an opportunity to support and encourage each other as parents. They aim to help support you in meeting your child’s needs, focussing on children aged between 3 to 11 years with a disability or additional needs, particularly those who have learning, developmental and behavioural issues.
-
-  This group could also be an ideal opportunity to invite someone along with you. We look forward to spending time together.
-location: Gaer Christian Centre, Newport
-day: Mondays
-time: 7-9pm
-image: "/v1605630777/Screenshot_2020-11-17_at_16.26.10_q7ikai.png"
+title: Raising Faith
+leaders: Jody Jones & Lana Fisher
+description: "<p>The Raising Faith sessions are all about equipping and empowering
+  Christian families to create strong and healthy foundations of faith.</p><p>We'll
+  be chatting about topics such as:</p><ul><li><p>Building faith through everyday
+  life</p></li><li><p>Different ways we connect with God</p></li><li><p>Dealing with
+  doubts and questions</p></li><li><p>Belonging in the church</p></li></ul><p>When
+  we are able to, we also hope to gather as families throughout this term for a walk
+  outdoors.</p>"
+location: Online via Zoom
+day: Thursdays
+time: 7.30pm
+image: "/v1608289050/raisingfaith_y48okn.png"
 published: false
 
 ---
