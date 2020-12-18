@@ -10,6 +10,5 @@ location: Online via Zoom
 day: Thursdays
 time: 7.30pm
 image: "/v1608289509/Barnes_copy_ri9gid.png"
-published: false
 
 ---
