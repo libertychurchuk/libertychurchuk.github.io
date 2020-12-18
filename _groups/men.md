@@ -12,6 +12,5 @@ location: Online via Zoom
 day: Wednesdays
 time: 8pm
 image: "/v1608289283/dean_dddxou.png"
-published: false
 
 ---
