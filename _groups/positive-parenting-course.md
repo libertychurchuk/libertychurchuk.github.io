@@ -12,6 +12,5 @@ location: Online via Zoom
 day: Thursdays
 time: 7.30pm
 image: "/v1608289050/raisingfaith_y48okn.png"
-published: false
 
 ---
