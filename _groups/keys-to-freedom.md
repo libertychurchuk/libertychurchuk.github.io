@@ -26,6 +26,6 @@ description: "<p>Keys to Freedom, from Mercy UK, is an nine week interactive cou
 location: Online via Zoom
 day: Mondays
 time: 7.30pm
-image: "/v1605628879/McFarlanes_ivirfj.png"
+image: "/v1608288856/McFarlanes_i9oaz2.png"
 
 ---
