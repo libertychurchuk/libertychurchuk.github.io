@@ -10,6 +10,5 @@ location: Gaer Christian Centre, Newport
 day: Thursdays
 time: 7.45-9.15pm
 image: "/v1608290033/heath_bhfscl.png"
-published: false
 
 ---
