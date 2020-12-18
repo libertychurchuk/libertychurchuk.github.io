@@ -1,13 +1,15 @@
 ---
-title: Psalm 103
+title: Victorious Living
 leaders: Paula and Michael Barnes
-description: Meeting on Thursday evenings to encourage each other and dive into the
-  Word of God with a focus on Psalm 103 over the 8 weeks. We look forward to spending
-  time together and hearing what God is saying to us through His Word.
+description: "<p>Over this term, we will be focusing on Ephesians 6:10-18 and living
+  victoriously. We will start off with getting to know each other and run through
+  how to study the Bible and the study outline. After this we will all focus on the
+  scriptures for 7 weeks and discuss what we see, how we can apply it to our lives
+  and pray together.</p>"
 location: Online via Zoom
 day: Thursdays
 time: 7.30pm
-image: "/v1605630708/Screenshot_2020-11-17_at_16.26.01_jhahg5.png"
+image: "/v1608289509/Barnes_copy_ri9gid.png"
 published: false
 
 ---
