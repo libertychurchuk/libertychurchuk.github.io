@@ -7,8 +7,8 @@ title: Good and great are going to be part of your 2021
 scripture: John 14:12, Ephesians 2:10, Hebrews 10:24
 description: ''
 series: ''
-duration: ''
-length: 
+duration: '28:48'
+length: 40248152
 image: ''
 notes: ''
 published: false
