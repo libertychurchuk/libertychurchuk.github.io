@@ -11,6 +11,5 @@ duration: '24:22'
 length: 
 image: ''
 notes: ''
-published: false
 
 ---
