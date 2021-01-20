@@ -7,7 +7,8 @@ description: "<p>Every Man a Warrior is an incredible tool that points you towar
   mediocrity, but maturing and becoming equipped in the areas where men fight and
   need to win such as:</p><ul><li><p>Walking with God</p></li><li><p>Marriage</p></li><li><p>Raising
   children</p></li><li><p>Work</p></li><li><p>Going through hard times</p></li><li><p>Sex
-  and moral purity</p></li><li><p>Making your life count</p></li></ul>"
+  and moral purity</p></li><li><p>Making your life count</p></li></ul><p>[This group
+  is now FULL for the winter term]</p>"
 location: Online via Zoom
 day: Wednesdays
 time: 8pm

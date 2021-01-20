@@ -22,7 +22,8 @@ description: "<p>Keys to Freedom, from Mercy UK, is an nine week interactive cou
   to review the chapter and encourage one another in the journey. We ask you to commit
   to the full 9 weeks.</p><p>If you are interest in signing up for the course but
   have further questions, please drop us an email to admin@libertychurchuk.com</p><p>(You
-  will be required to purchase your own workbook at £8.00)</p>"
+  will be required to purchase your own workbook at £8.00)</p><p></p><p>[This group
+  is now FULL for the winter term]</p>"
 location: Online via Zoom
 day: Mondays
 time: 7.30pm
