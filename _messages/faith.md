@@ -3,7 +3,7 @@ date: 2021-02-07 11:50:53 +0000
 author: _authors/heath-van-staden.md
 part: 0
 file: "/2021/2021-02-07.mp3"
-title: Labouring on prayer
+title: Faith
 scripture: ''
 description: ''
 series: ''
