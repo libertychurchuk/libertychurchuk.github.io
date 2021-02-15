@@ -7,10 +7,9 @@ title: Labouring in prayer
 scripture: Romans 5:1-2, Hebrews 10:35-39, Galatians 2:20
 description: ''
 series: _series/faith-ceasefire.md
-duration: ''
-length: 
+duration: '30:42'
+length: 36845630
 image: ''
 notes: ''
-published: false
 
 ---
