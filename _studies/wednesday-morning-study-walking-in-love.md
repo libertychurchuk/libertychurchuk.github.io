@@ -1,6 +1,6 @@
 ---
 author: _authors/phil-boalch.md
-title: 'Wednesday Morning Study: Walking in Love Part 1'
+title: 'Wednesday Morning Bible Study: Walking in Love Part 1'
 scripture: 1 Corinthians 13:1-8
 date: 2021-01-27 10:00:00 +0000
 description: ''
