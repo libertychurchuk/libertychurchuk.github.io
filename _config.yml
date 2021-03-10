@@ -104,7 +104,8 @@ contact:
   service-time: 9.30am and 11am
   service-address: Gaer Christian Centre, Gaer Park Drive, Newport, NP20 3NN, United
     Kingdom
-  admin-address: 42 Bryngwyn Road, Newport, NP20 4JT, United Kingdom
+  admin-address: Gaer Christian Centre, Gaer Park Drive, Newport, NP20 3NN, United
+    Kingdom
 pagination:
   enabled: true
   debug: false
