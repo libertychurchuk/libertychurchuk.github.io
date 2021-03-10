@@ -9,4 +9,4 @@ category: Devotional
 image: "/v1615413079/lentbanner_website_bivyft.png"
 
 ---
-<iframe src="[https://player.vimeo.com/video/522067608](https://player.vimeo.com/video/522067608 "https://player.vimeo.com/video/522067608")" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/522067608" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
