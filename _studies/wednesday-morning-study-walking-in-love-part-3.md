@@ -1,6 +1,6 @@
 ---
 author: _authors/phil-boalch.md
-title: 'Wednesday Morning Study: Walking in Love Part 3'
+title: 'Wednesday Morning Bible Study: Walking in Love Part 3'
 scripture: Ephesians 5:1
 date: 2021-02-10 10:00:00 +0000
 description: Loving Others
