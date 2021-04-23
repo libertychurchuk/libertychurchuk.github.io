@@ -1,14 +1,17 @@
 ---
-title: Victorious Living
-leaders: Paula and Michael Barnes
-description: "<p>Over this term, we will be focusing on Ephesians 6:10-18 and living
-  victoriously. We will start off with getting to know each other and run through
-  how to study the Bible and the study outline. After this we will all focus on the
-  scriptures for 7 weeks and discuss what we see, how we can apply it to our lives
-  and pray together.</p>"
-location: Online via Zoom
+title: Worship
+leaders: Adam & Lizzy Howard
+description: "<p>If you have a heart for worship and a desire for community then why
+  not come along to our worship Team Nights every Thursday evening. Maybe you have
+  been playing guitar in your bedroom or singing in the shower but want to take the
+  next step. Perhaps you are interested in sound design or want to serve on our visual
+  team, come along and we would love to help you find your space within our team.
+  You don’t need to be Mozart or Jimi Hendrix, but a degree of instrumental capability
+  would be preferable, for all other elements such as words and sound, training will
+  be provided.</p><p>We would love for you to become part of our worship family.</p>"
+location: Liberty Church, Gaer Park Drive
 day: Thursdays
 time: 7.30pm
-image: "/v1608289509/Barnes_copy_ri9gid.png"
+image: "/v1619191843/Howards_m5pan4.png"
 
 ---
