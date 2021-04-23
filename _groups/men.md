@@ -6,7 +6,7 @@ description: "<p>This group is open to all who have an interest in photography. 
   types of photography and may have some special guests join us! </p><p>We look forward
   to learning together, getting out and about with our cameras and talking about the
   beauty He has given us in His creation.</p>"
-location: Out & About/Liberty Church, Gaer Park Drive
+location: Out & About/Liberty Church, Gaer Park Drive, Newport
 day: Fridays
 time: 6.30pm
 image: ''

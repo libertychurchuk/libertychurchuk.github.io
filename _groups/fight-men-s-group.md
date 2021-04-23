@@ -7,6 +7,6 @@ description: "<p>Come and join us as we share in one anothers stories, as we lea
 location: Out & About
 day: Tuesdays
 time: 10am - 12pm
-image: ''
+image: "/v1619192609/leah_cv9yjp.png"
 
 ---
