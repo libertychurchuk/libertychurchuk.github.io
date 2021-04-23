@@ -1,16 +1,12 @@
 ---
-title: Raising Faith
-leaders: Jody Jones & Lana Fisher
-description: "<p>The Raising Faith sessions are all about equipping and empowering
-  Christian families to create strong and healthy foundations of faith.</p><p>We'll
-  be chatting about topics such as:</p><ul><li><p>Building faith through everyday
-  life</p></li><li><p>Different ways we connect with God</p></li><li><p>Dealing with
-  doubts and questions</p></li><li><p>Belonging in the church</p></li></ul><p>When
-  we are able to, we also hope to gather as families throughout this term for a walk
-  outdoors.</p>"
-location: Online via Zoom
+title: Ladies Coffee Morning
+leaders: Thelma Davies & Lorraine Kemp
+description: "<p>We would love you to join us as we spend time together over a coffee,
+  encouraging each other, sharing testimonies of what God is doing and having fun!
+  We will be meeting on Zoom but hopefully able to get out and about too!</p>"
+location: Online via Zoom/Out & About
 day: Thursdays
-time: 7.30pm
-image: "/v1608289050/raisingfaith_y48okn.png"
+time: 11am
+image: ''
 
 ---
