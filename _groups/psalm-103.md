@@ -9,9 +9,9 @@ description: "<p>If you have a heart for worship and a desire for community then
   You don’t need to be Mozart or Jimi Hendrix, but a degree of instrumental capability
   would be preferable, for all other elements such as words and sound, training will
   be provided.</p><p>We would love for you to become part of our worship family.</p>"
-location: Liberty Church, Gaer Park Drive
+location: Liberty Church, Gaer Park Drive, Newport
 day: Thursdays
 time: 7.30pm
-image: "/v1619191843/Howards_m5pan4.png"
+image: "/v1619192324/howards_hnfwod.png"
 
 ---
