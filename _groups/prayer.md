@@ -1,5 +1,5 @@
 ---
-title: Revelation of Jesus and the End Times
+title: Revelation of Jesus
 leaders: Rob McFarlane & Graeme De Villiers
 description: "<p>These evenings will be focused on John’s teaching in the Bible on
   the ‘Revelation of Jesus Christ’, that there is no new revelation in the final book
