@@ -9,6 +9,6 @@ description: "<p>We are looking forward to getting out and about together, headi
 location: Out & About
 day: Fridays
 time: 5pm
-image: "/v1619199991/hilliers2_ndg454.png"
+image: "/v1619200143/hilliers2_cxbagj.png"
 
 ---
