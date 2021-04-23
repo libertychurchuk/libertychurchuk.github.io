@@ -1,14 +1,13 @@
 ---
-title: Soul Care - Slowing down for connection
+title: Running
 leaders: Heath van Staden
-description: "<p>How do we stay healthy, while navigating life and our journeying
-  realities? You are a new creation, whom the Holy Spirit dwells within, and you are
-  able to have those real conversations which matter.</p><p>Together we are going
-  to slow down to connect and begin to understand the gift of limitations and much
-  more. Let's explore the scripture together and make it practical.</p>"
-location: Gaer Christian Centre, Newport
+description: "<p>This group is available to various running ability levels. We will
+  have a main route and then alternate shorter routes.</p><p>The evening will incorporate
+  a gathered time of encouragement through the scripture, exercise and refreshments.</p><p>You
+  are welcome to bring children with, but they will be each parents responsibility.</p>"
+location: Out & About
 day: Thursdays
-time: 7.45-9.15pm
+time: 7.30-9pm
 image: "/v1608290033/heath_bhfscl.png"
 
 ---
