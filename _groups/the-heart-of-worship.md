@@ -6,7 +6,7 @@ description: "<p>Why do we need armour? Is it something that we have automatical
   these and many more questions as we dig into the truths regarding the armour of
   God. We will also look at the spiritual warfare that reveals the necessity of wearing
   the armour and how that applies to us on a daily basis.</p>"
-location: Gaer Christian Centre, Newport
+location: Liberty Church, Gaer Park Drive, Newport
 day: Wednesdays
 time: 11am - 12.30pm
 image: "/v1608289899/phil_iagj2r.png"
