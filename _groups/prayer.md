@@ -1,17 +1,15 @@
 ---
-title: Prayer
-leaders: Kobby Poku
-description: <p>"If the foundations be destroyed, what can the righteous do?" Psalm
-  11:3</p><p>Our continual triumph in our Christian walk or journey is ultimately
-  based on the solid foundation laid by Christ, which is seen through God's Character,
-  His Word and the believers identity.</p><p>In the prayer small group, we will be
-  focusing on these three key subjects which I call the 3 H's of prayer:</p><ul><li><p>His
-  Character</p></li><li><p>His Word</p></li><li><p>Him in us (Our identity in Him)</p></li></ul><p>(After
-  the small group we will be joining together with others to pray together from 8-9pm
-  at the Gaer CC)</p><p>We would love to see you there!</p>
-location: Gaer Christian Centre, Newport
-day: Tuesdays
-time: 7.30-8pm
-image: "/v1608290403/kobby_cqkw5o.png"
+title: Revelation of Jesus and the End Times
+leaders: Rob McFarlane & Graeme De Villiers
+description: "<p>These evenings will be focused on John’s teaching in the Bible on
+  the ‘Revelation of Jesus Christ’, that there is no new revelation in the final book
+  of the Bible, rather that it pulls everything together from Genesis to Jude, and
+  most practically how this points to how we should be living our lives today. </p><p>We
+  will have a time of teaching and open question/discussion time. We would love you
+  to join us!</p>"
+location: Liberty Church, Gaer Park Drive, Newport
+day: Mondays
+time: 7.30-9pm
+image: "/v1619192062/endtimes_wxkoea.png"
 
 ---
