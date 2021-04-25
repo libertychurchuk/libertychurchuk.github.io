@@ -7,6 +7,6 @@ description: "<p>We would love you to join us as we spend time together over a c
 location: Online via Zoom/Out & About
 day: Thursdays
 time: 11am
-image: ''
+image: "/v1619374092/thelma_lorraine_ckjosn.png"
 
 ---
