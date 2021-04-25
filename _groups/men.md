@@ -9,6 +9,6 @@ description: "<p>This group is open to all who have an interest in photography. 
 location: Out & About/Liberty Church, Gaer Park Drive, Newport
 day: Fridays
 time: 6.30pm
-image: ''
+image: "/v1619374071/Rob_yzdlq7.png"
 
 ---
