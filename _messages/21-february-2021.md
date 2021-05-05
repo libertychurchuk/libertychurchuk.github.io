@@ -9,7 +9,7 @@ description: ''
 series: ''
 duration: '36:46'
 length: 44125434
-image: ''
+image: "/v1620224610/FIXYOURGAZE_web_zkkdbj.png"
 notes: ''
 
 ---
