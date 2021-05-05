@@ -6,7 +6,7 @@ file: "/2021/2021-03-21.mp3"
 title: See and hear
 scripture: ''
 description: ''
-series: ''
+series: _series/fix-your-gaze.md
 duration: '39:50'
 length: 47795638
 image: ''
