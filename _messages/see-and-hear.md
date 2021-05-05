@@ -9,7 +9,7 @@ description: ''
 series: _series/fix-your-gaze.md
 duration: '39:50'
 length: 47795638
-image: ''
+image: "/v1620204291/FIXYOURGAZE_1920x1080_ddykmb.png"
 notes: ''
 
 ---
