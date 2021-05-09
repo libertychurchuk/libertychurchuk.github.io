@@ -4,7 +4,7 @@ author: _authors/phil-boalch.md
 part: 
 file: "/2021/2021-05-09.mp3"
 title: Stop, look, listen
-scripture: 'Genesis '
+scripture: Genesis , Isaiah 51:1-2
 description: ''
 series: _series/fix-your-gaze.md
 duration: ''
