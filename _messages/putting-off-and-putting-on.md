@@ -7,10 +7,9 @@ title: Putting off and putting on
 scripture: ''
 description: ''
 series: _series/fix-your-gaze.md
-duration: ''
-length: 
+duration: '46:33'
+length: 78206104
 image: ''
 notes: ''
-published: false
 
 ---
