@@ -7,10 +7,9 @@ title: Stop, look, listen
 scripture: Genesis 13:14-18, Isaiah 51:1-2, John 10:10
 description: ''
 series: _series/fix-your-gaze.md
-duration: ''
-length: 
-image: ''
+duration: '39:07'
+length: 46925238
+image: "/v1620224610/FIXYOURGAZE_web_zkkdbj.png"
 notes: ''
-published: false
 
 ---
