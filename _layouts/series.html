@@ -16,12 +16,23 @@ pagination:
 
   <div class="article__body">
 
-    {% assign series = site.messages | where: 'series', page.relative_path %}
+
+{% assign messages = site.messages %}
+{% assign devotionals = site.devotionals %}
+
+{% assign series = messages | concat: devotionals | where: 'series', page.relative_path%}
 
     <div class="row c-grid c-grid--two">
       {% for item in series %}
-        {% include items/card-message.html %}
-      {% endfor %}
+
+          {% if item.file.size > 1 %}
+            {% include items/card-message.html %}
+          {% else %}
+            {% include items/card-devotional.html %}
+          {% endif %}
+
+     {% endfor %}
+
     </div>
     
   </div>
