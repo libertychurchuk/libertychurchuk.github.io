@@ -11,6 +11,19 @@ fields:
   description: The title of the devotional. This will become the name for the page,
     and will be displayed when sharing on social media.
   default: 'Daily Devotional:'
+- name: series
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: message-series
+      file: 
+      path: 
+  label: Series
+  description: Is this devotional a part of a series?
 - name: scripture
   type: text
   config:
