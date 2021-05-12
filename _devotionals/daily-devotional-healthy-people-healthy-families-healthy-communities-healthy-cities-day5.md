@@ -1,5 +1,6 @@
 ---
-title: 'Daily Devotional: Day 5'
+title: 'Daily Devotional: Healthy People, healthy families, healthy communities, healthy
+  cities (Day5)'
 author: _authors/nat-smith.md
 date: 2020-09-25T06:20:33.000+00:00
 scripture: " Deut 6:10-12"
