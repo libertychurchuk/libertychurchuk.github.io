@@ -15,7 +15,7 @@ sections:
   - message
 - type: directory
   path: _series
-  label: Message Series
+  label: Message & devotional series
   create: documents
   match: "**/*"
 - type: heading
