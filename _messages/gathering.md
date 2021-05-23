@@ -6,7 +6,7 @@ file: "/2021/2021-05-23.mp3"
 title: Gathering
 scripture: Genesis 13:14-18, John 15:5, Hebrews 10:23
 description: ''
-series: ''
+series: _series/fix-your-gaze.md
 duration: ''
 length: 
 image: ''
