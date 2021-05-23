@@ -9,7 +9,7 @@ description: ''
 series: _series/fix-your-gaze.md
 duration: ''
 length: 
-image: ''
+image: "/v1620224610/FIXYOURGAZE_web_zkkdbj.png"
 notes: ''
 published: false
 
