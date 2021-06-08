@@ -9,7 +9,7 @@ description: ''
 series: _series/faith-ceasefire.md
 duration: '30:42'
 length: 36845630
-image: "/v1623148310/Faith_ceasefireB_z1otud.png"
+image: ''
 notes: ''
 
 ---
