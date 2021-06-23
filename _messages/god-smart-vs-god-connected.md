@@ -1,7 +1,7 @@
 ---
 date: 2021-05-16 00:00:00 +0000
 author: _authors/koby-poku.md
-part: 
+part: 11
 file: "/2021/2021-05-17.mp3"
 title: 'Fix Your Gaze: God Connected Not Just God Smart'
 scripture: Genesis 13:14-18, 2 Corinthians 2:14-15, 1John 1:1-3
