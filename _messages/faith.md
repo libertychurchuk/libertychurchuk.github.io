@@ -3,7 +3,7 @@ date: 2021-02-07 11:50:53 +0000
 author: _authors/heath-van-staden.md
 part: 1
 file: "/2021/2021-02-07.mp3"
-title: Faith
+title: 'Part 1: Faith ≠ Ceasefire: Don’t agree to a ceasefire'
 scripture: ''
 description: ''
 series: _series/faith-ceasefire.md
