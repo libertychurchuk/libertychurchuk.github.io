@@ -1,7 +1,7 @@
 ---
 date: 2021-04-18 09:25:12 +0000
 author: _authors/phil-boalch.md
-part: 
+part: 7
 file: "/2021/2021-04-18.mp3"
 title: 'Fix Your Gaze: Putting off and putting on'
 scripture: ''
