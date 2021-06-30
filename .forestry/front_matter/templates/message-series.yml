@@ -12,6 +12,7 @@ fields:
   name: image
   label: Series artwork
 pages:
+- _series/architecture.md
 - _series/claim-to-fame.md
 - _series/faith-ceasefire.md
 - _series/family-service.md
